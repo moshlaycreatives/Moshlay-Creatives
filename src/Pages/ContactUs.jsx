@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import React, { useEffect } from 'react'
-import MainComponent from './Components/MainComponent'
+// import MainComponent from './Components/MainComponent'
 import Page from '../components/page'
 const ContactUs = () => {
 
@@ -53,7 +53,7 @@ const ContactUs = () => {
         </Box>
       </Box>
 
-<MainComponent/>
+{/* <MainComponent/> */}
 
 
 </Page>

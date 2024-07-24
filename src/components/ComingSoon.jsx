@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Typography, Container, Grid, Box } from '@mui/material';
+import { Typography, Container, Grid, Box , Button ,useMediaQuery, useTheme} from '@mui/material';
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const ComingSoon = () => {
+  const theme = useTheme();
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMedium = useMediaQuery(theme.breakpoints.down("md"));
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
@@ -49,61 +55,83 @@ const ComingSoon = () => {
   };
 
   return (
-    <div style={{ minHeight: '92vh', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column', padding: '24px', textAlign: 'center',
-              backgroundImage: `linear-gradient(180deg, rgba(0, 0, 0, 0.5) 30.2%, rgb(0,0, 0, 0.5) 90.9%),url(/banner1.jpeg)`,
-          backgroundPosition: "center",
-          backgroundSize: "cover",
-          backgroundRepeat: "none",
+    <Box sx={{
+      backgroundColor: 'black',
+      width: '100%',
+      height: '100vh',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: '0',
+      position: 'relative', // Ensures the button container can be positioned absolutely
+    }}>
+      <Box sx={{
+        width: '100%',
+        height: '100%',
+      }}>
+        <img src="comingSoon.png" alt="Coming Soon" style={{ 
+          width: '100%',
+          height: '100%',
+          objectFit: 'contain',
+        }} />
 
-
-
-     }}>
-      <Container>
-        <Grid container justifyContent="center" spacing={2}>
-          <Grid item xs={12}>
-          <Box>
-
-
-          <Box>
-            <img src="/Logo Ok.png" alt="Logo" width='5%' />
-
-          </Box>
-          <Typography variant="h2" gutterBottom sx={{color:'white', fontWeight:600}}>
-             Ex Furniture
-
-            </Typography>
-          </Box>
-
-
-          </Grid>
-          <Grid item xs={12}>
-            <Typography variant="h5" gutterBottom sx={{color:'white'}}>
-              We are launching soon!
-            </Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <Box style={countdownStyle}>
-              <div style={countdownItemStyle}>
-                <Typography>{countdown.days}</Typography>
-                <Typography>Days</Typography>
-              </div>
-              <div style={countdownItemStyle}>
-                <Typography>{countdown.hours}</Typography>
-                <Typography>Hours</Typography>
-              </div>
-              <div style={countdownItemStyle}>
-                <Typography>{countdown.minutes}</Typography>
-                <Typography>Minutes</Typography>
-              </div>
-              <div style={countdownItemStyle}>
-                <Typography>{countdown.seconds}</Typography>
-                <Typography>Seconds</Typography>
-              </div>
-            </Box>
-          </Grid>
-        </Grid>
-      </Container>
-    </div>
+<Box sx={{
+      position: 'absolute',
+      top: '90%',
+      left: '50%',
+      transform: isMedium ? 'translate(-40%, -100%)' : 'translate(-40%, -40%)',
+      transform: isSmall ? 'translate(-50%, -250%)' : 'translate(-40%, -40%)',
+      display: 'flex',
+      gap: '1rem',
+      zIndex: 99,
+    }}>
+      <a href="https://www.facebook.com/MoshlayCreatives" target="_blank" rel="noopener noreferrer" style={{
+        color: 'white',
+        fontSize: '1.2rem',
+        border: '1px solid white',
+        borderRadius: '50%',
+        width: '2.5rem',
+        height: '2.5rem',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        textDecoration: 'none',
+      }}>
+        <FaFacebookF />
+      </a>
+      <a href="https://www.linkedin.com/company/moshlaycreatives/?viewAsMember=true" target="_blank" rel="noopener noreferrer" style={{
+        color: 'white',
+        fontSize: '1.2rem',
+        border: '1px solid white',
+        borderRadius: '50%',
+        width: '2.5rem',
+        height: '2.5rem',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        textDecoration: 'none',
+      }}>
+        <FaInstagram />
+      </a>
+      <a href="https://www.linkedin.com/company/moshlaycreatives/?viewAsMember=true" target="_blank" rel="noopener noreferrer" style={{
+        color: 'white',
+        fontSize: '1.2rem',
+        border: '1px solid white',
+        borderRadius: '50%',
+        width: '2.5rem',
+        height: '2.5rem',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        textDecoration: 'none',
+      }}>
+        <FaLinkedinIn />
+      </a>
+    </Box>
+      </Box>
+    </Box>
+    
+    
   );
 };
 

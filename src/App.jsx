@@ -25,9 +25,9 @@ function App() {
           >
             <ErrorBoundary>
               {/* Conditionally render Header and Footer */}
-              {showHeaderAndFooter && <Header />}
+              {/* {showHeaderAndFooter && <Header />} */}
               <Router />
-              {showHeaderAndFooter && <Footer />}
+              {/* {showHeaderAndFooter && <Footer />} */}
             </ErrorBoundary>
           </SnackbarProvider>
         </StyledEngineProvider>

@@ -83,7 +83,7 @@ export const deleteSellers = (id) => async (dispatch) => {
   }
 };
 
-export const userLogout = () => async (dispatch) => {
+export const logout = () => async (dispatch) => {
   try {
     localStorage.removeItem('token');
 

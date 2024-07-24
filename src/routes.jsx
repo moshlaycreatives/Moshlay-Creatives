@@ -9,14 +9,12 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 import ProtectedRoutes from '../src/components/ProtectedRoutes/ProtectedRoutes'
 import AdminMain from '../src/Admin/AdminMain'
-import SellerMain from "./Seller/SellerMain";
 import Main from "./Pages/Authentication_Page/Main";
 import ContactUs from "./Pages/ContactUs";
 import AboutUs from "./Pages/AboutUs";
 import ShopMain from "./Pages/ShopPage/ShopMain";
-import TermsConditions from "./Pages/Components/TermsConditions";
-import PrivacyPolicy from "./Pages/Components/PrivacyPolicy";
-import CookiesPolicy from "./Pages/Components/CookiesPolicy";
+// import PrivacyPolicy from "./Pages/Components/PrivacyPolicy";
+// import CookiesPolicy from "./Pages/Components/CookiesPolicy";
 import SingleProduct from "./Pages/ShopPage/SingleProduct";
 import ComingSoon from "./components/ComingSoon";
 export default function Router() {
@@ -31,12 +29,6 @@ console.log(isAuthenticated, 'hgyfuhhj')
 
 
     let element = useRoutes([
-
-        {
-
-            element: <ProtectedRoutes isLogged={isAuthenticated} />,
-            children: [{ path: "/seller/dashboard", element: <SellerMain /> }],
-          },
 
         {
             path:'/admin/dashboard',
@@ -54,10 +46,10 @@ console.log(isAuthenticated, 'hgyfuhhj')
         element : <Landing /> ,
        },
 
-    // {
-    //     path:'/',
-    //     element : <ComingSoon /> ,
-    //    },
+    {
+        path:'/comming-soon',
+        element : <ComingSoon /> ,
+       },
 
 
        {
@@ -86,19 +78,15 @@ console.log(isAuthenticated, 'hgyfuhhj')
         element : <ContactUs/> ,
        },
 
-       {
-        path:'/terms-&-conditions',
-        element : <TermsConditions/> ,
-       },
-       {
-        path:'/privacy-policy',
-        element : <PrivacyPolicy/> ,
-       },
+    //    {
+    //     path:'/privacy-policy',
+    //     element : <PrivacyPolicy/> ,
+    //    },
 
-       {
-        path:'/cookies-policy',
-        element : <CookiesPolicy/> ,
-       },
+    //    {
+    //     path:'/cookies-policy',
+    //     element : <CookiesPolicy/> ,
+    //    },
 
        {
         path:'/shop',
