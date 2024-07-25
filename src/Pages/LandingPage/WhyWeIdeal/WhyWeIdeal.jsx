@@ -1,11 +1,14 @@
-import { Box, Divider, Grid, Typography, useTheme } from "@mui/material";
+import { Box, Divider, Grid, Typography, useTheme, useMediaQuery } from "@mui/material";
 import React from "react";
 
 const WhyWeIdeal = () => {
   const theme = useTheme();
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+
   return (
     <>
-      <Box>
+      <Box >
         <Box marginBottom={"2rem"}>
           <Typography
             variant="h3"
@@ -19,8 +22,7 @@ const WhyWeIdeal = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-            }}
-          >
+            }}>
             What Makes Us The Ideal Software Development Company
           </Typography>
 
@@ -43,24 +45,26 @@ const WhyWeIdeal = () => {
             development services company
           </Typography>
         </Box>
-        <Grid container spacing={20}>
+
+        <Grid container spacing={isMedium ? 5 : 20}>
           <Grid lg={6} md={6} sm={12} xs={12} item>
             <Box sx={{
                 display:'flex',
                 alignItems:"end",
-                // position:'relative',
                 width:'100%'
             }}>
               <img src="whyWeIdeal.svg" alt=""  width={"100%"}/>
               <Box sx={{
                 display:'flex',
                 flexDirection:"column",
+                justifyContent:'end',
                 backgroundColor:theme.palette.primary.main,
-                height:'85vh',
-                gap:10, 
+                height:'85%',
+                gap:11, 
                 borderRadius:'20px 0 20px 0', 
                 padding:'1rem',
-                marginLeft:'-10%'
+                marginLeft:'-10%',
+                display: isMedium ? 'none' : 'flex',
               }}>
                 <Typography sx={{
                     fontSize:'2.5rem', 

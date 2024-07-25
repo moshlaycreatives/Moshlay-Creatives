@@ -1,5 +1,6 @@
 import { Box, Typography } from '@mui/material'
 import React from 'react'
+import Header from '../../Components/Header'
 
 const Hero = () => {
   return (
@@ -16,7 +17,7 @@ const Hero = () => {
             overflow:'hidden',
         }}>
         <img src="heroImage.svg" alt="" style={{
-            position:'absolute',width:'110%', top:-40 ,left:-60
+            position:'absolute',width:'100%', top:-40 ,left:-60
             ,objectFit:'cover',
             objectPosition:'center'}}/>
         <img src="heroImage1.svg" alt="" style={{
@@ -27,7 +28,8 @@ const Hero = () => {
 
         <Box sx={{
             display:'flex',
-            justifyContent:'center'
+            justifyContent:'center',
+            width:'100%'
         }}>
             <img src="logo.svg" alt=""  style={{}}/>
         </Box>
@@ -43,6 +45,7 @@ const Hero = () => {
             }}>Your Vision, Our Innovation</Typography>
         </Box>
         <Box>
+            <Header/>
         </Box>
     </Box>
     </>

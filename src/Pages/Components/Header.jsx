@@ -95,7 +95,7 @@ const Header = () => {
         boxShadow: "1px 1px 1px #ededed",
       }}
     >
-      <Box>
+      {/* <Box>
         <Link to="/">
           <img
             src="/mainLogo.png"
@@ -103,7 +103,7 @@ const Header = () => {
             style={{ height: "auto", width: "100%" }}
           />
         </Link>
-      </Box>
+      </Box> */}
       <Box
         sx={{
           display: { xs: "none", sm: "flex" },
@@ -243,7 +243,7 @@ const Header = () => {
           sx={{ textTransform: "none", marginBottom: '1rem' }}
           onClick={handleAddEvent}
         >
-          Add New Event
+        <Typography>Home</Typography>
         </Button>
 
         <Button
@@ -258,7 +258,7 @@ const Header = () => {
               textTransform: "none",
             }}
           >
-            Show All History
+            Digital Solution
           </Link>
         </Button>
         <Button variant="contained" sx={{ textTransform: "none" }}>

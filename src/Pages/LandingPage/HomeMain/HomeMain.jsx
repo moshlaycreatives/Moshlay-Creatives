@@ -3,6 +3,7 @@ import AboutUs from '../AboutUs/AboutUs'
 import { Box } from '@mui/material'
 import Services from '../Services/Services'
 import WhyWeIdeal from '../WhyWeIdeal/WhyWeIdeal'
+import KnowUs from '../KnowUs/KnowUs'
 
 const HomeMain = () => {
   return (
@@ -21,6 +22,7 @@ const HomeMain = () => {
             <br />
             <Services/>
             <WhyWeIdeal/>
+            <KnowUs/>
         </Box>
     </Box>
     </>
