@@ -44,7 +44,14 @@ const Hero = () => {
                 textAlign:'center'
             }}>Your Vision, Our Innovation</Typography>
         </Box>
-        <Box>
+        <Box sx={{
+            marginTop :'2.5rem',
+            position:"absolute",
+            bottom:2,
+            // left:"1% ",
+            textAlign:'center',
+            width:'100%'
+        }}>
             <Header/>
         </Box>
     </Box>

@@ -4,6 +4,11 @@ import { Box } from '@mui/material'
 import Services from '../Services/Services'
 import WhyWeIdeal from '../WhyWeIdeal/WhyWeIdeal'
 import KnowUs from '../KnowUs/KnowUs'
+import ContactUs from '../ContactUs/ContactUs'
+import Blogs from '../Blogs/Blogs'
+import Footer from '../../Components/Footer/Footer'
+import Technology from '../Technology/Technology'
+import ReviewsCarousel from '../ReviewsCarousel/ReviewsCarousel'
 
 const HomeMain = () => {
   return (
@@ -22,7 +27,12 @@ const HomeMain = () => {
             <br />
             <Services/>
             <WhyWeIdeal/>
+            <ReviewsCarousel/>
+            <Technology/>
             <KnowUs/>
+            <ContactUs/>
+            <Blogs/>
+            <Footer/>
         </Box>
     </Box>
     </>

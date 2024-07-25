@@ -8,13 +8,15 @@ const KnowUs = () => {
     <>
       <Box
         sx={{
-          width: "100%",
+          // width: "100%",
           backgroundColor: "#263238",
           padding:'2rem',
-          marginTop:'5rem'
+          marginTop:'5rem',
+          // padding:'0% 10%',
+
         }}
       >
-        <Grid container>
+        <Grid container spacing={5}>
           <Grid item lg={6} md={6} sm={12} xs={12} sx={{
                 display:'flex', alignItems:"center",
                 width:'100%'
@@ -48,9 +50,7 @@ const KnowUs = () => {
                 portti tum elit ut facilisis. Curabitur sit amet sagittis magna.
                 Vestibulum la lacus, vitae venenatis magna interdum a.
                 Pellentesque vestibulum tortor sed mollis. Orci varius natoque
-                penatibus et magnis dis pa es, nascetur ridiculus mus Orci
-                varius natoque penatibus et mag ent mont es, nascetur ridiculus
-                mus,
+                penatibus et 
               </Typography>
               <Typography sx={{
                 fontSize:'1.1rem',
@@ -63,9 +63,7 @@ const KnowUs = () => {
                 portt tum elit ut facilisis. Curabitur sit amet sagittis magna.
                 Vestibulum lao lacus, vitae venenatis magna interdum a.
                 Pellentesque vestibulum tortor sed mollis. Orci varius natoque
-                penatibus et magnis dis part es, nascetur ridiculus mus Orci
-                varius natoque penatibus et mag ent mont es, nascetur ridiculus
-                mus,
+                penatibus et 
               </Typography>
               <Box>
                 <Button variant="outlined" 

@@ -10,13 +10,26 @@ import {
   Typography,
   IconButton,
   useTheme,
+  Menu,
 } from "@mui/material";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../store/actions/authActions";
+import { MdOutlineArrowDropDown } from "react-icons/md";
+
 
 const Header = () => {
+  const [anchorEl, setAnchorEl] = useState(null);
+  const openMenu = Boolean(anchorEl);
+
+  const handleAnchorElClick = (e)=>{
+    setAnchorEl (e.currentTarget);
+  }
+  const handleAchorClose = ( )=>{
+    setAnchorEl(null)
+  }
+
   const location = useLocation();
   const navigate = useNavigate();
   const judge_check = location.pathname.includes("judge-score-card") || location.pathname.includes("judge-login");
@@ -84,69 +97,84 @@ const Header = () => {
   return (
     <Box
       sx={{
-        backgroundColor: "white",
+        // backgroundColor: "white",
         padding: "0rem 5%",
         display: "flex",
-        justifyContent: "space-between",
+        justifyContent: "center",
         alignItems: "center",
         position: "static",
         top: 0,
         zIndex: 10000000,
-        boxShadow: "1px 1px 1px #ededed",
+        // boxShadow: "1px 1px 1px black ",
       }}
     >
-      {/* <Box>
-        <Link to="/">
-          <img
-            src="/mainLogo.png"
-            alt="Logo"
-            style={{ height: "auto", width: "100%" }}
-          />
-        </Link>
-      </Box> */}
       <Box
         sx={{
           display: { xs: "none", sm: "flex" },
           justifyContent: "center",
           alignItems: "center",
+          gap:3,
+          color:'white'
         }}
       >
 
-{!judge_check ? (
-  <>
-    {auth && (
-      <>
-        <Button
-          variant="contained"
-          sx={{ textTransform: "none", marginRight: '1rem' }}
-          onClick={handleAddEvent}
+        <Typography 
+        aria-controls="digital-solution"
+        aria-haspopup="true" 
+        aria-expanded={ openMenu ? 'true' : undefined}
+        onClick={handleAnchorElClick}
+        style={{cursor:'pointer'}}
+        // display={"flex"} 
         >
-          Add New Event
-        </Button>
-
-        <Button
-          variant="contained"
-          sx={{ textTransform: "none", color: "white" }}
-
-        >
-          <Link
-            to="all-history"
-            style={{
-              color: "white",
-              textDecoration: "none",
-              textTransform: "none",
-            }}
-          >
-            Show All History
-          </Link>
-        </Button>
-        <Button variant="contained" sx={{ marginLeft:'1rem', textTransform: "none" }}>
-          Upgrade your pricing plan
-        </Button>
-      </>
-    )}
-  </>
-) : null}
+          Digital Solution
+        </Typography>
+        <Typography sx={{
+            fontSize:'1.5rem',
+            marginLeft:"-1.5rem",
+            marginTop :'.5rem',
+            textAlign:'center',
+            color:theme.palette.primary.main
+          }}><MdOutlineArrowDropDown /></Typography>
+        {/* drop down list  */}
+        <Typography>
+          <Menu id="digital-solution" anchorEl={anchorEl} open={openMenu} onClose={handleAchorClose}>
+            <MenuItem onClick={handleAchorClose}> Example 1</MenuItem>
+            <MenuItem onClick={handleAchorClose}>  Example 2</MenuItem>
+          </Menu>
+        </Typography>
+        <Typography
+        aria-controls="digital-marketing"
+        aria-haspopup="true" 
+        aria-expanded={ openMenu ? 'true' : undefined}
+        onClick={handleAnchorElClick}
+        style={{cursor:'pointer'}}>
+          Digital Marketing 
+        </Typography>
+        <Typography sx={{
+            fontSize:'1.5rem',
+            marginLeft:"-1.5rem",
+            marginTop :'.5rem',
+            textAlign:'center',
+            color:theme.palette.primary.main
+          }}><MdOutlineArrowDropDown /></Typography>  
+        <Typography>
+          <Menu id="digital-marketing" anchorEl={anchorEl} open={openMenu} onClose={handleAchorClose}>
+            <MenuItem onClick={handleAchorClose}> Example 1</MenuItem>
+            <MenuItem onClick={handleAchorClose}>  Example 2</MenuItem>
+          </Menu>
+        </Typography>
+        <Typography>
+          Company
+        </Typography>
+        <Typography>
+          Blog
+        </Typography>
+        <Typography>
+          Careers
+        </Typography>
+        <Typography>
+          Contact
+        </Typography>
 
         <Box
           sx={{
@@ -156,71 +184,11 @@ const Header = () => {
             cursor: "pointer",
           }}
         >
-          {auth ? (
-            <Box>
-              <FormControl sx={{ padding: 0 }}>
-                <Select
-                  sx={{
-                    outline: "none",
-                    "&:focus": {
-                      outline: "none",
-                    },
-                    "& .MuiOutlinedInput-notchedOutline": {
-                      border: "none", // Remove the outline border
-                    },
-                  }}
-                  // value={selectedValue}
-                  // onChange={handleChange}
-                  displayEmpty
-                  inputProps={{ "aria-label": "Select user" }}
-                  style={{ minWidth: "120px", padding: 0 }}
-                  renderValue={(selected) => (
-                    <Box sx={{ display: "flex", alignItems: "center" }}>
-                      <Avatar
-                        alt=""
-                        // src={userData ? `${base}${userData?.profile_image}` : ""}
-                        sx={{
-                          height: "2rem",
-                          width: "2rem",
-                          marginRight: "8px",
-                        }}
-                      />
-                      <Typography sx={{ fontSize: "1rem" }}>
-                        {username}
-                      </Typography>
-                    </Box>
-                  )}
-                >
-                  <MenuItem
-                    sx={{ fontSize: "0.8rem" }}
-                    value="Logout"
-                    onClick={() => handleMenuItemClick("Logout")}
-                  >
-                    Logout
-                  </MenuItem>
-                </Select>
-              </FormControl>
-            </Box>
-          ) : (
-            <Button
-              onClick={handleLogin}
-              variant="contained"
-              size="small"
-              sx={{
-                backgroundColor: theme.palette.primary.main,
-                padding: "0.5rem 2rem",
-                textTransform: "none",
-                fontSize: "0.9rem",
-                marginLeft: "1rem",
-              }}
-            >
-              Login
-            </Button>
-          )}
+          
         </Box>
       </Box>
       <Box sx={{ display: { xs: "flex", sm: "none" } }}>
-        <IconButton onClick={handleDrawerOpen} sx={{ padding: "10px" }}>
+        <IconButton onClick={handleDrawerOpen} sx={{ padding: "10px" , color:'white'}}>
           <MenuIcon />
         </IconButton>
         <Drawer
@@ -229,109 +197,106 @@ const Header = () => {
           onClose={handleDrawerClose}
           sx={{ zIndex: 10000000 }}
         >
-
-
-
-
           <Box sx={{ width: 250, padding: "20px" }}>
-          {!judge_check ? (
-  <>
-    {auth && (
-      <>
-        <Button
-          variant="contained"
-          sx={{ textTransform: "none", marginBottom: '1rem' }}
-          onClick={handleAddEvent}
+          
+          {/* <Box
+        sx={{
+          display: { xs: "none", sm: "flex" },
+          justifyContent: "center",
+          alignItems: "center",
+          gap:3,
+          color:'white'
+        }}
+      > */}
+
+       <Box  sx={{
+        gap:5
+       }}>
+      <Box sx={{
+        display:'flex'
+       }}>
+      <Typography 
+        aria-controls="digital-solution"
+        aria-haspopup="true" 
+        aria-expanded={ openMenu ? 'true' : undefined}
+        onClick={handleAnchorElClick}
+        style={{cursor:'pointer'}}
+        // display={"flex"} 
         >
-        <Typography>Home</Typography>
-        </Button>
+          Digital Solution
+        </Typography>
+        <Typography sx={{
+            fontSize:'1.5rem',
+            // marginLeft:"-1.5rem",
+            // marginTop :'.5rem',
+            textAlign:'center',
+            color:theme.palette.primary.main
+          }}><MdOutlineArrowDropDown /></Typography>
+        {/* drop down list  */}
+        <Typography sx={{
+          zIndex:1000
+        }}>
+          <Menu id="digital-solution" anchorEl={anchorEl} open={openMenu} onClose={handleAchorClose}>
+            <MenuItem onClick={handleAchorClose}> Example 1</MenuItem>
+            <MenuItem onClick={handleAchorClose}>  Example 2</MenuItem>
+          </Menu>
+        </Typography>
+       
+      </Box>
 
-        <Button
-          variant="contained"
-          sx={{ textTransform: "none", color: "white", marginBottom: '1rem' }}
+      <Box sx={{
+        display:'flex'
+      }}>
+      <Typography
+        aria-controls="digital-marketing"
+        aria-haspopup="true" 
+        aria-expanded={ openMenu ? 'true' : undefined}
+        onClick={handleAnchorElClick}
+        style={{cursor:'pointer'}}>
+          Digital Marketing 
+        </Typography>
+        <Typography sx={{
+            fontSize:'1.5rem',
+            // marginLeft:"-1.5rem",
+            // marginTop :'.5rem',
+            textAlign:'center',
+            color:theme.palette.primary.main
+          }}><MdOutlineArrowDropDown /></Typography>  
+        <Typography sx={{
+          zIndex:1000
+        }}>
+          <Menu id="digital-marketing" anchorEl={anchorEl} open={openMenu} onClose={handleAchorClose}>
+            <MenuItem onClick={handleAchorClose}> Example 1</MenuItem>
+            <MenuItem onClick={handleAchorClose}>  Example 2</MenuItem>
+          </Menu>
+        </Typography>
+      </Box >
+        
+        <Typography >
+          Company
+        </Typography>
+        <Typography>
+          Blog
+        </Typography>
+        <Typography>
+          Careers
+        </Typography>
+        <Typography>
+          Contact
+        </Typography>
+
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "center",
+
+            cursor: "pointer",
+          }}
         >
-          <Link
-            to="all-history"
-            style={{
-              color: "white",
-              textDecoration: "none",
-              textTransform: "none",
-            }}
-          >
-            Digital Solution
-          </Link>
-        </Button>
-        <Button variant="contained" sx={{ textTransform: "none" }}>
-          Upgrade your pricing plan
-        </Button>
-      </>
-    )}
-  </>
-) : null}
-
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-
-                cursor: "pointer",
-              }}
-            >
-              {auth ? (
-                <Box>
-                  <FormControl sx={{ padding: 0 }}>
-                    <Box
-                      sx={{
-                        display: "flex",
-                        alignItems: "center",
-                        mt: 5,
-                      }}
-                    >
-                      <Avatar
-                        alt=""
-                        // src={userData ? `${base}${userData?.profile_image}` : ""}
-                        sx={{
-                          height: "2rem",
-                          width: "2rem",
-                          marginRight: "8px",
-                        }}
-                      />
-                      <Typography sx={{ fontSize: "1rem" }}>
-                      {username}
-                      </Typography>
-                    </Box>
-                    <Box
-                      sx={{
-                        mt: 2,
-                      }}
-                    >
-                      <Button
-                        variant="contained"
-                        onClick={() => handleMenuItemClick("Logout")}
-                      >
-                        Logout
-                      </Button>
-                    </Box>
-
-                  </FormControl>
-                </Box>
-              ) : (
-                <Button
-                  onClick={handleLogin}
-                  variant="contained"
-                  sx={{
-                    backgroundColor: theme.palette.primary.main,
-                    padding: "0.5rem 2rem",
-                    textTransform: "none",
-                    fontSize: "0.9rem",
-                    mt: 4,
-                  }}
-                >
-                  Login
-                </Button>
-              )}
-            </Box>
-          </Box>
+          
+        </Box>
+      </Box>
+           </Box>
         </Drawer>
       </Box>
     </Box>
