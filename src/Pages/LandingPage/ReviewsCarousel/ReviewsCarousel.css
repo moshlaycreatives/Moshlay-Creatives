@@ -1,0 +1,10 @@
+.slick-slide{
+    margin:3rem  1rem;    
+}
+.slick-list{
+    margin: 0x 10px;
+}
+.slick-track {
+    display: flex;
+    align-items: center; /* Ensure slides are centered vertically */
+  }

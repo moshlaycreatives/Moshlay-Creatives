@@ -10,7 +10,9 @@ const AboutUs = () => {
     
   return (
     <>
-    <Box margin={" 3rem 0rem"}>
+    <Box sx={{
+        padding:'5% 10% 2.5% 10%',
+    }} > 
         <Grid container >
             <Grid lg={5} md={5} sm={12} xs={12}
             sx={{

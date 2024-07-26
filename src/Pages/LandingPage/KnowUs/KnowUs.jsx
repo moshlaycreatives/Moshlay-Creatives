@@ -1,8 +1,10 @@
-import { Box, Button, Grid, Typography, useTheme } from "@mui/material";
+import { Box, Button, Grid, Typography, useTheme , useMediaQuery} from "@mui/material";
 import React from "react";
 
 const KnowUs = () => {
     const theme = useTheme();
+    const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMedium = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <>
@@ -10,14 +12,13 @@ const KnowUs = () => {
         sx={{
           // width: "100%",
           backgroundColor: "#263238",
-          padding:'2rem',
           marginTop:'5rem',
-          // padding:'0% 10%',
+          padding:isMedium ? '5% 10%' : '2% 10%',
 
         }}
       >
         <Grid container spacing={5}>
-          <Grid item lg={6} md={6} sm={12} xs={12} sx={{
+          <Grid item lg={6} md={6} sm={12} xs={12} order={isMedium ? 2 : 1} sx={{
                 display:'flex', alignItems:"center",
                 width:'100%'
             }}>
@@ -25,7 +26,7 @@ const KnowUs = () => {
             <img src="knowus.svg" alt="" width={"100%"} />
             </Box>
           </Grid>
-          <Grid item lg={6} md={6} sm={12} xs={12}>
+          <Grid item lg={6} md={6} sm={12} xs={12} order={isMedium ? 1 : 2}>
             <Box>
               <Typography sx={{
                 fontSize:'2.5rem',

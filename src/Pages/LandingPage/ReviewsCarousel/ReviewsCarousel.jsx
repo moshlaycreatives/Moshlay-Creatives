@@ -1,8 +1,9 @@
-import { Avatar, Box, Rating, Typography } from "@mui/material";
+import { Avatar, Box, Rating, Typography, useMediaQuery ,useTheme} from "@mui/material";
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./ReviewsCarousel.css"
 
 const ReviewsCarousel = () => {
 
@@ -13,40 +14,65 @@ const ReviewsCarousel = () => {
         {cardimage : 'services4.svg' , cardTitle: 'ahmad' , cardDes :"Lorem Ipsum es simplemente el texto  relleno de las imprentas y archivos de teLorem Ipsum ha sido el texto de relleno tándar de las industrias desde el año 15"},
     ]
 
+    const theme = useTheme();
+    const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+    const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+
+    const slidersToShow = isSmall ? 1 : isMedium ?  2 :3;
+
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slidersToShow,
     slidesToScroll: 3,
-    arrows:false
+    arrows:false,
+    // autoplay:true
   };
 
   return (
     <>
       <Box
         sx={{
-          background: "linear-gradient(to bottom, #98c447 50%, red 50%)",
+          background: "linear-gradient(to bottom, #98c447 50%, transparent 40%)",
           width: "100%",
-          height: "50vh",
+          // height: "50vh",
           marginTop: "4rem",
+          // marginBottom:'4rem',
+          // display:'flex',
+          alignItems:'center',
+          padding:' 2rem 9%'
         }}
       >
         <Box>
           <div className="slider-container">
+            <Box>
+              <Typography sx={{
+                fontSize:'1.8rem',
+                fontWeight:700,
+                color:'white '
+              }}>
+              Tried & Trusted With Revered Reviews
+              </Typography>
+            </Box>
             <Slider {...settings}>
                 {cardData.map((val,ind)=>(
                     <Box key={ind} sx={{
-                        backgroundColor:'black', color:'white' , padding:'1rem', display:'flex',
-                        justifyContent:'center',
-                        alignItems:'center'
-                    }} gap={5}>
-                <Box >
-                  <Avatar src={val.cardimage} />
+                        backgroundColor:'#18232d', color:'white' , padding:'1.5rem',
+                        textAlign:'center',
+                        borderRadius:'10px'
+                    }}>
+                <Box sx={{
+                  display:'flex',
+                  justifyContent:'center',
+                  width:'100%'
+                  ,marginBottom:'1rem',
+                }} >
+                  <Avatar src={val.cardimage}  sx={{width:80 , height:80}}/>
                 </Box>
-                <Typography>{val.cardTitle}</Typography>
+                <Typography sx={{marginBottom:'1rem' , fontSize:'1.3rem', fontWeight:500}}>{val.cardTitle}</Typography>
                 <Rating readOnly value={5} />
-                <Typography>
+                <Typography sx={{marginTop:'1rem' , fontSize:'1rem', fontWeight:400, textAlign:'justify'}} >
                   {val.cardDes}
                 </Typography>
               </Box>

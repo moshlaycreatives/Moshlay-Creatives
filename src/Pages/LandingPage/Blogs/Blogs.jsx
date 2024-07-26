@@ -14,7 +14,8 @@ const  cardData =[
   return (
     <>
       <Box sx={{
-        margin:'2rem 0rem'
+        margin:'2rem 0rem',
+        padding:'0 10%'
       }}>
         <Box marginBottom={'2rem'}>
           <Typography variant="h3" sx={{
@@ -44,8 +45,8 @@ const  cardData =[
                 <Card sx={{
                     backgroundColor:'#18232d'
                 }}>
-                <Box>
-                    <img src={val.cardImage} alt=""  />
+                <Box width={'100%'}>
+                    <img src={val.cardImage} alt="" width={'100%'} />
                 </Box>
                 <Box sx={{
                     padding:'1rem',

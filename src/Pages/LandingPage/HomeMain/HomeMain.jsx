@@ -9,6 +9,8 @@ import Blogs from '../Blogs/Blogs'
 import Footer from '../../Components/Footer/Footer'
 import Technology from '../Technology/Technology'
 import ReviewsCarousel from '../ReviewsCarousel/ReviewsCarousel'
+import Faqs from '../Faqs/Faqs'
+import FaqsPage from '../Faqs/faqsPage'
 
 const HomeMain = () => {
   return (
@@ -20,7 +22,7 @@ const HomeMain = () => {
         backgroundImage: 'linear-gradient(to right, #0d1834, #020307 )',
     }}>
         <Box sx={{
-            padding:'2% 10%',
+            // padding:'2% 10%',
             // height:"auto",
         }}>
             <AboutUs/>
@@ -32,6 +34,7 @@ const HomeMain = () => {
             <KnowUs/>
             <ContactUs/>
             <Blogs/>
+            <FaqsPage/>
             <Footer/>
         </Box>
     </Box>

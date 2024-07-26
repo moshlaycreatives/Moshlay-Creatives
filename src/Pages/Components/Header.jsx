@@ -195,7 +195,7 @@ const Header = () => {
           anchor="right"
           open={drawerOpen}
           onClose={handleDrawerClose}
-          sx={{ zIndex: 10000000 }}
+          sx={{ zIndex: 1300}}
         >
           <Box sx={{ width: 250, padding: "20px" }}>
           
@@ -234,11 +234,12 @@ const Header = () => {
           }}><MdOutlineArrowDropDown /></Typography>
         {/* drop down list  */}
         <Typography sx={{
-          zIndex:1000
+          zIndex:2000,
+          position:'fixed'
         }}>
           <Menu id="digital-solution" anchorEl={anchorEl} open={openMenu} onClose={handleAchorClose}>
-            <MenuItem onClick={handleAchorClose}> Example 1</MenuItem>
-            <MenuItem onClick={handleAchorClose}>  Example 2</MenuItem>
+            <MenuItem onClick={()=>{handleAchorClose(); handleDrawerClose();}}>  Example 1</MenuItem>
+            <MenuItem onClick={()=>{handleAchorClose(); handleDrawerClose();}}>  Example 2</MenuItem>
           </Menu>
         </Typography>
        
@@ -263,11 +264,13 @@ const Header = () => {
             color:theme.palette.primary.main
           }}><MdOutlineArrowDropDown /></Typography>  
         <Typography sx={{
-          zIndex:1000
+          zIndex:2000,
+          postion:'fixed',
+          // marginBottom:'4rem'
         }}>
           <Menu id="digital-marketing" anchorEl={anchorEl} open={openMenu} onClose={handleAchorClose}>
-            <MenuItem onClick={handleAchorClose}> Example 1</MenuItem>
-            <MenuItem onClick={handleAchorClose}>  Example 2</MenuItem>
+          <MenuItem onClick={()=>{handleAchorClose(); handleDrawerClose();}}>  Example 1</MenuItem>
+          <MenuItem onClick={()=>{handleAchorClose(); handleDrawerClose();}}>  Example 2</MenuItem>
           </Menu>
         </Typography>
       </Box >

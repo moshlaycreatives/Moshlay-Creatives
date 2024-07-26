@@ -10,7 +10,7 @@
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 20px 0px;
+    padding: 20px 10%;
 }
 .footer-main-div{
     width: 100%;
@@ -150,5 +150,19 @@ text-decoration: none;
     }
     .footer-logo-text{
         width: 60%;
+    }
+}
+
+@media(max-width:500px){
+    
+    .footer-logo-text img{
+        width: 40%;
+    }
+}
+
+@media(max-width:400px){
+    
+    .footer-logo-text img{
+        width: 50%;
     }
 }

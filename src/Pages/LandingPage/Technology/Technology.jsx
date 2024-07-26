@@ -10,7 +10,7 @@ const Technology = () => {
         sx={{
           // width: "100%",
         //   backgroundColor: "#263238",
-          padding:'2rem',
+          padding:'0 10%',
           marginTop:'5rem',
           // padding:'0% 10%',
 

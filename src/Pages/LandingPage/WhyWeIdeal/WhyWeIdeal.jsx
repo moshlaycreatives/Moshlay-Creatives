@@ -8,7 +8,10 @@ const WhyWeIdeal = () => {
 
   return (
     <>
-      <Box >
+      <Box sx={{
+        // margin:'2rem 0rem',
+        padding:'2.5% 10%'
+        }}>
         <Box marginBottom={"2rem"}>
           <Typography
             variant="h3"

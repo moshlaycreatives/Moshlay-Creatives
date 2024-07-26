@@ -17,6 +17,8 @@ import ShopMain from "./Pages/ShopPage/ShopMain";
 // import CookiesPolicy from "./Pages/Components/CookiesPolicy";
 import SingleProduct from "./Pages/ShopPage/SingleProduct";
 import ComingSoon from "./components/ComingSoon";
+import About from "./Pages/About/About";
+import Contact from "./Pages/Contact/Contact";
 export default function Router() {
 
     const [progress, setProgress] = useState(0);
@@ -45,7 +47,14 @@ console.log(isAuthenticated, 'hgyfuhhj')
         path:'/',
         element : <Landing /> ,
        },
-
+{
+       path:'/about-section',
+       element : <About /> ,
+      },
+      {
+        path:'/contact-section',
+        element : <Contact /> ,
+       },
     {
         path:'/comming-soon',
         element : <ComingSoon /> ,
