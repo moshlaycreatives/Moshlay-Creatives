@@ -11,31 +11,56 @@ import {
   IconButton,
   useTheme,
   Menu,
+  useMediaQuery,
 } from "@mui/material";
 import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../store/actions/authActions";
 import { MdOutlineArrowDropDown } from "react-icons/md";
-
+import { MdOutlineMessage } from "react-icons/md";
 
 const Header = () => {
-  const [anchorEl, setAnchorEl] = useState(null);
-  const openMenu = Boolean(anchorEl);
 
-  const handleAnchorElClick = (e)=>{
-    setAnchorEl (e.currentTarget);
+
+  const [anchorSolutionEl, setAnchorSolutionEl] = useState(null);
+  const [anchorMarketingEl, setAnchorMarketingEl] = useState(null);
+
+  const openMenuSolution = Boolean(anchorSolutionEl);
+  const openMenuMarketing = Boolean(anchorMarketingEl);
+
+ 
+  const handleAnchorElClickSolution = (e) => {
+    setAnchorSolutionEl(e.currentTarget);
+  };
+  const handleAnchorElClickMarketing = (e) => {
+    setAnchorMarketingEl(e.currentTarget);
+  };
+
+  const handleAchorClose = ( setAnchorFn, path) => {
+    if (typeof setAnchorFn === handleAnchorElClickSolution) {
+      setAnchorFn(null);
+  } else {
+      console.error('setAnchorFn is not a function');
   }
-  const handleAchorClose = ( )=>{
-    setAnchorEl(null)
+  navigate(path);
+  };
+
+  const handleClickMenu = (path)=>{
+     navigate(path);
   }
 
   const location = useLocation();
   const navigate = useNavigate();
-  const judge_check = location.pathname.includes("judge-score-card") || location.pathname.includes("judge-login");
+  const judge_check =
+    location.pathname.includes("judge-score-card") ||
+    location.pathname.includes("judge-login");
 
   const [drawerOpen, setDrawerOpen] = useState(false);
   const theme = useTheme();
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+
   const handleDrawerOpen = () => {
     setDrawerOpen(true);
   };
@@ -94,112 +119,142 @@ const Header = () => {
     navigate("/admin/welcome");
   };
 
+
+  // const menuListRoutes= [
+  //   {routes : }
+  // ]
+
   return (
     <Box
       sx={{
         // backgroundColor: "white",
-        padding: "0rem 5%",
+        padding: "1% 10%",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        position: "static",
+        position: "sticky",
         top: 0,
         zIndex: 10000000,
         // boxShadow: "1px 1px 1px black ",
       }}
     >
+      {/* ==============================================NAVBAR=========================== */}
       <Box
         sx={{
           display: { xs: "none", sm: "flex" },
-          justifyContent: "center",
-          alignItems: "center",
+          justifyContent: "space-between",
+          alignItems: "end",
           gap:3,
-          color:'white'
+          color:'white',
+          width:'100%'
         }}
       >
 
+        <Box display={"flex"} justifyContent={"start"} width={'25%'}>
+          <img src="logo.svg" alt=""  style={{ maxWidth:isMedium ? '80px' : '100px  ' , height:"auto"}}/>
+        </Box>
+        <Box sx={{
+          display:'flex',
+          justifyContent:"center",
+          alignItems:'end',
+          gap:2,
+          width:'80%'
+        }}>
         <Typography 
         aria-controls="digital-solution"
         aria-haspopup="true" 
-        aria-expanded={ openMenu ? 'true' : undefined}
-        onClick={handleAnchorElClick}
-        style={{cursor:'pointer'}}
+        aria-expanded={ openMenuSolution ? 'true' : undefined}
+        onClick={handleAnchorElClickSolution}
+        style={{cursor:'pointer', fontSize:isMedium ? ".8rem" : '1rem'}}
         // display={"flex"} 
         >
           Digital Solution
         </Typography>
         <Typography sx={{
             fontSize:'1.5rem',
-            marginLeft:"-1.5rem",
-            marginTop :'.5rem',
+            marginLeft:"-1rem",
+            marginRight:'-1rem',
+            marginTop :'1rem',
+            display:'flex',
             textAlign:'center',
             color:theme.palette.primary.main
           }}><MdOutlineArrowDropDown /></Typography>
         {/* drop down list  */}
         <Typography>
-          <Menu id="digital-solution" anchorEl={anchorEl} open={openMenu} onClose={handleAchorClose}>
-            <MenuItem onClick={handleAchorClose}> Example 1</MenuItem>
-            <MenuItem onClick={handleAchorClose}>  Example 2</MenuItem>
+          <Menu id="digital-solution" anchorEl={anchorSolutionEl} open={openMenuSolution} onClose={handleAchorClose}>
+            <MenuItem onClick={()=> handleAchorClose(setAnchorSolutionEl, 'about-section')}> Example 1</MenuItem>
+            <MenuItem onClick={()=>handleAchorClose( setAnchorMarketingEl, 'contact-section')}>  Example 2</MenuItem>
           </Menu>
         </Typography>
         <Typography
         aria-controls="digital-marketing"
         aria-haspopup="true" 
-        aria-expanded={ openMenu ? 'true' : undefined}
-        onClick={handleAnchorElClick}
-        style={{cursor:'pointer'}}>
+        aria-expanded={ openMenuMarketing ? 'true' : undefined}
+        onClick={handleAnchorElClickMarketing}
+        style={{cursor:'pointer', fontSize:isMedium ? ".8rem" : '1rem'}}>
           Digital Marketing 
         </Typography>
         <Typography sx={{
             fontSize:'1.5rem',
-            marginLeft:"-1.5rem",
+            marginLeft:"-1rem",
             marginTop :'.5rem',
+            marginRight:'-1rem',
             textAlign:'center',
+            display:'flex',
             color:theme.palette.primary.main
           }}><MdOutlineArrowDropDown /></Typography>  
         <Typography>
-          <Menu id="digital-marketing" anchorEl={anchorEl} open={openMenu} onClose={handleAchorClose}>
-            <MenuItem onClick={handleAchorClose}> Example 1</MenuItem>
-            <MenuItem onClick={handleAchorClose}>  Example 2</MenuItem>
+        <Menu id="digital-marketing" anchorEl={anchorMarketingEl} open={openMenuMarketing} onClose={handleAchorClose}>
+            <MenuItem onClick={()=> handleAchorClose(setAnchorMarketingEl, 'about-section')}> Example 1</MenuItem>
+            <MenuItem onClick={()=>handleAchorClose( setAnchorMarketingEl, 'contact-section')}>  Example 2</MenuItem>
           </Menu>
         </Typography>
-        <Typography>
+        <Typography marginRight={'.5rem'} onClick={()=>(handleClickMenu('contact-section'))} sx={{ cursor:'pointer', fontSize:isMedium ? ".8rem" : '1rem'}} >
           Company
         </Typography>
-        <Typography>
+        <Typography marginRight={'.5rem'} onClick={()=>(handleClickMenu('contact-section'))} sx={{ cursor:'pointer', fontSize:isMedium ? ".8rem" : '1rem'}} >
           Blog
         </Typography>
-        <Typography>
+        <Typography marginRight={'.5rem'} onClick={()=>(handleClickMenu('contact-section'))} sx={{ cursor:'pointer', fontSize:isMedium ? ".8rem" : '1rem'}} >
           Careers
         </Typography>
-        <Typography>
+        <Typography onClick={()=>(handleClickMenu('contact-section'))} sx={{ cursor:'pointer', fontSize:isMedium ? ".8rem" : '1rem'}} >
           Contact
         </Typography>
+        </Box>
 
         <Box
           sx={{
             display: "flex",
-            alignItems: "center",
-
+            alignItems: "end",
+            justifyContent:'end', 
+            width:'25%',
             cursor: "pointer",
+            marginBottom:'-.5rem'
           }}
         >
-          
+          <Button sx={{ fontSize: isMedium ? '.8rem' : '.9rem'}}>
+          <MdOutlineMessage style={{marginRight:'.5rem'}} /> contact
+          </Button>
         </Box>
       </Box>
+
+      {/* <=================================DRAWER ========================== */}
       <Box sx={{ display: { xs: "flex", sm: "none" } }}>
-        <IconButton onClick={handleDrawerOpen} sx={{ padding: "10px" , color:'white'}}>
+        <IconButton
+          onClick={handleDrawerOpen}
+          sx={{ padding: "10px", color: "white" }}
+        >
           <MenuIcon />
         </IconButton>
         <Drawer
           anchor="right"
           open={drawerOpen}
           onClose={handleDrawerClose}
-          sx={{ zIndex: 1300}}
+          sx={{ zIndex: 1300 }}
         >
           <Box sx={{ width: 250, padding: "20px" }}>
-          
-          {/* <Box
+            {/* <Box
         sx={{
           display: { xs: "none", sm: "flex" },
           justifyContent: "center",
@@ -209,97 +264,105 @@ const Header = () => {
         }}
       > */}
 
-       <Box  sx={{
-        gap:5
-       }}>
-      <Box sx={{
-        display:'flex'
-       }}>
-      <Typography 
-        aria-controls="digital-solution"
-        aria-haspopup="true" 
-        aria-expanded={ openMenu ? 'true' : undefined}
-        onClick={handleAnchorElClick}
-        style={{cursor:'pointer'}}
-        // display={"flex"} 
-        >
-          Digital Solution
-        </Typography>
-        <Typography sx={{
-            fontSize:'1.5rem',
-            // marginLeft:"-1.5rem",
-            // marginTop :'.5rem',
-            textAlign:'center',
-            color:theme.palette.primary.main
-          }}><MdOutlineArrowDropDown /></Typography>
-        {/* drop down list  */}
-        <Typography sx={{
-          zIndex:2000,
-          position:'fixed'
-        }}>
-          <Menu id="digital-solution" anchorEl={anchorEl} open={openMenu} onClose={handleAchorClose}>
-            <MenuItem onClick={()=>{handleAchorClose(); handleDrawerClose();}}>  Example 1</MenuItem>
-            <MenuItem onClick={()=>{handleAchorClose(); handleDrawerClose();}}>  Example 2</MenuItem>
+            <Box
+              sx={{
+                gap: 5,
+              }}
+            >
+              <Box
+                sx={{
+                  display: "flex",
+                }}
+              >
+                <Typography
+                  aria-controls="digital-solution"
+                  aria-haspopup="true"
+                  aria-expanded={openMenuSolution ? "true" : undefined}
+                  onClick={handleAnchorElClickSolution}
+                  style={{ cursor: "pointer" }}
+                  // display={"flex"}
+                >
+                  Digital Solution
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "1.5rem",
+                    // marginLeft:"-1.5rem",
+                    // marginTop :'.5rem',
+                    textAlign: "center",
+                    color: theme.palette.primary.main,
+                  }}
+                >
+                  <MdOutlineArrowDropDown />
+                </Typography>
+                {/* drop down list  */}
+                <Typography
+                  sx={{
+                    zIndex: 2000,
+                    position: "fixed",
+                  }}
+                >
+               <Menu id="digital-solution" anchorEl={anchorSolutionEl} open={openMenuSolution} onClose={handleAchorClose}>
+            <MenuItem onClick={()=> handleAchorClose(setAnchorSolutionEl, 'about-section')}> Example 1</MenuItem>
+            <MenuItem onClick={()=>handleAchorClose( setAnchorMarketingEl, 'contact-section')}>  Example 2</MenuItem>
           </Menu>
-        </Typography>
-       
-      </Box>
+                </Typography>
+              </Box>
 
-      <Box sx={{
-        display:'flex'
-      }}>
-      <Typography
-        aria-controls="digital-marketing"
-        aria-haspopup="true" 
-        aria-expanded={ openMenu ? 'true' : undefined}
-        onClick={handleAnchorElClick}
-        style={{cursor:'pointer'}}>
-          Digital Marketing 
-        </Typography>
-        <Typography sx={{
-            fontSize:'1.5rem',
-            // marginLeft:"-1.5rem",
-            // marginTop :'.5rem',
-            textAlign:'center',
-            color:theme.palette.primary.main
-          }}><MdOutlineArrowDropDown /></Typography>  
-        <Typography sx={{
-          zIndex:2000,
-          postion:'fixed',
-          // marginBottom:'4rem'
-        }}>
-          <Menu id="digital-marketing" anchorEl={anchorEl} open={openMenu} onClose={handleAchorClose}>
-          <MenuItem onClick={()=>{handleAchorClose(); handleDrawerClose();}}>  Example 1</MenuItem>
-          <MenuItem onClick={()=>{handleAchorClose(); handleDrawerClose();}}>  Example 2</MenuItem>
+              <Box
+                sx={{
+                  display: "flex",
+                }}
+              >
+                <Typography
+                  aria-controls="digital-marketing"
+                  aria-haspopup="true"
+                  aria-expanded={openMenuMarketing ? "true" : undefined}
+                  onClick={handleAnchorElClickMarketing}
+                  style={{ cursor: "pointer" }}
+                >
+                  Digital Marketing
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: "1.5rem",
+                    // marginLeft:"-1.5rem",
+                    // marginTop :'.5rem',
+                    textAlign: "center",
+                    color: theme.palette.primary.main,
+                  }}
+                >
+                  <MdOutlineArrowDropDown />
+                </Typography>
+                <Typography
+                  sx={{
+                    zIndex: 2000,
+                    postion: "fixed",
+                    // marginBottom:'4rem'
+                  }}
+                >
+                  <Menu id="digital-marketing" anchorEl={anchorMarketingEl} open={openMenuMarketing} onClose={handleAchorClose}>
+            <MenuItem onClick={()=> handleAchorClose(setAnchorMarketingEl, 'about-section')}> Example 1</MenuItem>
+            <MenuItem onClick={()=>handleAchorClose( setAnchorMarketingEl, 'contact-section')}>  Example 2</MenuItem>
           </Menu>
-        </Typography>
-      </Box >
-        
-        <Typography >
-          Company
-        </Typography>
-        <Typography>
-          Blog
-        </Typography>
-        <Typography>
-          Careers
-        </Typography>
-        <Typography>
-          Contact
-        </Typography>
+                </Typography>
+              </Box>
 
-        <Box
-          sx={{
-            display: "flex",
-            alignItems: "center",
+              <Typography onClick={()=>(handleClickMenu('contact-section'))} cursor={'pointer'}>Company</Typography>
+              <Typography onClick={()=>(handleClickMenu('contact-section'))} cursor={'pointer'}>Blog</Typography>
+              <Typography onClick={()=>(handleClickMenu('contact-section'))} cursor={'pointer'}>Careers</Typography>
+              <Typography onClick={()=>(handleClickMenu('contact-section'))} cursor={'pointer'}> Contact</Typography>
 
-            cursor: "pointer",
-          }}
-        >
-          
-        </Box>
-      </Box>
-           </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+
+                  cursor: "pointer",
+                }}
+              ></Box>
+            </Box>
+          </Box>
         </Drawer>
       </Box>
     </Box>

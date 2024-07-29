@@ -11,6 +11,7 @@ import Technology from '../Technology/Technology'
 import ReviewsCarousel from '../ReviewsCarousel/ReviewsCarousel'
 import Faqs from '../Faqs/Faqs'
 import FaqsPage from '../Faqs/faqsPage'
+import DevelpmentProcess from '../DevelpmentProcess/DevelpmentProcess'
 
 const HomeMain = () => {
   return (
@@ -35,6 +36,7 @@ const HomeMain = () => {
             <ContactUs/>
             <Blogs/>
             <FaqsPage/>
+            {/* <DevelpmentProcess/> */}
             <Footer/>
         </Box>
     </Box>
