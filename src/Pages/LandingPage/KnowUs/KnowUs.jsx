@@ -29,19 +29,19 @@ const KnowUs = () => {
           <Grid item lg={6} md={6} sm={12} xs={12} order={isMedium ? 1 : 2}>
             <Box>
               <Typography sx={{
-                fontSize:'2.5rem',
+                fontSize: isSmall ?  '1.6rem' : isMedium ? '2rem' :  '2.5rem',
                 color:theme.palette.primary.main,
                 fontWeight:700,
                 marginBottom:'.5rem'
               }}> Get to Know Us</Typography>
               <Typography sx={{
-                fontSize:'1.2rem',
+                fontSize: isSmall? "1.1rem":'1.2rem',
                 color:"white",
                 fontWeight:400,
                 marginBottom:'.5rem',fontStyle:"italic"
               }}> The Moshlay Creatives Team</Typography>
               <Typography sx={{
-                fontSize:'1.1rem',
+                fontSize: isSmall? "1rem":'1.1rem',
                 color:'white',
                 fontWeight:400,
                 marginBottom:'.5rem'
@@ -54,7 +54,7 @@ const KnowUs = () => {
                 penatibus et 
               </Typography>
               <Typography sx={{
-                fontSize:'1.1rem',
+                fontSize: isSmall? "1rem":'1.1rem',
                 color:'white',
                 fontWeight:400,
                 marginBottom:'2rem'
@@ -70,7 +70,8 @@ const KnowUs = () => {
                 <Button variant="outlined" 
                 sx={{
                     color:'white',
-                    fontSize:'1rem'
+                    fontSize:'1rem',
+                    textTransform:'none'
                 }}>Meet the Team</Button>
               </Box>
             </Box>

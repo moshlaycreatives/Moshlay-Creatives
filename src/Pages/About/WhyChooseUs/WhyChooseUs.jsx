@@ -10,11 +10,14 @@ const WhyChooseUs = () => {
   return (
     <>
     <Box sx={{
-        padding:'2% 10%'
+        padding:'2% 10%',
+        marginTop:'2rem',
+        marginBottom:isSmall ? '-3rem' : isMedium ? '-2rem' : '-1rem',
+
     }}>
         <Box>
             <Typography sx={{
-                fontSize:'2.5rem',
+                fontSize: isSmall ?  '1.8rem' : isMedium ? '2rem' :  '2.5rem',
                 color:theme.palette.primary.main,
                 marginBottom:'2rem'
             }}>
@@ -45,7 +48,7 @@ const WhyChooseUs = () => {
              }}>
             <Typography
               sx={{
-                fontSize: "1.6rem",
+                fontSize:isSmall ? '1.4rem' : "1.6rem",
                 fontWeight: 700,
                 // color: theme.palette.primary.main
                 color:'white',
@@ -55,7 +58,7 @@ const WhyChooseUs = () => {
               Proven Delivery Record
             </Typography>
             <Typography sx={{
-                fontSize: "1.1rem",
+                fontSize:isSmall ? '1rem' : '1.1rem',
                 fontWeight: 400,
                 color: "white",
                 textAlign: 'justify',
@@ -99,7 +102,7 @@ const WhyChooseUs = () => {
              }}>
             <Typography
               sx={{
-                fontSize: "1.6rem",
+                fontSize:isSmall ? '1.4rem' : "1.6rem",
                 fontWeight: 700,
                 // color: theme.palette.primary.main
                 color:'white',
@@ -109,7 +112,7 @@ const WhyChooseUs = () => {
               We Own The Outcome
             </Typography>
             <Typography sx={{
-                fontSize: "1.1rem",
+                fontSize: isSmall ? '1rem' : "1.1rem",
                 fontWeight: 400,
                 color: "white",
                 textAlign: 'justify',
@@ -172,7 +175,7 @@ const WhyChooseUs = () => {
              }}>
             <Typography
               sx={{
-                fontSize: "1.6rem",
+                fontSize:isSmall ? '1.4rem' : "1.6rem",
                 fontWeight: 700,
                 // color: theme.palette.primary.main
                 color:'white',
@@ -182,7 +185,7 @@ const WhyChooseUs = () => {
               We Know How To Scale
             </Typography>
             <Typography sx={{
-                fontSize: "1.1rem",
+                fontSize: isSmall ? '1rem' : "1.1rem",
                 fontWeight: 400,
                 color: "white",
                 textAlign: 'justify',

@@ -46,7 +46,7 @@ const ContactUs = () => {
             }}>
               <Typography
                 sx={{
-                  fontSize: "3rem",
+                  fontSize: isSmall ? '1.6rem' : isMedium ? '2rem' : '3rem',
                   color: 'white',
                   fontWeight: 700,
                   marginBottom: ".5rem",
@@ -57,11 +57,12 @@ const ContactUs = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "1.2rem",
+                  fontSize: "1.9rem",
                   color: "white",
                   fontWeight: 400,
                   marginBottom: ".5rem",
                   fontStyle: "italic",
+                  fontFamily:'Moon Dance'
                 }}
               >
                 Contact Us
@@ -70,7 +71,7 @@ const ContactUs = () => {
                 sx={{
                   fontSize: "1.1rem",
                   color: "white",
-                  fontWeight: 400,
+                  fontWeight: 600,
                   marginBottom: ".5rem",
                 }}
               >
@@ -78,10 +79,11 @@ const ContactUs = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "1.1rem",
+                  fontSize: "2.5rem",
                   color: "white",
                   fontWeight: 400,
-                  marginBottom: "2rem",
+                  marginBottom: "1rem",
+                  fontFamily:'Moon Dance'
                 }}
               >
                 or
@@ -92,7 +94,8 @@ const ContactUs = () => {
                   sx={{
                     color: theme.palette.primary.main,
                     fontSize: "1rem",
-                    backgroundColor:'white'
+                    backgroundColor:'white',
+                    textTransform:'none'
                   }}
                 >
                   Send A Message

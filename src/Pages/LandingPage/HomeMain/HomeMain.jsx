@@ -29,6 +29,7 @@ const HomeMain = () => {
             <AboutUs/>
             <br />
             <Services/>
+            <DevelpmentProcess/>
             <WhyWeIdeal/>
             <ReviewsCarousel/>
             <Technology/>
@@ -36,7 +37,6 @@ const HomeMain = () => {
             <ContactUs/>
             <Blogs/>
             <FaqsPage/>
-            {/* <DevelpmentProcess/> */}
             <Footer/>
         </Box>
     </Box>

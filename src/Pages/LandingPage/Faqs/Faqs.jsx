@@ -7,6 +7,9 @@ import CloseIcon from '@mui/icons-material/Close';
 const Faqs = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+
   const [expanded, setExpanded] = useState(false);
 
   const handleChange = (panel) => (event, isExpanded) => {
@@ -62,7 +65,9 @@ const Faqs = () => {
             id={`panel${index}bh-header`}
             sx={{ color: expanded === index ? theme.palette.primary.main : 'white' }}
           >
-            <Typography variant="h6">
+            <Typography variant="h6" sx={{
+              fontSize:isSmall? '1rem' : '1.2rem'
+            }}>
               {faq.question}
             </Typography>
           </AccordionSummary>

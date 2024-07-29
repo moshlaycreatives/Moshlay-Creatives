@@ -8,10 +8,10 @@ import "./ReviewsCarousel.css"
 const ReviewsCarousel = () => {
 
     const cardData=[
-        {cardimage : 'services1.svg' , cardTitle: 'ahmad' , cardDes :"Lorem Ipsum es simplemente el texto  relleno de las imprentas y archivos de teLorem Ipsum ha sido el texto de relleno tándar de las industrias desde el año 15"},
-        {cardimage : 'services2.svg' , cardTitle: 'ahmad' , cardDes :"Lorem Ipsum es simplemente el texto  relleno de las imprentas y archivos de teLorem Ipsum ha sido el texto de relleno tándar de las industrias desde el año 15"},
-        {cardimage : 'services3.svg' , cardTitle: 'ahmad' , cardDes :"Lorem Ipsum es simplemente el texto  relleno de las imprentas y archivos de teLorem Ipsum ha sido el texto de relleno tándar de las industrias desde el año 15"},
-        {cardimage : 'services4.svg' , cardTitle: 'ahmad' , cardDes :"Lorem Ipsum es simplemente el texto  relleno de las imprentas y archivos de teLorem Ipsum ha sido el texto de relleno tándar de las industrias desde el año 15"},
+        {cardimage : 'services1.svg' , cardTitle: 'ahmad sultan' , cardDes :"Lorem Ipsum es simplemente el texto  relleno de las imprentas y archivos de teLorem Ipsum ha sido el texto de relleno tándar de las industrias desde el año 15"},
+        {cardimage : 'services2.svg' , cardTitle: 'imran ashiq' , cardDes :"Lorem Ipsum es simplemente el texto  relleno de las imprentas y archivos de teLorem Ipsum ha sido el texto de relleno tándar de las industrias desde el año 15"},
+        {cardimage : 'services3.svg' , cardTitle: 'usama jawad' , cardDes :"Lorem Ipsum es simplemente el texto  relleno de las imprentas y archivos de teLorem Ipsum ha sido el texto de relleno tándar de las industrias desde el año 15"},
+        {cardimage : 'services4.svg' , cardTitle: 'hassan ali' , cardDes :"Lorem Ipsum es simplemente el texto  relleno de las imprentas y archivos de teLorem Ipsum ha sido el texto de relleno tándar de las industrias desde el año 15"},
     ]
 
     const theme = useTheme();
@@ -23,11 +23,12 @@ const ReviewsCarousel = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: slidersToShow,
-    slidesToScroll: 3,
+    // slidesToScroll: 3,
     arrows:false,
-    // autoplay:true
+    autoplay:true,
+    autoplaySpeed:100,
   };
 
   return (
@@ -41,14 +42,14 @@ const ReviewsCarousel = () => {
           // marginBottom:'4rem',
           // display:'flex',
           alignItems:'center',
-          padding:' 2rem 9%'
+          padding:' 1rem 9%'
         }}
       >
         <Box>
           <div className="slider-container">
             <Box>
               <Typography sx={{
-                fontSize:'1.8rem',
+                fontSize:  isSmall? '1.5rem' : '1.8rem',
                 fontWeight:700,
                 color:'white '
               }}>

@@ -1,4 +1,4 @@
-import { Box, Button, FormControl, Grid, TextField, Typography, useTheme } from "@mui/material";
+import { Box, Button, FormControl, Grid, TextField, Typography, useTheme,useMediaQuery } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa";
@@ -38,6 +38,9 @@ const CustomTextField = styled(TextField)({
 const ContactForm = () => {
 
     const theme = useTheme();
+    
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMedium = useMediaQuery(theme.breakpoints.down("md"));
   return (
     <>
       <Box sx={{
@@ -47,7 +50,7 @@ const ContactForm = () => {
           <Grid item lg={5} md={5} sm={12} xs={12}>
             <Box>
               <Typography sx={{
-                fontSize:'1.8rem',
+                fontSize: isSmall ? '1.6rem' : '1.8rem',
                 fontWeight:700,
                 color:theme.palette.primary.main
               }}>Write Us a Message</Typography>
@@ -79,7 +82,7 @@ const ContactForm = () => {
                 </Typography>
                     </a>
 
-                    <a href="">
+                    <a href="https://www.google.com/">
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',
@@ -90,7 +93,7 @@ const ContactForm = () => {
                 </Typography>
                     </a>
 
-                    <a href="">
+                    <a href="https://www.google.com/">
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',
@@ -101,7 +104,7 @@ const ContactForm = () => {
                 </Typography>
                     </a>
 
-                    <a href="">
+                    <a href="https://www.google.com/">
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',
@@ -163,7 +166,7 @@ const ContactForm = () => {
             multiline
             rows={5}
             />
-            <Button variant="contained" sx={{marginTop:'3rem'}}>
+            <Button variant="contained" sx={{marginTop:'3rem', color:'white', textTransform:'none'}}>
                 Send Message
             </Button>
 

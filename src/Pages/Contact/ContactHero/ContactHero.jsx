@@ -13,6 +13,7 @@ const ContactHero = () => {
         sx={{
           width: "100%",
           padding: "5% 10%",
+          marginBottom:'2rem'
         }}
       >
         <Box
@@ -32,7 +33,7 @@ const ContactHero = () => {
           }}>
           <Typography
             sx={{
-              fontSize: "4rem",
+              fontSize: isSmall ? '2rem' : isMedium ? '3rem' : "4rem",
               fontWeight: 700,
               color: "white",
               textAlign:'center'

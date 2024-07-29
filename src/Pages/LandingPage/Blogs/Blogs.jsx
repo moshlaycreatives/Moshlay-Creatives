@@ -1,9 +1,11 @@
-import { Box, Button, Card, colors, Divider, Grid, Typography, useTheme } from "@mui/material";
+import { Box, Button, Card, colors, Divider, Grid, Typography, useTheme, useMediaQuery } from "@mui/material";
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
 const Blogs = () => {
-const theme = useTheme();
+  const theme = useTheme();
+const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
 
 const  cardData =[
   { cardImage :'blog1.svg', cardDate : ' 28 JANUARY, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
@@ -26,9 +28,9 @@ const  cardData =[
           }}>
             Blogs
           </Typography>
-          <Typography variant="p" sx={{
+          <Typography  sx={{
             color:'white',
-            fontSize:'1.1rem',
+            fontSize: isMedium ? '1rem' : '1.1rem',
             textAlign:'center',
             marginBottom:'1rem'
           }}>
@@ -70,7 +72,7 @@ const  cardData =[
                     </Button>
                     {/* </Box> */}
                     <Typography sx={{
-                        fontSize:'1.3rem',
+                        fontSize: isSmall ? '1.1rem' : isMedium ? '1.2rem' : '1.3rem', 
                         color:'white',
                         
                         

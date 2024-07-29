@@ -19,6 +19,9 @@ import SingleProduct from "./Pages/ShopPage/SingleProduct";
 import ComingSoon from "./components/ComingSoon";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
+import Technologytwo from "./Pages/LandingPage/Technologytwo/Technologytwo";
+
+
 export default function Router() {
 
     const [progress, setProgress] = useState(0);
@@ -59,7 +62,10 @@ console.log(isAuthenticated, 'hgyfuhhj')
         path:'/comming-soon',
         element : <ComingSoon /> ,
        },
-
+       {
+        path:'/technologytwo',
+        element : <Technologytwo /> ,
+       },
 
        {
         path:'/signup',

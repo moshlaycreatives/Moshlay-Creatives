@@ -1,8 +1,10 @@
-import { Box, Button, Grid, Typography, useTheme } from "@mui/material";
+import { Box, Button, Grid, Typography, useTheme, useMediaQuery } from "@mui/material";
 import React from "react";
 
 const Technology = () => {
-    const theme = useTheme();
+  const theme = useTheme();
+  const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
     <>
@@ -11,17 +13,17 @@ const Technology = () => {
           // width: "100%",
         //   backgroundColor: "#263238",
           padding:'0 10%',
-          marginTop:'5rem',
+          marginTop:'1rem',
           // padding:'0% 10%',
 
         }}
       >
-        <Grid container spacing={10} alignItems={'center'}>
+        <Grid container spacing={isSmall ? 5 : 10} alignItems={'center'}>
 
         <Grid item lg={6} md={6} sm={12} xs={12}>
             <Box>
               <Typography sx={{
-                fontSize:'1.8rem',
+                fontSize: isSmall  ? '1.4rem ' : '1.8rem',
                 color:theme.palette.primary.main,
                 fontWeight:700,
                 marginBottom:'.5rem'
@@ -30,7 +32,7 @@ const Technology = () => {
               Services</Typography>
 
               <Typography sx={{
-                fontSize:'1.1rem',
+                fontSize: isSmall ? ' 1rem' : '1.1rem',
                 color:'white',
                 fontWeight:400,
                 marginBottom:'.5rem',
