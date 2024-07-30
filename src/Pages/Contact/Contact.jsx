@@ -1,10 +1,26 @@
 import { Box } from '@mui/material'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import ContactHero from './ContactHero/ContactHero'
 import ContactForm from './ContactForm/ContactForm'
 import Footer from '../Components/Footer/Footer'
+import Header2 from '../Components/Header2'
 
 const Contact = () => {
+  const [isScroll, setIsScroll] = useState(false);
+
+
+  useEffect(()=>{
+   const handleScroll =()=>{
+    if (window.scrollY > 20) {
+        setIsScroll(true);
+    } else {
+        setIsScroll(false)
+    }
+  }
+  window.addEventListener('scroll',handleScroll)
+   return ()=>{
+    window.removeEventListener('scroll',handleScroll);}
+  },[])
   return (
     <>
     <Box sx={{
@@ -12,6 +28,16 @@ const Contact = () => {
         // position:'relative', 
         // minHeight:'100vh',
     }}>
+       <Box sx={{
+        width:'100%',
+        textAlign:'center',
+        background:isScroll ? '#0d1834e8' : 'transparent',  
+        position:isScroll ? 'sticky' : 'none',
+        zIndex:1000000000,
+        top:0
+      }}>
+      <Header2/>
+      </Box>      
         <ContactHero/>
         <ContactForm/>
         <Footer/>

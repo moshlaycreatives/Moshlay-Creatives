@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import AboutHero from './AboutHero/AboutHero'
 import { Box } from '@mui/material'
 import AboutUs from '../LandingPage/AboutUs/AboutUs'
@@ -8,8 +8,24 @@ import ReviewsCarousel from '../LandingPage/ReviewsCarousel/ReviewsCarousel'
 import ContactUs from '../LandingPage/ContactUs/ContactUs'
 import Footer from '../Components/Footer/Footer'
 import FaqsPage from '../LandingPage/Faqs/faqsPage'
+import Header2 from '../Components/Header2'
 
 const About = () => {
+  const [isScroll, setIsScroll] = useState(false);
+
+
+  useEffect(()=>{
+   const handleScroll =()=>{
+    if (window.scrollY > 0) {
+        setIsScroll(true);
+    } else {
+        setIsScroll(false)
+    }
+  }
+  window.addEventListener('scroll',handleScroll)
+   return ()=>{
+    window.removeEventListener('scroll',handleScroll);}
+  },[])
   return (
     <>
     <Box sx={{
@@ -17,11 +33,21 @@ const About = () => {
         position:'relative', 
         minHeight:'100vh',
     }}>
-        <AboutHero/>
+      <Box sx={{
+        width:'100%',
+        textAlign:'center',
+        background:isScroll ? '#0d1834e8' : 'transparent',  
+        position:isScroll ? 'sticky' : 'none',
+        zIndex:1000000000,
+        top:0
+      }}>
+      <Header2/>
+      </Box>
+        <AboutHero />
         <WhyWeIdeal/>
         <WhyChooseUs/>
         <ReviewsCarousel/>
-        <ContactUs/>
+        <ContactUs/>A
         <FaqsPage/>
         <Footer/>
     </Box>

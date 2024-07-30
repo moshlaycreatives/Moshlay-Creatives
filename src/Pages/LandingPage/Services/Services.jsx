@@ -70,12 +70,12 @@ const listData =[
                 '&:hover .overplay ': {
                   transform:'translateX(0%)'
                 },
-               '&:hover .overplay-title': {
+               '&:hover .diviver-text-overplay': {
                 transform:'translateX(-150%)'
                },
-              '&:hover .divider': {
-                transform:'translateX(-1000%)'
-               }
+              // '&:hover .divider': {
+              //   transform:'translateX(-1000%)'
+              //  }
             }}>
               {/* =======================HOVER BOX=========================== */}
               <Box className='overplay'
@@ -85,7 +85,7 @@ const listData =[
                 right:0 ,
                 bottom:0,
                 top:0 ,
-                backgroundColor:'#0d1834e4',
+                backgroundColor:'#050913e3',
                 display:'flex',
                 justifyContent:'center',
                 alignItems:'center',
@@ -100,13 +100,19 @@ const listData =[
                 }}>{val.subTitle}</Typography>
               </Box>
               {/* ================================================================= */}
+                <Box  className="diviver-text-overplay" sx={{
+                  display:'flex',
+                  alignItems:'center',
+                  transform: 'translateX(0)', 
+                  transition: 'transform 0.5s ease-in-out, opacity 0.5s ease-in-out', 
+                }}>
                 <Divider className="divider"
                  sx={{
                     height:'30px',
                     width:'8px',
                     backgroundColor:theme.palette.primary.main,
-                    transform:'TranslateX(100%)',
-                    transition:'transform 0.3s ease-in-out'
+                    // transform:'TranslateX(100%)',
+                    // transition:'transform 0.3s ease-in-out'
                     // orientation:'horiental'
                 }}/>
                 <Typography className="overplay-title"
@@ -115,9 +121,10 @@ const listData =[
                     fontSize: isSmall ? '1.3rem' : isMedium ? '1.5rem' : '1.7rem',
                     fontWeight:'500',
                     marginLeft: '1rem',
-                    transform: 'translateX(0)', 
-                    transition: 'transform 0.5s ease-in-out, opacity 0.5s ease-in-out',
+                    // transform: 'translateX(0)', 
+                    // transition: 'transform 0.5s ease-in-out, opacity 0.5s ease-in-out',
                 }}>{val.title}</Typography>
+                </Box>
             </Box>
           </Grid>
             ))}

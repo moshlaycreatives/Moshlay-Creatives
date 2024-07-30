@@ -83,7 +83,7 @@ const AboutHero = () => {
 
       <Box sx={{
         padding:'2% 10%',
-        marginBottom:'-3rem'
+        marginBottom:'-3rem',
       }}>
         <Grid container spacing={10}>
             <Grid item lg={7} md={7} sm={12} xs={12}>

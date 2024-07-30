@@ -378,7 +378,7 @@
 
 // chnges ======================================================================================
 // =================================================================================================
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   Avatar,
   Box,
@@ -401,10 +401,11 @@ import { logout } from "../../store/actions/authActions";
 import { MdOutlineArrowDropDown } from "react-icons/md";
 import { MdOutlineMessage } from "react-icons/md";
 
-const Header = () => {
+const Header2 = () => {
   const [anchorSolutionEl, setAnchorSolutionEl] = useState(null);
   const [anchorMarketingEl, setAnchorMarketingEl] = useState(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  
 
   const openMenuSolution = Boolean(anchorSolutionEl);
   const openMenuMarketing = Boolean(anchorMarketingEl);
@@ -422,7 +423,7 @@ const Header = () => {
     location.pathname.includes("judge-login");
 
   const handleDrawerOpen = () => {
-    setDrawerOpen(true);
+    setDrawerOpen(!drawerOpen);
   };
 
   const handleDrawerClose = () => {
@@ -509,24 +510,25 @@ const Header = () => {
         sx={{
           display: { xs: "none", sm: "flex" },
           justifyContent: "space-between",
-          alignItems: "end",
+          alignItems: "center",
           gap: 3,
           color: "white",
           width: "100%",
         }}
       >
-        {/* <Box display={"flex"} justifyContent={"start"} width={"25%"}>
+        <Box display={"flex"} justifyContent={"start"} width={"25%"}>
           <img
             src="logo.svg"
             alt=""
             style={{ maxWidth: isMedium ? "80px" : "100px", height: "auto" }}
           />
-        </Box> */}
+        </Box>
         <Box
           sx={{
             display: "flex",
             justifyContent: "center",
-            alignItems: "end",
+            alignItems: " center",
+            // marginBottom:'1rem',
             gap: 2,
             width: "100%",
           }}
@@ -545,7 +547,7 @@ const Header = () => {
               fontSize: "1.5rem",
               marginLeft: "-1rem",
               marginRight: "-1rem",
-              marginTop: "1rem",
+            //   marginTop: "1rem",
               display: "flex",
               textAlign: "center",
               color: theme.palette.primary.main,
@@ -592,7 +594,7 @@ const Header = () => {
             sx={{
               fontSize: "1.5rem",
               marginLeft: "-1rem",
-              marginTop: ".5rem",
+            //   marginTop: ".5rem",
               marginRight: "-1rem",
               textAlign: "center",
               display: "flex",
@@ -657,37 +659,38 @@ const Header = () => {
           </Typography>
         </Box>
 
-        {/* <Box
+        <Box
           sx={{
             display: "flex",
-            alignItems: "end",
+            alignItems: "start",
             justifyContent: "end",
             width: "25%",
             cursor: "pointer",
-            marginBottom: "-.5rem",
+            // marginBottom: ".5rem",
           }}
         >
-          <Button sx={{ fontSize: isMedium ? ".8rem" : ".9rem" }}>
+          <Button sx={{ fontSize: isMedium ? ".8rem" : ".9rem", alignSelf:'start' }}>
             <MdOutlineMessage style={{ marginRight: ".5rem" }} /> contact
           </Button>
-        </Box> */}
+        </Box>
       </Box>
 
       {/* <=================================DRAWER ========================== */}
-      <Box sx={{ display: { xs: "flex", sm: "none" } }}>
-        <IconButton onClick={handleDrawerOpen} sx={{ padding: "10px", color: "white" }}>
+      <Box sx={{ display: { xs: "flex", sm: "none"  } }}>
+        <IconButton onClick={handleDrawerOpen} sx={{ padding: "10px", color: "white",
+          display: drawerOpen ? 'none' : 'flex'
+         }}>
           <MenuIcon />
         </IconButton>
         <Drawer
           anchor="right"
           open={drawerOpen}
           onClose={handleDrawerClose}
-          sx={{ zIndex: 1300 }}
-          
+          sx={{ zIndex: 1500 }}
         >
           <Box sx={{ width: 250, padding: "20px" }}>
             <Box sx={{ gap: 5 }}>
-              <Box sx={{ display: "flex" }}>
+              <Box sx={{ display: "flex" , marginTop:'.5rem'}}>
                 <Typography
                   aria-controls="digital-solution"
                   aria-haspopup="true"
@@ -706,6 +709,7 @@ const Header = () => {
                 >
                   <MdOutlineArrowDropDown />
                 </Typography>
+                
                 <Menu
                   id="digital-solution"
                   anchorEl={anchorSolutionEl}
@@ -730,12 +734,11 @@ const Header = () => {
               </Box>
               <Divider sx={{
                   width:'100%',
-                  marginBottom:'.5rem',
-                  backgroundColor:theme.palette.primary.main
+                backgroundColor:theme.palette.primary.main
                 }}/>
 
 
-              <Box sx={{ display: "flex" }}>
+              <Box sx={{ display: "flex" , marginTop:'.5rem'}}>
                 <Typography
                   aria-controls="digital-marketing"
                   aria-haspopup="true"
@@ -778,23 +781,23 @@ const Header = () => {
               </Box>
               <Divider sx={{
                   width:'100%',
-                  marginBottom:'.5rem',
-                  backgroundColor:theme.palette.primary.main
-                  // color:theme.palette.primary.main
+                backgroundColor:theme.palette.primary.main
                 }}/>
-
 
               <Typography
                 onClick={() => handleClickMenu("contact-section")}
                 cursor={"pointer"}
                 marginBottom={'.5rem'}
+                marginTop={'.5rem'}
               >
                 Company
               </Typography>
               <Divider sx={{
-                width:'100%',
+                  width:'100%',
+                  marginTop:'.5rem',
+                  cursor:'pointer',
                 backgroundColor:theme.palette.primary.main
-              }}/>
+                }}/>
               <Typography
                 onClick={() => handleClickMenu("contact-section")}
                 cursor={"pointer"}
@@ -804,10 +807,11 @@ const Header = () => {
                 Blog
               </Typography>
               <Divider sx={{
-                width:'100%',
+                  width:'100%',
+                  marginTop:'.5rem',
+                  cursor:'pointer',
                 backgroundColor:theme.palette.primary.main
-              
-              }}/>
+                }}/>
               <Typography
                 onClick={() => handleClickMenu("contact-section")}
                 cursor={"pointer"}
@@ -817,9 +821,11 @@ const Header = () => {
                 Careers
               </Typography>
               <Divider sx={{
-                width:'100%',
+                  width:'100%',
+                  marginTop:'.5rem',
+                  cursor:'pointer',
                 backgroundColor:theme.palette.primary.main
-              }}/>
+                }}/>
               <Typography
                 onClick={() => handleClickMenu("contact-section")}
                 cursor={"pointer"}
@@ -829,9 +835,11 @@ const Header = () => {
                 Contact
               </Typography>
               <Divider sx={{
-                width:'100%',
+                  width:'100%',
+                  marginTop:'.5rem',
+                  cursor:'pointer',
                 backgroundColor:theme.palette.primary.main
-              }}/>
+                }}/>
             </Box>
           </Box>
         </Drawer>
@@ -840,4 +848,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Header2;
