@@ -1,5 +1,6 @@
 import { Box, Button, Grid, Typography, useTheme, useMediaQuery } from "@mui/material";
 import React from "react";
+import Technologytwo from "../Technologytwo/Technologytwo";
 
 const Technology = () => {
   const theme = useTheme();
@@ -14,6 +15,7 @@ const Technology = () => {
         //   backgroundColor: "#263238",
           padding:'0 10%',
           marginTop:'1rem',
+          overflow:'hidden'
           // padding:'0% 10%',
 
         }}
@@ -70,11 +72,15 @@ const Technology = () => {
           </Grid>
 
           <Grid item lg={6} md={6} sm={12} xs={12} sx={{
-                display:'flex', alignItems:"center",
+                display:  'flex', alignItems:"center",
+                justifyContent:isMedium ? 'center' : 'end',
                 width:'100%'
+                // overflow:'hidden'
             }}>
-            <Box  sx={{ width:'100%'}}>
-            <img src="technology.svg" alt="" width={"100%"} />
+            <Box  sx={{  postition:'relative', width:'100%', oveflow:'hidden'}}>
+            {/* <img src="technology.svg" alt="" width={"100%"} /> */}
+
+            <Technologytwo/>
             </Box>
           </Grid>
     

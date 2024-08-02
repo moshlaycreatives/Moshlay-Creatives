@@ -677,11 +677,20 @@ const Header2 = () => {
 
       {/* <=================================DRAWER ========================== */}
       <Box sx={{ display: { xs: "flex", sm: "none"  } }}>
+       <Box sx={{
+        display:'flex',
+        justifyContent:'space-between',
+        alignItems:'center'
+               }}>
+        <Box width={'50%'} sx={{display:'flex' , justifyContent:'start'}}>
+          <img src="logo.svg" alt=""  width={'50%'}/>
+        </Box>
         <IconButton onClick={handleDrawerOpen} sx={{ padding: "10px", color: "white",
           display: drawerOpen ? 'none' : 'flex'
          }}>
           <MenuIcon />
         </IconButton>
+        </Box> 
         <Drawer
           anchor="right"
           open={drawerOpen}
@@ -715,6 +724,7 @@ const Header2 = () => {
                   anchorEl={anchorSolutionEl}
                   open={openMenuSolution}
                   onClose={() => setAnchorSolutionEl(null)}
+                  zIndex={1600}
                 >
                   <MenuItem
                     onClick={() =>
@@ -762,6 +772,7 @@ const Header2 = () => {
                   anchorEl={anchorMarketingEl}
                   open={openMenuMarketing}
                   onClose={() => setAnchorMarketingEl(null)}
+                  zIndex={1600}
                 >
                   <MenuItem
                     onClick={() =>

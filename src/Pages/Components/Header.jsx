@@ -560,7 +560,7 @@ const Header = () => {
             open={openMenuSolution}
             onClose={() => setAnchorSolutionEl(null)}
           sx={{
-            zIndex:10000001
+            zIndex:150000000001
           }}
           >
             <MenuItem
@@ -608,7 +608,7 @@ const Header = () => {
             open={openMenuMarketing}
             onClose={() => setAnchorMarketingEl(null)}
             sx={{
-              zIndex:10000001
+              zIndex:150000000001
             }}
           >
             <MenuItem
@@ -675,14 +675,26 @@ const Header = () => {
 
       {/* <=================================DRAWER ========================== */}
       <Box sx={{ display: { xs: "flex", sm: "none" } }}>
-        <IconButton onClick={handleDrawerOpen} sx={{ padding: "10px", color: "white" }}>
+       <Box sx={{display:'flex',
+        justifyContent:'space-between',
+        alignItems:'center'
+       }}>
+       {/* <Box width={'50%'} sx={{
+        
+       }}>
+          <img src="logo.svg" alt=""  width={'50%'}/>
+        </Box> */}
+        <IconButton onClick={handleDrawerOpen} sx={{ padding: "10px", color: "white" ,
+          display: drawerOpen ? 'none' : '',
+        }}>
           <MenuIcon />
         </IconButton>
+       </Box>
         <Drawer
           anchor="right"
           open={drawerOpen}
           onClose={handleDrawerClose}
-          sx={{ zIndex: 1300 }}
+          sx={{ zIndex: 1300000000 }}
           
         >
           <Box sx={{ width: 250, padding: "20px" }}>
@@ -711,6 +723,7 @@ const Header = () => {
                   anchorEl={anchorSolutionEl}
                   open={openMenuSolution}
                   onClose={() => setAnchorSolutionEl(null)}
+                  zIndex={ 150000000001}
                 >
                   <MenuItem
                     onClick={() =>
@@ -759,6 +772,8 @@ const Header = () => {
                   anchorEl={anchorMarketingEl}
                   open={openMenuMarketing}
                   onClose={() => setAnchorMarketingEl(null)}
+                  zIndex={ 150000000001}
+                  
                 >
                   <MenuItem
                     onClick={() =>

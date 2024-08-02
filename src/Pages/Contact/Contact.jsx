@@ -32,8 +32,9 @@ const Contact = () => {
         width:'100%',
         textAlign:'center',
         background:isScroll ? '#0d1834e8' : 'transparent',  
+        transition:'transform 1s, opacity 0.5s, background-color 0.5s',
         position:isScroll ? 'sticky' : 'none',
-        zIndex:1000000000,
+        zIndex:1400,
         top:0
       }}>
       <Header2/>
