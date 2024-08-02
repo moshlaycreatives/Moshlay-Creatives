@@ -2,8 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Typography, Container, Grid, Box, Button, useMediaQuery, useTheme } from '@mui/material';
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Page from '../components/Page/Page'
+// import vido  from '../../src/assets/bnar.mp4'
+import BackgroundVideo from './BackgroundVideo';
 
 const ComingSoon = () => {
+
+
   const theme = useTheme();
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
   const [countdown, setCountdown] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
@@ -54,8 +58,23 @@ const ComingSoon = () => {
 
   
   return (
-    <Page title="Moshaly Creative">
-    <Box>
+    <Page title="Cali Origins">
+      {/* <Box sx={{ width: '100%', height: '100%', overflow: 'hidden' }}>
+      <video src={vido} autoPlay loop muted playsInline style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+    </Box> */}
+
+<BackgroundVideo/>
+
+
+
+      {/* <Box sx={{
+        width:'100%',
+        height:'100%'
+      }}>
+      <video src={vido} autoPlay="true" width={'100%'} height={'100%'} />
+      </Box> */}
+
+    {/* <Box>
       {isMedium ? (
         <Box sx={{ textAlign: 'center', padding: '2rem' }}>
           <Box sx={{ marginBottom: '2rem', marginTop: '-1rem' }}>
@@ -119,7 +138,7 @@ const ComingSoon = () => {
           </Grid>
         </Grid>
       )}
-    </Box>
+    </Box> */}
     </Page>
   );
 };

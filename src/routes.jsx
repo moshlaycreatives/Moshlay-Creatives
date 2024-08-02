@@ -46,10 +46,10 @@ console.log(isAuthenticated, 'hgyfuhhj')
            },
 
 
-        {
-        path:'/',
-        element : <Landing /> ,
-       },
+    //     {
+    //     path:'/',
+    //     element : <Landing /> ,
+    //    },
 {
        path:'/about-section',
        element : <About /> ,
@@ -59,7 +59,7 @@ console.log(isAuthenticated, 'hgyfuhhj')
         element : <Contact /> ,
        },
     {
-        path:'/comming-soon',
+        path:'/',
         element : <ComingSoon /> ,
        },
        {
