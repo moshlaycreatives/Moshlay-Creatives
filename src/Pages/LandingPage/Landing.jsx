@@ -64,11 +64,6 @@ const Landing = () => {
       </Box>
     <Box >
       <Hero/>
-      {/* <Box sx={{
-        position:'relative'
-      }}>
-      <Technologytwo/>
-      </Box> */}
       <HomeMain/>
     </Box>
     </>

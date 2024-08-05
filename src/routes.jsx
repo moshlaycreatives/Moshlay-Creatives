@@ -46,10 +46,10 @@ console.log(isAuthenticated, 'hgyfuhhj')
            },
 
 
-    //     {
-    //     path:'/',
-    //     element : <Landing /> ,
-    //    },
+        {
+        path:'/',
+        element : <Landing /> ,
+       },
 {
        path:'/about-section',
        element : <About /> ,
@@ -58,10 +58,10 @@ console.log(isAuthenticated, 'hgyfuhhj')
         path:'/contact-section',
         element : <Contact /> ,
        },
-    {
-        path:'/',
-        element : <ComingSoon /> ,
-       },
+    // {
+    //     path:'/',
+    //     element : <ComingSoon /> ,
+    //    },
        {
         path:'/technologytwo',
         element : <Technologytwo /> ,

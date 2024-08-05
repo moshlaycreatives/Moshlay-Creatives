@@ -34,7 +34,10 @@ const Technologytwo = () => {
         position: 'relative',
         overflow: 'hidden',
         padding: '1rem',
-        boxSizing: 'border-box'
+        boxSizing: 'border-box',
+        // backgroundColor:'red',
+        paddingLeft:'5rem',
+        paddingRight:'5rem'
       }}>
         <Box>
             {/* Central Image Fixed */}
@@ -54,12 +57,15 @@ const Technologytwo = () => {
             />
         
             {/* Rotating Wrapper */}
+
+            
             <Box className='maindiv' sx={{
                 position: 'relative',
                 width: '100%',
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'center'
+                alignItems: 'center',
+                
             }}>
                 <Box sx={{ position: 'relative', width: '100%' }}>
                     <svg width="400" height="400">
@@ -85,7 +91,7 @@ const Technologytwo = () => {
                         <Box>
                             <img
                                 src={iconUrlsBlackCircle[index]}
-                                alt={`Icon ${index + 1}`}
+                                alt={`Icon ${index + 190}`}
                                 className="rotating-icon"
                                 style={{
                                     width: '100%',

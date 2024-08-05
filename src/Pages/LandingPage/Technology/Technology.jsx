@@ -1,6 +1,7 @@
 import { Box, Button, Grid, Typography, useTheme, useMediaQuery } from "@mui/material";
 import React from "react";
 import Technologytwo from "../Technologytwo/Technologytwo";
+import Technologytwosmall from "../Technologytwo/Technologytwosmall";
 
 const Technology = () => {
   const theme = useTheme();
@@ -11,7 +12,7 @@ const Technology = () => {
     <>
       <Box
         sx={{
-          // width: "100%",
+          width: "100%",
         //   backgroundColor: "#263238",
           padding:'0 10%',
           marginTop:'1rem',
@@ -74,14 +75,25 @@ const Technology = () => {
           <Grid item lg={6} md={6} sm={12} xs={12} sx={{
                 display:  'flex', alignItems:"center",
                 justifyContent:isMedium ? 'center' : 'end',
-                width:'100%'
+                width:'100%',
+                // minHeight:'50vh'
                 // overflow:'hidden'
             }}>
-            <Box  sx={{  postition:'relative', width:'100%', oveflow:'hidden'}}>
-            {/* <img src="technology.svg" alt="" width={"100%"} /> */}
 
-            <Technologytwo/>
-            </Box>
+              {isSmall ? (
+                 <Box  sx={{  postition:'relative', width:'100%', oveflow:'hidden', padding:'1rem'}}>
+                 {/* <img src="technology.svg" alt="" width={"100%"} /> */}
+     
+                 <Technologytwosmall/>
+                 </Box>
+              ) : (
+                <Box  sx={{  postition:'relative', width:'100%', oveflow:'hidden', padding:'1rem'}}>
+                {/* <img src="technology.svg" alt="" width={"100%"} /> */}
+    
+                <Technologytwo/>
+                </Box>
+              )}
+           
           </Grid>
     
         </Grid>

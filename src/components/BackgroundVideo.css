@@ -33,13 +33,13 @@
   color: white; /* Example styling, adjust as needed */
   /* Add more styling for your content as needed */
 }
-
+/* 
 body, html {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* Remove scroll */
+  overflow: hidden; 
 }
   @media (max-width:600px){
     .video-background1{
@@ -48,5 +48,5 @@ body, html {
     .video-background2{
       display: none;
     }
-  }
+  } */
   

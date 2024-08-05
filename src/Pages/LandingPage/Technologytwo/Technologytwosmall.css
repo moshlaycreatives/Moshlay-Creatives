@@ -12,10 +12,10 @@
 
 @keyframes rotate-around {
   from {
-    transform: rotate(360deg);
+    transform: rotate(0deg);
   }
   to {
-    transform: rotate(0deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -30,9 +30,6 @@
 
 .maindiv {
   animation: rotate-around-axis 20s linear infinite;
-  /* width:10rem; */
-  /* background-color: aqua; */
-  /* padding-left: 100rem; */
 }
 
 @keyframes rotate-around-axis {
@@ -44,12 +41,6 @@
   }
 }
 
-/* Ensure central images remain static */
 .central-image {
   transform: translate(-50%, -50%);
 }
-
-
-
-
-
