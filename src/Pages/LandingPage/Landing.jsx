@@ -14,6 +14,7 @@ import HomeMain from "./HomeMain/HomeMain";
 import Header from "../Components/Header";
 import { useEffect, useState } from "react";
 import Technologytwo from "./Technologytwo/Technologytwo";
+import Header2 from "../Components/Header2";
 
 
 const Landing = () => {
@@ -60,7 +61,8 @@ const Landing = () => {
         alignItems:'center',
         zIndex:1000000000,
       }}>
-      <Header/>
+      {/* <Header/> */}
+      {isSmall && isSticky ? <Header2 /> : <Header />}
       </Box>
     <Box >
       <Hero/>
