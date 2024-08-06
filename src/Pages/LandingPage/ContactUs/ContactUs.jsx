@@ -1,10 +1,29 @@
-import { Box, Button, Grid, Typography, useTheme,useMediaQuery } from "@mui/material";
+import { Box, Button, Grid, Typography, useTheme,useMediaQuery, keyframes } from "@mui/material";
 import React from "react";
 
 const ContactUs = () => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+
+
+  const translateYAnimation = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`;
 
   return (
     <>
@@ -32,8 +51,8 @@ const ContactUs = () => {
               width: "100%",
             }}
           >
-            <Box sx={{ width: "100%" }}>
-              <img src="rocket.svg" alt="" width={"100%"} />
+            <Box sx={{ width: "100%", animation: `${translateYAnimation} 2s linear infinite`, }}>
+              <img src="rocket2.svg" alt="" width={"100%"} />
             </Box>
           </Grid>
           <Grid item lg={6} md={6} sm={12} xs={12} order={isMedium ? 1 : 2}>

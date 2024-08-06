@@ -5,6 +5,7 @@ const KnowUs = () => {
     const theme = useTheme();
     const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  const isLarge = useMediaQuery('(max-width:1500px)');
 
   return (
     <>
@@ -23,7 +24,7 @@ const KnowUs = () => {
                 width:'100%'
             }}>
             <Box  sx={{ width:'100%'}}>
-            <img src="knowus.svg" alt="" width={"100%"} />
+            <img src="knowus.svg" alt="" width={isLarge ? '80%' : '70%' } />
             </Box>
           </Grid>
           <Grid item lg={6} md={6} sm={12} xs={12} order={isMedium ? 1 : 2}>

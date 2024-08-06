@@ -51,7 +51,7 @@ const Landing = () => {
         position:isSticky ? 'sticky' : 'absolute',
         width:'100%',
         top: isSticky ? '0%' : '90%' ,
-        backgroundColor:  isSticky ? '#0d1834f0' : 'none' ,
+        backgroundColor:  isSticky ? '#000205ef' : 'none' ,
         // backgroundColor:isSmall ?  'none' :  (isSticky ? '#0d1834f0' : 'none') ,
         // transition: 'bottom 1s, backround-color 0.5s' , 
         transition: 'transform 1s,  opacity 0.5s, background-color 0.5s',
@@ -62,7 +62,17 @@ const Landing = () => {
         zIndex:1000000000,
       }}>
       {/* <Header/> */}
-      {isSmall && isSticky ? <Header2 /> : <Header />}
+      
+      {
+  isSmall ? (
+    isSmall && isSticky ? <Header2 /> : <Header />
+  ) : (
+    isSticky ? <Header2 /> : <Header />
+  )
+}
+      
+
+      
       </Box>
     <Box >
       <Hero/>

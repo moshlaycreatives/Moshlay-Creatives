@@ -12,6 +12,7 @@ const WhyWeIdeal = () => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  const isLarge = useMediaQuery('(max-width:1500px)');
 
   return (
     <>
@@ -67,7 +68,7 @@ const WhyWeIdeal = () => {
                 width: "100%",
               }}
             >
-              <img src="whyWeIdeal.svg" alt="" width={"100%"} />
+              <img src="whyWeIdeal.svg" alt="" width={'100%'} />
               <Box
                 sx={{
                   display: "flex",
