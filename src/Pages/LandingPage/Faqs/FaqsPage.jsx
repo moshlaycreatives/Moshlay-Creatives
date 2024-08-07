@@ -15,8 +15,9 @@ const FaqsPage = () => {
       }}>
         <Box>
             <Typography sx={{
-                fontSize:isSmall ? '1.6rem' : '2rem', fontWeight:'700' , textAlign:'center', marginBottom:'2rem',
-                color:theme.palette.primary.main
+                fontSize:isSmall ? '1.6rem' : '2.5rem', fontWeight:'600' , textAlign:'center', marginBottom:'2rem',
+                color:theme.palette.primary.main,
+                fontFamily:'Montserrat'
             }}>
             Frequently Asked Questions
             </Typography>

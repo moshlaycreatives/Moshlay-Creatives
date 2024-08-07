@@ -16,68 +16,51 @@ import { useEffect, useState } from "react";
 import Technologytwo from "./Technologytwo/Technologytwo";
 import Header2 from "../Components/Header2";
 
-
 const Landing = () => {
   const theme = useTheme();
-  
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
-  
-  const [isSticky, setIsSticky] =useState(false);
-   
-  useEffect(()=>{
-    const handleScroll= ()=>{
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
       if (window.scrollY > 600) {
-        console.log(window.scroll)
-        setIsSticky(true)
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
       }
-      else {
-        setIsSticky(false)
-      }
-    }
+    };
 
-    window.addEventListener('scroll',handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-    return ()=>{
-      window.removeEventListener('scroll',handleScroll)
-    }
-
-  },[])
-  
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
-      <Box sx={{
-        position:isSticky ? 'sticky' : 'absolute',
-        width:'100%',
-        top: isSticky ? '0%' : '90%' ,
-        backgroundColor:  isSticky ? '#000205ef' : 'none' ,
-        // backgroundColor:isSmall ?  'none' :  (isSticky ? '#0d1834f0' : 'none') ,
-        // transition: 'bottom 1s, backround-color 0.5s' , 
-        transition: 'transform 1s,  opacity 0.5s, background-color 0.5s',
-        // zIndex: 10000000, 
-        display:'flex',
-        justifyContent:'center',
-        alignItems:'center',
-        zIndex:1000000000,
-      }}>
-      {/* <Header/> */}
-      
-      {
-  isSmall ? (
-    isSmall && isSticky ? <Header2 /> : <Header />
-  ) : (
-    isSticky ? <Header2 /> : <Header />
-  )
-}
-      
-
-      
+      <Box
+        sx={{
+          // position: "absolute",
+          position: isSticky ? "fixed" : "absolute",
+          width: "100%",
+          top: isSticky ? "0%" : "90%",
+          transition: " ease-in-out, opacity 0.5s ease-in-out, background-color 0.5s ease-in-out",
+          backgroundColor: isSticky ? "#000205f8" : "none",
+          willChange: "top, opacity, background-color",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          zIndex: 900,
+        }}
+      >
+        {isSticky ? <Header2 /> : <Header />}
       </Box>
-    <Box >
-      <Hero/>
-      <HomeMain/>
-    </Box>
+      <Box>
+        <Hero />
+        <HomeMain />
+      </Box>
     </>
   );
 };

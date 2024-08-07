@@ -12,7 +12,7 @@ const Technology = () => {
     <>
       <Box
         sx={{
-          width: "100%",
+          width : "100%",
         //   backgroundColor: "#263238",
           padding:'0 10%',
           marginTop:'1rem',
@@ -21,25 +21,29 @@ const Technology = () => {
 
         }}
       >
-        <Grid container spacing={isSmall ? 5 : 10} alignItems={'center'}>
+        <Grid container spacing={isSmall ? 0 : 10} alignItems={'center'}>
 
-        <Grid item lg={6} md={6} sm={12} xs={12}>
+        <Grid item lg={6} md={12} sm={12} xs={12}>
             <Box>
               <Typography sx={{
                 fontSize: isSmall  ? '1.4rem ' : '1.8rem',
                 color:theme.palette.primary.main,
-                fontWeight:700,
-                marginBottom:'.5rem'
+                fontWeight:600,
+                marginBottom:'.5rem',
+                fontFamily:'Montserrat',
+                // textAlign:isSmall ? 'center' : '',
+
               }}> We do work with all kinds of
               Backends and Frontends 
               Services</Typography>
 
               <Typography sx={{
-                fontSize: isSmall ? ' 1rem' : '1.1rem',
+                fontSize: isSmall ? ' 1rem' : '1rem',
                 color:'white',
                 fontWeight:400,
                 marginBottom:'.5rem',
-                textAlign:'justify'
+                // textAlign:isSmall ? 'center' : '',
+                fontFamily:'Montserrat',
               }}>
                 {" "}
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -53,7 +57,8 @@ const Technology = () => {
                 color:'white',
                 fontWeight:400,
                 marginBottom:'2rem',
-                textAlign:'justify'
+                // textAlign:isSmall ? 'center' : '',
+                fontFamily:'Montserrat',
               }}>
                 {" "}
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -72,7 +77,7 @@ const Technology = () => {
             </Box>
           </Grid>
 
-          <Grid item lg={6} md={6} sm={12} xs={12} sx={{
+          <Grid item lg={6} md={12} sm={12} xs={12} sx={{
                 display:  'flex', alignItems:"center",
                 justifyContent:isMedium ? 'center' : 'end',
                 width:'100%',
@@ -81,7 +86,7 @@ const Technology = () => {
             }}>
 
               {isSmall ? (
-                 <Box  sx={{  postition:'relative', width:'100%', oveflow:'hidden', padding:'1rem'}}>
+                 <Box  sx={{  postition:'relative', width:'100%', oveflow:'hidden', }}>
                  {/* <img src="technology.svg" alt="" width={"100%"} /> */}
      
                  <Technologytwosmall/>

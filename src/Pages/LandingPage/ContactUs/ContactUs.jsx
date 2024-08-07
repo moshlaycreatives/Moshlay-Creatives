@@ -5,6 +5,7 @@ const ContactUs = () => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  const isLarge = useMediaQuery('(max-width:1400px)');
 
 
   const translateYAnimation = keyframes`
@@ -52,7 +53,7 @@ const ContactUs = () => {
             }}
           >
             <Box sx={{ width: "100%", animation: `${translateYAnimation} 2s linear infinite`, }}>
-              <img src="rocket2.svg" alt="" width={"100%"} />
+              <img src="rocket2.svg" alt="" width={ isLarge ? '100%' : '90%'} />
             </Box>
           </Grid>
           <Grid item lg={6} md={6} sm={12} xs={12} order={isMedium ? 1 : 2}>
@@ -70,13 +71,14 @@ const ContactUs = () => {
                   fontWeight: 700,
                   marginBottom: ".5rem",
                   textAlign: "center",
+                  fontFamily:'Montserrat'
                 }}
               >
                 You have a vision. We have a team to get you there.
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "1.9rem",
+                  fontSize: "2rem",
                   color: "white",
                   fontWeight: 400,
                   marginBottom: ".5rem",
@@ -88,7 +90,7 @@ const ContactUs = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "1.1rem",
+                  fontSize: "1.2rem",
                   color: "white",
                   fontWeight: 600,
                   marginBottom: ".5rem",
@@ -98,7 +100,7 @@ const ContactUs = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "2.5rem",
+                  fontSize: "2rem",
                   color: "white",
                   fontWeight: 400,
                   marginBottom: "1rem",
@@ -114,7 +116,9 @@ const ContactUs = () => {
                     color: theme.palette.primary.main,
                     fontSize: "1rem",
                     backgroundColor:'white',
-                    textTransform:'none'
+                    textTransform:'none',
+                    fontFamily:'Montserrat',
+                    fontWeight:500
                   }}
                 >
                   Send A Message

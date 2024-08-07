@@ -65,14 +65,18 @@ const Faqs = () => {
             id={`panel${index}bh-header`}
             sx={{ color: expanded === index ? theme.palette.primary.main : 'white' }}
           >
-            <Typography variant="h6" sx={{
-              fontSize:isSmall? '1rem' : '1.2rem'
+            <Typography  sx={{
+              fontSize:isSmall? '1rem' : '1.2rem',
+              fontFamily:'Montserrat',
+              fontWeight:400
             }}>
               {faq.question}
             </Typography>
           </AccordionSummary>
-          <AccordionDetails sx={{ color: 'white' }}>
-            <Typography>
+          <AccordionDetails sx={{ color: 'white', }}>
+            <Typography sx={{
+              fontFamily:'Montserrat', fontSize:'1rem', fontWeight:'400'
+            }}>
               {faq.answer}
             </Typography>
           </AccordionDetails>

@@ -21,13 +21,13 @@ const Hero = () => {
     }}>
         <Box sx={{
             width:'100%',
-            height: isSmall ? '25vh': isMedium ? '30v' : '40vh',
+            height: isSmall ? '25vh': isMedium ? '35vh' : '40vh',
             position:'relative',
             overflow:'hidden',
         }}>
         <img src="heroImage.svg" alt="" style={{
             position:'absolute',width:'100%',
-            height: isSmall ? '15vh' : isMedium ? '10vh' : 'auto',
+            // height: isSmall ? '15vh' : isMedium ? '10vh' : 'auto',
              top: four ? 2 : isSmall ? -5 : seven5 ? -25 : isMedium ? -30 : ten ? -30 : twelve ? -35 : -40 ,
              left:isSmall ? -5 : isMedium ? -40 : ten ? -45 :  twelve ? -50 : -60 
             ,objectFit:'cover',
@@ -54,6 +54,7 @@ const Hero = () => {
             <Typography sx={{
                 fontSize:'2rem',
                 fontWeight:'500',
+                fontFamily:'Montserrat',
                 color:'white',
                 textAlign:'center'
             }}>Your Vision, Our Innovation</Typography>

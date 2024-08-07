@@ -20,9 +20,11 @@ const CustomTextField = styled(TextField)({
       },
       backgroundColor: 'transparent',
       color: 'white',
+     
     },
     '& .MuiInputBase-input': {
       color: 'white',
+       fontFamily:'Montserrat'
     },
     '& .MuiInputLabel-root': {
       color: 'white',
@@ -51,15 +53,17 @@ const ContactForm = () => {
             <Box>
               <Typography sx={{
                 fontSize: isSmall ? '1.6rem' : '1.8rem',
-                fontWeight:700,
-                color:theme.palette.primary.main
+                fontWeight:600,
+                color:theme.palette.primary.main,
+                fontFamily: 'Montserrat',
               }}>Write Us a Message</Typography>
               <Typography sx={{
                 fontSize:'1rem',
                 fontWeight:400,
                 color:'white',
                 textAlign:'justify',
-                marginBottom:'1rem'
+                marginBottom:'1rem',
+                fontFamily: 'Montserrat',
 
               }}> 
                 The quick, brown fox jumps over a lazy dog. DJs flock by when
@@ -75,8 +79,8 @@ const ContactForm = () => {
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',
-                    padding:'.2rem',
-                    fontSize:'1rem'
+                    padding:'.3rem .2rem 0rem .2rem',
+                    fontSize:'1rem', fontFamily: 'Montserrat',
                 }}>
                 <FaFacebookF />
                 </Typography>
@@ -86,8 +90,8 @@ const ContactForm = () => {
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',
-                    padding:'.2rem',
-                    fontSize:'1rem'
+                    padding:'.3rem .2rem 0rem .2rem',
+                    fontSize:'1rem', fontFamily: 'Montserrat',
                 }}>
                 <FaInstagram />
                 </Typography>
@@ -97,8 +101,8 @@ const ContactForm = () => {
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',
-                    padding:'.2rem',
-                    fontSize:'1rem'
+                    padding:'.3rem .2rem 0rem .2rem',
+                    fontSize:'1rem', fontFamily: 'Montserrat',
                 }}>
                 <FaXTwitter />
                 </Typography>
@@ -108,8 +112,8 @@ const ContactForm = () => {
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',
-                    padding:'.2rem',
-                    fontSize:'1rem'
+                    padding:'.3rem .2rem 0rem .2rem',
+                    fontSize:'1rem', fontFamily: 'Montserrat',
                 }}>
                 <FaThreads />
                 </Typography>
@@ -166,7 +170,10 @@ const ContactForm = () => {
             multiline
             rows={5}
             />
-            <Button variant="contained" sx={{marginTop:'3rem', color:'white', textTransform:'none'}}>
+            <Button variant="contained" sx={{marginTop:'3rem', color:'white', textTransform:'none',
+               fontFamily: 'Montserrat',
+               fontWeight:500
+            }}>
                 Send Message
             </Button>
 

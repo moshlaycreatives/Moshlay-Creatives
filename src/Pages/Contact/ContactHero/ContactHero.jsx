@@ -33,10 +33,11 @@ const ContactHero = () => {
           }}>
           <Typography
             sx={{
-              fontSize: isSmall ? '2rem' : isMedium ? '3rem' : "4rem",
-              fontWeight: 700,
+              fontSize: isSmall ? '2rem' : isMedium ? '3.5rem' : "5rem",
+              fontWeight: 600,
               color: "white",
-              textAlign:'center'
+              textAlign:'center',
+              fontFamily: 'Montserrat',
             }}
           >
             Get In Touch
@@ -47,7 +48,8 @@ const ContactHero = () => {
               fontWeight: 400,
               color: "white",
               textAlign:'center',
-              marginBottom:'5rem'
+              marginBottom:'5rem',
+              fontFamily: 'Montserrat',
             }}
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc

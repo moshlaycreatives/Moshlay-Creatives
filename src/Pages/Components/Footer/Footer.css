@@ -113,6 +113,7 @@ font-family: 'Montserrat';
 }
 .footer-contact-info-links a{
 text-decoration: none;
+font-family: 'Montserrat';
 }
 .footer-contact-info-links i{
     font-size: 1.1rem;
@@ -128,6 +129,7 @@ text-decoration: none;
 }
 .footer-social-btn a{
     color: white;
+    font-family: 'Montserrat';
 }
 .footer-social-links{
     font-size:1.9rem;

@@ -24,7 +24,9 @@ const  cardData =[
             color:theme.palette.primary.main,
             fontSize:'2.5rem',
             textAlign:'center',
-            marginBottom:'1rem'
+            marginBottom:'1rem',
+            fontFamily:'Montserrat',
+            fontWeight:600
           }}>
             Blogs
           </Typography>
@@ -32,7 +34,9 @@ const  cardData =[
             color:'white',
             fontSize: isMedium ? '1rem' : '1.1rem',
             textAlign:'center',
-            marginBottom:'1rem'
+            marginBottom:'1rem',
+            fontFamily:'Montserrat',
+            fontWeight:400
           }}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat auctor ipsum, a suscipit 
             lacus efficitur ut. Fusce sit amet nunc vitae urna commodo mattis in in turpis.
@@ -58,22 +62,24 @@ const  cardData =[
                 }}> 
                     {/* <Box > */}
                     <Button variant="contained" sx={{
-                        // fontSize:'1rem',
-                        
-                        // width:'50%',
+                        fontSize:'.9rem',
                         textAlign:'center',
                         padding:'.6rem',
                         borderRadius:'5px',
                         marginTop:'-3rem',
                         color:'white',
-                        textTransform:'none'
+                        textTransform:'none',
+                        fontFamily:'Montserrat',
+                        fontWeight:400
                     }}>
                         {val.cardDate}
                     </Button>
                     {/* </Box> */}
                     <Typography sx={{
-                        fontSize: isSmall ? '1.1rem' : isMedium ? '1.2rem' : '1.3rem', 
+                        fontSize: isSmall ? '1.1rem' : isMedium ? '1.2rem' : '1.2rem', 
                         color:'white',
+                        fontFamily:'Montserrat',
+                        fontWeight:400
                         
                         
                     }}>
@@ -81,8 +87,11 @@ const  cardData =[
                     </Typography>
                     
                     <Button sx={{
+                      fontSize:'1rem',
                       marginLeft:'-.3rem',
-                      textTransform:'none'
+                      textTransform:'none',
+                      fontFamily:'Montserrat',
+                      fontWeight:400
                     }}>
                       See More<MdKeyboardArrowRight  fontSize={"1.3rem"}/>
                     </Button>

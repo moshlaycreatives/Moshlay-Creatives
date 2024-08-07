@@ -36,7 +36,7 @@ const About = () => {
       <Box sx={{
         width:'100%',
         textAlign:'center',
-        background:isScroll ? '#0d1834e8' : 'transparent',  
+        background:isScroll ? '#000205f8' : 'transparent',  
         transition: 'transform 1s,  opacity 0.5s, background-color 0.5s',
 
         position:isScroll ? 'sticky' : 'none',

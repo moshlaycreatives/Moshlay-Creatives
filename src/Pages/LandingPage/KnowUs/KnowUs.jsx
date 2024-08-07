@@ -5,7 +5,8 @@ const KnowUs = () => {
     const theme = useTheme();
     const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
-  const isLarge = useMediaQuery('(max-width:1500px)');
+  const isLarge = useMediaQuery('(max-width:1400px)');
+  const isEleven50 = useMediaQuery('(max-width:1150px)');
 
   return (
     <>
@@ -21,10 +22,15 @@ const KnowUs = () => {
         <Grid container spacing={5}>
           <Grid item lg={6} md={6} sm={12} xs={12} order={isMedium ? 2 : 1} sx={{
                 display:'flex', alignItems:"center",
+                justifyContent: isMedium ? 'center' : 'start',
                 width:'100%'
             }}>
-            <Box  sx={{ width:'100%'}}>
-            <img src="knowus.svg" alt="" width={isLarge ? '80%' : '70%' } />
+            <Box  sx={{
+               width:'100%',
+               display:'flex',
+               justifyContent:isMedium ? 'center' : 'start'
+               }}>
+            <img src="knowus.svg" alt="" width={ isMedium ? '70%' : isEleven50 ? '100%' : isLarge ? '80%' : '70%' } />
             </Box>
           </Grid>
           <Grid item lg={6} md={6} sm={12} xs={12} order={isMedium ? 1 : 2}>
@@ -32,20 +38,24 @@ const KnowUs = () => {
               <Typography sx={{
                 fontSize: isSmall ?  '1.6rem' : isMedium ? '2rem' :  '2.5rem',
                 color:theme.palette.primary.main,
-                fontWeight:700,
-                marginBottom:'.5rem'
+                fontWeight:600,
+                marginBottom:'.5rem',
+                fontFamily:'Montserrat'
               }}> Get to Know Us</Typography>
               <Typography sx={{
                 fontSize: isSmall? "1.1rem":'1.2rem',
                 color:"white",
                 fontWeight:400,
-                marginBottom:'.5rem',fontStyle:"italic"
+                marginBottom:'.5rem',
+                fontStyle:"italic",
+                fontFamily:'Montserrat'
               }}> The Moshlay Creatives Team</Typography>
               <Typography sx={{
-                fontSize: isSmall? "1rem":'1.1rem',
+                fontSize: isSmall? "1rem":'1rem',
                 color:'white',
                 fontWeight:400,
-                marginBottom:'.5rem'
+                marginBottom:'.5rem',
+                fontFamily:'Montserrat'
               }}>
                 {" "}
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -55,10 +65,11 @@ const KnowUs = () => {
                 penatibus et 
               </Typography>
               <Typography sx={{
-                fontSize: isSmall? "1rem":'1.1rem',
+                fontSize: isSmall? "1rem":'1rem',
                 color:'white',
                 fontWeight:400,
-                marginBottom:'2rem'
+                marginBottom:'2rem',
+                fontFamily:'Montserrat'
               }}>
                 {" "}
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -72,6 +83,7 @@ const KnowUs = () => {
                 sx={{
                     color:'white',
                     fontSize:'1rem',
+                    fontFamily:'Montserrat',
                     textTransform:'none'
                 }}>Meet the Team</Button>
               </Box>

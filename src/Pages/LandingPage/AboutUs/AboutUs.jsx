@@ -1,6 +1,7 @@
 import { Box ,Button,Grid, Typography, useTheme,useMediaQuery} from '@mui/material'
 import React from 'react'
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+// import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import { IoIosArrowRoundForward, IoIosMedal } from "react-icons/io";
 import { useNavigate } from 'react-router';
 
 
@@ -16,10 +17,11 @@ const AboutUs = () => {
   return (
     <>
     <Box sx={{
-        padding:'5% 10% 2.5% 10%',
+        padding: isMedium ? '7% 10% 2.5% 10%' :'5% 10% 2.5% 10%',
     }} > 
         <Grid container >
-            <Grid item lg={5} md={5} sm={12} xs={12}
+            <Grid item lg={5} md={5} sm={12} xs={12} 
+            // spacing={isSmall ? 1 : null}
             sx={{
                 display:'flex',
                 alignItems:isSmall ? "center" : "start", 
@@ -35,9 +37,9 @@ const AboutUs = () => {
             sx={{
                 display:'flex',
                 flexDirection:'column',
-                alignItems:isMedium ? 'center' : 'end',
+                alignItems:isSmall ? 'start' :  isMedium ? 'center' : 'end',
                 justifyContent:'end',
-                paddingTop:'3rem',
+                paddingTop: isSmall ? '1rem' : isMedium ? '2rem' : '3rem',
                 marginBottom:isMedium ? " 0rem" : "-2rem",
                 marginLeft:isMedium ? "0rem" : "-2rem",
                 
@@ -46,22 +48,26 @@ const AboutUs = () => {
             >
                 <Box sx={{
                     backgroundColor: "#212e3a",
-                    padding:'1rem',
+                    padding:'1.5rem',
                     width:'100%'
                 }}>
-                    <Typography variant='h3' sx={{
+                    <Typography  sx={{
                         fontSize:'2rem',
+                        fontWeight:600,
                         color:theme.palette.primary.main, 
-                        // fontFamily:'Montserrat' 
+                        fontFamily:'Montserrat'
                     }}>About Company</Typography>
                     <Typography sx={{
                         fontSize:'1rem',
+                        fontFamily:'Montserrat',
                         color:'white',
-                        fontWeight:300,
+                        fontWeight:400,
                         marginTop:'1rem'
                     }}>Lorem ipsum dolor sitLorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quo perferendis  amet consectetur adipisicing elit. Distinctio voluptatem facere quaerat ut odit, commodi eveniet ratione cupiditate nisi exercitationem. Lorem, ipsum dolor sit amet consectetur adipisicing el</Typography>
                     <Button variant='outlined' sx={{
+                        fontFamily:'Montserrat',
                         color:'white',
+                        fontWeight:400,
                         fontSize:'1rem',
                         marginTop:'1rem',
                         textTransform:'none'
@@ -79,11 +85,13 @@ const AboutUs = () => {
                 }} >
 
                <Box sx={{ 
-                    padding:'2rem',  
+                    padding:'1.5rem',  
                 }}>
                     <Typography sx={{
                         fontSize:'1rem',
                         paddingBottom:'1rem',
+                        fontFamily:'Montserrat',
+                        fontWeight:400,
                         color:"white"
                     }}> quia asperiores iusto, voluptatum consectetur labore voluptatibus aperiam obcaecati, pariatur dolorum iure sed quas aspernatur aut tempore enim quidem.</Typography>
 
@@ -94,22 +102,24 @@ const AboutUs = () => {
                     justifyContent:'end'
                 }}>
                 <Button sx={{
+                        fontFamily:'Montserrat',
                         color:'white',
+                        fontWeight:400,
                         fontSize:'1.1rem',
                         fontStyle:'italic',
                         textTransform:'none'
-                    }} onClick={()=>handleSeeMore('comming-soon')}> Request for Quote 
+                    }} onClick={()=>handleSeeMore('/comming-soon')}> Request for Quote 
                     </Button>
 
                     <Button variant='contained'
                     sx={{
-                        padding:'.5rem 2rem',
+                        padding:'.3rem 1rem',    
                         backgroundColor:'black',
                         color:theme.palette.primary.main,
                         borderRadius:'0',
-                        // fontSize:'5rem'
-                    }} onClick={()=>handleSeeMore('comming-soon')}>
-                    <ArrowRightAltIcon />
+                    }} onClick={()=>handleSeeMore('/comming-soon')}>
+                    {/* <ArrowRightAltIcon  style={{fontSize:'2.2rem'}}/> */}
+                    <IoIosArrowRoundForward  style={{fontSize:'2.5rem'}} />
                     </Button>
                 </Box>
                </Box>

@@ -6,6 +6,9 @@ const Services = () => {
 const theme = useTheme();
 const isMedium = useMediaQuery(theme.breakpoints.down("md"));
 const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+const isFourteen = useMediaQuery('(max-width:1400px)');
+
+
 const listData =[
     {title : 'Web Developer' , subTitle:'A wide client base across various industries is proof of our ability to deliver remarkable software solutions.', image : "services1.svg"},
     {title : 'Search Engine Optimization' , subTitle:'A wide client base across various industries is proof of our ability to deliver remarkable software solutions.', image : "services2.svg"},
@@ -21,22 +24,28 @@ const listData =[
   return (
     <>
       <Box sx={{
+        width:'100%',
         marginBottom:'1rem',
         padding:'2.5% 10%'
         }}>
         <Box marginBottom={'2rem'}>
-          <Typography variant="h3" sx={{
+          <Typography  sx={{
             color:theme.palette.primary.main,
             fontSize: isSmall ?  '1.6rem' : isMedium ? '2rem' :  '2.5rem',
+            fontFamily:'Montserrat',
+            fontWeight:600, 
             textAlign:'center',
             marginBottom:'1rem',
-            marginTop:'1rem'
+            marginTop:'1rem',
+            width:'100%'
           }}>
             Affordable Digital Solution & Marketing Services
           </Typography>
           <Typography variant="body2" sx={{
             color:'white',
             fontSize: isMedium ? '1rem' : '1.1rem',
+            fontFamily:'Montserrat',
+            fontWeight:400,
             textAlign:'center',
             marginBottom:'-2rem'
             
@@ -48,7 +57,7 @@ const listData =[
           </Typography>
         </Box>
 
-          <Grid container spacing={5} sx={{
+          <Grid container spacing={isSmall ? 2 : isMedium ? 4 : 5} sx={{
             marginTop:'.5rem'
           }}>
 
@@ -65,7 +74,7 @@ const listData =[
                 alignItems:'center',
                 padding:'3rem',
                 width:'100%',
-                height:isMedium ? '25vh' : isSmall ? '20vh' : "30vh",
+                height: isSmall ? '20vh' : isMedium ? '20vh' : isFourteen ? '25vh' : '25vh' ,
                 overflow:'hidden',
                 '&:hover .overplay ': {
                   transform:'translateX(0%)'
@@ -95,7 +104,8 @@ const listData =[
                         }}>
               <Typography sx={{
                     color:'white',fontSize:'1rem',
-                    fontWeight:'200',
+                    fontWeight:'400',
+                    fontFamily:'Montserrat',
                     // marginLeft: '1rem'
                 }}>{val.subTitle}</Typography>
               </Box>
@@ -119,7 +129,8 @@ const listData =[
                 sx={{
                     color:'white',
                     fontSize: isSmall ? '1.3rem' : isMedium ? '1.5rem' : '1.7rem',
-                    fontWeight:'500',
+                    fontWeight:'600',
+                    fontFamily:'Montserrat',
                     marginLeft: '1rem',
                     // transform: 'translateX(0)', 
                     // transition: 'transform 0.5s ease-in-out, opacity 0.5s ease-in-out',

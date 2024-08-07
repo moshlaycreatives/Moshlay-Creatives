@@ -49,9 +49,11 @@ const ReviewsCarousel = () => {
           <div className="slider-container">
             <Box>
               <Typography sx={{
-                fontSize:  isSmall? '1.5rem' : '1.8rem',
-                fontWeight:700,
-                color:'white '
+                fontSize:  isSmall? '1.5rem' : '1.9rem',
+                fontWeight:600,
+                color:'white ',
+                fontFamily:'Montserrat',
+                // textAlign :isSmall ? 'center' : 'start'
               }}>
               Tried & Trusted With Revered Reviews
               </Typography>
@@ -71,9 +73,13 @@ const ReviewsCarousel = () => {
                 }} >
                   <Avatar src={val.cardimage}  sx={{width:80 , height:80}}/>
                 </Box>
-                <Typography sx={{marginBottom:'1rem' , fontSize:'1.3rem', fontWeight:500}}>{val.cardTitle}</Typography>
+                <Typography sx={{marginBottom:'1rem' , fontSize:'1.3rem', fontWeight:500 , 
+                  fontFamily:'Montserrat'
+                }}>{val.cardTitle}</Typography>
                 <Rating readOnly value={5} />
-                <Typography sx={{marginTop:'1rem' , fontSize:'1rem', fontWeight:400, textAlign:'justify'}} >
+                <Typography sx={{marginTop:'1rem' , fontSize:'1rem', fontWeight:400, fontFamily:'Montserrat'
+                  // textAlign:'start' 
+                  }} >
                   {val.cardDes}
                 </Typography>
               </Box>

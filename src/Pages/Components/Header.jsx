@@ -495,6 +495,7 @@ const Header = () => {
   return (
     <Box
       sx={{
+         width:'100%',
         padding: "1% 10%",
         display: "flex",
         justifyContent: "center",
@@ -531,6 +532,11 @@ const Header = () => {
             width: "100%",
           }}
         >
+          <Box onClick={handleAnchorElClickSolution} sx={{
+            display:'flex',
+            justifyContent:'center',
+            alignItems:'center'
+          }} >
           <Typography
             aria-controls="digital-solution"
             aria-haspopup="true"
@@ -543,17 +549,18 @@ const Header = () => {
           <Typography
             sx={{
               fontSize: "1.5rem",
-              marginLeft: "-1rem",
-              marginRight: "-1rem",
-              marginTop: "1rem",
+              // marginLeft: "-1rem",
+              // marginRight: "-1rem",
+              // marginTop: "1rem",
               display: "flex",
               textAlign: "center",
               color: theme.palette.primary.main,
               marginRight:'.2rem'
             }}
           >
-            <MdOutlineArrowDropDown />
+            <MdOutlineArrowDropDown  />
           </Typography>
+          </Box>
           <Menu
             id="digital-solution"
             anchorEl={anchorSolutionEl}
@@ -565,21 +572,26 @@ const Header = () => {
           >
             <MenuItem
               onClick={() =>
-                handleAnchorClose(setAnchorSolutionEl, "about-section")
+                handleAnchorClose(setAnchorSolutionEl, "/about-section")
               }
             >
               Example 1
             </MenuItem>
             <MenuItem
               onClick={() =>
-                handleAnchorClose(setAnchorSolutionEl, "contact-section")
+                handleAnchorClose(setAnchorSolutionEl, "/contact-section")
               }
             >
               Example 2
             </MenuItem>
           </Menu>
 
-          <Typography
+          <Box onClick={handleAnchorElClickMarketing} sx={{
+            display:'flex',
+            justifyContent:'center',
+            alignItems:'center'
+          }} >
+            <Typography
             aria-controls="digital-marketing"
             aria-haspopup="true"
             aria-expanded={openMenuMarketing ? "true" : undefined}
@@ -591,9 +603,9 @@ const Header = () => {
           <Typography
             sx={{
               fontSize: "1.5rem",
-              marginLeft: "-1rem",
-              marginTop: ".5rem",
-              marginRight: "-1rem",
+              // marginLeft: "-1rem",
+              // marginTop: ".5rem",
+              // marginRight: "-1rem",
               textAlign: "center",
               display: "flex",
               color: theme.palette.primary.main,
@@ -602,6 +614,8 @@ const Header = () => {
           >
             <MdOutlineArrowDropDown />
           </Typography>
+          </Box>
+          
           <Menu
             id="digital-marketing"
             anchorEl={anchorMarketingEl}
@@ -613,14 +627,14 @@ const Header = () => {
           >
             <MenuItem
               onClick={() =>
-                handleAnchorClose(setAnchorMarketingEl, "about-section")
+                handleAnchorClose(setAnchorMarketingEl, "/about-section")
               }
             >
               Example 1
             </MenuItem>
             <MenuItem
               onClick={() =>
-                handleAnchorClose(setAnchorMarketingEl, "contact-section")
+                handleAnchorClose(setAnchorMarketingEl, "/contact-section")
               }
             >
               Example 2
@@ -629,28 +643,28 @@ const Header = () => {
 
           <Typography
             marginRight={".5rem"}
-            onClick={() => handleClickMenu("contact-section")}
+            onClick={() => handleClickMenu("/contact-section")}
             sx={{ cursor: "pointer", fontSize: isMedium ? ".8rem" : "1rem" }}
           >
             Company
           </Typography>
           <Typography
             marginRight={".5rem"}
-            onClick={() => handleClickMenu("contact-section")}
+            onClick={() => handleClickMenu("/contact-section")}
             sx={{ cursor: "pointer", fontSize: isMedium ? ".8rem" : "1rem" }}
           >
             Blog
           </Typography>
           <Typography
             marginRight={".5rem"}
-            onClick={() => handleClickMenu("contact-section")}
+            onClick={() => handleClickMenu("/contact-section")}
             sx={{ cursor: "pointer", fontSize: isMedium ? ".8rem" : "1rem" }}
           >
             Careers
           </Typography>
 
           <Typography
-            onClick={() => handleClickMenu("contact-section")}
+            onClick={() => handleClickMenu("/contact-section")}
             sx={{ cursor: "pointer", fontSize: isMedium ? ".8rem" : "1rem" }}
           >
             Contact
@@ -700,7 +714,13 @@ const Header = () => {
           <Box sx={{ width: 250, padding: "20px" }}>
             <Box sx={{ gap: 5 }}>
               <Box sx={{ display: "flex" }}>
-                <Typography
+
+              <Box onClick={handleAnchorElClickSolution} sx={{
+            display:'flex',
+            justifyContent:'center',
+            alignItems:'center'
+          }} >
+            <Typography
                   aria-controls="digital-solution"
                   aria-haspopup="true"
                   aria-expanded={openMenuSolution ? "true" : undefined}
@@ -716,8 +736,10 @@ const Header = () => {
                     color: theme.palette.primary.main,
                   }}
                 >
-                  <MdOutlineArrowDropDown />
+                  <MdOutlineArrowDropDown  style={{marginTop:'.5rem'}}/>
                 </Typography>
+          </Box>
+                
                 <Menu
                   id="digital-solution"
                   anchorEl={anchorSolutionEl}
@@ -727,14 +749,14 @@ const Header = () => {
                 >
                   <MenuItem
                     onClick={() =>
-                      handleAnchorClose(setAnchorSolutionEl, "about-section")
+                      handleAnchorClose(setAnchorSolutionEl, "/about-section")
                     }
                   >
                     Example 1
                   </MenuItem>
                   <MenuItem
                     onClick={() =>
-                      handleAnchorClose(setAnchorSolutionEl, "contact-section")
+                      handleAnchorClose(setAnchorSolutionEl, "/contact-section")
                     }
                   >
                     Example 2
@@ -749,7 +771,12 @@ const Header = () => {
 
 
               <Box sx={{ display: "flex" }}>
-                <Typography
+              <Box onClick={handleAnchorElClickMarketing} sx={{
+            display:'flex',
+            justifyContent:'center',
+            alignItems:'center'
+          }} >
+            <Typography
                   aria-controls="digital-marketing"
                   aria-haspopup="true"
                   aria-expanded={openMenuMarketing ? "true" : undefined}
@@ -765,8 +792,10 @@ const Header = () => {
                     color: theme.palette.primary.main,
                   }}
                 >
-                  <MdOutlineArrowDropDown />
+                  <MdOutlineArrowDropDown  style={{marginTop:'.5rem'}}/>
                 </Typography>
+            </Box>
+                
                 <Menu
                   id="digital-marketing"
                   anchorEl={anchorMarketingEl}
@@ -777,14 +806,14 @@ const Header = () => {
                 >
                   <MenuItem
                     onClick={() =>
-                      handleAnchorClose(setAnchorMarketingEl, "about-section")
+                      handleAnchorClose(setAnchorMarketingEl, "/about-section")
                     }
                   >
                     Example 1
                   </MenuItem>
                   <MenuItem
                     onClick={() =>
-                      handleAnchorClose(setAnchorMarketingEl, "contact-section")
+                      handleAnchorClose(setAnchorMarketingEl, "/contact-section")
                     }
                   >
                     Example 2
@@ -800,7 +829,7 @@ const Header = () => {
 
 
               <Typography
-                onClick={() => handleClickMenu("contact-section")}
+                onClick={() => handleClickMenu("/contact-section")}
                 cursor={"pointer"}
                 marginBottom={'.5rem'}
               >
@@ -811,7 +840,7 @@ const Header = () => {
                 backgroundColor:theme.palette.primary.main
               }}/>
               <Typography
-                onClick={() => handleClickMenu("contact-section")}
+                onClick={() => handleClickMenu("/contact-section")}
                 cursor={"pointer"}
                 marginBottom={'.5rem'}
                 marginTop={'.5rem'}
@@ -824,7 +853,7 @@ const Header = () => {
               
               }}/>
               <Typography
-                onClick={() => handleClickMenu("contact-section")}
+                onClick={() => handleClickMenu("/contact-section")}
                 cursor={"pointer"}
                 marginBottom={'.5rem'}
                 marginTop={'.5rem'}
@@ -836,7 +865,7 @@ const Header = () => {
                 backgroundColor:theme.palette.primary.main
               }}/>
               <Typography
-                onClick={() => handleClickMenu("contact-section")}
+                onClick={() => handleClickMenu("/contact-section")}
                 cursor={"pointer"}
                 marginBottom={'.5rem'}
                 marginTop={'.5rem'}

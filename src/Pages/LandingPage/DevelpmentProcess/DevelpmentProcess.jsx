@@ -6,6 +6,8 @@ const DevelpmentProcess = () => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  const isLarge = useMediaQuery('(max-width:1400px)');
+  const isTen = useMediaQuery('(max-width:1050px)');
 
   return (
     <>
@@ -16,11 +18,14 @@ const DevelpmentProcess = () => {
     }}>
       <Box sx={{
         position:'absolute',
-        right:-60,
-        top:50,
+        padding:'1rem',
+        right: isMedium ? -130 : isTen ? -130 : isLarge ? -90 : -80,
+        top: isMedium ? 100 : isTen ? 90 : isLarge ? 110 : 95,
         display:isMedium ? ' none' : 'flex'
       }}>
-      <img src="hand.svg" alt="" width={'80%'} />
+      <img src="hand.svg" alt=""  style={{
+        width: isSmall ? '30%' : isMedium ? '50%' : isTen ? '60%' : isLarge ? '70%' : '75%'
+      }} />
       </Box>
       <Box>
         <Box sx={{
@@ -32,9 +37,10 @@ const DevelpmentProcess = () => {
             <Typography variant='h3' sx={{
               color:theme.palette.primary.main,
               fontSize: isSmall ?  '1.6rem' : isMedium ? '2rem' :  '2.5rem',
-              fontWeight:700,
+              fontWeight:600,
               textAlign:'center',
-              marginBottom:'1rem'
+              marginBottom:'1rem',
+              fontFamily:'Montserrat'
             }}>
             Our Software Development Process
             </Typography>
@@ -42,13 +48,23 @@ const DevelpmentProcess = () => {
               color:'white',
               fontSize:'1.1rem',
               fontWeight:400,
+              fontFamily:'Montserrat',
               textAlign:'center',
               marginBottom:isMedium ? '-3.2rem' : '-2rem'
             }}>
             With our streamlined software development process, we are able to build
             extraordinary products within ordinary timescales.
             </Typography>
-          </Box>
+          </Box >
+          {/* flex box changes purpose  */}
+          {/* <Box sx={{display:'flex' , justifyContent:'space-between', alignItems:'center', width:'100%'}}>
+            <Box width={'100%'}> 
+              <img src="develop.svg" alt=""  width={'100%'}/>
+            </Box>
+            <Box width={'100%'}>
+              <img src="res-ln.svg" alt="" width={'100%'}/>
+            </Box>
+          </Box> */}
 
           <Grid container alignItems={'center'} justifyContent={'center'} marginTop={'0%'}>
             <Grid item lg={6} md={6} sm={12} xs={12} >
