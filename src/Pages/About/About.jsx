@@ -49,7 +49,7 @@ const About = () => {
         <WhyWeIdeal/>
         <WhyChooseUs/>
         <ReviewsCarousel/>
-        <ContactUs/>A
+        <ContactUs/>
         <FaqsPage/>
         <Footer/>
     </Box>

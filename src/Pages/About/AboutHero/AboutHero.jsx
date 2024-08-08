@@ -7,6 +7,8 @@ const AboutHero = () => {
     const minDesktop = useMediaQuery('(max-width:1000px)');
     const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  const isTwelve80 = useMediaQuery('(max-width:1280px)');
+  const isTwelve = useMediaQuery('(max-width:1200px)');
 
   
   return (
@@ -85,16 +87,17 @@ const AboutHero = () => {
         padding:'2% 10%',
         marginBottom:'-3rem',
       }}>
-        <Grid container spacing={10}>
-            <Grid item lg={7} md={7} sm={12} xs={12}>
+        <Grid container spacing={ isMedium ? 5 : 10}>
+            <Grid item lg={7} md={12} sm={12} xs={12}>
             <Box sx={{
           }}>
             <Typography
               sx={{
-                fontSize: isSmall ? '1.5rem' : "2rem",
-                fontWeight: 700,
+                fontSize: isSmall ? '1.5rem' : "2.5rem",
+                fontWeight: 600,
                 color: theme.palette.primary.main,
-                marginBottom:'.5rem'
+                marginBottom:'.5rem',
+                fontFamily:'Montserrat'
               }}
             >
               About Moshlay Creatives
@@ -102,9 +105,10 @@ const AboutHero = () => {
             <Typography
               sx={{
                 fontSize: "1rem",
-                fontWeight: 100,
+                fontWeight: 400,
                 color: "white",
-                textAlign: 'justify'
+                textAlign: 'justify',
+                fontFamily:'Montserrat'
               }}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elis
@@ -117,33 +121,37 @@ const AboutHero = () => {
             </Typography>
           </Box>
             </Grid>
-            <Grid item lg={5} md={5} sm={12} xs={12} >
+
+            <Grid item lg={5} md={12} sm={12} xs={12} >
             <Box sx={{
                 width:'100%',
                 // display:"flex",
                 // justifyContent:'end'
+                // marginTop: isTwelve80 ? '5rem' : '0rem'
                 
           }}>
             <img src="aboutHero1.svg" alt="aboutHero1" width="100%"  />
           </Box>
             </Grid>
         </Grid>
-        <Grid container spacing={5} sx={{
-            marginTop: isMedium ? "2rem" : ".1rem"
+
+        <Grid container spacing={isTwelve ? 2 : 5} sx={{
+            marginTop: isMedium ? ".1rem" : ".1rem"
         }}>
-            <Grid item lg={5} md={5} sm={12} xs={12}>
+            <Grid item lg={5} md={12} sm={12} xs={12}>
             <Box sx={{
-                marginTop:'-3rem'
+                marginTop:isTwelve ? '0rem' : isTwelve80 ? '-2rem' : '-3rem'
           }}>
             <img src="aboutHero3.svg" alt="aboutHero1" width="100%" />
           </Box>
             </Grid>
-            <Grid item lg={7} md={7} sm={12} xs={12}>
+            <Grid item lg={7} md={12} sm={12} xs={12}>
             <Box sx={{
             // position: 'absolute',
             // top: '10%', 
             // right: '0%',
             // width: minDesktop ? '43%' : '38%',
+            // marginTop:isTwelve80 ? '-2rem' : '0rem'
           }}>
             <img src="aboutHero2.svg" alt="aboutHero1" width="100%" />
           </Box>

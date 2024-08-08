@@ -6,6 +6,7 @@ const WhyChooseUs = () => {
     const theme = useTheme();
     const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
     const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+    const isTwelve = useMediaQuery ('(max-width:1200px)');
 
   return (
     <>
@@ -19,7 +20,9 @@ const WhyChooseUs = () => {
             <Typography sx={{
                 fontSize: isSmall ?  '1.8rem' : isMedium ? '2rem' :  '2.5rem',
                 color:theme.palette.primary.main,
-                marginBottom:'2rem'
+                marginBottom:'2rem',
+                fontFamily:'Montserrat',
+                fontWeight:600,
             }}>
             What Sets Us Apart?
             </Typography>
@@ -28,7 +31,7 @@ const WhyChooseUs = () => {
         {/* grid one  */}
     <Grid container alignItems={"center"} >
         {/* item one */}
-    <Grid item lg={5} md={5} sm={12} xs={12} >
+    <Grid item lg={5} md={12} sm={12} xs={12} >
             <Box sx={{
                 width:'100%',
                 // display:"flex",
@@ -38,40 +41,42 @@ const WhyChooseUs = () => {
             <img src="whychooseus1.svg" alt="aboutHero1" width="100%"  />
           </Box>
             </Grid>
-            <Grid item lg={7} md={7} sm={12} xs={12} sx={{
+            <Grid item lg={7} md={12} sm={12} xs={12} sx={{
                 padding:'2rem 0',
             }}>
             <Box sx={{
-                marginLeft: isMedium ?  '0rem' : "-2rem",
+                marginLeft: isTwelve ?  '0rem' : "-2rem",
                 backgroundColor:'#141e28da',padding:'2rem'
 
              }}>
             <Typography
               sx={{
-                fontSize:isSmall ? '1.4rem' : "1.6rem",
-                fontWeight: 700,
+                fontSize:isSmall ? '1.4rem' : "1.7rem",
+                fontWeight: 600,
                 // color: theme.palette.primary.main
                 color:'white',
-                marginBottom:'.5rem'
+                marginBottom:'.5rem',
+                fontFamily:'Montserrat'
               }}
             >
               Proven Delivery Record
             </Typography>
             <Typography sx={{
                 fontSize:isSmall ? '1rem' : '1.1rem',
-                fontWeight: 400,
                 color: "white",
                 textAlign: 'justify',
-                marginBottom:'1rem'
+                marginBottom:'1rem',
+                fontWeight: 400,
+                fontFamily:'Montserrat'
               }}>
             More than technology-a partner invested in your success 
             </Typography>
             <Typography
               sx={{
                 fontSize: "1rem",
-                fontWeight: 100,
+                fontWeight: 400,
                 color: "white",
-                textAlign: 'justify'
+                textAlign: 'justify',fontFamily:'Montserrat'
               }}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elis
@@ -90,23 +95,24 @@ const WhyChooseUs = () => {
         {/* Grid two */}
         <Grid container alignItems={"center"}  marginTop={isMedium ? "0rem" : "2rem"}>
   
-            <Grid item lg={7} md={7} sm={12} xs={12} order={isMedium ? 2 : 1} sx={{
+            <Grid item lg={7} md={12} sm={12} xs={12} order={isTwelve ? 2 : 1} sx={{
                 padding:'2rem 0',
                 zIndex:'99'
             }}>
             <Box sx={{
-                marginRight: isMedium ?  '0rem' : "-2rem",
+                marginRight: isTwelve ?  '0rem' : "-2rem",
                 backgroundColor:'#141e28da',padding:'2rem',
                 
 
              }}>
             <Typography
               sx={{
-                fontSize:isSmall ? '1.4rem' : "1.6rem",
-                fontWeight: 700,
+                fontSize:isSmall ? '1.4rem' : "1.7rem",
+                fontWeight: 600,
                 // color: theme.palette.primary.main
                 color:'white',
-                marginBottom:'.5rem'
+                marginBottom:'.5rem',
+                fontFamily:'Montserrat'
               }}
             >
               We Own The Outcome
@@ -116,16 +122,18 @@ const WhyChooseUs = () => {
                 fontWeight: 400,
                 color: "white",
                 textAlign: 'justify',
-                marginBottom:'1rem'
+                marginBottom:'1rem',
+                fontFamily:'Montserrat'
               }}>
             Your foundation for transformation and progress
             </Typography>
             <Typography
               sx={{
                 fontSize: "1rem",
-                fontWeight: 100,
+                fontWeight: 400,
                 color: "white",
-                textAlign: 'justify'
+                textAlign: 'justify',
+                fontFamily:'Montserrat'
               }}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elis
@@ -138,7 +146,7 @@ const WhyChooseUs = () => {
             </Typography>
           </Box>
             </Grid>
-            <Grid item lg={5} md={5} sm={12} xs={12} order={isMedium ? 1 : 2} zIndex={'98'}>
+            <Grid item lg={5} md={12} sm={12} xs={12} order={isTwelve ? 1 : 2} zIndex={'98'}>
             <Box sx={{
                 width:'100%',
                 // display:"flex",
@@ -153,9 +161,9 @@ const WhyChooseUs = () => {
         </Grid>
 
         {/* grid Three  */}
-    <Grid container alignItems={"center"}  marginTop={'2rem'}>
+    <Grid container alignItems={"center"}  marginTop={ isMedium ? '0rem' : '2rem'}>
         {/* item one */}
-    <Grid item lg={5} md={5} sm={12} xs={12} >
+    <Grid item lg={5} md={12} sm={12} xs={12} >
             <Box sx={{
                 width:'100%',
                 // display:"flex",
@@ -165,21 +173,22 @@ const WhyChooseUs = () => {
             <img src="whychooseus3.svg" alt="aboutHero1" width="100%"  />
           </Box>
             </Grid>
-            <Grid item lg={7} md={7} sm={12} xs={12} sx={{
+            <Grid item lg={7} md={12} sm={12} xs={12} sx={{
                 padding:'2rem 0',
             }}>
             <Box sx={{
-                marginLeft: isMedium ?  '0rem' : "-2rem",
+                marginLeft: isTwelve ?  '0rem' : "-2rem",
                 backgroundColor:'#141e28da',padding:'2rem'
 
              }}>
             <Typography
               sx={{
-                fontSize:isSmall ? '1.4rem' : "1.6rem",
-                fontWeight: 700,
+                fontSize:isSmall ? '1.4rem' : "1.7rem",
+                fontWeight: 600,
                 // color: theme.palette.primary.main
                 color:'white',
-                marginBottom:'.5rem'
+                marginBottom:'.5rem',
+                fontFamily:'Montserrat'
               }}
             >
               We Know How To Scale
@@ -189,16 +198,18 @@ const WhyChooseUs = () => {
                 fontWeight: 400,
                 color: "white",
                 textAlign: 'justify',
-                marginBottom:'1rem'
+                marginBottom:'1rem',
+                fontFamily:'Montserrat'
               }}>
             More than technology-a partner invested in your success 
             </Typography>
             <Typography
               sx={{
                 fontSize: "1rem",
-                fontWeight: 100,
+                fontWeight: 400,
                 color: "white",
-                textAlign: 'justify'
+                textAlign: 'justify',
+                fontFamily:'Montserrat'
               }}
             >
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elis

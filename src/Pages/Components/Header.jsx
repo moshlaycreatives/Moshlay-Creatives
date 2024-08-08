@@ -416,6 +416,7 @@ const Header = () => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  const isSeven70 = useMediaQuery ('(max-width:770px)')
 
   const judge_check =
     location.pathname.includes("judge-score-card") ||
@@ -508,7 +509,7 @@ const Header = () => {
       {/* ==============================================NAVBAR=========================== */}
       <Box
         sx={{
-          display: { xs: "none", sm: "flex" },
+          display:  isSeven70 ? 'none' : 'flex',
           justifyContent: "space-between",
           alignItems: "end",
           gap: 3,
@@ -688,7 +689,7 @@ const Header = () => {
       </Box>
 
       {/* <=================================DRAWER ========================== */}
-      <Box sx={{ display: { xs: "flex", sm: "none" } }}>
+      <Box sx={{display:  isSeven70 ? 'flex' : 'none'  }}>
        <Box sx={{display:'flex',
         justifyContent:'space-between',
         alignItems:'center'
