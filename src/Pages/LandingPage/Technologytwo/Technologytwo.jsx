@@ -44,7 +44,7 @@ const Technologytwo = () => {
             <img
                 src="techcenter.svg"
                 alt="Central Image"
-                className="central-image"
+                className="central-image1"
                 style={{ 
                     position: 'absolute', 
                     width: '120px', 
@@ -59,7 +59,7 @@ const Technologytwo = () => {
             {/* Rotating Wrapper */}
 
             
-            <Box className='maindiv' sx={{
+            <Box className='maindiv1' sx={{
                 position: 'relative',
                 width: '100%',
                 display: 'flex',
@@ -79,7 +79,7 @@ const Technologytwo = () => {
                 {positionsBlackCircle.map((pos, index) => (
                     <Box
                         key={index}
-                        className="rotating-wrapper-black"
+                        className="rotating-wrapper-black1"
                         sx={{
                             position: 'absolute',
                             width: `${iconSize}px`,
@@ -92,7 +92,7 @@ const Technologytwo = () => {
                             <img
                                 src={iconUrlsBlackCircle[index]}
                                 alt={`Icon ${index + 190}`}
-                                className="rotating-icon"
+                                className="rotating-iconblack"
                                 style={{
                                     width: '100%',
                                     height: '100%',
@@ -105,7 +105,7 @@ const Technologytwo = () => {
                 {positionsRedCircle.map((pos, index) => (
                     <Box
                         key={index}
-                        className="rotating-wrapper-red"
+                        className="rotating-wrapper-red1"
                         sx={{
                             position: 'absolute',
                             width: `${iconSize}px`,
@@ -118,7 +118,7 @@ const Technologytwo = () => {
                             <img
                                 src={iconUrlsRedCircle[index]}
                                 alt={`Icon ${index + 1}`}
-                                className="rotating-icon"
+                                className="rotating-iconred"
                                 style={{
                                     width: '100%',
                                     height: '100%',
@@ -131,7 +131,7 @@ const Technologytwo = () => {
                 {positionsBlueCircle.map((pos, index) => (
                     <Box
                         key={index}
-                        className="rotating-wrapper-blue"
+                        className="rotating-wrapper-blue1"
                         sx={{
                             position: 'absolute',
                             width: `${iconSize}px`,
@@ -144,7 +144,7 @@ const Technologytwo = () => {
                             <img
                                 src={iconUrlsBlueCircle[index]}
                                 alt={`Icon ${index + 1}`}
-                                className="rotating-icon"
+                                className="rotating-iconblue"
                                 style={{
                                     width: '100%',
                                     height: '100%',

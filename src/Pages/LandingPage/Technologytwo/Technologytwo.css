@@ -1,55 +1,72 @@
-.rotating-wrapper-black,
-.rotating-wrapper-red,
-.rotating-wrapper-blue {
-  animation: rotate-around 13s linear infinite;
+/* Wrapper divs rotate around their center at different speeds */
+.rotating-wrapper-black1,
+.rotating-wrapper-red1,
+.rotating-wrapper-blue1 {
   position: absolute;
   transform-origin: center center;
 }
 
-.rotating-icon {
-  animation: rotate-on-its-own 40s linear infinite;
+/* Adjust timing for each div as needed */
+.rotating-wrapper-black1 {
+  animation: rotate-around1 60s linear infinite;
 }
 
-@keyframes rotate-around {
+.rotating-wrapper-red1 {
+  animation: rotate-around1 150s linear infinite;
+}
+
+.rotating-wrapper-blue1 {
+  animation: rotate-around1 100s linear infinite;
+}
+
+/* Icons rotate in the opposite direction to the parent div to counteract its rotation */
+.rotating-iconblack {
+  animation: icon-counter-rotate1 30s linear infinite;
+}
+
+.rotating-iconred {
+  animation: icon-counter-rotate1 23s linear infinite;
+}
+
+.rotating-iconblue {
+  animation: icon-counter-rotate1 25s linear infinite;
+}
+
+/* Keyframe for rotating divs clockwise */
+@keyframes rotate-around1 {
   from {
-    transform: rotate(360deg);
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
   }
   to {
-    transform: rotate(0deg);
+    transform: rotate(-360deg); /* Complete rotation to 360 degrees */
   }
 }
 
-@keyframes rotate-on-its-own {
+/* Keyframe for icons rotating counter-clockwise */
+@keyframes icon-counter-rotate1 {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(-360deg); /* Rotate counter-clockwise */
   }
 }
 
-.maindiv {
+/* Main div rotates around its axis (if needed) */
+.maindiv1 {
   animation: rotate-around-axis 20s linear infinite;
-  /* width:10rem; */
-  /* background-color: aqua; */
-  /* padding-left: 100rem; */
 }
 
 @keyframes rotate-around-axis {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0deg); /* Start rotation from 0 degrees */
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Complete rotation to 360 degrees */
   }
 }
 
 /* Ensure central images remain static */
-.central-image {
+.central-image1 {
   transform: translate(-50%, -50%);
 }
-
-
-
-
-
