@@ -521,7 +521,8 @@ const Header2 = () => {
           <img
             src="logo.svg"
             alt=""
-            style={{ maxWidth: isMedium ? "80px" : "100px", height: "auto" }}
+            style={{ maxWidth: isMedium ? "80px" : "100px", height: "auto", cursor:'pointer' }}
+            onClick={()=>{navigate("/")}}
           />
         </Box>
         <Box

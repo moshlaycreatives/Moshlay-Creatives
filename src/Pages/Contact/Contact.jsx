@@ -4,10 +4,15 @@ import ContactHero from './ContactHero/ContactHero'
 import ContactForm from './ContactForm/ContactForm'
 import Footer from '../Components/Footer/Footer'
 import Header2 from '../Components/Header2'
+import { useLocation } from 'react-router-dom'
 
 const Contact = () => {
   const [isScroll, setIsScroll] = useState(false);
+  const location = useLocation()
 
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[location])
 
   useEffect(()=>{
    const handleScroll =()=>{

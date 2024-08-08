@@ -15,12 +15,18 @@ import Header from "../Components/Header";
 import { useEffect, useState } from "react";
 import Technologytwo from "./Technologytwo/Technologytwo";
 import Header2 from "../Components/Header2";
+import { useLocation } from "react-router-dom";
 
 const Landing = () => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
   const [isSticky, setIsSticky] = useState(false);
+  const location = useLocation()
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[location])
 
   useEffect(() => {
     const handleScroll = () => {

@@ -9,10 +9,15 @@ import ContactUs from '../LandingPage/ContactUs/ContactUs'
 import Footer from '../Components/Footer/Footer'
 import FaqsPage from '../LandingPage/Faqs/faqsPage'
 import Header2 from '../Components/Header2'
+import { useLocation } from 'react-router-dom'
 
 const About = () => {
   const [isScroll, setIsScroll] = useState(false);
+  const location = useLocation()
 
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[location])
 
   useEffect(()=>{
    const handleScroll =()=>{
@@ -40,7 +45,7 @@ const About = () => {
         transition: 'transform 1s,  opacity 0.5s, background-color 0.5s',
 
         position:isScroll ? 'sticky' : 'none',
-        zIndex:1400,
+        zIndex:1000,
         top:0
       }}>
       <Header2/>
