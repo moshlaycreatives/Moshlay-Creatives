@@ -417,6 +417,7 @@ const Header2 = () => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  const isSeven70 = useMediaQuery ('(max-width:770px)')
 
   const judge_check =
     location.pathname.includes("judge-score-card") ||
@@ -509,7 +510,7 @@ const Header2 = () => {
       {/* ==============================================NAVBAR=========================== */}
       <Box
         sx={{
-          display: { xs: "none", sm: "flex" },
+          display:  isSeven70 ? 'none' : 'flex' ,
           justifyContent: "space-between",
           alignItems: "center",
           gap: 3,
@@ -693,16 +694,17 @@ const Header2 = () => {
       </Box>
 
       {/* <=================================DRAWER ========================== */}
-      <Box sx={{ display: { xs: "flex", sm: "none"  } }}>
+      <Box sx={{ display:  isSeven70 ? 'flex' : 'none', width:'100%'}}>
        <Box sx={{
         display:'flex',
         justifyContent:'space-between',
-        alignItems:'center'
+        alignItems:'center',
+        width:'100%'
                }}>
         <Box width={'50%'} sx={{display:'flex' , justifyContent:'start'}}>
           <img src="logo.svg" alt=""  width={'50%'}/>
         </Box>
-        <IconButton onClick={handleDrawerOpen} sx={{ padding: "10px", color: "white",
+        <IconButton onClick={handleDrawerOpen} sx={{ padding: "10px", color: "white", textAlign:'end',
           display: drawerOpen ? 'none' : 'flex'
          }}>
           <MenuIcon />
