@@ -539,7 +539,8 @@ const Header2 = () => {
           <Box onClick={handleAnchorElClickSolution} sx={{
             display:'flex',
             justifyContent:'center',
-            alignItems:'center'
+            alignItems:'center',
+            cursor:'pointer'
           }} >
 
 <Typography
@@ -548,6 +549,13 @@ const Header2 = () => {
             aria-expanded={openMenuSolution ? "true" : undefined}
             onClick={handleAnchorElClickSolution}
             style={{ cursor: "pointer", fontSize: isMedium ? ".8rem" : "1rem" }}
+            sx={{
+              color: 'white',
+              transition: 'color .5s',
+              '&:hover': {
+                color: theme => theme.palette.primary.main, 
+              },
+            }}
           >
             Digital Solution
           </Typography>
@@ -595,7 +603,8 @@ const Header2 = () => {
           <Box onClick={handleAnchorElClickMarketing} sx={{
             display:'flex',
             justifyContent:'center',
-            alignItems:'center'
+            alignItems:'center',
+            cursor:'pointer'
           }} >
             <Typography
             aria-controls="digital-marketing"
@@ -603,6 +612,13 @@ const Header2 = () => {
             aria-expanded={openMenuMarketing ? "true" : undefined}
             onClick={handleAnchorElClickMarketing}
             style={{ cursor: "pointer", fontSize: isMedium ? ".8rem" : "1rem" }}
+            sx={{
+              color: 'white',
+              transition: 'color .5s',
+              '&:hover': {
+                color: theme => theme.palette.primary.main, 
+              },
+            }}
           >
             Digital Marketing
           </Typography>
@@ -633,14 +649,14 @@ const Header2 = () => {
           >
             <MenuItem
               onClick={() =>
-                handleAnchorClose(setAnchorMarketingEl, "/about-section")
+                handleAnchorClose(setAnchorMarketingEl, "/about")
               }
             >
               Example 1
             </MenuItem>
             <MenuItem
               onClick={() =>
-                handleAnchorClose(setAnchorMarketingEl, "/contact-section")
+                handleAnchorClose(setAnchorMarketingEl, "/contact")
               }
             >
               Example 2
@@ -649,32 +665,47 @@ const Header2 = () => {
 
           <Typography
             marginRight={".5rem"}
-            onClick={() => handleClickMenu("/contact-section")}
-            sx={{ cursor: "pointer", fontSize: isMedium ? ".8rem" : "1rem" }}
+            onClick={() => handleClickMenu("/contact")}
+            sx={{ cursor: "pointer", fontSize: isMedium ? ".8rem" : "1rem",
+              color: 'white',
+              transition: 'color .5s',
+              '&:hover': {
+                color: theme => theme.palette.primary.main, } 
+             }}
           >
             Company
           </Typography>
           <Typography
             marginRight={".5rem"}
-            onClick={() => handleClickMenu("/contact-section")}
-            sx={{ cursor: "pointer", fontSize: isMedium ? ".8rem" : "1rem" }}
+            onClick={() => handleClickMenu("/blogs")}
+            sx={{ cursor: "pointer", fontSize: isMedium ? ".8rem" : "1rem",
+              color: 'white',
+              transition: 'color .5s',
+              '&:hover': {
+                color: theme => theme.palette.primary.main, } 
+             }}
           >
-            Blog
+            Blogs
           </Typography>
           <Typography
             marginRight={".5rem"}
-            onClick={() => handleClickMenu("/contact-section")}
-            sx={{ cursor: "pointer", fontSize: isMedium ? ".8rem" : "1rem" }}
+            onClick={() => handleClickMenu("/blogs")}
+            sx={{ cursor: "pointer", fontSize: isMedium ? ".8rem" : "1rem",
+              color: 'white',
+              transition: 'color .5s',
+              '&:hover': {
+                color: theme => theme.palette.primary.main, } 
+             }}
           >
             Careers
           </Typography>
 
-          <Typography
+          {/* <Typography
             onClick={() => handleClickMenu("/contact-section")}
             sx={{ cursor: "pointer", fontSize: isMedium ? ".8rem" : "1rem" }}
           >
             Contact
-          </Typography>
+          </Typography> */}
         </Box>
 
         <Box
@@ -686,6 +717,7 @@ const Header2 = () => {
             cursor: "pointer",
             // marginBottom: ".5rem",
           }}
+          onClick={() => handleClickMenu("/contact")}
         >
           <Button sx={{ fontSize: isMedium ? ".8rem" : ".9rem", alignSelf:'start' }}>
             <MdOutlineMessage style={{ marginRight: ".5rem" }} /> contact
@@ -723,7 +755,8 @@ const Header2 = () => {
               <Box onClick={handleAnchorElClickSolution} sx={{
             display:'flex',
             justifyContent:'center',
-            alignItems:'center'
+            alignItems:'center',
+            cursor:'pointer'
           }} >
 
 <Typography
@@ -756,14 +789,14 @@ const Header2 = () => {
                 >
                   <MenuItem
                     onClick={() =>
-                      handleAnchorClose(setAnchorSolutionEl, "/about-section")
+                      handleAnchorClose(setAnchorSolutionEl, "/about")
                     }
                   >
                     Example 1
                   </MenuItem>
                   <MenuItem
                     onClick={() =>
-                      handleAnchorClose(setAnchorSolutionEl, "/contact-section")
+                      handleAnchorClose(setAnchorSolutionEl, "/contact")
                     }
                   >
                     Example 2
@@ -781,7 +814,8 @@ const Header2 = () => {
               <Box onClick={handleAnchorElClickSolution} sx={{
             display:'flex',
             justifyContent:'center',
-            alignItems:'center'
+            alignItems:'center',
+            cursor:'pointer'
           }} >
 
 <Typography
@@ -813,14 +847,14 @@ const Header2 = () => {
                 >
                   <MenuItem
                     onClick={() =>
-                      handleAnchorClose(setAnchorMarketingEl, "/about-section")
+                      handleAnchorClose(setAnchorMarketingEl, "/about")
                     }
                   >
                     Example 1
                   </MenuItem>
                   <MenuItem
                     onClick={() =>
-                      handleAnchorClose(setAnchorMarketingEl, "/contact-section")
+                      handleAnchorClose(setAnchorMarketingEl, "/contact")
                     }
                   >
                     Example 2
@@ -833,7 +867,7 @@ const Header2 = () => {
                 }}/>
 
               <Typography
-                onClick={() => handleClickMenu("/contact-section")}
+                onClick={() => handleClickMenu("/contact")}
                 cursor={"pointer"}
                 marginBottom={'.5rem'}
                 marginTop={'.5rem'}
@@ -847,12 +881,12 @@ const Header2 = () => {
                 backgroundColor:theme.palette.primary.main
                 }}/>
               <Typography
-                onClick={() => handleClickMenu("/contact-section")}
+                onClick={() => handleClickMenu("/blogs")}
                 cursor={"pointer"}
                 marginBottom={'.5rem'}
                 marginTop={'.5rem'}
               >
-                Blog
+                Blogs
               </Typography>
               <Divider sx={{
                   width:'100%',
@@ -861,7 +895,7 @@ const Header2 = () => {
                 backgroundColor:theme.palette.primary.main
                 }}/>
               <Typography
-                onClick={() => handleClickMenu("/contact-section")}
+                onClick={() => handleClickMenu("/blogs")}
                 cursor={"pointer"}
                 marginBottom={'.5rem'}
                 marginTop={'.5rem'}
@@ -874,14 +908,16 @@ const Header2 = () => {
                   cursor:'pointer',
                 backgroundColor:theme.palette.primary.main
                 }}/>
+
               <Typography
-                onClick={() => handleClickMenu("/contact-section")}
+                onClick={() => handleClickMenu("/contact")}
                 cursor={"pointer"}
                 marginBottom={'.5rem'}
                 marginTop={'.5rem'}
               >
                 Contact
               </Typography>
+
               <Divider sx={{
                   width:'100%',
                   marginTop:'.5rem',

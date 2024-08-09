@@ -20,6 +20,7 @@ import ComingSoon from "./components/ComingSoon";
 import About from "./Pages/About/About";
 import Contact from "./Pages/Contact/Contact";
 import Technologytwo from "./Pages/LandingPage/Technologytwo/Technologytwo";
+import BlogsMain from "./Pages/Blogs/Blogsmain";
 
 
 export default function Router() {
@@ -51,12 +52,16 @@ console.log(isAuthenticated, 'hgyfuhhj')
         element : <Landing /> ,
        },
 {
-       path:'/about-section',
+       path:'/about',
        element : <About /> ,
       },
       {
-        path:'/contact-section',
+        path:'/contact',
         element : <Contact /> ,
+       },
+       {
+        path:'/blogs',
+        element : <BlogsMain /> ,
        },
     // {
     //     path:'/',

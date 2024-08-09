@@ -25,13 +25,27 @@ const KnowUs = () => {
                 justifyContent: isMedium ? 'center' : 'start',
                 width:'100%'
             }}>
-            <Box  sx={{
-               width:'100%',
-               display:'flex',
-               justifyContent:isMedium ? 'center' : 'start'
-               }}>
-            <img src="knowus.svg" alt="" width={ isMedium ? '70%' : isEleven50 ? '100%' : isLarge ? '80%' : '70%' } />
-            </Box>
+
+
+<Box
+      sx={{
+        width: '100%',
+        display: 'flex',
+        justifyContent: isMedium ? 'center' : 'start',
+        '& img': {
+          width: isMedium ? '70%' : isEleven50 ? '100%' : isLarge ? '80%' : '70%',
+          animation: 'rotation 10s infinite linear', // Apply animation
+        },
+        '@keyframes rotation': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+      }}
+    >
+      <img src="knowus.svg" alt="description" />
+    </Box>
+
+
           </Grid>
           <Grid item lg={6} md={6} sm={12} xs={12} order={isMedium ? 1 : 2}>
             <Box>

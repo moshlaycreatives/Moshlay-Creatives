@@ -42,12 +42,12 @@ function Footer() {
             <h2>Quick Links</h2>
             <ul className='footer-links'>
                 <li onClick={()=>handleQuickLinks('/') } >Home</li>
-                <li onClick={()=>handleQuickLinks('/contact-section') }>Digital Solution</li>
-                <li onClick={()=>handleQuickLinks('/about-section') }>Digital Marketing</li>
-                <li onClick={()=>handleQuickLinks('/about-section') }>Company</li>
-                <li onClick={()=>handleQuickLinks('/contact-section') }>Blog</li>
-                <li onClick={()=>handleQuickLinks('/about-section') }>Career</li>
-                <li onClick={()=>handleQuickLinks('/contact-section') }>Contact</li>
+                <li onClick={()=>handleQuickLinks('/contact') }>Digital Solution</li>
+                <li onClick={()=>handleQuickLinks('/about') }>Digital Marketing</li>
+                <li onClick={()=>handleQuickLinks('/about') }>Company</li>
+                <li onClick={()=>handleQuickLinks('/blogs') }>Blogs</li>
+                <li onClick={()=>handleQuickLinks('/about') }>Career</li>
+                <li onClick={()=>handleQuickLinks('/contact') }>Contact</li>
             </ul>
         </div>
         <div className='footer-contact-info'>
@@ -56,7 +56,8 @@ function Footer() {
             <a href=''> <i>   <IoLocationOutline />Johar Town,Lahore</i></a>
             <a href=''> <i>   <MdOutlineEmail /> abc@gmail.com</i></a>
             <a href=''> <i>   <FaPhoneVolume /> +923076589234</i></a>
-            </div>
+            </div >
+
             <div className='footer-social-btn'>
             <a href="https://www.facebook.com/MoshlayCreatives"><AiOutlineFacebook  className='footer-social-links'/></a>
             <a href="https://www.linkedin.com/company/moshlaycreatives/?viewAsMember=true"><FaInstagram  className='footer-social-links' /></a>

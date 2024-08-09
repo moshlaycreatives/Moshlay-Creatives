@@ -1,7 +1,9 @@
 import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
+import BlogsCard from "../../LandingPage/Blogs/blogsCard";
 
-const ContactHero = () => {
+
+const BlogsHero = () => {
 
     const theme = useTheme();
     const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
@@ -40,7 +42,7 @@ const ContactHero = () => {
               fontFamily: 'Montserrat',
             }}
           >
-            Get In Touch
+            Blogs
           </Typography>
           <Typography
             sx={{
@@ -57,12 +59,18 @@ const ContactHero = () => {
             magna. porttitor Lorem ipsum dolor sit amet, consectetur adipiscing
             elit.
           </Typography>
-          {/* <Box>
-            <img src="getintouch.svg" alt="" />
+
+          {/* <Box sx={{
+            display:'flex',
+            flexDirection:'column',
+          }}>
+            <img src="Frame1.svg" alt=""  style={{marginBottom:'-1.2rem'}}/>
+            <img src="Frame2.svg" alt="" style={{marginBottom:'-1.2rem'}}/>
+            <img src="Frame3.svg" alt="" />
           </Box> */}
 
-          {/* =================================ADD ANIMATION ================================ */}
-          <Box
+
+<Box
       sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -123,13 +131,18 @@ const ContactHero = () => {
         `}
       </style>
     </Box>
-
-
+          
           </Box>
+          <Box sx={{
+            marginTop:'10rem'
+          }}>
+          <BlogsCard/>
+          </Box>
+
         </Box>
       </Box>
     </>
   );
 };
 
-export default ContactHero;
+export default BlogsHero;

@@ -82,6 +82,11 @@ font-family: 'Montserrat';
     font-weight: 400;
     font-family: 'Montserrat';
     cursor: pointer;
+    transition: .5s ;
+}
+.footer-links li:hover{
+    color: #98c447;
+    /* font-weight: 450; */
 }
 
 .footer-contact-info{
@@ -115,13 +120,20 @@ font-family: 'Montserrat';
 text-decoration: none;
 font-family: 'Montserrat';
 }
+
+
 .footer-contact-info-links i{
+    transition: .5s;
     font-size: 1.1rem;
     font-weight: 400;
     color: white;
     text-decoration: none;
     list-style: none ;
     font-family: 'Montserrat';
+}
+
+.footer-contact-info-links i:hover{
+    color: #98c447;
 }
 .footer-social-btn{
     display: flex;
@@ -130,6 +142,10 @@ font-family: 'Montserrat';
 .footer-social-btn a{
     color: white;
     font-family: 'Montserrat';
+    transition: .5s;
+}
+.footer-social-btn a:hover{
+    color: #98c447;
 }
 .footer-social-links{
     font-size:1.9rem;
