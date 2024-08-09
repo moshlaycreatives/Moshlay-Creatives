@@ -111,12 +111,18 @@ const AboutUs = () => {
                     }} onClick={()=>handleSeeMore('/comming-soon')}> Request for Quote 
                     </Button>
 
-                    <Button variant='contained'
+                    <Button variant=''
                     sx={{
                         padding:'.3rem 1rem',    
                         backgroundColor:'black',
                         color:theme.palette.primary.main,
                         borderRadius:'0',
+                        border:'none',
+                        outline:'none',
+                        '&:hover' : {
+                            backgroundColor:'black',
+                        color:theme.palette.primary.main,
+                        }
                     }} onClick={()=>handleSeeMore('/comming-soon')}>
                     {/* <ArrowRightAltIcon  style={{fontSize:'2.2rem'}}/> */}
                     <IoIosArrowRoundForward  style={{fontSize:'2.5rem'}} />

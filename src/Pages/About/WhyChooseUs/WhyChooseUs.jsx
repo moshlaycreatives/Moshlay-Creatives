@@ -46,7 +46,7 @@ const WhyChooseUs = () => {
             }}>
             <Box sx={{
                 marginLeft: isTwelve ?  '0rem' : "-2rem",
-                backgroundColor:'#141e28da',padding:'2rem'
+                backgroundColor:'#141e28f6',padding:'2rem'
 
              }}>
             <Typography
@@ -101,7 +101,7 @@ const WhyChooseUs = () => {
             }}>
             <Box sx={{
                 marginRight: isTwelve ?  '0rem' : "-2rem",
-                backgroundColor:'#141e28da',padding:'2rem',
+                backgroundColor:'#141e28f6',padding:'2rem',
                 
 
              }}>
@@ -178,7 +178,7 @@ const WhyChooseUs = () => {
             }}>
             <Box sx={{
                 marginLeft: isTwelve ?  '0rem' : "-2rem",
-                backgroundColor:'#141e28da',padding:'2rem'
+                backgroundColor:'#141e28f6',padding:'2rem'
 
              }}>
             <Typography

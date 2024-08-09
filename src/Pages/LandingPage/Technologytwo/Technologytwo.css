@@ -20,15 +20,15 @@
 }
 
 /* Icons rotate in the opposite direction to the parent div to counteract its rotation */
-.rotating-iconblack {
+.rotating-iconblack1 {
   animation: icon-counter-rotate1 30s linear infinite;
 }
 
-.rotating-iconred {
-  animation: icon-counter-rotate1 23s linear infinite;
+.rotating-iconred1 {
+  animation: icon-counter-rotate1 23.2s linear infinite;
 }
 
-.rotating-iconblue {
+.rotating-iconblue1 {
   animation: icon-counter-rotate1 25s linear infinite;
 }
 

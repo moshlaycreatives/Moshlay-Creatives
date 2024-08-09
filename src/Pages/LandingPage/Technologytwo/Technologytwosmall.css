@@ -21,11 +21,11 @@
 
 /* Icons rotate in the opposite direction to the parent div to counteract its rotation */
 .rotating-iconblack {
-  animation: icon-counter-rotate 30s linear infinite;
+  animation: icon-counter-rotate 29s linear infinite;
 }
 
 .rotating-iconred {
-  animation: icon-counter-rotate 23s linear infinite;
+  animation: icon-counter-rotate 23.2s linear infinite;
 }
 
 .rotating-iconblue {

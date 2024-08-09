@@ -70,6 +70,7 @@ const ContactForm = () => {
                 MTV ax quiz prog. Junk MTV quiz graced by fox whelps Bawds jog,
                 whelps Bawds jog.
               </Typography>
+              <br />
               <Box sx={{
                 display:'flex',
                 // justifyContent:'space-between',
@@ -80,6 +81,7 @@ const ContactForm = () => {
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',
                     padding:'.3rem .2rem 0rem .2rem',
+                    borderRadius:'4px',
                     fontSize:'1rem', fontFamily: 'Montserrat',
                 }}>
                 <FaFacebookF />
@@ -91,6 +93,7 @@ const ContactForm = () => {
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',
                     padding:'.3rem .2rem 0rem .2rem',
+                    borderRadius:'4px',
                     fontSize:'1rem', fontFamily: 'Montserrat',
                 }}>
                 <FaInstagram />
@@ -102,6 +105,7 @@ const ContactForm = () => {
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',
                     padding:'.3rem .2rem 0rem .2rem',
+                    borderRadius:'4px',
                     fontSize:'1rem', fontFamily: 'Montserrat',
                 }}>
                 <FaXTwitter />
@@ -113,12 +117,14 @@ const ContactForm = () => {
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',
                     padding:'.3rem .2rem 0rem .2rem',
+                    borderRadius:'4px',
                     fontSize:'1rem', fontFamily: 'Montserrat',
                 }}>
                 <FaThreads />
                 </Typography>
                     </a>
               </Box>
+
             </Box>
           </Grid>
           <Grid item lg={7} md={7} sm={12} xs={12} >

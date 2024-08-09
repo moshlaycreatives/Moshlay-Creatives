@@ -92,7 +92,7 @@ const Technologytwo = () => {
                             <img
                                 src={iconUrlsBlackCircle[index]}
                                 alt={`Icon ${index + 190}`}
-                                className="rotating-iconblack"
+                                className="rotating-iconblack1"
                                 style={{
                                     width: '100%',
                                     height: '100%',
@@ -118,7 +118,7 @@ const Technologytwo = () => {
                             <img
                                 src={iconUrlsRedCircle[index]}
                                 alt={`Icon ${index + 1}`}
-                                className="rotating-iconred"
+                                className="rotating-iconred1"
                                 style={{
                                     width: '100%',
                                     height: '100%',
@@ -144,7 +144,7 @@ const Technologytwo = () => {
                             <img
                                 src={iconUrlsBlueCircle[index]}
                                 alt={`Icon ${index + 1}`}
-                                className="rotating-iconblue"
+                                className="rotating-iconblue1"
                                 style={{
                                     width: '100%',
                                     height: '100%',
