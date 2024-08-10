@@ -3,7 +3,7 @@ import { Typography, Container, Grid, Box, Button, useMediaQuery, useTheme } fro
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import Page from '../components/Page/Page'
 // import vido  from '../../src/assets/bnar.mp4'
-import BackgroundVideo from './BackgroundVideo';
+// import BackgroundVideo from './BackgroundVideo';
 
 const ComingSoon = () => {
 
@@ -58,12 +58,14 @@ const ComingSoon = () => {
 
   
   return (
-    <Page title="Cali Origins">
+    <Page title="Moshlay Creatives">
+      {/* <BackgroundVideo/> */}
+
+
       {/* <Box sx={{ width: '100%', height: '100%', overflow: 'hidden' }}>
       <video src={vido} autoPlay loop muted playsInline style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
     </Box> */}
 
-<BackgroundVideo/>
 
 
 
@@ -74,14 +76,14 @@ const ComingSoon = () => {
       <video src={vido} autoPlay="true" width={'100%'} height={'100%'} />
       </Box> */}
 
-    {/* <Box>
+    <Box>
       {isMedium ? (
         <Box sx={{ textAlign: 'center', padding: '2rem' }}>
           <Box sx={{ marginBottom: '2rem', marginTop: '-1rem' }}>
             <img src="logo2.png" alt="Logo" width="50%" />
           </Box>
           <Box sx={{ marginBottom: '-1rem', marginTop: '-2.5rem' }}>
-            <img src="comingSoon2.gif" alt="Coming Soon" width="100%" zIndex='10000' />
+            <img src="comingSoon3.gif" alt="Coming Soon" width="100%" zIndex='10000' />
           </Box>
           <Box >
             <Typography sx={{ fontSize: '2.5rem', fontWeight: 700, color: '#535761' }}>
@@ -111,10 +113,10 @@ const ComingSoon = () => {
                 <img src="logo2.png" alt="Logo" width="100%" zIndex='10000' />
               </Box>
               <Box>
-                <Typography sx={{ fontSize: '3rem', fontWeight: 600, color: '#535761', textAlign: "start" }}>
+                <Typography sx={{ fontSize: '3rem', fontWeight: 700, color: '#535761', textAlign: "start" }}>
                   WEBSITE
                 </Typography>
-                <Typography sx={{ fontSize: '3rem', fontWeight: 600, textAlign: 'center', marginBottom: '1rem', color: '#81ba04' }}>
+                <Typography sx={{ fontSize: '3rem', fontWeight: 700, textAlign: 'center', marginBottom: '1rem', marginTop:'-1rem', color: '#81ba04' }}>
                   UNDER CONSTRUCTION
                 </Typography>
               </Box>
@@ -133,12 +135,12 @@ const ComingSoon = () => {
           </Grid>
           <Grid item lg={6} md={6} sm={12} xs={12}>
             <Box sx={{ width: '100%', marginTop: '-5rem' }}>
-              <img src="comingSoon2.gif" alt="Coming Soon" width="100%" />
+              <img src="comingSoon3.gif" alt="Coming Soon" width="100%" />
             </Box>
           </Grid>
         </Grid>
       )}
-    </Box> */}
+    </Box>
     </Page>
   );
 };
