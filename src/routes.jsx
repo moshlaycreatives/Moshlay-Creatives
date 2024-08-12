@@ -22,6 +22,7 @@ import Contact from "./Pages/Contact/Contact";
 import Technologytwo from "./Pages/LandingPage/Technologytwo/Technologytwo";
 import BlogsMain from "./Pages/Blogs/Blogsmain";
 import BlogsArticleMain from "./Pages/Blogs/components/BlogsArticle/BlogArticleMain";
+import CareersMain from "./Pages/Careers/CareersMain";
 
 
 export default function Router() {
@@ -68,6 +69,10 @@ console.log(isAuthenticated, 'hgyfuhhj')
         path:'/blogs-article',
         element : <BlogsArticleMain /> ,
        },
+    {
+       path:'/careers',
+       element : <CareersMain /> ,
+      },
     // {
     //     path:'/',
     //     element : <ComingSoon /> ,
