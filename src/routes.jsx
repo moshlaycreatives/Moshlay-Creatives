@@ -23,7 +23,7 @@ import Technologytwo from "./Pages/LandingPage/Technologytwo/Technologytwo";
 import BlogsMain from "./Pages/Blogs/Blogsmain";
 import BlogsArticleMain from "./Pages/Blogs/components/BlogsArticle/BlogArticleMain";
 import CareersMain from "./Pages/Careers/CareersMain";
-
+import CareersJobDetails from "./Pages/Careers/components/CareersJobDetails/CareersJobDetails";
 
 export default function Router() {
 
@@ -73,6 +73,10 @@ console.log(isAuthenticated, 'hgyfuhhj')
        path:'/careers',
        element : <CareersMain /> ,
       },
+      {
+         path:'/careers-job-details',
+         element : <CareersJobDetails /> ,
+        },
     // {
     //     path:'/',
     //     element : <ComingSoon /> ,
