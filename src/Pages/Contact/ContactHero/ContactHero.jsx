@@ -35,7 +35,7 @@ const ContactHero = () => {
             sx={{
               fontSize: isSmall ? '2rem' : isMedium ? '3.5rem' : "5rem",
               fontWeight: 600,
-              color: "white",
+              color: theme.palette.primary.main,
               textAlign:'center',
               fontFamily: 'Montserrat',
             }}
