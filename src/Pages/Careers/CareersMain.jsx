@@ -5,6 +5,7 @@ import Footer from '../Components/Footer/Footer'
 import Header2 from '../Components/Header2'
 import CareersHero from './components/CareersHero'
 import CareersJob from './components/CareersJob'
+import CareersJoinUs from './components/CareersJoinUs'
 
 
 const CareersMain = () => {
@@ -47,6 +48,7 @@ const CareersMain = () => {
       </Box>      
         <CareersHero/>
         <CareersJob/>
+        <CareersJoinUs/>
         <Footer/>
     </Box>
     </>
