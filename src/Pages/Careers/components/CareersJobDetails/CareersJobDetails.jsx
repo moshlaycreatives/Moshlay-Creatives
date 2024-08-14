@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom'
 import CareersJoinUs from '../CareersJoinUs'
 import Footer from '../../../Components/Footer/Footer'
 import Header2 from '../../../Components/Header2'
+import CareersJobDetailsHero from './CareersJobDetailsHero'
 
 
 
@@ -47,7 +48,8 @@ const CareersJobDetails = () => {
       </Box>      
         {/* <CareersHero/> */}
         {/* <CareersJob/> */}
-        <CareersJoinUs/>
+        {/* <CareersJoinUs/> */}
+        <CareersJobDetailsHero/>
         <Footer/>
     </Box>
     </>

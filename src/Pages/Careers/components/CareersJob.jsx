@@ -3,14 +3,18 @@ import { Box, Button, Card, Grid, IconButton, Typography, useTheme , useMediaQue
 import { FiShoppingBag } from "react-icons/fi";
 import { TbCurrentLocation } from "react-icons/tb";
 import React from 'react'
+import { useNavigate } from 'react-router';
 
 
 
 
 const CareersJob = () => {
   const theme = useTheme();
+  const navigate = useNavigate();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+
+ 
 
     const listData = [
       {jobtitle:'Frontend Developer - Full Time',
@@ -74,13 +78,13 @@ const CareersJob = () => {
                 fontSize:'1.1rem', 
                 fontWeight:600,
                 color:theme.palette.primary.main,
-                textAlign:'center'
+                textAlign:'center',fontFamily: 'Montserrat',
             }}> Our Jobs</Typography>
               <Typography sx={{
                 fontSize: isSmall ? '1.4rem' : isMedium ? '2rem' : '2.5rem', 
                 fontWeight:600, 
                 color:'white',
-                textAlign:'center'
+                textAlign:'center',fontFamily: 'Montserrat',
             }}> 
             Current Available Positions at Moshlay Creatives
             </Typography>
@@ -108,7 +112,8 @@ const CareersJob = () => {
                   </IconButton>
                   <Typography sx={{fontSize: isSmall ? '.8rem' : '1rem',
                      color:'white',
-                      fontWeight:'400'}}>
+                      fontWeight:'400',fontFamily: 'Montserrat',
+                      }}>
                     {row.jobtitle}
                   </Typography>
                 </Box>
@@ -118,7 +123,7 @@ const CareersJob = () => {
                   fontWeight:400,
                    color:'white', borderRadius:'20px',
                     padding: isSmall ? '0.5rem 0.8rem' : '.8rem 1.5rem',
-                    textTransform:'none'
+                    textTransform:'none',fontFamily: 'Montserrat',
                 }}>
                   {row.jobpost}
                 </Button>
@@ -127,7 +132,8 @@ const CareersJob = () => {
               <Typography sx={{fontSize: isSmall ? '.8rem' : '1rem', 
                 color:'white',
                  fontWeight:'600',
-                  marginLeft:'.7rem'}}>
+                  marginLeft:'.7rem',fontFamily: 'Montserrat',
+                  }}>
                  {row.jobprimayname}
                 </Typography>
                 <br />
@@ -138,7 +144,7 @@ const CareersJob = () => {
               <TbCurrentLocation color={'white'} fontSize={isSmall ? '1.2rem' : '1.5rem'}/>
                   </IconButton>
                   <Typography sx={{fontSize: isSmall ? '.8rem' : '1rem',
-                     color:'white', fontWeight:'400', marginRight:'1rem'}}>
+                     color:'white', fontWeight:'400', marginRight:'1rem',fontFamily: 'Montserrat',}}>
                    {row.jobloc}
                   </Typography>
               </Box>
@@ -148,6 +154,7 @@ const CareersJob = () => {
               <FiShoppingBag color={'white'} fontSize={isSmall ? '1.2rem' : '1.5rem'}/>
                   </IconButton>
                   <Typography sx={{fontSize: isSmall ? '.8rem' : '1rem',
+                  fontFamily: 'Montserrat',
                      color:'white', fontWeight:'400'}}>
                     {row.jobyear}
                   </Typography>
@@ -160,8 +167,10 @@ const CareersJob = () => {
                 fontSize: isSmall ?  '0.8rem' : '1rem', 
                 fontFamily:500,
                 padding:'.8rem 2rem',
-                textTransform:'none'
-              }}>
+                textTransform:'none',fontFamily: 'Montserrat',
+              }}
+              onClick={()=>navigate('/careers-job-details')}
+              >
                 Apply Now
               </Button>
   
@@ -183,4 +192,8 @@ const CareersJob = () => {
   )
 }
 
-export default CareersJob
+export default CareersJob;
+
+
+
+// #13161c
