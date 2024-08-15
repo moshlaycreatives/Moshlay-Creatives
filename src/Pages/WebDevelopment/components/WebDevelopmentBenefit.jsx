@@ -66,7 +66,7 @@ const WebDevelopmentBenefit = () => {
             }}
           >
             <Tab
-              icon={<FaCircle />} // Add icon before text
+              icon={<FaCircle  className='icon' color={theme.palette.primary.main}/>} // Add icon before text
               iconPosition="start" // Position the icon at the start
               label="Online Presence"
               {...a11yProps(0)}
@@ -79,12 +79,17 @@ const WebDevelopmentBenefit = () => {
                 width: '100%', // Custom width
                 height: '3rem', // Custom height
                 borderRadius: '5px', // Border radius
+                '&.Mui-selected .icon': {
+                  color: 'white', // Text color when selected
+                },
                 '&.Mui-selected': {
                   backgroundColor: theme.palette.primary.main, // Background color when selected
                   color: 'white', // Text color when selected
+                  
                 },
                 '&:hover': {
                   backgroundColor:theme.palette.primary.main, // Background color on hover
+                  
                 },
               }}
             />
