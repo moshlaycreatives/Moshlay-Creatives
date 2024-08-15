@@ -61,7 +61,7 @@ const ReviewsCarousel = () => {
             <Slider {...settings}>
                 {cardData.map((val,ind)=>(
                     <Box key={ind} sx={{
-                        backgroundColor:'#18232d', color:'white' , padding:'1.5rem',
+                        backgroundColor:'#1c2844', color:'white' , padding:'1.5rem',
                         textAlign:'center',
                         borderRadius:'10px'
                     }}>

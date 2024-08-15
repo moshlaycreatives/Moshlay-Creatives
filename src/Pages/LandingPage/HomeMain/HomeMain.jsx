@@ -20,7 +20,7 @@ const HomeMain = () => {
         width:'100%',
         height:'auto',
         // padding:'2%  10%',
-        backgroundImage: 'linear-gradient(to right, #0d1834, #020307 )',
+        backgroundImage: 'linear-gradient(to right, #132650, #000000)',
     }}>
         <Box sx={{
             // padding:'2% 10%',

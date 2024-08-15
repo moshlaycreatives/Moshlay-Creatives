@@ -13,7 +13,7 @@ const KnowUs = () => {
       <Box
         sx={{
           // width: "100%",
-          backgroundColor: "#263238",
+          backgroundColor: "#1c2844",
           marginTop:'5rem',
           padding:isMedium ? '5% 10%' : '2% 10%',
 

@@ -24,6 +24,8 @@ import BlogsMain from "./Pages/Blogs/Blogsmain";
 import BlogsArticleMain from "./Pages/Blogs/components/BlogsArticle/BlogArticleMain";
 import CareersMain from "./Pages/Careers/CareersMain";
 import CareersJobDetails from "./Pages/Careers/components/CareersJobDetails/CareersJobDetails";
+import CareersAddJobDetails from "./Pages/Careers/components/CareersAddJobDetails/CareersAddJobDetails";
+import WebDevelopmentMain from "./Pages/WebDevelopment/WebDevelopmentMain";
 
 export default function Router() {
 
@@ -76,6 +78,14 @@ console.log(isAuthenticated, 'hgyfuhhj')
       {
          path:'/careers-job-details',
          element : <CareersJobDetails /> ,
+        },
+        {
+         path:'/careers-add-job-details',
+         element : <CareersAddJobDetails /> ,
+        },
+        {
+         path:'/web-development',
+         element : <WebDevelopmentMain /> ,
         },
     // {
     //     path:'/',

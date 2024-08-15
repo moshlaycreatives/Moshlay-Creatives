@@ -49,7 +49,7 @@ const Faqs = () => {
           expanded={expanded === index}
           onChange={handleChange(index)}
           sx={{
-            backgroundColor: '#18232d',
+            backgroundColor: '#1c2844',
             color: 'white',
             marginBottom: '.5rem', 
             borderRadius:'5px'

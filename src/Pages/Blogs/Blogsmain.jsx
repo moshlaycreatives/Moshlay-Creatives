@@ -30,7 +30,7 @@ const BlogsMain = () => {
   return (
     <>
     <Box sx={{
-        backgroundImage:'linear-gradient( to right , #0d1834, #020307)',
+        backgroundImage: 'linear-gradient(to right, #132650, #000000)',
         // position:'relative', 
         // minHeight:'100vh',
     }}>

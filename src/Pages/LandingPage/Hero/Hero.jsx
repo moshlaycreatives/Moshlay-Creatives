@@ -16,7 +16,7 @@ const Hero = () => {
     <Box sx={{
         width:'100%',
         height:'100vh',
-        backgroundImage: 'linear-gradient(to right, #020307, #0d1834)',
+        backgroundImage: 'linear-gradient(to right, #010102, #132650)',
         position:'relative'
     }}>
         <Box sx={{

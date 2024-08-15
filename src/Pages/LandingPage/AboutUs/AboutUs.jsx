@@ -47,7 +47,7 @@ const AboutUs = () => {
             
             >
                 <Box sx={{
-                    backgroundColor: "#212e3a",
+                    backgroundColor: "#1c2844",
                     padding:'1.5rem',
                     width:'100%'
                 }}>

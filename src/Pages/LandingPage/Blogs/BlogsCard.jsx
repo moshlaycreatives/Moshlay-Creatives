@@ -23,14 +23,14 @@ const BlogsCard = () => {
 
             <Grid  item key={ind} lg={4} md={4} sm={12} xs={12}>
                 <Card sx={{
-                    backgroundColor:'#18232d'
+                    backgroundColor:'#1c2844'
                 }}>
                 <Box width={'100%'}>
                     <img src={val.cardImage} alt="" width={'100%'} />
                 </Box>
                 <Box sx={{
                     padding:'1rem',
-                    backgroundColor:'#18232d',
+                    backgroundColor:'#1c2844',
                     // marginTop:'-3rem',
                      
                 }}> 

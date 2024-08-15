@@ -10,8 +10,12 @@ import {
 } from "@mui/material";
 import { TbCurrentLocation } from "react-icons/tb";
 import React from "react";
+import CareersHMQ from "./CareersHMQ";
+import { useNavigate } from "react-router";
+
 
 const CareersJobDetailsHero = () => {
+  const navigate = useNavigate();
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
@@ -124,8 +128,8 @@ const CareersJobDetailsHero = () => {
             Job Details
           </Typography>
         
-        <Grid container spacing={15}>
-          <Grid item lg={7} md={7} sm={12} xs={12} order={isMedium ? 1 : 2}>
+        <Grid container spacing={isMedium ? 1 :  15}>
+          <Grid item lg={7} md={7} sm={12} xs={12} order={isMedium ? 2 : 1}>
 
             
           <Box>
@@ -232,11 +236,20 @@ const CareersJobDetailsHero = () => {
           </Typography>
         </Box>
           </Grid>
-          <Grid item lg={5} md={5} sm={12} xs={12}>
-            <Box sx={{
+
+          <Grid item lg={5} md={5} sm={12} xs={12} order={isMedium ? 1 : 2}>
+           
+           {/* <Box sx={{
+            backgroundColor:'red'
+           }}> */}
+
+           <Box sx={{
               backgroundColor:'#1c2844',
                 padding:'2rem',
-                borderRadius:'10px'
+                borderRadius:'10px',
+                width: isSmall ? '100%' : isMedium ? '70%' : '100%',
+                marginTop:isMedium ? '2rem' : '-2.8rem',
+
             }}>
               <Typography sx={{
                 fontSize:'1.8rem',
@@ -321,20 +334,29 @@ const CareersJobDetailsHero = () => {
               </Typography>
               <br /><br />
 
-              <Button sx={{
+              <Button fullWidth variant="contained" sx={{
                 fontSize:'1rem',
                 fontFamily:'montserrat',
                 fontWeight:500,
                 textTransform:'none', 
                 color:'white',
-                backgroundColor:theme.palette.primary.main
-              }}>
+                backgroundColor:theme.palette.primary.main,
+              }}
+              onClick={()=>navigate('/careers-add-job-details')}
+              >
                 Apply Now
               </Button>
-
             </Box>
+
+           {/* </Box> */}
+
           </Grid>
         </Grid>
+
+        {/* ================================================CAREERSHMQ COMPONENT =========================================== */}
+        <Box>
+          <CareersHMQ/>
+        </Box>
 
       </Box>
     </>

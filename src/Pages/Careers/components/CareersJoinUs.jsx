@@ -12,6 +12,7 @@ import {
 import { FiShoppingBag } from "react-icons/fi";
 import { TbCurrentLocation } from "react-icons/tb";
 import React from "react";
+import CareersHMQ from "./CareersJobDetails/CareersHMQ";
 
 const CareersJoinUs = () => {
   const theme = useTheme();
@@ -92,7 +93,7 @@ const CareersJoinUs = () => {
 
         <Grid container spacing={6}>
           {listData.map((row, id)=>(
-          <Grid item lg={6} md={6} sm={12} xs={12}>
+          <Grid key={id} item lg={6} md={6} sm={12} xs={12}>
             <Box sx={{
                 display:'flex',
                 flexDirection: isSmall ? 'column' : 'row',
@@ -131,7 +132,10 @@ const CareersJoinUs = () => {
 
         </Grid>
 
-        <Box sx={{
+
+{/* ===================================CONVERT ITNO COMPONENT ======================================================== */}
+        <CareersHMQ/>
+        {/* <Box sx={{
           backgroundColor:theme.palette.primary.main,
           padding:'1.5rem',
           display:'flex',
@@ -167,7 +171,8 @@ const CareersJoinUs = () => {
           }}>
             Get in touch
           </Button>
-        </Box>
+        </Box> */}
+{/* ========================================================================================================================== */}
       </Box>
     </>
   );

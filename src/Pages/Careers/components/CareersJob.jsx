@@ -99,7 +99,7 @@ const CareersJob = () => {
             <Grid key={id} item lg={6} md={6} sm={12} xs={12}>
             <Card sx={{ 
                padding:'1.5rem',
-               backgroundColor:'#1b243b', borderRadius:'15px'
+               backgroundColor:'#1c2844', borderRadius:'15px'
             }}>
               <Box sx={{
                 display:'flex',
@@ -118,7 +118,7 @@ const CareersJob = () => {
                   </Typography>
                 </Box>
                 <Button variant='contained' sx={{
-                  backgroundColor:'#3d4659',
+                  backgroundColor:'#3e4860',
                   fontSize:isSmall ? '0.7rem' : '0.9rem',
                   fontWeight:400,
                    color:'white', borderRadius:'20px',
