@@ -1,21 +1,18 @@
 import { Box } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
+import ContactUs from '../LandingPage/ContactUs/ContactUs'
+import AppDevelopmentHero from './components/AppDevelopmentHero'
+import AppDevelopmentServices from './components/AppDevelopmentServices'
 import Footer from '../Components/Footer/Footer'
 import Header2 from '../Components/Header2'
-import WebDevelopmentHero from './components/WebDevelopmentHero'
-import WebDevelopmentServices from './components/WebDevelopmentServices'
-import WebDevelopmentDigitalStand from './components/WebDevelopmentDigitalStand'
-import WebDevelopmentType from './components/WebDevelopentType'
-import ContactUs from '../LandingPage/ContactUs/ContactUs'
-import WebDevelopmentBenefit from './components/WebDevelopmentBenefit'
-import WebDevelopmentTech from './components/WebDevelopmentTech'
+import AppDevelopmentPlatforms from './components/AppDevelopmentPlatforms'
+import AppDevelopmentTech from './components/AppDevelopmentTech'
+import AppDevelopmentSteps from './components/AppDevelopmentSteps'
 
 
 
-
-
-const WebDevelopmentMain = () => {
+const AppDevelopmentMain = () => {
   const [isScroll, setIsScroll] = useState(false);
   const location = useLocation()
 
@@ -38,7 +35,7 @@ const WebDevelopmentMain = () => {
   return (
     <>
     <Box sx={{
-        backgroundImage: 'linear-gradient(to right, #132650, #000000)',
+        backgroundImage: 'linear-gradient(to right, #132650, #000000)', 
         // position:'relative', 
         // minHeight:'100vh',
     }}>
@@ -53,12 +50,11 @@ const WebDevelopmentMain = () => {
       }}>
       <Header2/>
       </Box>      
-        <WebDevelopmentHero/>
-        <WebDevelopmentServices/>
-        <WebDevelopmentDigitalStand/>
-        <WebDevelopmentBenefit/>
-        <WebDevelopmentType/>
-        <WebDevelopmentTech/>
+        <AppDevelopmentHero/>
+        <AppDevelopmentServices/>
+        <AppDevelopmentPlatforms/>
+        <AppDevelopmentTech/>
+        <AppDevelopmentSteps/>
         <ContactUs/>
         <Footer/>
     </Box>
@@ -66,4 +62,4 @@ const WebDevelopmentMain = () => {
   )
 }
 
-export default WebDevelopmentMain;
+export default AppDevelopmentMain;

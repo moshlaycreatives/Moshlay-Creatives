@@ -15,7 +15,7 @@ import React from "react";
 import { Gradient } from "@mui/icons-material";
 // import CareersHMQ from "./CareersJobDetails/CareersHMQ";
 
-const WebDevelopmentHero = () => {
+const AppDevelopmentHero = () => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
@@ -102,7 +102,7 @@ const WebDevelopmentHero = () => {
             }}
           >
             {" "}
-            Web Development
+            APP Development
           </Typography>
           {/* <br /> */}
           <Typography
@@ -148,7 +148,7 @@ const WebDevelopmentHero = () => {
         }}
       >
         {/* ========================================================TEXT PART============================================= */}
-        <Box sx={{
+        {/* <Box sx={{
             display:'flex',
             flexDirection:'column',
             alignItems:'center'
@@ -183,11 +183,11 @@ const WebDevelopmentHero = () => {
           </Typography>
         </Box>
         <br />
-        <br />
+        <br /> */}
 
         {/* ===========================CARDS================================ */}
 
-        <Grid container spacing={6}>
+        {/* <Grid container spacing={6}>
           {listData.map((row, id) => (
             <Grid key={id} item lg={4} md={6} sm={12} xs={12}>
               <Box
@@ -246,10 +246,10 @@ const WebDevelopmentHero = () => {
               </Box>
             </Grid>
           ))}
-        </Grid>
+        </Grid> */}
       </Box>
     </>
   );
 };
 
-export default WebDevelopmentHero;
+export default AppDevelopmentHero;

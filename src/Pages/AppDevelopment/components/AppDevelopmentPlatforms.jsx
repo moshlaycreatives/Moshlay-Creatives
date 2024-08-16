@@ -1,38 +1,13 @@
-import { ThemeContext } from "@emotion/react";
-import {
-  Box,
-  Button,
-  Card,
-  Grid,
-  IconButton,
-  Typography,
-  useTheme,
-  useMediaQuery,
-} from "@mui/material";
-import { FiShoppingBag } from "react-icons/fi";
-import { TbCurrentLocation } from "react-icons/tb";
-import React from "react";
-import { Gradient } from "@mui/icons-material";
-// import CareersHMQ from "./CareersJobDetails/CareersHMQ";
+import { Box, Typography, useTheme, useMediaQuery, Grid } from '@mui/material'
+import React from 'react'
 
-const WebDevelopmentType = () => {
-  const theme = useTheme();
+const AppDevelopmentPlatforms = () => {
+    const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
 
   const listData = [
-    {
-      careerlogo: "webdev1.svg",
-      careertitle: "Static/Dynamic Websites",
-      carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
-    },
-    {
-      careerlogo: "webdev2.svg",
-      careertitle: "Social Networking Sites",
-      carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
-    },
+
     {
       careerlogo: "webdev3.svg",
       careertitle: "E-Commerce Websites ",
@@ -46,7 +21,7 @@ const WebDevelopmentType = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
     },
     {
-      careerlogo: "webdev5.svg",
+      careerlogo: "webdev2.svg",
       careertitle: "Web Applications",
       carrerdes:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
@@ -58,22 +33,22 @@ const WebDevelopmentType = () => {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
     },
   ];
+
   return (
-    <>
-      {/* ==========================================HERO CARD PART ====================================================== */}
+   <>
+   <Box sx={{
+       backgroundImage: 'linear-gradient(to right, #1c2844, #1c2844)',
+       width:'100%',
 
-    
-      <Box
-        sx={{
-          marginTop: "1rem",
-          padding: "4rem 10%",
-          marginBottom: "4rem",
-        backgroundImage: "linear-Gradient(to right  , #1c2844, #1c2844 )",
-
-        }}
-      >
-        {/* ========================================================TEXT PART============================================= */}
-        <Box sx={{
+   }}>
+    <Box sx={{
+        backgroundImage:'url(appdevplatfomsmask.png)',
+        backgroundPosition:'center',
+        backgroundRepeat:'no-repeat',
+        backgroundSize:'cover',
+        padding:' 4rem 10%'
+    }}>
+    <Box sx={{
             display:'flex',
             flexDirection:'column',
             alignItems:'center'
@@ -85,12 +60,13 @@ const WebDevelopmentType = () => {
               fontWeight: 600,
               color: theme.palette.primary.main,
               textAlign: "center",
-              // marginTop:'4rem',
+            //   marginTop:'4rem',
               fontFamily: "montserrat",
             }}
           >
             {" "}
-            Types of Website Development
+            MOBILE APPLICATION DEVELOPMENT SERVICES 
+FOR VARIOUS PLATFORMS
           </Typography>
           <Typography
             sx={{
@@ -98,22 +74,20 @@ const WebDevelopmentType = () => {
               fontWeight: 400,
               color: "white",
               textAlign: "center",
-              width:isSmall ? '100%' : isMedium  ? '90%' : '90%',
+              width:isSmall ? '100%' : isMedium  ? '90%' : '70%',
               fontFamily: "montserrat",
             }}
           >
-            Your business is unique and has distinct goals. That’s why we carry a vast arsenal of digital marketing
+            Your business is unique and has distinct goals. That’s why we carry a vast arsenal of digital marketing 
             you achieve those goals. Is it quality website traffic you seek?
           </Typography>
         </Box>
-        <br />
-        <br />
+        <br /><br />
 
-        {/* ===========================CARDS================================ */}
-
-        <Grid container spacing={6}>
+        {/* ================================================CARDS =============================================== */}
+<Grid container spacing={6}>
           {listData.map((row, id) => (
-            <Grid key={id} item lg={4} md={6} sm={12} xs={12}>
+            <Grid key={id} item lg={3} md={6} sm={12} xs={12}>
               <Box
                 sx={{
                   display: "flex",
@@ -171,9 +145,12 @@ const WebDevelopmentType = () => {
             </Grid>
           ))}
         </Grid>
-      </Box>
-    </>
-  );
-};
 
-export default WebDevelopmentType;
+    </Box>
+
+   </Box>
+   </>
+  )
+}
+
+export default AppDevelopmentPlatforms

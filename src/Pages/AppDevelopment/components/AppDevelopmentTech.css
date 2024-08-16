@@ -1,0 +1,16 @@
+.appdevtechios{
+    margin-left: 1rem;
+}
+.appdevtechios li{
+   margin-bottom: 1rem;
+   font-family: 'Montserrat';
+   font-size: 1rem;
+   font-weight: 400;
+
+   color: white;
+}
+
+ .appdevtechios li::marker{
+    color: #98c447;
+    margin-bottom: 1rem;
+ }
