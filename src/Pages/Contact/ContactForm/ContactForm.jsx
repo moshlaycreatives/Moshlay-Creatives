@@ -1,11 +1,14 @@
-import { Box, Button, FormControl, Grid, TextField, Typography, useTheme,useMediaQuery } from "@mui/material";
-import React from "react";
+import { Box, Button, FormControl, Grid, TextField, Typography, useTheme,useMediaQuery, Snackbar } from "@mui/material";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaThreads } from "react-icons/fa6";
 import {styled} from "@mui/material"
+import { useDispatch } from "react-redux";
+import { useSnackbar } from "notistack";
+import { SendFormData } from "../../../store/actions/dataActions";
 
 const CustomTextField = styled(TextField)({
     '& .MuiOutlinedInput-root': {
@@ -38,11 +41,50 @@ const CustomTextField = styled(TextField)({
     },
   });
 const ContactForm = () => {
-
+  const {enqueueSnackbar} = useSnackbar();
+  const formData = new FormData();
+  const dispatch = useDispatch();
     const theme = useTheme();
     
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+
+  const initialvalue = {
+    fullName  :'',
+    phone: '',
+    email:'',
+    company:'',
+    message :''
+  }
+  const[formValue , setFormValue] = useState(initialvalue); 
+
+  const handleFormValue = (e)=>{
+    e.preventDefault();
+
+    const {name, value}  = e.target;
+    setFormValue({...formValue, [name]:value})
+  }
+
+  // formData.append('fullName',formValue.fullName);
+  // formData.append('phone',formValue.phone);
+  // formData.append('email',formValue.email);
+  // formData.append('company',formValue.company);
+  // formData.append('message',formValue.company);
+  // console.log(formValue)
+  
+  const handleFormSubmit =(e)=>{
+    e.preventDefault();
+
+    dispatch(SendFormData(formValue))
+    .then((res)=>{
+      enqueueSnackbar(res.data.message, {variant:'success'})
+      setFormValue(initialvalue)
+    })
+    .catch((error)=>{
+      enqueueSnackbar(error.response.data.message , { variant: 'error' })
+      // console.log( 'api error ', err)
+    })
+  }
   return (
     <>
       <Box sx={{
@@ -132,6 +174,9 @@ const ContactForm = () => {
             <Grid container spacing={2} marginBottom={'1rem'} >
                 <Grid item lg={6} md={6} sm={12} xs={12}>
                 <CustomTextField 
+                onChange={handleFormValue}
+                value={formValue.fullName}
+                name="fullName"
             placeholder="Full Name"
             size="small"
             varient ='outlined'
@@ -141,6 +186,9 @@ const ContactForm = () => {
                 </Grid>
                 <Grid item lg={6} md={6} sm={12} xs={12}>
                 <CustomTextField 
+                onChange={handleFormValue}
+                value={formValue.phone}
+                name="phone"
             placeholder="Phone Number"
             size="small"
             varient ='outlined'
@@ -152,6 +200,9 @@ const ContactForm = () => {
             <Grid container spacing={2} marginBottom={'1rem'} >
                 <Grid item lg={6} md={6} sm={12} xs={12}>
                 <CustomTextField 
+                onChange={handleFormValue}
+                value={formValue.email}
+                name="email"
             placeholder="Email Address"
             size="small"
             varient ='outlined'
@@ -161,6 +212,9 @@ const ContactForm = () => {
                 </Grid>
                 <Grid item lg={6} md={6} sm={12} xs={12}>
                 <CustomTextField 
+                onChange={handleFormValue}
+                value={formValue.company}
+                name="company"
             placeholder="Company Name"
             size="small"
             varient ='outlined'
@@ -169,6 +223,9 @@ const ContactForm = () => {
                 </Grid>
             </Grid>
             <CustomTextField 
+            onChange={handleFormValue}
+            value={formValue.message}
+            name="message"
             placeholder="Your Message"
             size="small"
             varient ='outlined'
@@ -179,7 +236,9 @@ const ContactForm = () => {
             <Button variant="contained" sx={{marginTop:'3rem', color:'white', textTransform:'none',
                fontFamily: 'Montserrat',
                fontWeight:500
-            }}>
+            }}
+            onClick={handleFormSubmit}
+            >
                 Send Message
             </Button>
 

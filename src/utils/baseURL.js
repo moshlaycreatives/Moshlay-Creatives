@@ -1,4 +1,4 @@
-export const BASE_URL = "https://wv9pfwh9-5002.inc1.devtunnels.ms/api/v1"
+export const BASE_URL = "https://zh0k2dcj-3700.euw.devtunnels.ms/api/v1"
 
 export const AUTH_LOGIN = "auth/login/admin"
 
