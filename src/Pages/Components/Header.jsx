@@ -583,17 +583,17 @@ const Header = () => {
           >
             <MenuItem  
               onClick={() =>
-                handleAnchorClose(setAnchorSolutionEl, "/about")
+                handleAnchorClose(setAnchorSolutionEl, "/web-development")
               }
             >
-              Example 1
+              Web Development
             </MenuItem>
             <MenuItem
               onClick={() =>
-                handleAnchorClose(setAnchorSolutionEl, "/contact")
+                handleAnchorClose(setAnchorSolutionEl, "/app-development")
               }
             >
-              Example 2
+              App Development
             </MenuItem>
           </Menu>
 

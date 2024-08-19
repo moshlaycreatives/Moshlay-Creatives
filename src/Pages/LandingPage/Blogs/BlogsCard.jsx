@@ -1,9 +1,10 @@
 import { Box, Button, Card, colors, Divider, Grid, Typography, useTheme, useMediaQuery } from "@mui/material";
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { useNavigate } from "react-router";
 
 const BlogsCard = () => {
-
+  const navigate = useNavigate();
     const theme = useTheme();
     const isMedium = useMediaQuery(theme.breakpoints.down("md"));
     const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
@@ -45,7 +46,9 @@ const BlogsCard = () => {
                         textTransform:'none',
                         fontFamily:'Montserrat',
                         fontWeight:400
-                    }}>
+                    }}
+                    onClick={()=> navigate('/blogs-article')}
+                    >
                         {val.cardDate}
                     </Button>
                     {/* </Box> */}

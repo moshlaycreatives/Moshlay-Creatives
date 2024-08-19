@@ -586,17 +586,17 @@ const Header2 = () => {
           >
             <MenuItem
               onClick={() =>
-                handleAnchorClose(setAnchorSolutionEl, "/about-section")
+                handleAnchorClose(setAnchorSolutionEl, "/web-development")
               }
             >
-              Example 1
+              Web Development
             </MenuItem>
             <MenuItem
               onClick={() =>
-                handleAnchorClose(setAnchorSolutionEl, "/contact-section")
+                handleAnchorClose(setAnchorSolutionEl, "/app-development")
               }
             >
-              Example 2
+              App Development
             </MenuItem>
           </Menu>
 
@@ -733,7 +733,9 @@ const Header2 = () => {
         alignItems:'center',
         width:'100%'
                }}>
-        <Box width={'50%'} sx={{display:'flex' , justifyContent:'start'}}>
+        <Box width={'50%'} sx={{display:'flex' , justifyContent:'start'}}
+        onClick={()=>{navigate("/")}}
+        >
           <img src="logo.svg" alt=""  width={'50%'}/>
         </Box>
         <IconButton onClick={handleDrawerOpen} sx={{ padding: "10px", color: "white", textAlign:'end',
@@ -789,17 +791,17 @@ const Header2 = () => {
                 >
                   <MenuItem
                     onClick={() =>
-                      handleAnchorClose(setAnchorSolutionEl, "/about")
+                      handleAnchorClose(setAnchorSolutionEl, "/web-development")
                     }
                   >
-                    Example 1
+                    Web development
                   </MenuItem>
                   <MenuItem
                     onClick={() =>
-                      handleAnchorClose(setAnchorSolutionEl, "/contact")
+                      handleAnchorClose(setAnchorSolutionEl, "/App-Development")
                     }
                   >
-                    Example 2
+                    App Development
                   </MenuItem>
                 </Menu>
               </Box>
