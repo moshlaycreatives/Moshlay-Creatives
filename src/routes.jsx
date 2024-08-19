@@ -96,10 +96,10 @@ console.log(isAuthenticated, 'hgyfuhhj')
     //     path:'/',
     //     element : <ComingSoon /> ,
     //    },
-       {
-        path:'/technologytwo',
-        element : <Technologytwo /> ,
-       },
+      //  {
+      //   path:'/technologytwo',
+      //   element : <Technologytwo /> ,
+      //  },
 
        {
         path:'/signup',
