@@ -192,6 +192,7 @@ const WebDevelopmentHero = () => {
             <Grid key={id} item lg={4} md={6} sm={12} xs={12}>
               <Box
                 sx={{
+                  height:'100%',
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",

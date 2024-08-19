@@ -22,37 +22,37 @@ const WebDevelopmentType = () => {
 
   const listData = [
     {
-      careerlogo: "webdev1.svg",
+      careerlogo: "webdevtype1.png",
       careertitle: "Static/Dynamic Websites",
       carrerdes:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
     },
     {
-      careerlogo: "webdev2.svg",
+      careerlogo: "webdevtype2.png",
       careertitle: "Social Networking Sites",
       carrerdes:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
     },
     {
-      careerlogo: "webdev3.svg",
+      careerlogo: "webdevtype3.png",
       careertitle: "E-Commerce Websites ",
       carrerdes:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
     },
     {
-      careerlogo: "webdev4.svg",
+      careerlogo: "webdevtype4.png",
       careertitle: "Single-Page Applications(SPAs)",
       carrerdes:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
     },
     {
-      careerlogo: "webdev5.svg",
+      careerlogo: "webdevtype5.png",
       careertitle: "Web Applications",
       carrerdes:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
     },
     {
-      careerlogo: "webdev6.svg",
+      careerlogo: "webdevtype6.png",
       careertitle: "Web Applications",
       carrerdes:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
@@ -116,6 +116,7 @@ const WebDevelopmentType = () => {
             <Grid key={id} item lg={4} md={6} sm={12} xs={12}>
               <Box
                 sx={{
+                  height:'100%',
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",

@@ -9,26 +9,26 @@ const AppDevelopmentPlatforms = () => {
   const listData = [
 
     {
-      careerlogo: "webdev3.svg",
-      careertitle: "E-Commerce Websites ",
+      careerlogo: "webdevplatform1.png",
+      careertitle: "ENative Mobile App Development",
       carrerdes:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
     },
     {
-      careerlogo: "webdev4.svg",
-      careertitle: "Single-Page Applications(SPAs)",
+      careerlogo: "webdevplatform2.png",
+      careertitle: "Hybrid Mobile App Development",
       carrerdes:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
     },
     {
-      careerlogo: "webdev2.svg",
-      careertitle: "Web Applications",
+      careerlogo: "webdevplatform3.png",
+      careertitle: "Progressive Web App Development",
       carrerdes:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
     },
     {
-      careerlogo: "webdev6.svg",
-      careertitle: "Web Applications",
+      careerlogo: "webdevplatform4.png",
+      careertitle: "Wearables and Embedded Software",
       carrerdes:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
     },
@@ -90,6 +90,7 @@ FOR VARIOUS PLATFORMS
             <Grid key={id} item lg={3} md={6} sm={12} xs={12}>
               <Box
                 sx={{
+                  height:'100%',
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
@@ -103,7 +104,7 @@ FOR VARIOUS PLATFORMS
                   sx={{
                     width: "100%",
                     display: "flex",
-                    justifyContent: "center",
+                    // justifyContent: "center",
                   }}
                 >
                   <img src={row.careerlogo} alt="" width={"15%"} />
@@ -119,11 +120,11 @@ FOR VARIOUS PLATFORMS
                 >
                   <Typography
                     sx={{
-                      color: theme.palette.primary.main,
-                      fontSize: isSmall ? "1.2rem" : "1.5rem",
+                      color: 'white',
+                      fontSize: isSmall ? "1.1rem" : "1.2rem",
                       fontFamily: "Montserrat",
                       fontWeight: 600,
-                      textAlign: "center",
+                      // textAlign: "center",
                     }}
                   >
                     {row.careertitle}
@@ -135,7 +136,7 @@ FOR VARIOUS PLATFORMS
                       fontSize: "1rem",
                       fontFamily: "Montserrat",
                       fontWeight: 400,
-                      textAlign: "center",
+                      // textAlign: "center",
                     }}
                   >
                     {row.carrerdes}
