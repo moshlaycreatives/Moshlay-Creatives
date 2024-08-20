@@ -8,16 +8,25 @@ import {
   Typography,
   useTheme,
   useMediaQuery,
+  CircularProgress,
 } from "@mui/material";
 import { FiShoppingBag } from "react-icons/fi";
 import { TbCurrentLocation } from "react-icons/tb";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CareersHMQ from "./CareersJobDetails/CareersHMQ";
+import { useDispatch } from "react-redux";
+import { GetCareersJob } from "../../../store/actions/dataActions";
+import { Dialpad } from "@mui/icons-material";
 
 const CareersJoinUs = () => {
+  const dispatch = useDispatch();
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  
+
+
+  
 
   const listData = [
     {
@@ -92,45 +101,46 @@ const CareersJoinUs = () => {
         {/* ===========================CARDS================================ */}
 
         <Grid container spacing={6}>
-          {listData.map((row, id)=>(
-          <Grid key={id} item lg={6} md={6} sm={12} xs={12}>
-            <Box sx={{
-                display:'flex',
-                flexDirection: isSmall ? 'column' : 'row',
-                // padding:'1.5rem',
-                gap:2
-            }}>
-              <Box>
-                <img src={row.careerlogo} alt="" />
-              </Box>
-              <Box>
-                <Typography
-                  sx={{
-                    color: theme.palette.primary.main,
-                    fontSize: isSmall ? '1.2rem' : "1.5rem",
-                    fontFamily: "Montserrat",
-                    fontWeight: 600,
-                  }}
-                >
-                  {row.careertitle}
-                </Typography>
-                <br />
-                <Typography
-                  sx={{
-                    color: "white",
-                    fontSize: "1rem",
-                    fontFamily: "Montserrat",
-                    fontWeight: 400,
-                  }}
-                >
-               {row.carrerdes}
-                </Typography>
-              </Box>
+        {listData.map((row, id)=>(
+        <Grid key={id} item lg={6} md={6} sm={12} xs={12}>
+          <Box sx={{
+              display:'flex',
+              flexDirection: isSmall ? 'column' : 'row',
+              // padding:'1.5rem',
+              gap:2
+          }}>
+            <Box>
+              <img src={row.careerlogo} alt="" />
             </Box>
-          </Grid>
-          ))} 
-
+            <Box>
+              <Typography
+                sx={{
+                  color: theme.palette.primary.main,
+                  fontSize: isSmall ? '1.2rem' : "1.5rem",
+                  fontFamily: "Montserrat",
+                  fontWeight: 600,
+                }}
+              >
+                {row.careertitle}
+              </Typography>
+              <br />
+              <Typography
+                sx={{
+                  color: "white",
+                  fontSize: "1rem",
+                  fontFamily: "Montserrat",
+                  fontWeight: 400,
+                }}
+              >
+             {row.carrerdes}
+              </Typography>
+            </Box>
+          </Box>
         </Grid>
+        ))} 
+
+      </Grid>
+      
 
 
 {/* ===================================CONVERT ITNO COMPONENT ======================================================== */}

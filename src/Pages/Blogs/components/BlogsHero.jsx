@@ -1,6 +1,7 @@
 import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
-import BlogsCard from "../../LandingPage/Blogs/blogsCard";
+import BlogsCard from "../../LandingPage/Blogs/BlogsCard";
+
 
 
 const BlogsHero = () => {

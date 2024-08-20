@@ -9,17 +9,38 @@ import {
   Button,
 } from "@mui/material";
 import { TbCurrentLocation } from "react-icons/tb";
-import React from "react";
+import React, { useEffect } from "react";
 import CareersHMQ from "./CareersHMQ";
-import { useNavigate } from "react-router";
+import { useNavigate, useParams } from "react-router";
+import { useDispatch } from "react-redux";
+import { SendJobId } from "../../../../store/actions/dataActions";
 
 
 const CareersJobDetailsHero = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
   const istwelve = useMediaQuery("(max-width:1200px)");
+  const {id} = useParams();
+//  console.log('carererererererrrerer',id);
+
+const fetchData = async ()=>{
+  try {
+  const res = await dispatch(SendJobId(id))
+  console.log('resresresres', res.data.data) 
+  console.log('ahmad ahmad ')
+  } catch (error) {
+    console.error('failed to get single carrer job detail ', error)
+  }
+};
+
+useEffect(()=>{
+ 
+  fetchData();
+},[])
+
   return (
     <>
       <Box
@@ -43,7 +64,7 @@ const CareersJobDetailsHero = () => {
           }}
         >
           <img
-            src="careersjobdetailleft.svg"
+            src="/careersjobdetailleft.svg"
             alt=""
             width={isSmall ? "60%" : istwelve ? "80%" : "100%"}
           />
@@ -56,7 +77,7 @@ const CareersJobDetailsHero = () => {
           }}
         >
           <img
-            src="careersjobdetailmid.svg"
+            src="/careersjobdetailmid.svg"
             alt=""
             width={isSmall ? "60%" : istwelve ? "80%" : "100%"}
           />

@@ -69,7 +69,7 @@ console.log(isAuthenticated, 'hgyfuhhj')
         element : <BlogsMain /> ,
        },
        {
-        path:'/blogs-article',
+        path:'/blogs-article/:id',
         element : <BlogsArticleMain /> ,
        },
     {
@@ -77,9 +77,13 @@ console.log(isAuthenticated, 'hgyfuhhj')
        element : <CareersMain /> ,
       },
       {
-         path:'/careers-job-details',
+         path:'/careers-job-details/:id',
          element : <CareersJobDetails /> ,
         },
+        {
+            path:'/careers-job-details-hero/:id',
+            element : <CareersJobDetails /> ,
+           },
         {
          path:'/careers-add-job-details',
          element : <CareersAddJobDetails /> ,

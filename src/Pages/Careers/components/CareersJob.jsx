@@ -1,20 +1,48 @@
 import { ThemeContext } from '@emotion/react'
-import { Box, Button, Card, Grid, IconButton, Typography, useTheme , useMediaQuery} from '@mui/material'
+import { Box, Button, Card, Grid, IconButton, Typography, useTheme , useMediaQuery, CircularProgress} from '@mui/material'
 import { FiShoppingBag } from "react-icons/fi";
 import { TbCurrentLocation } from "react-icons/tb";
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router';
+import { GetCareersJob } from '../../../store/actions/dataActions';
+import { useDispatch } from 'react-redux';
 
 
 
 
 const CareersJob = () => {
+  const dispatch = useDispatch();
   const theme = useTheme();
   const navigate = useNavigate();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  const [jobData , setJobData]= useState([]);
+  const [loading , setLoading] = useState(false);
 
+  const handleClick =(jobId)=>{
+    navigate(`/careers-job-details-hero/${jobId}`);
+  }
+
+
+  useEffect(()=>{
+    const fetchData = async ()=>{
+      setLoading(true)
+      try {
+        const res = await dispatch(GetCareersJob());
+        // console.log("career data ", res.data.data)
+        setJobData(res.data.data)
+      } catch (error) {
+        console.error("failed to get the career job data ", error)
+      }
+      finally {
+        setLoading(false)
+      }
+    }
+
+    fetchData();
+  },[dispatch])
  
+  
 
     const listData = [
       {jobtitle:'Frontend Developer - Full Time',
@@ -93,10 +121,18 @@ const CareersJob = () => {
 
         {/* ===========================CARDS================================ */}
 
+
+        {loading ? (
+            <Box sx={{
+              display:'flex', justifyContent:'center', alignItems:'center', height:'50vh'
+            }}>
+              <CircularProgress/>
+            </Box>
+       ): (
         <Grid container  spacing={3}>
 
-          {listData.map((row, id)=>(
-            <Grid key={id} item lg={6} md={6} sm={12} xs={12}>
+          {jobData.map((row, id)=>(
+            <Grid key={row._id} item lg={6} md={6} sm={12} xs={12}>
             <Card sx={{ 
                padding:'1.5rem',
                backgroundColor:'#1c2844', borderRadius:'15px'
@@ -114,7 +150,7 @@ const CareersJob = () => {
                      color:'white',
                       fontWeight:'400',fontFamily: 'Montserrat',
                       }}>
-                    {row.jobtitle}
+                    {`${row.mainDesignation} - ${row.jobTime}`}
                   </Typography>
                 </Box>
                 <Button variant='contained' sx={{
@@ -125,7 +161,7 @@ const CareersJob = () => {
                     padding: isSmall ? '0.5rem 0.8rem' : '.8rem 1.5rem',
                     textTransform:'none',fontFamily: 'Montserrat',
                 }}>
-                  {row.jobpost}
+                  {row.jobDesignation}
                 </Button>
               </Box>
               <br />
@@ -134,7 +170,7 @@ const CareersJob = () => {
                  fontWeight:'600',
                   marginLeft:'.7rem',fontFamily: 'Montserrat',
                   }}>
-                 {row.jobprimayname}
+                 {row.jobTitle}
                 </Typography>
                 <br />
   
@@ -145,7 +181,7 @@ const CareersJob = () => {
                   </IconButton>
                   <Typography sx={{fontSize: isSmall ? '.8rem' : '1rem',
                      color:'white', fontWeight:'400', marginRight:'1rem',fontFamily: 'Montserrat',}}>
-                   {row.jobloc}
+                   {row.location}
                   </Typography>
               </Box>
   
@@ -156,7 +192,7 @@ const CareersJob = () => {
                   <Typography sx={{fontSize: isSmall ? '.8rem' : '1rem',
                   fontFamily: 'Montserrat',
                      color:'white', fontWeight:'400'}}>
-                    {row.jobyear}
+                    {row.experienceRequired}
                   </Typography>
               </Box>
               </Box>
@@ -169,7 +205,7 @@ const CareersJob = () => {
                 padding:'.8rem 2rem',
                 textTransform:'none',fontFamily: 'Montserrat',
               }}
-              onClick={()=>navigate('/careers-job-details')}
+              onClick={()=>handleClick(row._id)}
               >
                 Apply Now
               </Button>
@@ -184,7 +220,7 @@ const CareersJob = () => {
         
 
         </Grid>
-
+ )}
 
     </Box>
     

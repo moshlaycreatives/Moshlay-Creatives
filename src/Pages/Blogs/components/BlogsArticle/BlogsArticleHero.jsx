@@ -81,8 +81,8 @@ const BlogsArticleHero = () => {
       }}
     >
       <img
-        src="Frame2.svg"
-        alt="Frame 1"
+        src="/Frame2.svg"
+        alt="/Frame 1"
         style={{
           // position: 'absolute',
           marginBottom: '-1.2rem',
@@ -91,8 +91,8 @@ const BlogsArticleHero = () => {
         }}
       />
       <img
-        src="Frame2.svg"
-        alt="Frame 2"
+        src="/Frame2.svg"
+        alt="/Frame 2"
         style={{
           // position: 'absolute',
           marginBottom: '-1.2rem',
@@ -101,8 +101,8 @@ const BlogsArticleHero = () => {
         }}
       />
       <img
-        src="Frame3.svg"
-        alt="Frame 3"
+        src="/Frame3.svg"
+        alt="/Frame 3"
         style={{
           // position: 'absolute',
           animation: 'fade 2s infinite',

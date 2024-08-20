@@ -23,3 +23,39 @@ export const SendFormData = (formData) => async (dispatch) => {
       throw(error);
     }
   }
+
+  export const SendBlogsId = (blogId)=> async (dispatch)=>{
+    const res = await api.get(`/getBlogId/${blogId}`)
+    dispatch({type:'SEND-BLOGS-ID', payload:res.data})
+    try {
+      return res;
+    } catch (error) {
+      throw err;
+      
+    }
+  }
+
+
+  export const GetCareersJob = ()=> async (dispatch)=>{
+    const res = await api.get('/getAllJobs')
+    dispatch({type:'GET-CAREERS-JOB', payload:res.data})
+    try {
+      return res;
+    } catch (error) {
+      throw err;
+      
+    }
+  }
+
+  export const SendJobId = (jobId)=> async (dispatch)=>{
+    const res = await api.get(`/getJobById/${jobId}`)
+    console.log('api res res re s', res)
+    // dispatch({type:'SEND-BLOGS-ID', payload:res.data})
+    try {
+      return res;
+    } catch (error) {
+      throw err;
+      
+    }
+  }
+
