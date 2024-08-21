@@ -3,8 +3,9 @@ import React, { useEffect, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
-import { getAllBlogs, SendBlogsId } from "../../../store/actions/dataActions";
+// import { getAllBlogs, SendBlogsId } from "../../../store/actions/dataActions";
 import dateFormat from "dateformat";
+import { getAllBlogs } from "../../../store/actions/dataActions";
 
 
 
@@ -82,7 +83,7 @@ const BlogsCard = () => {
     ) : (
       <Box>
             <Grid container spacing={5}>
-              {blogsData.slice(0,3).map(( row,index)=>(
+              {blogsData.map(( row,index)=>(
             <Grid  item key={index} lg={4} md={4} sm={12} xs={12} width={'100%'} >
                <Box sx={{
                 width:'100%'

@@ -1,7 +1,9 @@
 import { Box, Button, Grid, Typography, useTheme,useMediaQuery, keyframes } from "@mui/material";
 import React from "react";
+import { useNavigate } from "react-router";
 
 const ContactUs = () => {
+  const navigate = useNavigate();
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
@@ -120,6 +122,7 @@ const ContactUs = () => {
                     fontFamily:'Montserrat',
                     fontWeight:500
                   }}
+                  onClick={()=>navigate('/contact')}
                 >
                   Send A Message
                 </Button>

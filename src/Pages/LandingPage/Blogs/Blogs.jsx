@@ -2,8 +2,10 @@ import { Box, Button, Card, colors, Divider, Grid, Typography, useTheme, useMedi
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import BlogsCard from "./blogsCard";
+import { useNavigate } from "react-router";
 
 const Blogs = () => {
+  const navigate = useNavigate();
   const theme = useTheme();
 const isMedium = useMediaQuery(theme.breakpoints.down("md"));
 const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
@@ -47,6 +49,18 @@ const  cardData =[
         
         
         <BlogsCard/>
+        <Box sx={{
+              textAlign:'center'
+            }}>
+            <Button variant="contained" sx={{
+              color:'white', fontSize:'1rem', fontFamily:'Montserrat',
+              textTransform:'none',fontWeight:500,
+              marginTop:'1rem', 
+            }}
+            onClick={(e)=>navigate('/blogs')}
+            >
+              View More</Button>
+            </Box>
 
       </Box>
     </>

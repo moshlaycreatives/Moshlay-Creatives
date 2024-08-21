@@ -520,7 +520,7 @@ const Header2 = () => {
       >
         <Box display={"flex"} justifyContent={"start"} width={"25%"}>
           <img
-            src="logo.svg"
+            src="/logo.svg"
             alt=""
             style={{ maxWidth: isMedium ? "80px" : "100px", height: "auto", cursor:'pointer' }}
             onClick={()=>{navigate("/")}}
@@ -736,7 +736,7 @@ const Header2 = () => {
         <Box width={'50%'} sx={{display:'flex' , justifyContent:'start'}}
         onClick={()=>{navigate("/")}}
         >
-          <img src="logo.svg" alt=""  width={'50%'}/>
+          <img src="/logo.svg" alt=""  width={'50%'}/>
         </Box>
         <IconButton onClick={handleDrawerOpen} sx={{ padding: "10px", color: "white", textAlign:'end',
           display: drawerOpen ? 'none' : 'flex'

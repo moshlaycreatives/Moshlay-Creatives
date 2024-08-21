@@ -40,7 +40,7 @@ function Footer() {
         <div className='footer-main-div'>
         <div className='footer-logo-text'>
             <h1>
-            <img src="logo.svg" alt="" />
+            <img src="/logo.svg" alt="" />
             </h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit corporis nobis accusamus, voluptatem minus et sint. Totam, incidunt doloribus. Modi omnis vel ea quae minima porro deserunt, atque molestiae sequi.</p>
         </div>

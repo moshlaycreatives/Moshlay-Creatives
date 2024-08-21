@@ -426,7 +426,9 @@ const CareersAddJobDetailsForm = () => {
 <Button variant="outlined" fullWidth sx={{ color:'white', textTransform:'none',
                fontFamily: 'Montserrat',
                fontWeight:500
-            }}>
+            }}
+            onClick={()=>navigate(-1)}
+            >
                 Close
             </Button>
 </Grid>

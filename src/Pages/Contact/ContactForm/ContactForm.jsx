@@ -1,4 +1,4 @@
-import { Box, Button, FormControl, Grid, TextField, Typography, useTheme,useMediaQuery, Snackbar } from "@mui/material";
+import { Box, Button, FormControl, Grid, TextField, Typography, useTheme,useMediaQuery, Snackbar, CircularProgress } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa";
@@ -57,6 +57,7 @@ const ContactForm = () => {
     message :''
   }
   const[formValue , setFormValue] = useState(initialvalue); 
+  const [loading , setLoading] = useState(false);
 
   const handleFormValue = (e)=>{
     e.preventDefault();
@@ -74,19 +75,29 @@ const ContactForm = () => {
   
   const handleFormSubmit =(e)=>{
     e.preventDefault();
-
+    setLoading(true)
     dispatch(SendFormData(formValue))
     .then((res)=>{
       enqueueSnackbar(res.data.message, {variant:'success'})
+      setLoading(false)
       setFormValue(initialvalue)
     })
     .catch((error)=>{
       enqueueSnackbar(error.response.data.message , { variant: 'error' })
+      setLoading(false)
       // console.log( 'api error ', err)
     })
   }
   return (
     <>
+    {loading ? ( 
+      <Box sx={{
+        display:'flex', justifyContent:'center', alignItems:'center', height:'50vh'
+      }}>
+        <CircularProgress/>
+      </Box>
+    ) : (
+      <>
       <Box sx={{
         padding:'5% 10%'
       }}>
@@ -251,6 +262,8 @@ const ContactForm = () => {
             <img src="contactmap1.svg" alt=""  width={'100%'}/>
         </Box>
       </Box>
+      </>
+    )}
     </>
   );
 };
