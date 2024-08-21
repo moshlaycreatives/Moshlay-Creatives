@@ -1,4 +1,4 @@
-import { Gradient } from "@mui/icons-material";
+import { AirlineSeatLegroomReducedSharp, Gradient } from "@mui/icons-material";
 import {
   Box,
   Typography,
@@ -7,13 +7,16 @@ import {
   useMediaQuery,
   Grid,
   Button,
+  CircularProgress,
 } from "@mui/material";
 import { TbCurrentLocation } from "react-icons/tb";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import CareersHMQ from "./CareersHMQ";
 import { useNavigate, useParams } from "react-router";
 import { useDispatch } from "react-redux";
 import { SendJobId } from "../../../../store/actions/dataActions";
+import BreadCrumbs from "../../../../components/BreadCrumbs/BreadCrumbs";
+import { Link } from "react-router-dom";
 
 
 const CareersJobDetailsHero = () => {
@@ -24,26 +27,47 @@ const CareersJobDetailsHero = () => {
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
   const istwelve = useMediaQuery("(max-width:1200px)");
   const {id} = useParams();
+  const [careerJobDetail, setCareerJobDetail] = useState([]);
+  const [loading , setLoading] = useState(false);
+
 //  console.log('carererererererrrerer',id);
 
 const fetchData = async ()=>{
+  setLoading(true);
   try {
   const res = await dispatch(SendJobId(id))
-  console.log('resresresres', res.data.data) 
+  setCareerJobDetail(res.data.data)
+  // console.log('resresresres', res.data.data) 
   console.log('ahmad ahmad ')
   } catch (error) {
     console.error('failed to get single carrer job detail ', error)
+  } finally {
+    setLoading(false)
   }
 };
+console.log('jobjob job',careerJobDetail)
 
 useEffect(()=>{
  
   fetchData();
 },[])
 
+const handleClick = ()=>{
+  navigate('/careers-add-job-details' , {state : {careerJobDetail : careerJobDetail}})
+}
+
   return (
     <>
-      <Box
+    {loading ? (
+      <Box sx={{display:'flex', justifyContent:'center', alignItems:'center', height:'50vh'}}>
+        <CircularProgress/>
+      </Box>
+    ) : (
+
+      <>
+      {careerJobDetail.map((row, index)=>(
+       <Box key={index}>
+       <Box     
         sx={{
           // #121316
           // #203157
@@ -94,10 +118,16 @@ useEffect(()=>{
               fontSize: "1rem",
               fontFamily: "Montserrat",
               fontWeight: 500,
+              display:'flex'
             }}
           >
-            Home / Career / frontend developer reactjs nextjs and other js
-            frameworks
+            {/* <BreadCrumbs/>  */}
+            <Link style={{marginRight:'.5rem', color:'#98c447' , textDecoration:'none'}} to={'/'}>Home</Link> 
+            <span>/</span>
+            <Link style={{margin:'0rem .5rem', color:'#98c447' , textDecoration:'none'}} to={'/careers'}>Career</Link>
+            {/* / frontend developer reactjs nextjs and other js
+            frameworks */}
+            {row.jobTitle}
           </Typography>
           <br />
           <Typography
@@ -108,7 +138,8 @@ useEffect(()=>{
               fontWeight: 600,
             }}
           >
-            Frontend Developer (ReactJS, NextJS)
+            {/* Frontend Developer (ReactJS, NextJS) */}
+            {row.jobTitle}
           </Typography>
           <br />
           <Box sx={{ display: "flex", alignItems: "center" }}>
@@ -124,7 +155,8 @@ useEffect(()=>{
                 fontFamily: "Montserrat",
               }}
             >
-              Lahore - Pakistan
+              {/* Lahore - Pakistan */}
+              {row.location}
             </Typography>
           </Box>
         </Box>
@@ -178,12 +210,7 @@ useEffect(()=>{
               color: "white",
             }}
           >
-            <strong>Job Descriptions:</strong>   Moshlay Creatives is a
-            cutting-edge tech company focused innovative solutions to our
-            clients. Our team is dedicated to creating top-tier experiences
-            using the latest technologies. We are seeking a talented Front
-            Developer to join our dynamic team and contribute to exciting
-            projects.
+            <strong>Job Descriptions:</strong> {row.jobDescription}
           </Typography>
         </Box>
         <br />
@@ -207,7 +234,8 @@ useEffect(()=>{
               color: "white",
             }}
           >
-          <li>Develop new user-facing features using ReactJS, NextJS, and other JS
+            {row.responsiblities}
+          {/* <li>Develop new user-facing features using ReactJS, NextJS, and other JS
             frameworks.
             </li>
             <li>Develop new user-facing features using ReactJS, NextJS, and other JS
@@ -217,8 +245,8 @@ useEffect(()=>{
             </li><li>Develop new user-facing features using ReactJS, NextJS, and other JS
             frameworks.
             </li><li>Develop new user-facing features using ReactJS, NextJS, and other JS
-            frameworks.
-            </li>
+            frameworks. 
+            </li> */}
           </Typography>
         </Box>
         <br />
@@ -231,7 +259,7 @@ useEffect(()=>{
               color: "white",
             }}
           >
-            Key Responsibilities:
+            Key Qualification:
           </Typography>
           <br />
           <Typography
@@ -242,7 +270,8 @@ useEffect(()=>{
               color: "white",
             }}
           >
-          <li>Develop new user-facing features using ReactJS, NextJS, and other JS
+            {row.qualification}
+          {/* <li>Develop new user-facing features using ReactJS, NextJS, and other JS
             frameworks.
             </li>
             <li>Develop new user-facing features using ReactJS, NextJS, and other JS
@@ -253,18 +282,19 @@ useEffect(()=>{
             frameworks.
             </li><li>Develop new user-facing features using ReactJS, NextJS, and other JS
             frameworks.
-            </li>
+            </li> */}
           </Typography>
         </Box>
           </Grid>
 
-          <Grid item lg={5} md={5} sm={12} xs={12} order={isMedium ? 1 : 2}>
+          <Grid  item lg={5} md={5} sm={12} xs={12} order={isMedium ? 1 : 2}>
            
            {/* <Box sx={{
             backgroundColor:'red'
-           }}> */}
+            }}> */}
 
-           <Box sx={{
+            
+            <Box  sx={{
               backgroundColor:'#1c2844',
                 padding:'2rem',
                 borderRadius:'10px',
@@ -297,7 +327,7 @@ useEffect(()=>{
                 color:'white',
                 fontWeight:400
               }}>
-                Lahore - Pakistan
+                {row.location}
               </Typography>
               <br />
 
@@ -315,7 +345,8 @@ useEffect(()=>{
                 color:'white',
                 fontWeight:400
               }}>
-                Frontend Developer (ReactJS, NextJS)
+                {/* Frontend Developer (ReactJS, NextJS) */}
+                {row.jobTitle}
               </Typography>
               <br />
 
@@ -333,7 +364,8 @@ useEffect(()=>{
                 color:'white',
                 fontWeight:400
               }}>
-                1-3 Years
+                {/* 1-3 Years */}
+                {row.experienceRequired}
               </Typography>
               <br />
 
@@ -351,7 +383,8 @@ useEffect(()=>{
                 color:'white',
                 fontWeight:400
               }}>
-                Full Time
+                {/* Full Time */}
+                {row.jobTime}
               </Typography>
               <br /><br />
 
@@ -363,11 +396,12 @@ useEffect(()=>{
                 color:'white',
                 backgroundColor:theme.palette.primary.main,
               }}
-              onClick={()=>navigate('/careers-add-job-details')}
+              onClick={handleClick}
               >
                 Apply Now
               </Button>
             </Box>
+
 
            {/* </Box> */}
 
@@ -380,6 +414,12 @@ useEffect(()=>{
         </Box>
 
       </Box>
+       </Box>
+     ))} 
+
+    </>
+
+    )}
     </>
   );
 };

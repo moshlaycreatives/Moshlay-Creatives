@@ -7,6 +7,7 @@ import { useParams } from 'react-router';
 import { SendBlogsId } from '../../../../store/actions/dataActions';
 import { useDispatch } from 'react-redux';
 import dateFormat from 'dateformat';
+import BlogsCard from '../../../LandingPage/Blogs/blogsCard';
 
 
 
@@ -224,7 +225,7 @@ const date = dateFormat(singleBlog.createdAt, 'dS mmmm, yyyy')
             Related Post
         </Typography>
         <br />
-        {/* <BlogsCard/> */}
+        <BlogsCard/>
     </Box>
     <br /><br /><br />
     

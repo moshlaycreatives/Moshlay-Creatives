@@ -1,6 +1,6 @@
 import { Box, Typography, useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
-import BlogsCard from "../../LandingPage/Blogs/BlogsCard";
+import BlogsCard from "../../LandingPage/Blogs/blogsCard";
 
 
 
@@ -135,7 +135,7 @@ const BlogsHero = () => {
           
           </Box>
           <Box sx={{
-            marginTop:'10rem'
+            marginTop:'10rem', width:'100%'
           }}>
           <BlogsCard/>
           </Box>

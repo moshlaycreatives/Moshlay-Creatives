@@ -59,3 +59,16 @@ export const SendFormData = (formData) => async (dispatch) => {
     }
   }
 
+  export const ApplyCareersJob = (formData) => async (dispatch) => {
+  
+    try {
+      const res = await api.post("/applyNow", formData);
+      // console.log("send job apply  data api ",formData);
+      // console.log("send job apply  data api ",res);
+      return res;
+    } catch (err) {
+      console.log("eireireier", err)
+      throw err;
+    }xx
+  };
+  

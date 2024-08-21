@@ -26,7 +26,7 @@ const BlogsCard = () => {
     useEffect(()=>{
 
       const fetchData = async ()=>{
-        // setLoading(true);
+        setLoading(true);
         try {
           const res = await dispatch(getAllBlogs())
         const result = (res && res.data.data && res.data.data[0].images) || [];
@@ -37,29 +37,29 @@ const BlogsCard = () => {
         } catch (error) {
           console.error('failed to fetch all blogs data ', error)
         } finally {
-          // setLoading(false)
+          setLoading(false)
         }
       }
       fetchData();
     },[dispatch])
 
-    console.log('blog data ', blogsData)
+    // console.log('blog data ', blogsData)
 
     const date = dateFormat(blogsData.createdAt, "dS mmmm, yyyy")
-    console.log('data new format ',date)
+    // console.log('data new format ',date)
 
     
     
-    console.log('images ', image)
+    // console.log('images ', image)
 
     // console.log('new', blogsData)
     
     
-    const  cardData =[
-      { cardImage :'blog1.svg', cardDate : ' 28 JANUARY, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
-      { cardImage :'common.webp', cardDate : ' 28 DECEMBER, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
-      {cardImage :'banner1.jpeg', cardDate : ' 28 SEPTEMBER, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
-    ]
+    // const  cardData =[
+    //   { cardImage :'blog1.svg', cardDate : ' 28 JANUARY, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
+    //   { cardImage :'common.webp', cardDate : ' 28 DECEMBER, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
+    //   {cardImage :'banner1.jpeg', cardDate : ' 28 SEPTEMBER, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
+    // ]
 
   
 
@@ -82,7 +82,7 @@ const BlogsCard = () => {
     ) : (
       <Box>
             <Grid container spacing={5}>
-              {cardData.map(( row,index)=>(
+              {blogsData.map(( row,index)=>(
             <Grid  item key={index} lg={4} md={4} sm={12} xs={12} width={'100%'} >
                <Box sx={{
                 width:'100%'
@@ -92,18 +92,19 @@ const BlogsCard = () => {
                     width:'100%',
                 }}>
                <Box sx={{
-                height: '10rem', overflow: 'hidden' 
+                width:'100%',
+                height: '15rem', overflow: 'hidden' 
                }}>
                <CardMedia
           component="img"
-          // image={`${base}${row.images[0].replace(/ /g, "%20")}`}
-            image={row.cardImage}
+          image={`${base}${row.images[0].replace(/ /g, "%20")}`}
+            // image={row.cardImage}
 
           alt=""
           sx={{
             width: '100%',
-            height: 'auto',
-            objectFit: 'contain',
+            height: '100%',
+            objectFit: 'cover',
           }}
         />
                </Box>
@@ -127,7 +128,7 @@ const BlogsCard = () => {
                     }}
                     onClick={()=> navigate('/blogs-article')}
                     >
-                        {row.cardDate}
+                        {date}
                     </Button>
                     {/* </Box> */}
                     <Typography sx={{
@@ -138,7 +139,7 @@ const BlogsCard = () => {
                         
                         
                     }}>
-                    {row.cardText}
+                    {row.title}
                     </Typography>
                     
                     <Button sx={{

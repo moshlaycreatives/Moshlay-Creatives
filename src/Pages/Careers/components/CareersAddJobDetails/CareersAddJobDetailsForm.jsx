@@ -6,24 +6,21 @@ import {
     useMediaQuery,
     Grid,
     Button,
-    TextField
+    TextField,
+    CircularProgress
   } from "@mui/material";
-import React from 'react'
-import { useNavigate } from "react-router";
+import React, { useState } from 'react'
+import { useLocation, useNavigate } from "react-router";
 import {styled} from "@mui/material"
+import { useDispatch } from "react-redux";
+import { ApplyCareersJob } from "../../../../store/actions/dataActions";
+import { useSnackbar } from "notistack";
+import { AirlineSeatLegroomReducedSharp } from "@mui/icons-material";
+
+
 // import "./CareersAddJobDetailsForm.css"
 
-
-
-const CareersAddJobDetailsForm = () => {
-    const navigate = useNavigate();
-
-  const theme = useTheme();
-  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
-  const isMedium = useMediaQuery(theme.breakpoints.down("md"));
-  const istwelve = useMediaQuery("(max-width:1200px)");
-
-  const CustomTextField = styled(TextField)({
+const CustomTextField = styled(TextField)({
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
         borderColor: 'white',
@@ -52,9 +49,114 @@ const CareersAddJobDetailsForm = () => {
         fontSize:'1rem',
         fontWeight:400,
               color: 'white',
-      opacity: .9, // Ensure the placeholder is fully opaque
+    //   opacity: .9, // Ensure the placeholder is fully opaque
     },
   });
+
+
+const CareersAddJobDetailsForm = () => {
+    const {enqueueSnackbar} = useSnackbar();
+    const formData = new FormData();
+    const location = useLocation();
+    const navigate = useNavigate();
+    const dispatch = useDispatch()
+    // console.log("state",location.state)
+    const careersstate = location.state.careerJobDetail;
+    // const [careersJobDetail , setCareersJobDetail] = useState(careersstate);
+    // console.log('job carrrrrrr' , careersJobDetail)
+
+    const job_id = careersstate.map((row)=>row._id)
+    // console.log("idiididididididid", a);
+
+
+    const initialValue = {
+        jobId: '',
+        fullName: '',
+        email: '',
+        phone: '',
+        experience: '',
+        currentJobLocation:'',
+        noticePeriod: '',
+        currentSalary: '',
+        expectedSalary:'',
+        // image:null,
+      }
+
+      
+
+  const theme = useTheme();
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  const istwelve = useMediaQuery("(max-width:1200px)");
+  const [formvalue, setFormvalue] = useState(initialValue);
+  const [file, setFile] = useState(null)
+  const [loading,setLoading] = useState(false);
+  
+
+
+
+  const handleFormValue = (e)=> {
+    e.preventDefault();
+
+    const {name, value}  = e.target;
+    // setFormvalue({...formvalue, [name]:value})
+    setFormvalue((prevState) => ({
+        ...prevState,
+        [name]: value,}))
+
+  }
+  const handleImageUpload = (e)=>{
+      setFile(e.target.files[0]);
+  }
+  console.log('filefileiufle', file)
+
+
+  formData.append('jobId', job_id)
+  formData.append('fullName', formvalue.fullName)
+  formData.append('email', formvalue.email)
+  formData.append('phone', formvalue.phone)
+  formData.append('experience', formvalue.experience)
+  formData.append('currentJobLocation', formvalue.currentJobLocation)
+  formData.append('noticePeriod', formvalue.noticePeriod)
+  formData.append('currentSalary', formvalue.currentSalary)
+  formData.append('expectedSalary', formvalue.expectedSalary)
+  formData.append('cv', file)
+
+  console.log('fomfomfomf', FormData)
+
+ const handleSubmit = (e)=>{
+    e.preventDefault();
+    setLoading(true)
+    dispatch(ApplyCareersJob(formData))
+    .then((res)=>{
+        enqueueSnackbar(res.data.message, {variant:'success'})
+    setFormvalue(initialValue);
+    setLoading(false)
+    
+    })
+    .catch((err)=>{
+        enqueueSnackbar(err.response.data.message, {variant:'error'})
+        setLoading(false)
+    })
+ }
+
+// const handleSubmit = (e)=>{
+//     e.preventDefault();
+//     setLoading(true)
+//     dispatch(ApplyCareersJob(formData))
+//     try{
+//         enqueueSnackbar(res.data.message, {variant:'success'})
+//     }
+//     catch{
+//         // enqueueSnackbar(err.response.data.message, {variant:'error'})
+//     }
+//     setLoading(false)
+//     // setFormvalue(initialValue);
+//  }
+ 
+
+
+//   console.log('formvalyesdsdsafaf', formvalue)
 
   return (
     <>
@@ -78,31 +180,43 @@ const CareersAddJobDetailsForm = () => {
                 height:'100%',
                 // right:0
             }}>
-            <img src="careersAddJobDetails.svg" alt=""  style={{width: isSmall ? '80%' : isMedium ? '70%' : '100%', height:'100%'}} />
+            <img src="/careersAddJobDetails.svg" alt=""  style={{width: isSmall ? '80%' : isMedium ? '70%' : '100%', height:'100%'}} />
             </Box>
-         <Box
-        sx={{  
-          padding:'10% 0%'
-        }}>
-             <Typography
-            sx={{
-              color: "white",
-              fontSize: isSmall ? "1.5rem" : isMedium ? "2rem" : "2.5rem",
-              fontFamily: "Montserrat",
-              fontWeight: 600,
-            }}
-          >
-            Frontend Developer (ReactJS, NextJS)
-          </Typography>
 
-        </Box>
+     {careersstate.map((row, index)=>(
+        
+            <Box
+            key={index}
+            sx={{  
+              padding:'10% 0%'
+            }}>
+                 <Typography
+                sx={{
+                  color: "white",
+                  fontSize: isSmall ? "1.5rem" : isMedium ? "2rem" : "2.5rem",
+                  fontFamily: "Montserrat",
+                  fontWeight: 600,
+                }}
+              >
+                {/* Frontend Developer (ReactJS, NextJS) */}
+                {row.jobTitle}
+              </Typography>
+    
+            </Box>
+     ))}
         </Box>
     </Box>
     
 
     {/* =============================================HERO SECTION ADD DETAIL FORM ===================================================== */}
 
-    <Box sx={{
+    {loading ? (<>
+        <Box sx={{display:'flex', justifyContent:'center', alignItems:'center', height:'50vh'}}>
+        <CircularProgress/>
+      </Box>
+    </>) : (<>
+    
+        <Box sx={{
         padding:'5% 10%'
     }}>
     <form action=""  className="add-job-details-form">
@@ -114,16 +228,20 @@ const CareersAddJobDetailsForm = () => {
                         fontFamily:'montserrat',
                         marginBottom:'.5rem',
                         fontWeight:400,
-                        fontSize:'1.1rem'
+                        fontSize:'1.1rem',
+                        
                     }}>
                         Full Name <span style={{color:theme.palette.primary.main}}>*</span>
                     </Typography>
                 <CustomTextField 
             placeholder="Enter Name"
             size="small"
-            varient ='outlined'
+            variant ='outlined'
             fullWidth
-
+            onChange={handleFormValue}
+            value={formvalue.fullName}
+            name="fullName"
+            autoComplete="off"
             />
                 </Grid>
                 <Grid item lg={6} md={6} sm={12} xs={12}>
@@ -140,8 +258,11 @@ const CareersAddJobDetailsForm = () => {
                 <CustomTextField 
             placeholder="Enter Email"
             size="small"
-            varient ='outlined'
+            variant ='outlined'
             fullWidth
+            onChange={handleFormValue}
+          value={formvalue.email}
+          name="email"
 
             />
                 </Grid>
@@ -162,8 +283,11 @@ const CareersAddJobDetailsForm = () => {
                 <CustomTextField 
             placeholder="Enter Phone"
             size="small"
-            varient ='outlined'
+            variant ='outlined'
             fullWidth
+            onChange={handleFormValue}
+            value={formvalue.phone}
+            name="phone"
 
             />
                 </Grid>
@@ -180,8 +304,11 @@ const CareersAddJobDetailsForm = () => {
                 <CustomTextField 
             placeholder="Enter Experience"
             size="small"
-            varient ='outlined'
+            variant ='outlined'
             fullWidth
+            onChange={handleFormValue}
+          value={formvalue.experience}
+          name="experience"
             />
                 </Grid>
             </Grid>
@@ -201,8 +328,11 @@ const CareersAddJobDetailsForm = () => {
                 <CustomTextField 
             placeholder="Enter current job location"
             size="small"
-            varient ='outlined'
+            variant ='outlined'
             fullWidth
+            onChange={handleFormValue}
+          value={formvalue.currentJobLocation}
+          name="currentJobLocation"
 
             />
                 </Grid>
@@ -219,8 +349,11 @@ const CareersAddJobDetailsForm = () => {
                 <CustomTextField 
             placeholder="Enter notice period"
             size="small"
-            varient ='outlined'
+            variant ='outlined'
             fullWidth
+            onChange={handleFormValue}
+          value={formvalue.noticePeriod}
+          name="noticePeriod"
             />
                 </Grid>
             </Grid>
@@ -240,8 +373,11 @@ const CareersAddJobDetailsForm = () => {
                 <CustomTextField 
             placeholder="Enter Enter current salary"
             size="small"
-            varient ='outlined'
+            variant ='outlined'
             fullWidth
+            onChange={handleFormValue}
+            value={formvalue.currentSalary}
+            name="currentSalary"
 
             />
                 </Grid>
@@ -258,8 +394,11 @@ const CareersAddJobDetailsForm = () => {
                 <CustomTextField 
             placeholder="Enter expected salary"
             size="small"
-            varient ='outlined'
+            variant ='outlined'
             fullWidth
+            onChange={handleFormValue}
+            value={formvalue.expectedSalary}
+            name="expectedSalary"
             />
                 </Grid>
             </Grid>
@@ -276,11 +415,10 @@ const CareersAddJobDetailsForm = () => {
             <CustomTextField 
             placeholder="Your Message"
             size="small"
-            varient ='outlined'
+            variant ='outlined'
             fullWidth
             type="file"
-            // multiline
-            // rows={5}
+            onChange={(e)=>handleImageUpload(e)}
             />
 <br /><br /><br />
 <Grid container spacing={2} marginBottom={'1rem'} >
@@ -296,7 +434,9 @@ const CareersAddJobDetailsForm = () => {
 <Button variant="contained" fullWidth sx={{ color:'white', textTransform:'none',
                fontFamily: 'Montserrat',
                fontWeight:500
-            }}>
+            }}
+            onClick={handleSubmit}
+            >
                 Submit
             </Button>
     </Grid>
@@ -307,6 +447,7 @@ const CareersAddJobDetailsForm = () => {
 
           </form>
     </Box>
+    </>)}
     
     </>
   )

@@ -27,6 +27,7 @@ import CareersJobDetails from "./Pages/Careers/components/CareersJobDetails/Care
 import CareersAddJobDetails from "./Pages/Careers/components/CareersAddJobDetails/CareersAddJobDetails";
 import WebDevelopmentMain from "./Pages/WebDevelopment/WebDevelopmentMain";
 import AppDevelopmentMain from "./Pages/AppDevelopment/AppDevelopmentMain";
+import CareersAddJobDetailsForm from "./Pages/Careers/components/CareersAddJobDetails/CareersAddJobDetailsForm";
 
 export default function Router() {
 
@@ -88,6 +89,10 @@ console.log(isAuthenticated, 'hgyfuhhj')
          path:'/careers-add-job-details',
          element : <CareersAddJobDetails /> ,
         },
+        {
+            path:'/careers-add-job-details-form',
+            element : <CareersAddJobDetailsForm /> ,
+           },
         {
          path:'/web-development',
          element : <WebDevelopmentMain /> ,
