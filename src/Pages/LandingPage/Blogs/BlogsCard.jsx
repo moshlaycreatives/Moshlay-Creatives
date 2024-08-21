@@ -26,7 +26,7 @@ const BlogsCard = () => {
     useEffect(()=>{
 
       const fetchData = async ()=>{
-        setLoading(true);
+        // setLoading(true);
         try {
           const res = await dispatch(getAllBlogs())
         const result = (res && res.data.data && res.data.data[0].images) || [];
@@ -37,7 +37,7 @@ const BlogsCard = () => {
         } catch (error) {
           console.error('failed to fetch all blogs data ', error)
         } finally {
-          setLoading(false)
+          // setLoading(false)
         }
       }
       fetchData();
@@ -55,11 +55,11 @@ const BlogsCard = () => {
     // console.log('new', blogsData)
     
     
-    // const  cardData =[
-    //   { cardImage :'blog1.svg', cardDate : ' 28 JANUARY, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
-    //   { cardImage :'blog1.svg', cardDate : ' 28 DECEMBER, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
-    //   {cardImage :'blog1.svg', cardDate : ' 28 SEPTEMBER, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
-    // ]
+    const  cardData =[
+      { cardImage :'blog1.svg', cardDate : ' 28 JANUARY, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
+      { cardImage :'common.webp', cardDate : ' 28 DECEMBER, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
+      {cardImage :'banner1.jpeg', cardDate : ' 28 SEPTEMBER, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
+    ]
 
   
 
@@ -82,48 +82,36 @@ const BlogsCard = () => {
     ) : (
       <Box>
             <Grid container spacing={5}>
-              {blogsData.map(( row,index)=>(
-            <Grid  item key={index} lg={4} md={4} sm={12} xs={12} padding={'0rem'} >
+              {cardData.map(( row,index)=>(
+            <Grid  item key={index} lg={4} md={4} sm={12} xs={12} width={'100%'} >
                <Box sx={{
                 width:'100%'
                }}>
                <Card variant="fullWidth" sx={{
                     backgroundColor:'#1c2844',
-                    // width:'20rem'
                     width:'100%',
-                    // width:'10rem'
-                    // height:'100%'
-
                 }}>
                <Box sx={{
-                height:'10rem'
+                height: '10rem', overflow: 'hidden' 
                }}>
                <CardMedia
           component="img"
-          image={`${base}${row.images[0].replace(/ /g, "%20")}`}
+          // image={`${base}${row.images[0].replace(/ /g, "%20")}`}
+            image={row.cardImage}
+
           alt=""
           sx={{
             width: '100%',
             height: 'auto',
-            // maxHeight: '20rem', // Controls the max height of the image
-            objectFit: 'cover',
+            objectFit: 'contain',
           }}
         />
                </Box>
-               {/* <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/>
-               <br/> */}
+            
                 <CardContent sx={{
-                    padding:'1rem',
-                    // flexGrow:1
+                    // padding:'1rem',
                     backgroundColor:'#1c2844',
-                    // marginTop:'-3rem',
-                    // width:'100%'
-                     
+                    // marginTop:'-3rem',                 
                 }}> 
                     {/* <Box > */}
                     <Button variant="contained" sx={{
@@ -139,7 +127,7 @@ const BlogsCard = () => {
                     }}
                     onClick={()=> navigate('/blogs-article')}
                     >
-                        {date}
+                        {row.cardDate}
                     </Button>
                     {/* </Box> */}
                     <Typography sx={{
@@ -150,12 +138,13 @@ const BlogsCard = () => {
                         
                         
                     }}>
-                    {row.title}
+                    {row.cardText}
                     </Typography>
                     
                     <Button sx={{
                       fontSize:'1rem',
                       marginLeft:'-.3rem',
+                      marginBottom:'-1.5rem',
                       textTransform:'none',
                       fontFamily:'Montserrat',
                       fontWeight:400
