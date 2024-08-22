@@ -665,7 +665,7 @@ const Header2 = () => {
 
           <Typography
             marginRight={".5rem"}
-            onClick={() => handleClickMenu("/contact")}
+            onClick={() => handleClickMenu("/about")}
             sx={{ cursor: "pointer", fontSize: isMedium ? ".8rem" : "1rem",
               color: 'white',
               transition: 'color .5s',
@@ -869,7 +869,7 @@ const Header2 = () => {
                 }}/>
 
               <Typography
-                onClick={() => handleClickMenu("/contact")}
+                onClick={() => handleClickMenu("/about")}
                 cursor={"pointer"}
                 marginBottom={'.5rem'}
                 marginTop={'.5rem'}

@@ -42,7 +42,7 @@ useEffect(()=>{
         
     }
     fetchData();
-},[dispatch])
+},[dispatch, id])
 
 const date = dateFormat(singleBlog.createdAt, 'dS mmmm, yyyy')
 

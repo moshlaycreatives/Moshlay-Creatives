@@ -114,7 +114,7 @@ FOR VARIOUS PLATFORMS
                   sx={{
                     display: "flex",
                     flexDirection: "column",
-                    alignItems: "center",
+                    // alignItems: "center",
                     // justifyContent:'center'
                   }}
                 >

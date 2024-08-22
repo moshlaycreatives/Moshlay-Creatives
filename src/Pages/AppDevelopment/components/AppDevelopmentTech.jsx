@@ -93,23 +93,20 @@ const AppDevelopmentTech = () => {
                     <li>iPhone App Development</li>
                 </ul>
             </Grid>
-            <Grid item lg={6} md={6} sm={12} xs={12}>
+            <Grid item lg={6} md={6} sm={12} xs={12} width={'100%'} >
                 <Box sx={{
-                    // display:'flex',
-                    // justifyContent:'end'
                     
                 }}>
                     <Box sx={{
-                    //    textAlign:'center'
-                    textAlign:isMedium ?  'center' : 'start'
+                    textAlign:isMedium ?  'center' : 'start',
 
                     }}>
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
                     </Box>
                 </Box>
             </Grid>
@@ -148,15 +145,15 @@ const AppDevelopmentTech = () => {
             <Grid item lg={6} md={6} sm={12} xs={12}>
                 <Box>
                     <Box sx={{
-                         textAlign:isMedium ?  'center' : 'start'
-                        // textAlign:'center'
+                         textAlign:isMedium ?  'center' : 'start',
+                        // textAlign:'end'
                     }}>
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
                     </Box>
                 </Box>
             </Grid>
@@ -197,12 +194,12 @@ const AppDevelopmentTech = () => {
                     <Box sx={{
                          textAlign:isMedium ?  'center' : 'start'
                     }}>
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
+                       <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
                     </Box>
                 </Box>
             </Grid>
@@ -248,12 +245,12 @@ const AppDevelopmentTech = () => {
                         // justifyContent:'center'
                         textAlign:isMedium ?  'center' : 'start'
                     }}>
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
-                        <img src="appdevtechimg.png" alt="" />
+                       <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
                     </Box>
                 </Box>
             </Grid>
