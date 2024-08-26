@@ -4,43 +4,49 @@ import { FiShoppingBag } from "react-icons/fi";
 import { TbCurrentLocation } from "react-icons/tb";
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router';
-import { GetCareersJob } from '../../../store/actions/dataActions';
-import { useDispatch } from 'react-redux';
-
-
+import { useDispatch, useSelector } from 'react-redux';
+import { GetCareersJob } from '../../../store/actions/DataActions';
 
 
 const CareersJob = () => {
+  const  jobData = useSelector((state)=> state.jobs.jobs.data)
+  // console.log(' reuder get adatra sjdsj', job);
+
+
+
   const dispatch = useDispatch();
   const theme = useTheme();
   const navigate = useNavigate();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
-  const [jobData , setJobData]= useState([]);
+  // const [jobData , setJobData]= useState([]);
   const [loading , setLoading] = useState(false);
 
   const handleClick =(jobId)=>{
     navigate(`/careers-job-details-hero/${jobId}`);
   }
 
+useEffect(()=>{
+  dispatch(GetCareersJob())
+},[dispatch])
 
-  useEffect(()=>{
-    const fetchData = async ()=>{
-      setLoading(true)
-      try {
-        const res = await dispatch(GetCareersJob());
-        // console.log("career data ", res.data.data)
-        setJobData(res.data.data)
-      } catch (error) {
-        console.error("failed to get the career job data ", error)
-      }
-      finally {
-        setLoading(false)
-      }
-    }
+  // useEffect(()=>{
+  //   const fetchData = async ()=>{
+  //     setLoading(true)
+  //     try {
+  //       const res = await dispatch(GetCareersJob());
+  //       // console.log("career data ", res.data.data)
+  //       setJobData(res.data.data)
+  //     } catch (error) {
+  //       console.error("failed to get the career job data ", error)
+  //     }
+  //     finally {
+  //       setLoading(false)
+  //     }
+  //   }
 
-    fetchData();
-  },[dispatch])
+  //   fetchData();
+  // },[dispatch])
  
   
 

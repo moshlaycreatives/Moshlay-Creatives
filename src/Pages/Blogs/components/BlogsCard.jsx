@@ -1,15 +1,17 @@
 import { Box, Button, Card, colors, Divider, Grid, Typography, useTheme, useMediaQuery, CardMedia, CardContent, CircularProgress } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
 // import { getAllBlogs, SendBlogsId } from "../../../store/actions/dataActions";
 import dateFormat from "dateformat";
-import { getAllBlogs } from "../../../store/actions/dataActions";
+import { getAllBlogs } from "../../../store/actions/DataActions";
+// import { getAllBlogs } from "../../../store/actions/dataActions";
 
 
 
 const BlogsCard = () => {
+  const blogsData = useSelector((state => state.blog.data))
 
   const base = "https://zh0k2dcj-3700.euw.devtunnels.ms";
   const dispatch = useDispatch();
@@ -18,31 +20,35 @@ const BlogsCard = () => {
     const isMedium = useMediaQuery(theme.breakpoints.down("md"));
     const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
 
-    const [blogsData, setBlogsData] = useState([]);
+    // const [blogsData, setBlogsData] = useState([]);
     const [image, setImage]=useState('')
     const [blogId, setBlogId]= useState('')
     const [loading , setLoading] = useState(false);
     // const [date,setDate]=useState('')
 
     useEffect(()=>{
-
-      const fetchData = async ()=>{
-        setLoading(true);
-        try {
-          const res = await dispatch(getAllBlogs())
-        const result = (res && res.data.data && res.data.data[0].images) || [];
-        // console.log(res.data.data)
-          setBlogsData(res.data.data)
-          setImage(result);
-
-        } catch (error) {
-          console.error('failed to fetch all blogs data ', error)
-        } finally {
-          setLoading(false)
-        }
-      }
-      fetchData();
+      dispatch(getAllBlogs())
     },[dispatch])
+
+    // useEffect(()=>{
+
+    //   const fetchData = async ()=>{
+    //     setLoading(true);
+    //     try {
+    //       const res = await dispatch(getAllBlogs())
+    //     const result = (res && res.data.data && res.data.data[0].images) || [];
+    //     // console.log(res.data.data)
+    //       setBlogsData(res.data.data)
+    //       setImage(result);
+
+    //     } catch (error) {
+    //       console.error('failed to fetch all blogs data ', error)
+    //     } finally {
+    //       setLoading(false)
+    //     }
+    //   }
+    //   fetchData();
+    // },[dispatch])
 
     // console.log('blog data ', blogsData)
 

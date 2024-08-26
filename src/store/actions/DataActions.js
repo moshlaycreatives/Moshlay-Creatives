@@ -9,20 +9,37 @@ export const SendFormData = (formData) => async (dispatch) => {
       return res;
     } catch (err) {
       throw err;
-    }xx
+    }
   };
   
   
-  export const getAllBlogs = ()=>  async (dispatch)=>{
+  // export const getAllBlogs = ()=>  async (dispatch)=>{
     
+  //   try {
+  //     const res = await api.get('/getAllBlogs');
+  //     dispatch({type :'GET-ALL-BLOGS', payload:res.data})
+  //     // console.log('payload data get blog api ', dispatch({type :'GET-ALL-BLOGS', payload:res.data}))
+      
+  //   return res;
+  //   } catch (error) {
+  //     throw(error);
+  //   }
+  // }
+
+  export const getAllBlogs = () => async (dispatch) => {
+    dispatch({ type: 'GET-ALL-BLOGS-REQUEST' }); // Dispatch request action
+  
     try {
       const res = await api.get('/getAllBlogs');
-      dispatch({type :'GET-ALL-BLOGS', payload:res.data})
-    return res;
+      console.log('Fetched blogs:', res.data); // Log fetched data
+  
+      dispatch({ type: 'GET-ALL-BLOGS', payload: res.data });
+      // console.log('data send to reducer', dispatch({ type: 'GET-ALL-BLOGS', payload: res.data }))
     } catch (error) {
-      throw(error);
+      console.error('Fetch blogs error:', error);
+      dispatch({ type: 'GET-ALL-BLOGS-FAILURE', payload: error.message });
     }
-  }
+  };
 
   export const SendBlogsId = (blogId)=> async (dispatch)=>{
     const res = await api.get(`/getBlogId/${blogId}`)
