@@ -719,8 +719,13 @@ const Header2 = () => {
           }}
           onClick={() => handleClickMenu("/contact")}
         >
-          <Button sx={{ fontSize: isMedium ? ".8rem" : ".9rem", alignSelf:'start' }}>
-            <MdOutlineMessage style={{ marginRight: ".5rem" }} /> contact
+          <Button variant="none" sx={{ fontSize: isMedium ? ".8rem" : "1rem", alignSelf:'start', color:'white', textTransform:'none',
+             fontFamily:'Montserrat',
+             transition: 'color .5s',
+              '&:hover': {
+                color: theme => theme.palette.primary.main, } 
+             }} >
+            <MdOutlineMessage style={{ marginRight: ".5rem", color:theme.palette.primary.main, fontSize:'1.4rem' }} /> Contact
           </Button>
         </Box>
       </Box>
@@ -916,6 +921,9 @@ const Header2 = () => {
                 cursor={"pointer"}
                 marginBottom={'.5rem'}
                 marginTop={'.5rem'}
+                sx={{
+                  color:'white'
+                }}
               >
                 Contact
               </Typography>

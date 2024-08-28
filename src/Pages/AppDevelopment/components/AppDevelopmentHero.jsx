@@ -80,7 +80,7 @@ const AppDevelopmentHero = () => {
           }}
         >
           <Button
-            variant="contained"
+            // variant="contained"
             sx={{
               padding: "1rem 2rem",
               fontSize: "1rem",
@@ -88,7 +88,14 @@ const AppDevelopmentHero = () => {
               fontWeight: 500,
               fontFamily: "montserrat",
               backgroundColor: "#4e6645",
+              border:'1px solid #4e6645',
               textTransform: "none",
+              transition:'.2s',
+              '&:hover':{
+                color:'white', 
+                border:'1px solid white',
+                // transition:'1s'
+              }
             }}
           >
             Digital Solutions
@@ -114,13 +121,7 @@ const AppDevelopmentHero = () => {
               //   textAlign: "center",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare
-            felis non quam egestas sagittis. Sed gravida nulla tellus, eu
-            aliquam m i vulputate at. Proin nunc magna, varius vel faucibus id,
-            ornare dignissi m sem. Nullam at molestie justo, ut fringilla dui.
-            Nam convallis ipsu m sodales augue consectetur, sed aliquam tortor
-            aliquam. Suspen disse eu consequat sem. Donec ac gravida metus, non
-            tincidunt null a. Pellentesque ullamcorper at felis ut ornare.
+           Turn your ideas into reality. Our full-cycle app development experts create stunning, stable, and scalable apps for Android, iOS, mobile TV, and tablets. From concept to launch and beyond, we're your trusted partner.
           </Typography>
           <br />
           <br />
@@ -134,6 +135,11 @@ const AppDevelopmentHero = () => {
               fontFamily: "montserrat",
               // backgroundColor:'#4e6645',
               textTransform: "none",
+              transition:'0.2s',
+              "&:hover":{
+                color:'white',
+                background:theme.palette.primary.main, border:'none'
+              }
             }}
           >
             Schedule a Free Consultation

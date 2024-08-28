@@ -25,35 +25,35 @@ const WebDevelopmentType = () => {
       careerlogo: "webdevtype1.png",
       careertitle: "Static/Dynamic Websites",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "Static websites have fixed content, making them easy to create and maintain. However, they may lack the dynamic features and personalized experiences offered by dynamic websites, which use server-side scripting to generate content on the fly.",
     },
     {
       careerlogo: "webdevtype2.png",
       careertitle: "Social Networking Sites",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "Social networking sites are online platforms that allow users to connect, communicate, and share information. They have become an integral part of modern life and business providing opportunities for socialization, networking, and entertainment.",
     },
     {
       careerlogo: "webdevtype3.png",
       careertitle: "E-Commerce Websites ",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "These websites are designed to sell products or services online. They typically include features such as shopping carts, payment gateways, and product catalogs.",
     },
     {
       careerlogo: "webdevtype4.png",
       careertitle: "Single-Page Applications(SPAs)",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "SPAs load all necessary files at once, providing a faster and more responsive user experience. They are often used for web applications and complex interactive websites.",
     },
     {
       careerlogo: "webdevtype5.png",
       careertitle: "Web Applications",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "Web applications, also known as web apps, are software programs that run on a web server and are accessed through a web browser. They are typically built using programming languages like HTML, CSS, JavaScript, and server-side languages like PHP, Python, or Ruby.",
     },
     {
       careerlogo: "webdevtype6.png",
-      careertitle: "Web Applications",
+      careertitle: "App Applications",
       carrerdes:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
     },
@@ -120,7 +120,7 @@ const WebDevelopmentType = () => {
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
-                  justifyContent: "end",
+                  // justifyContent: "end",
                   // flexDirection: isSmall ? 'column' : 'row',
                   // padding:'1.5rem',
                   gap: 2,
@@ -133,7 +133,7 @@ const WebDevelopmentType = () => {
                     justifyContent: "center",
                   }}
                 >
-                  <img src={row.careerlogo} alt="" width={"15%"} />
+                  <img src={row.careerlogo} alt=""  />
                 </Box>
 
                 <Box

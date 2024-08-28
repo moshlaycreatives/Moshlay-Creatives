@@ -100,14 +100,21 @@ const AboutUs = () => {
                 communication, collaboration, and exceeding expectations.
               </Typography>
               <Button
-                variant="outlined"
+                // variant="outlined"
                 sx={{
+                  border:"1px solid #98c447",
+                  padding:'0.5rem 1.7rem',
                   fontFamily: "Montserrat",
                   color: "white",
                   fontWeight: 400,
                   fontSize: "1rem",
                   marginTop: "1rem",
                   textTransform: "none",
+                  transition:'0.3s',
+                  "&:Hover":{
+                    backgroundColor:theme.palette.primary.main,
+                    color:'white',
+                  }
                 }}
                 onClick={() => handleSeeMore("/comming-soon")}
               >

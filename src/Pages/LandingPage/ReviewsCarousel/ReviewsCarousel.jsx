@@ -42,7 +42,7 @@ const ReviewsCarousel = () => {
           // marginBottom:'4rem',
           // display:'flex',
           alignItems:'center',
-          padding:' 1rem 9%'
+          padding:' 2rem 9%'
         }}
       >
         <Box>

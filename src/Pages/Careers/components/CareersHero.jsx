@@ -53,10 +53,7 @@ const CareersHero = () => {
               fontFamily: 'Montserrat',
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            porttitor fermentum elit ut facilisis. Curabitur sit amet sagittis
-            magna. porttitor Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit.
+           Join our dynamic team at Moshlay Creatives and embark on a rewarding career journey. We're committed to fostering a positive and supportive work environment where you can grow and thrive.
           </Typography>
 
           {/* <Box sx={{

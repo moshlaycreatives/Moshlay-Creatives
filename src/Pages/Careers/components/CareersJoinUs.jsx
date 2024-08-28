@@ -15,7 +15,7 @@ import { TbCurrentLocation } from "react-icons/tb";
 import React, { useEffect, useState } from "react";
 import CareersHMQ from "./CareersJobDetails/CareersHMQ";
 import { useDispatch } from "react-redux";
-import { GetCareersJob } from "../../../store/actions/dataActions";
+// import { GetCareersJob } from "../../../store/actions/dataActions";
 import { Dialpad } from "@mui/icons-material";
 
 const CareersJoinUs = () => {
@@ -32,33 +32,33 @@ const CareersJoinUs = () => {
     {
       careerlogo: "careerjoinlogo1.svg",
       careertitle: "Continuous Learning",
-      carrerdes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+      carrerdes: "We believe in investing in our employees' professional development. Enjoy opportunities for training, workshops, and certifications to stay up-to-date with the latest industry trends.",
       
     },
     {
         careerlogo: "careerjoinlogo2.svg",
         careertitle: "Flexible Timing",
-        carrerdes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        carrerdes: "We understand the importance of work-life balance. Enjoy the flexibility to manage your workload and schedule to suit your personal needs.",
         
       },{
         careerlogo: "careerjoinlogo3.svg",
         careertitle: "Team Support",
-        carrerdes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        carrerdes: "Be part of a professional and supportive team that values teamwork and collaboration. Benefit from the guidance and mentorship of experienced professionals.",
         
       },{
         careerlogo: "careerjoinlogo4.svg",
         careertitle: "Yearly Appraisals",
-        carrerdes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        carrerdes: "We recognize and reward your hard work and dedication through regular performance reviews and appraisals.",
         
       },{
         careerlogo: "careerjoinlogo5.svg",
         careertitle: "Friendly Environment",
-        carrerdes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        carrerdes: "Our office culture is friendly, inclusive, and supportive. Enjoy a positive and enjoyable work environment where you can connect with colleagues and build lasting relationships",
         
       },{
         careerlogo: "careerjoinlogo6.svg",
         careertitle: "Diversified Sources",
-        carrerdes: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        carrerdes: "We value diversity and inclusion. We encourage individuals from all backgrounds to join our team and contribute to our success.",
         
       },
    

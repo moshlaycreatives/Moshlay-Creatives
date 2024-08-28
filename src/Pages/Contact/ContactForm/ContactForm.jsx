@@ -119,9 +119,7 @@ const ContactForm = () => {
                 fontFamily: 'Montserrat',
 
               }}> 
-                The quick, brown fox jumps over a lazy dog. DJs flock by when
-                MTV ax quiz prog. Junk MTV quiz graced by fox whelps Bawds jog,
-                whelps Bawds jog.
+              Have a question? Need help? Send us a message. We welcome your query and are ready to assist you.
               </Typography>
               <br />
               <Box sx={{
@@ -136,6 +134,11 @@ const ContactForm = () => {
                     padding:'.3rem .2rem 0rem .2rem',
                     borderRadius:'4px',
                     fontSize:'1rem', fontFamily: 'Montserrat',
+                    transition:'0.3s',
+                    '&:hover':{
+                      color:'white',
+                      border:'2px solid white',
+                    }
                 }}>
                 <FaFacebookF />
                 </Typography>
@@ -148,6 +151,11 @@ const ContactForm = () => {
                     padding:'.3rem .2rem 0rem .2rem',
                     borderRadius:'4px',
                     fontSize:'1rem', fontFamily: 'Montserrat',
+                    transition:'0.3s',
+                    '&:hover':{
+                      color:'white',
+                      border:'2px solid white',
+                    }
                 }}>
                 <FaInstagram />
                 </Typography>
@@ -160,6 +168,11 @@ const ContactForm = () => {
                     padding:'.3rem .2rem 0rem .2rem',
                     borderRadius:'4px',
                     fontSize:'1rem', fontFamily: 'Montserrat',
+                    transition:'0.3s',
+                    '&:hover':{
+                      color:'white',
+                      border:'2px solid white',
+                    }
                 }}>
                 <FaXTwitter />
                 </Typography>
@@ -172,6 +185,11 @@ const ContactForm = () => {
                     padding:'.3rem .2rem 0rem .2rem',
                     borderRadius:'4px',
                     fontSize:'1rem', fontFamily: 'Montserrat',
+                    transition:'0.3s',
+                    '&:hover':{
+                      color:'white',
+                      border:'2px solid white',
+                    }
                 }}>
                 <FaThreads />
                 </Typography>
@@ -244,9 +262,20 @@ const ContactForm = () => {
             multiline
             rows={5}
             />
-            <Button variant="contained" sx={{marginTop:'3rem', color:'white', textTransform:'none',
+            <Button 
+            // variant="contained"
+             sx={{marginTop:'3rem', color:'white', textTransform:'none',
+              backgroundColor:theme.palette.primary.main,
+              padding:'0.8rem 2rem',
                fontFamily: 'Montserrat',
-               fontWeight:500
+               fontWeight:500,
+               border:'1px solid #98c447',
+               transition:'0.3s',
+               '&:hover':{
+                color:'white',
+                backgroundColor:"transparent",
+                border:'1px solid white'
+               }
             }}
             onClick={handleFormSubmit}
             >

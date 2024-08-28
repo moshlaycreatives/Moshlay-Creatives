@@ -10,27 +10,27 @@ const AppDevelopmentPlatforms = () => {
 
     {
       careerlogo: "webdevplatform1.png",
-      careertitle: "ENative Mobile App Development",
+      careertitle: "Native Mobile App Development",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "Native apps are platform-specific, offering optimal performance and device access. However, they require separate development for each platform.",
     },
     {
       careerlogo: "webdevplatform2.png",
       careertitle: "Hybrid Mobile App Development",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "Hybrid apps combine native and web elements, enabling cross-platform deployment. They balance performance and efficiency but may have limitations compared to fully native apps.",
     },
     {
       careerlogo: "webdevplatform3.png",
       careertitle: "Progressive Web App Development",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "PWAs offer a native-like experience without requiring app store downloads. They use web technologies and can provide offline functionality and push notifications.",
     },
     {
       careerlogo: "webdevplatform4.png",
       careertitle: "Wearables and Embedded Software",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "These specialized apps focus on wearable devices and IoT systems. They often have unique requirements for power consumption, performance, and hardware interaction.",
     },
   ];
 
@@ -94,7 +94,7 @@ FOR VARIOUS PLATFORMS
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
-                  justifyContent: "end",
+                  // justifyContent: "end",
                   // flexDirection: isSmall ? 'column' : 'row',
                   // padding:'1.5rem',
                   gap: 2,
@@ -107,7 +107,7 @@ FOR VARIOUS PLATFORMS
                     // justifyContent: "center",
                   }}
                 >
-                  <img src={row.careerlogo} alt="" width={"15%"} />
+                  <img src={row.careerlogo} alt=""  />
                 </Box>
 
                 <Box
@@ -124,12 +124,13 @@ FOR VARIOUS PLATFORMS
                       fontSize: isSmall ? "1.1rem" : "1.2rem",
                       fontFamily: "Montserrat",
                       fontWeight: 600,
+                      marginBottom:'.5rem'
                       // textAlign: "center",
                     }}
                   >
                     {row.careertitle}
                   </Typography>
-                  <br />
+                  {/* <br /> */}
                   <Typography
                     sx={{
                       color: "white",

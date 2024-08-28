@@ -25,37 +25,37 @@ const WebDevelopmentHero = () => {
       careerlogo: "webdev1.svg",
       careertitle: "Research",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "In-depth analysis of your business goals, target audience, and competitors.  For the Creation of a comprehensive project plan",
     },
     {
       careerlogo: "webdev2.svg",
       careertitle: "Web Designing",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "Designing visually appealing and user-friendly interfaces. Development of wireframes and mockups.",
     },
     {
       careerlogo: "webdev3.svg",
       careertitle: "Web Development",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "Building the website's structure and functionality using cutting-edge technologies. integration of essential features.",
     },
     {
       careerlogo: "webdev4.svg",
       careertitle: "Web Analysis and Testing",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "Rigorous testing to ensure optimal performance and compatibility. Implementation of analytics tools to track website performance.",
     },
     {
       careerlogo: "webdev5.svg",
       careertitle: "Launching",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "Deployment of the website on a secure and reliable server. Search engine optimization (SEO) to improve visibility.",
     },
     {
       careerlogo: "webdev6.svg",
       careertitle: "Website Maintenance",
       carrerdes:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget ipsum pretium, aliquam quam a, rhoncus diam. Nulla sagittis, nunc et vulputate pretium, velit libero pharetra elit, eget euismod mi massa ut lectus. Ut vulputate arcu vitae.",
+        "Ongoing updates and maintenance to keep your website secure and up-to-date. Technical support and troubleshooting services.",
     },
   ];
   return (
@@ -76,11 +76,11 @@ const WebDevelopmentHero = () => {
       >
         <Box
           sx={{
-            width:{lg: '50%', md : '100%'}
+            width: { lg: "50%", md: "100%" },
           }}
         >
           <Button
-            variant="contained"
+            // variant="contained"
             sx={{
               padding: "1rem 2rem",
               fontSize: "1rem",
@@ -88,7 +88,14 @@ const WebDevelopmentHero = () => {
               fontWeight: 500,
               fontFamily: "montserrat",
               backgroundColor: "#4e6645",
+              border:'1px solid #4e6645',
               textTransform: "none",
+              transition:'.2s',
+              '&:hover':{
+                color:'white', 
+                border:'1px solid white',
+                // transition:'1s'
+              }
             }}
           >
             Digital Solutions
@@ -110,17 +117,15 @@ const WebDevelopmentHero = () => {
               fontSize: "1rem",
               fontWeight: 400,
               color: "white",
-              fontFamily:'Montserrat'
+              fontFamily: "Montserrat",
               //   textAlign: "center",
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ornare
-            felis non quam egestas sagittis. Sed gravida nulla tellus, eu
-            aliquam m i vulputate at. Proin nunc magna, varius vel faucibus id,
-            ornare dignissi m sem. Nullam at molestie justo, ut fringilla dui.
-            Nam convallis ipsu m sodales augue consectetur, sed aliquam tortor
-            aliquam. Suspen disse eu consequat sem. Donec ac gravida metus, non
-            tincidunt null a. Pellentesque ullamcorper at felis ut ornare.
+            Your digital vision, our expertise. Moshlay Creatives bridges the
+            gap between front-end, back-end, and architecture to deliver
+            tailored web solutions that drive your business forward. With a
+            proven track record, we'll craft innovative software that exceeds
+            your expectations. Contact us to discuss your project
           </Typography>
           <br />
           <br />
@@ -134,6 +139,11 @@ const WebDevelopmentHero = () => {
               fontFamily: "montserrat",
               // backgroundColor:'#4e6645',
               textTransform: "none",
+              transition:'0.2s',
+              "&:hover":{
+                color:'white',
+                background:theme.palette.primary.main, border:'none'
+              }
             }}
           >
             Schedule a Free Consultation
@@ -148,19 +158,21 @@ const WebDevelopmentHero = () => {
         }}
       >
         {/* ========================================================TEXT PART============================================= */}
-        <Box sx={{
-            display:'flex',
-            flexDirection:'column',
-            alignItems:'center'
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
             // justifyContent:'center'
-        }}>
+          }}
+        >
           <Typography
             sx={{
               fontSize: isSmall ? "1.5rem" : isMedium ? "2rem" : "2.5rem",
               fontWeight: 600,
               color: theme.palette.primary.main,
               textAlign: "center",
-              marginTop:'4rem',
+              marginTop: "4rem",
               fontFamily: "montserrat",
             }}
           >
@@ -173,7 +185,7 @@ const WebDevelopmentHero = () => {
               fontWeight: 400,
               color: "white",
               textAlign: "center",
-              width:isSmall ? '100%' : isMedium  ? '90%' : '90%',
+              width: isSmall ? "100%" : isMedium ? "90%" : "90%",
               fontFamily: "montserrat",
             }}
           >
@@ -192,7 +204,7 @@ const WebDevelopmentHero = () => {
             <Grid key={id} item lg={4} md={6} sm={12} xs={12}>
               <Box
                 sx={{
-                  height:'100%',
+                  height: "100%",
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",

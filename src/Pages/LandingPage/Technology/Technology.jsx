@@ -55,11 +55,7 @@ const Technology = () => {
                 }}
               >
                 {" "}
-                We craft exceptional digital experiences. Our expert developer's
-                team delivers user-friendly back-end and front-end solutions
-                tailored to your business. With a proven track record across
-                industries, we help you create amazing products that customers
-                love.
+                As a leading IT service company, we specialize in delivering detailed solutions tailored to your unique needs. Our skilled team is proficient in working with a wide range of backend and frontend technologies, ensuring seamless integration and optimal performance. Whether you require robust backend development, captivating frontend design, or a combination of both, we have the expertise to deliver exceptional results
               </Typography>
               <Typography
                 sx={{
@@ -72,11 +68,11 @@ const Technology = () => {
                 }}
               >
                 {" "}
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 portt tum elit ut facilisis. Curabitur sit amet sagittis magna.
                 Vestibulum lao lacus, vitae venenatis magna interdum a.
                 Pellentesque vestibulum tortor sed mollis. Orci varius natoque
-                penatibus
+                penatibus */}
               </Typography>
               {/* <Box>
                 <Button variant="outlined" 

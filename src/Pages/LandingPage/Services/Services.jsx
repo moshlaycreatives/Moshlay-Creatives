@@ -20,25 +20,25 @@ const Services = () => {
     {
       title: "Web Developer",
       subTitle:
-        "A wide client base across various industries is proof of our ability to deliver remarkable software solutions.",
+        "We specialize in crafting custom websites that not only look stunning but also drive results. Our team of skilled developers utilizes the latest technologies to create websites that are visually appealing, user-friendly, and optimized for search engines.",
       image: "services1.svg",
     },
     {
       title: "Search Engine Optimization",
       subTitle:
-        "A wide client base across various industries is proof of our ability to deliver remarkable software solutions.",
+        "Our SEO experts are dedicated to improving your website's visibility in search engine results pages (SERPs). We employ proven strategies to optimize your website's content, structure, and technical aspects, ensuring that you rank higher for relevant keywords.",
       image: "services2.svg",
     },
     {
       title: "App Developer",
       subTitle:
-        "A wide client base across various industries is proof of our ability to deliver remarkable software solutions.",
+        "We create innovative mobile apps that meet your business objectives and provide a seamless user experience. Our app development services cover a wide range of platforms and functionalities, ensuring that your app stands out in the crowded marketplace.",
       image: "services3.svg",
     },
     {
       title: "Email Marketing",
       subTitle:
-        "A wide client base across various industries is proof of our ability to deliver remarkable software solutions.",
+        "Our email marketing services help you nurture customer relationships and drive conversions. We develop targeted email campaigns, personalize content, and track performance metrics to optimize your results.",
       image: "services4.svg",
     },
     {
@@ -50,31 +50,31 @@ const Services = () => {
     {
       title: "Socail Medai Marketing",
       subTitle:
-        "A wide client base across various industries is proof of our ability to deliver remarkable software solutions.",
+        "We help you engage with your target audience on popular social media platforms. Our team develops effective social media strategies, creates engaging content, and manages your online presence to drive brand awareness and increase customer engagement.",
       image: "services6.svg",
     },
     {
       title: "Quality Assurance",
       subTitle:
-        "A wide client base across various industries is proof of our ability to deliver remarkable software solutions.",
+        "We are committed to delivering high-quality IT solutions. Our quality assurance team conducts thorough testing and quality checks to ensure that your website, app, or other digital asset meets the highest standards of performance and reliability.",
       image: "services7.svg",
     },
     {
       title: "Pay-Par-Click(PPC)",
       subTitle:
-        "A wide client base across various industries is proof of our ability to deliver remarkable software solutions.",
+        "We optimize your online advertising campaigns to maximize your return on investment (ROI). Our PPC experts leverage data-driven strategies to target the right audience, improve click-through rates, and drive conversions.",
       image: "services8.svg",
     },
     {
       title: "UI/UX Designing",
       subTitle:
-        "A wide client base across various industries is proof of our ability to deliver remarkable software solutions.",
+        "We focus on designing intuitive and visually appealing user experiences that leave a lasting impression. Our UI/UX experts combine creativity and technical expertise to create interfaces that are both functional and aesthetically pleasing.",
       image: "services9.svg",
     },
     {
       title: "Content Marketing",
       subTitle:
-        "A wide client base across various industries is proof of our ability to deliver remarkable software solutions.",
+        "We help you create valuable and engaging content that attracts and retains your target audience. Our content marketing services include blog writing, article creation, and social media content development.",
       image: "services10.svg",
     },
   ];
@@ -113,11 +113,7 @@ const Services = () => {
               marginBottom: "-2rem",
             }}
           >
-            We offer cost-effective and efficient solutions without compromising
-            quality. We offer a wide range of services. From startups to
-            established enterprises, we've been the driving force behind
-            countless success stories. Discover how our comprehensive solutions
-            can transform your business.
+           We Don't compromise on quality, choose our affordable services and hire our premium services at budget-friendly prices to scale your business.
           </Typography>
         </Box>
 
@@ -147,14 +143,18 @@ const Services = () => {
                     ? "20vh"
                     : isFourteen
                     ? "25vh"
-                    : "25vh",
+                    : "20vh",
                   overflow: "hidden",
+                  transition:'1s',
                   "&:hover .overplay ": {
                     transform: "translateX(0%)",
                   },
                   "&:hover .diviver-text-overplay": {
                     transform: "translateX(-150%)",
                   },
+                  '&:hover':{
+                    transform:'scale(1.05)'
+                  }
                   // '&:hover .divider': {
                   //   transform:'translateX(-1000%)'
                   //  }
@@ -181,7 +181,7 @@ const Services = () => {
                   <Typography
                     sx={{
                       color: "white",
-                      fontSize: "1rem",
+                      fontSize: isSmall ? "0.8rem " : "1rem",
                       fontWeight: "400",
                       fontFamily: "Montserrat",
                       // marginLeft: '1rem'

@@ -113,14 +113,20 @@ const ContactUs = () => {
               </Typography>
               <Box>
                 <Button
-                  variant="contained"
+                  // variant="contained"
                   sx={{
                     color: theme.palette.primary.main,
+                    padding:'0.8rem 2rem',
                     fontSize: "1rem",
                     backgroundColor:'white',
                     textTransform:'none',
                     fontFamily:'Montserrat',
-                    fontWeight:500
+                    fontWeight:500,
+                    border:'1px solid white',
+                    '&:hover':{
+                      color:'white',
+                      
+                    }
                   }}
                   onClick={()=>navigate('/contact')}
                 >

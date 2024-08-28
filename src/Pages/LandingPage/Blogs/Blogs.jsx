@@ -1,4 +1,14 @@
-import { Box, Button, Card, colors, Divider, Grid, Typography, useTheme, useMediaQuery } from "@mui/material";
+import {
+  Box,
+  Button,
+  Card,
+  colors,
+  Divider,
+  Grid,
+  Typography,
+  useTheme,
+  useMediaQuery,
+} from "@mui/material";
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import BlogsCard from "./blogsCard";
@@ -7,61 +17,93 @@ import { useNavigate } from "react-router";
 const Blogs = () => {
   const navigate = useNavigate();
   const theme = useTheme();
-const isMedium = useMediaQuery(theme.breakpoints.down("md"));
-const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
 
-const  cardData =[
-  { cardImage :'blog1.svg', cardDate : ' 28 JANUARY, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
-  { cardImage :'blog1.svg', cardDate : ' 28 DECEMBER, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
-  {cardImage :'blog1.svg', cardDate : ' 28 SEPTEMBER, 2023' , cardText : 'Lorem ipsum dolor sit am consectetur ipiscing eli...' },
-]
+  const cardData = [
+    {
+      cardImage: "blog1.svg",
+      cardDate: " 28 JANUARY, 2023",
+      cardText: "Lorem ipsum dolor sit am consectetur ipiscing eli...",
+    },
+    {
+      cardImage: "blog1.svg",
+      cardDate: " 28 DECEMBER, 2023",
+      cardText: "Lorem ipsum dolor sit am consectetur ipiscing eli...",
+    },
+    {
+      cardImage: "blog1.svg",
+      cardDate: " 28 SEPTEMBER, 2023",
+      cardText: "Lorem ipsum dolor sit am consectetur ipiscing eli...",
+    },
+  ];
 
   return (
     <>
-      <Box sx={{
-        margin:'2rem 0rem',
-        padding:'0 10%'
-      }}>
-        <Box marginBottom={'2rem'}>
-          <Typography variant="h3" sx={{
-            color:theme.palette.primary.main,
-            fontSize:'2.5rem',
-            textAlign:'center',
-            marginBottom:'1rem',
-            fontFamily:'Montserrat',
-            fontWeight:600
-          }}>
+      <Box
+        sx={{
+          margin: "2rem 0rem",
+          padding: "0 10%",
+        }}
+      >
+        <Box marginBottom={"2rem"}>
+          <Typography
+            variant="h3"
+            sx={{
+              color: theme.palette.primary.main,
+              fontSize: "2.5rem",
+              textAlign: "center",
+              marginBottom: "1rem",
+              fontFamily: "Montserrat",
+              fontWeight: 600,
+            }}
+          >
             Blogs
           </Typography>
-          <Typography  sx={{
-            color:'white',
-            fontSize: isMedium ? '1rem' : '1.1rem',
-            textAlign:'center',
-            marginBottom:'1rem',
-            fontFamily:'Montserrat',
-            fontWeight:400
-          }}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat auctor ipsum, a suscipit 
-            lacus efficitur ut. Fusce sit amet nunc vitae urna commodo mattis in in turpis.
+          <Typography
+            sx={{
+              color: "white",
+              fontSize: isMedium ? "1rem" : "1.1rem",
+              textAlign: "center",
+              marginBottom: "1rem",
+              fontFamily: "Montserrat",
+              fontWeight: 400,
+            }}
+          >
+            Join us on a journey of knowledge and discovery. Explore our blog
+            section to read more about our services, industry trends, and
+            valuable insights.
           </Typography>
         </Box>
-        
-        
-        
-        <BlogsCard/>
-        <Box sx={{
-              textAlign:'center'
-            }}>
-            <Button variant="contained" sx={{
-              color:'white', fontSize:'1rem', fontFamily:'Montserrat',
-              textTransform:'none',fontWeight:500,
-              marginTop:'1rem', 
-            }}
-            onClick={(e)=>navigate('/blogs')}
-            >
-              View More</Button>
-            </Box>
 
+        <BlogsCard />
+        <Box
+          sx={{
+            textAlign: "center",
+          }}
+        >
+          <Button
+            // variant="contained"
+            sx={{
+              backgroundColor:theme.palette.primary.main,
+              padding:'0.8rem 2rem',
+              border:'1px solid #98c447',
+              color: "white",
+              fontSize: "1rem",
+              fontFamily: "Montserrat",
+              textTransform: "none",
+              fontWeight: 500,
+              marginTop: "1rem",
+              '&:hover':{
+                color:'white',
+                border:'1px solid white',
+              }
+            }}
+            onClick={(e) => navigate("/blogs")}
+          >
+            View More
+          </Button>
+        </Box>
       </Box>
     </>
   );
@@ -69,9 +111,6 @@ const  cardData =[
 
 export default Blogs;
 
-
-
- 
 // ========================BLOGS CARD ====================================
 
 // <Box>
@@ -88,8 +127,8 @@ export default Blogs;
 //                 <Box sx={{
 //                     padding:'1rem',
 //                     backgroundColor:'#18232d',
-                     
-//                 }}> 
+
+//                 }}>
 //                     <Button variant="contained" sx={{
 //                         fontSize:'.9rem',
 //                         textAlign:'center',
@@ -104,16 +143,15 @@ export default Blogs;
 //                         {val.cardDate}
 //                     </Button>
 //                     <Typography sx={{
-//                         fontSize: isSmall ? '1.1rem' : isMedium ? '1.2rem' : '1.2rem', 
+//                         fontSize: isSmall ? '1.1rem' : isMedium ? '1.2rem' : '1.2rem',
 //                         color:'white',
 //                         fontFamily:'Montserrat',
 //                         fontWeight:400
-                        
-                        
+
 //                     }}>
 //                     {val.cardText}
 //                     </Typography>
-                    
+
 //                     <Button sx={{
 //                       fontSize:'1rem',
 //                       marginLeft:'-.3rem',

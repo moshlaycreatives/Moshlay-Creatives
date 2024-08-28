@@ -74,7 +74,7 @@ const WhyWeIdeal = () => {
           </Typography>
         </Box>
 
-        <Grid container spacing={ isMedium ? 5 : istwelve ? 5 : isExtraLarge ? 20 :  5} alignItems={'end'}>
+        <Grid container spacing={ isMedium ? 5 : istwelve ? 5 : isExtraLarge ? 5 :  0} alignItems={'end'}>
           <Grid item lg={6} md={12} sm={12} xs={12}  >
             <Box
               sx={{
@@ -89,7 +89,7 @@ const WhyWeIdeal = () => {
               }} />
               <Box
                 sx={{
-                  display: "flex",
+                  // display: "flex",
                   flexDirection: "column",
                   justifyContent: "end",
                   backgroundColor: theme.palette.primary.main,
@@ -147,7 +147,165 @@ const WhyWeIdeal = () => {
             </Box>
           </Grid>
 
-          {/* <Grid
+          
+
+          <Grid 
+  item
+  lg={6}
+  md={12}
+  sm={12}
+  xs={12}
+  sx={{
+    display: "flex",
+    alignItems: "flex-start", // Ensure alignment at the top for large screens
+    width:'100%',
+  }}
+>
+  <Box
+    sx={{ 
+      display: istwelve ? 'flex' : 'none', 
+      flexDirection: 'column', 
+      justifyContent: 'flex-start', 
+      backgroundColor: theme.palette.primary.main,
+      height: '100%',
+      borderRadius: '20px 0 20px 0',
+      padding: isSmall ? '.5rem' : '1rem 1rem 2rem 1rem',
+      gap: isfour ? 27 : isfour50 ? 22  : isfive ? 18 : isfive50 ? 15.5 : isSmall ? 15 : isseven ? 14 : isEight ? 13 : isMedium ? 12 : isTen ? 10 :  8,
+      paddingBottom: isfour ? '9rem' : isfour50 ? '8rem' : isfive ? '7rem' : isfive50 ? '7rem' : isSmall ? '6rem' : isseven ? '4rem' : isEight ? '3rem' : isMedium ? '3rem' : '2rem',
+      marginRight: '1rem',
+    }}
+  >
+    <Typography
+      sx={{
+        fontSize: isSmall ? '1.8rem' : isMedium ? '2rem' : "2.5rem",
+        color: "white",
+        fontWeight: "500",
+        fontFamily: 'Montserrat',
+      }}
+    >
+      40%
+    </Typography>
+    <Typography
+      sx={{
+        fontSize: isSmall ? '1.8rem' : isMedium ? '2rem' : "2.5rem",
+        color: "white",
+        fontWeight: "500",
+        fontFamily: 'Montserrat',
+      }}
+    >
+      50%
+    </Typography>
+    <Typography
+      sx={{
+        fontSize: isSmall ? '1.8rem' : isMedium ? '2rem' : "2.5rem",
+
+        color: "white",
+        fontWeight: "500",
+        fontFamily: 'Montserrat',
+      }}
+    >
+      85%
+    </Typography>
+    <Typography
+      sx={{
+        fontSize: isSmall ? '1.8rem' : isMedium ? '2rem' : "2.5rem",
+
+        color: "white",
+        fontWeight: "500",
+        fontFamily: 'Montserrat',
+        marginBottom: '30%',
+      }}
+    >
+      97%
+    </Typography>
+  </Box>
+
+  <Box sx={{ flex: 1, width:'100%', display:'flex', flexDirection:'column', alignItems:'start', justifyContent:'start', paddingLeft:'0rem' }}>
+    {[
+      {
+        title: "Happy Customers",
+        text: "A wide client base across various industries is proof of our ability to deliver remarkable software solutions, and we endeavor to meet the needs of every client.",
+      },
+      {
+        title: "Successful Projects",
+        text: "We have completed over 20 successful projects demonstrating our capability to deliver software solutions that meet and exceed client expectations.",
+      },
+      {
+        title: "Faster Delivery",
+        text: "Our team can be expanded according to your project requirements in order to ensure faster delivery of your project.",
+      },
+      {
+        title: "Client Retention Rate",
+        text: "97% of our clients who chose us for bespoke software development continue to hire us for their additional projects, which demonstrates how well we serve our clients.",
+      },
+    ].map(({ title, text }, index) => (
+      <Box
+        key={index}
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          gap: 1,
+          marginTop: '1rem',
+          width:'100%',       }}
+      >
+        <Typography
+          sx={{
+            fontSize: { xs: "1.5rem", sm: "1.8rem" },
+            color: "white",
+            fontFamily: 'Montserrat',
+            fontWeight: 500,
+          }}
+        >
+          {title}
+        </Typography>
+        <Typography
+          sx={{
+            fontSize: "1rem",
+            color: "white",
+            fontFamily: 'Montserrat',
+            fontWeight: 400,
+          }}
+        >
+          {text}
+        </Typography>
+        <Divider color={"white"} />
+      </Box>
+    ))}
+  </Box>
+</Grid>
+
+
+
+        </Grid>
+      </Box>
+    </>
+  );
+};
+
+export default WhyWeIdeal;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <Grid
             item
             lg={6}
             md={12}
@@ -355,138 +513,3 @@ const WhyWeIdeal = () => {
           
 
           {/* test  */}
-
-          <Grid
-  item
-  lg={6}
-  md={12}
-  sm={12}
-  xs={12}
-  sx={{
-    display: "flex",
-    alignItems: "flex-start", // Ensure alignment at the top for large screens
-  }}
->
-  <Box
-    sx={{
-      display: "flex",
-      flexDirection: "column",
-      justifyContent: "flex-start", // Align content to the start
-      backgroundColor: theme.palette.primary.main,
-      height: "100%",
-      borderRadius: "20px 0 20px 0",
-      padding: isSmall ? '.5rem .5rem .5rem .5rem' :  "1rem 1rem 2rem 1rem",
-      gap: isfour ? 27 : isfour50 ? 22  : isfive ? 18 : isfive50 ? 15.5 : isSmall ? 15 : isseven ? 14 : isEight ? 13 : isMedium ? 12 : isTen ? 10 :  8, // Adjust gap to maintain spacing between percentages
-      paddingBottom : isfour ? '9rem' : isfour50 ? '8rem' : isfive ? '7rem' : isfive50 ? '7rem' : isSmall ? '6rem' : isseven ? '4rem' : isEight ? '3rem' : isMedium ? '3rem' : '2rem' ,
-      display: istwelve ? 'flex' : 'none' , // Show only on small screens and above
-      marginRight: '1rem',
-    }}
-  >
-    <Typography
-      sx={{
-        fontSize: isSmall ? '1.8rem' : isMedium ? '2rem' : "2.5rem",
-        color: "white",
-        fontWeight: "500",
-        fontFamily: 'Montserrat',
-      }}
-    >
-      40%
-    </Typography>
-    <Typography
-      sx={{
-        fontSize: isSmall ? '1.8rem' : isMedium ? '2rem' : "2.5rem",
-        color: "white",
-        fontWeight: "500",
-        fontFamily: 'Montserrat',
-      }}
-    >
-      50%
-    </Typography>
-    <Typography
-      sx={{
-        fontSize: isSmall ? '1.8rem' : isMedium ? '2rem' : "2.5rem",
-
-        color: "white",
-        fontWeight: "500",
-        fontFamily: 'Montserrat',
-      }}
-    >
-      85%
-    </Typography>
-    <Typography
-      sx={{
-        fontSize: isSmall ? '1.8rem' : isMedium ? '2rem' : "2.5rem",
-
-        color: "white",
-        fontWeight: "500",
-        fontFamily: 'Montserrat',
-        marginBottom: '30%',
-      }}
-    >
-      97%
-    </Typography>
-  </Box>
-
-  <Box sx={{ flex: 1 }}>
-    {[
-      {
-        title: "Happy Customers",
-        text: "A wide client base across various industries is proof of our ability to deliver remarkable software solutions, and we endeavor to meet the needs of every client.",
-      },
-      {
-        title: "Successful Projects",
-        text: "We have completed over 20 successful projects demonstrating our capability to deliver software solutions that meet and exceed client expectations.",
-      },
-      {
-        title: "Faster Delivery",
-        text: "Our team can be expanded according to your project requirements in order to ensure faster delivery of your project.",
-      },
-      {
-        title: "Client Retention Rate",
-        text: "97% of our clients who chose us for bespoke software development continue to hire us for their additional projects, which demonstrates how well we serve our clients.",
-      },
-    ].map(({ title, text }, index) => (
-      <Box
-        key={index}
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          gap: 1,
-          marginTop: '1rem',
-        }}
-      >
-        <Typography
-          sx={{
-            fontSize: { xs: "1.5rem", sm: "1.8rem" },
-            color: "white",
-            fontFamily: 'Montserrat',
-            fontWeight: 500,
-          }}
-        >
-          {title}
-        </Typography>
-        <Typography
-          sx={{
-            fontSize: "1rem",
-            color: "white",
-            fontFamily: 'Montserrat',
-            fontWeight: 400,
-          }}
-        >
-          {text}
-        </Typography>
-        <Divider color={"white"} />
-      </Box>
-    ))}
-  </Box>
-</Grid>
-
-
-
-        </Grid>
-      </Box>
-    </>
-  );
-};
-
-export default WhyWeIdeal;

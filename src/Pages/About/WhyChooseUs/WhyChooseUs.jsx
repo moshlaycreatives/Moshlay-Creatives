@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
                 textAlign: 'justify',fontFamily:'Montserrat'
               }}
             >
-              We have a strong history of successful project completion, delivering measurable results for our clients.
+              With a strong track record of successful project completion, Moshlay Creatives has consistently delivered measurable results for our clients. Our team of experienced professionals has a proven ability to meet deadlines, stay within budget, and exceed expectations. We leverage our industry knowledge and best practices to ensure that every project is executed efficiently and effectively.
             </Typography>
           </Box>
             </Grid>
@@ -130,8 +130,7 @@ const WhyChooseUs = () => {
                 fontFamily:'Montserrat'
               }}
             >
-              Our commitment to client success is unwavering. We take full ownership of project outcomes.
-
+             At Moshlay Creatives, we are committed to the success of our clients. We believe in taking full ownership of project outcomes, ensuring that every project is delivered to the highest standards. Our team works closely with our clients to understand their unique needs and goals, and we are dedicated to providing solutions that drive tangible results.
             </Typography>
           </Box>
             </Grid>
@@ -201,7 +200,7 @@ const WhyChooseUs = () => {
                 fontFamily:'Montserrat'
               }}
             >
-           Whether you're a startup or a large enterprise, we have the expertise to adapt and grow your business.
+          Whether you're a startup looking to scale rapidly or a large enterprise seeking to optimize your operations, Moshlay Creatives has the expertise to help you achieve your goals. Our team has a proven ability to adapt to changing business needs and implement scalable solutions that support your growth. We understand the challenges of scaling a business and can provide the guidance and support you need to succeed.
             </Typography>
           </Box>
             </Grid>

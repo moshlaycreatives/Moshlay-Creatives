@@ -52,7 +52,7 @@ const ContactHero = () => {
               fontFamily: 'Montserrat',
             }}
           >
-           Unlock your business potential. Contact us now!
+          Have a project in mind? Ready to take your business to the next level? Let's connect! Contact us today for a free consultation. Our team of experts is eager to discuss your needs and provide tailored solutions.
           </Typography>
           {/* <Box>
             <img src="getintouch.svg" alt="" />

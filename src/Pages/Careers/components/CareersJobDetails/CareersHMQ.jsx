@@ -38,21 +38,26 @@ const CareersHMQ = () => {
           </Typography>
           <Typography sx={{
             color:'white',
-            fontFamily:'Inter',
+            fontFamily:'Montserrat',
             fontSize:'1rem',
             fontWeight:400 
           }}>
           Drop us a note and we’ll get back to you soon
           </Typography>
           </Box>
-          <Button sx={{
+          <Button variant="outlined" sx={{
             backgroundColor:'white',
             color:theme.palette.primary.main,
-            padding:'1rem 2rem',
+            padding:'.8rem 2rem',
             fontSize:'1rem',
-            fontFamily:500
+            fontFamily:500,
+            textTransform:'none',
+            '&:hover':{
+              color:'white',
+              border:'1px solid white'
+            }
           }}>
-            Get in touch
+            Get in Touch
           </Button>
         </Box>
     </>
