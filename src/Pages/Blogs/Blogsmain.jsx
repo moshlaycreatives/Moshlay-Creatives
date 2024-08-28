@@ -6,6 +6,7 @@ import Header2 from '../Components/Header2'
 import { useLocation } from 'react-router-dom'
 import BlogsHero from './components/BlogsHero'
 import BlogsCard from '../LandingPage/Blogs/blogsCard'
+import Page from '../../components/Page/Page'
 
 const BlogsMain = () => {
   const [isScroll, setIsScroll] = useState(false);
@@ -28,8 +29,9 @@ const BlogsMain = () => {
     window.removeEventListener('scroll',handleScroll);}
   },[])
   return (
-    <>
-    <Box sx={{
+  <>
+  <Page title="Blogs">
+  <Box sx={{
         backgroundImage: 'linear-gradient(to right, #132650, #000000)',
         // position:'relative', 
         // minHeight:'100vh',
@@ -48,6 +50,10 @@ const BlogsMain = () => {
         <BlogsHero/>
         <Footer/>
     </Box>
+  </Page>
+
+
+ 
     </>
   )
 }

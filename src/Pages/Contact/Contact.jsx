@@ -5,6 +5,7 @@ import ContactForm from './ContactForm/ContactForm'
 import Footer from '../Components/Footer/Footer'
 import Header2 from '../Components/Header2'
 import { useLocation } from 'react-router-dom'
+import Page from '../../components/Page/Page'
 
 const Contact = () => {
   const [isScroll, setIsScroll] = useState(false);
@@ -28,6 +29,8 @@ const Contact = () => {
   },[])
   return (
     <>
+
+    <Page title="Contact">
     <Box sx={{
         backgroundImage: 'linear-gradient(to right, #132650, #000000)',
         // position:'relative', 
@@ -48,6 +51,8 @@ const Contact = () => {
         <ContactForm/>
         <Footer/>
     </Box>
+    </Page>
+    
     </>
   )
 }

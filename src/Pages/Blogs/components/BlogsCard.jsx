@@ -52,7 +52,7 @@ const BlogsCard = () => {
 
     // console.log('blog data ', blogsData)
 
-    const date = dateFormat(blogsData.createdAt, "dS mmmm, yyyy")
+    const date = dateFormat(blogsData?.createdAt, "dS mmmm, yyyy")
     // console.log('data new format ',date)
 
     
@@ -89,7 +89,7 @@ const BlogsCard = () => {
     ) : (
       <Box>
             <Grid container spacing={5}>
-              {blogsData.map(( row,index)=>(
+              {blogsData?.map(( row,index)=>(
             <Grid  item key={index} lg={4} md={4} sm={12} xs={12} width={'100%'} >
                <Box sx={{
                 width:'100%'

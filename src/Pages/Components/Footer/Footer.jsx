@@ -88,14 +88,14 @@ function Footer() {
               {" "}
               <i>
                 {" "}
-                <MdOutlineEmail /> abc@gmail.com
+                <MdOutlineEmail /> moshlaycreatives@gmail.com
               </i>
             </a>
             <a href="">
               {" "}
               <i>
                 {" "}
-                <FaPhoneVolume /> +923076589234
+                <FaPhoneVolume /> +92 309 2087119
               </i>
             </a>
           </div>

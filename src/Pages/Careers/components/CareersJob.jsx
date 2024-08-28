@@ -9,7 +9,7 @@ import { GetCareersJob } from '../../../store/actions/DataActions';
 
 
 const CareersJob = () => {
-  const  jobData = useSelector((state)=> state.jobs.jobs.data)
+  const  jobData = useSelector((state)=> state?.jobs?.jobs?.data)
   // console.log(' reuder get adatra sjdsj', job);
 
 
@@ -137,7 +137,7 @@ useEffect(()=>{
        ): (
         <Grid container  spacing={3}>
 
-          {jobData.map((row, id)=>(
+          {jobData?.map((row, id)=>(
             <Grid key={row._id} item lg={6} md={6} sm={12} xs={12}>
             <Card sx={{ 
                padding:'1.5rem',

@@ -9,6 +9,7 @@ import Header2 from '../Components/Header2'
 import AppDevelopmentPlatforms from './components/AppDevelopmentPlatforms'
 import AppDevelopmentTech from './components/AppDevelopmentTech'
 import AppDevelopmentSteps from './components/AppDevelopmentSteps'
+import Page from '../../components/Page/Page'
 
 
 
@@ -34,6 +35,7 @@ const AppDevelopmentMain = () => {
   },[])
   return (
     <>
+    <Page title="App Development">
     <Box sx={{
         backgroundImage: 'linear-gradient(to right, #132650, #000000)', 
         // position:'relative', 
@@ -58,6 +60,9 @@ const AppDevelopmentMain = () => {
         <ContactUs/>
         <Footer/>
     </Box>
+    </Page>
+
+    
     </>
   )
 }

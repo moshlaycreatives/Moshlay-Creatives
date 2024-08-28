@@ -11,7 +11,7 @@ import { getAllBlogs } from "../../../store/actions/DataActions";
 
 const BlogsCard = () => {
   // const { blogs, isloading, error } = useSelector(state => state.dataReducers);
-  const blogsData = useSelector((state => state.blog.data))
+  const blogsData = useSelector((state => state?.blog?.data))
 
 
   const base = "https://zh0k2dcj-3700.euw.devtunnels.ms";
@@ -54,7 +54,7 @@ const BlogsCard = () => {
 
     // console.log('blog data ', blogsData)
 
-    const date = dateFormat(blogsData.createdAt, "dS mmmm, yyyy")
+    const date = dateFormat(blogsData?.createdAt, "dS mmmm, yyyy")
     // console.log('data new format ',date)
 
     
@@ -92,7 +92,7 @@ const BlogsCard = () => {
     ) :  (
       <Box>
             <Grid container spacing={5}>
-              {blogsData.slice(0,3).map(( row,index)=>(
+              {blogsData?.slice(0,3)?.map(( row,index)=>(
             <Grid  item key={index} lg={4} md={4} sm={12} xs={12} width={'100%'} >
                <Box sx={{
                 width:'100%'

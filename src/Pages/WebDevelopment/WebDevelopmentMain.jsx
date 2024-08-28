@@ -10,6 +10,7 @@ import WebDevelopmentType from './components/WebDevelopentType'
 import ContactUs from '../LandingPage/ContactUs/ContactUs'
 import WebDevelopmentBenefit from './components/WebDevelopmentBenefit'
 import WebDevelopmentTech from './components/WebDevelopmentTech'
+import Page from '../../components/Page/Page'
 
 
 
@@ -37,6 +38,7 @@ const WebDevelopmentMain = () => {
   },[])
   return (
     <>
+    <Page title='Web Development'>
     <Box sx={{
         backgroundImage: 'linear-gradient(to right, #132650, #000000)',
         // position:'relative', 
@@ -62,6 +64,9 @@ const WebDevelopmentMain = () => {
         <ContactUs/>
         <Footer/>
     </Box>
+    </Page>
+
+   
     </>
   )
 }

@@ -16,6 +16,8 @@ import { useEffect, useState } from "react";
 import Technologytwo from "./Technologytwo/Technologytwo";
 import Header2 from "../Components/Header2";
 import { useLocation } from "react-router-dom";
+import Page from "../../components/Page/Page";
+
 
 const Landing = () => {
   const theme = useTheme();
@@ -46,7 +48,9 @@ const Landing = () => {
 
   return (
     <>
-      <Box
+
+    <Page title="Moshlay Creatives">
+    <Box
         sx={{
           // position: "absolute",
           position: isSticky ? "fixed" : "absolute",
@@ -67,6 +71,8 @@ const Landing = () => {
         <Hero />
         <HomeMain />
       </Box>
+    </Page>
+      
     </>
   );
 };

@@ -31,9 +31,9 @@ export const SendFormData = (formData) => async (dispatch) => {
   
     try {
       const res = await api.get('/getAllBlogs');
-      console.log('Fetched blogs:', res.data); // Log fetched data
+      console.log('Fetched blogs:', res?.data); // Log fetched data
   
-      dispatch({ type: 'GET-ALL-BLOGS', payload: res.data });
+      dispatch({ type: 'GET-ALL-BLOGS', payload: res?.data });
       // console.log('data send to reducer', dispatch({ type: 'GET-ALL-BLOGS', payload: res.data }))
     } catch (error) {
       console.error('Fetch blogs error:', error);
@@ -43,7 +43,7 @@ export const SendFormData = (formData) => async (dispatch) => {
 
   export const SendBlogsId = (blogId)=> async (dispatch)=>{
     const res = await api.get(`/getBlogId/${blogId}`)
-    dispatch({type:'SEND-BLOGS-ID', payload:res.data})
+    dispatch({type:'SEND-BLOGS-ID', payload:res?.data})
     try {
       return res;
     } catch (error) {

@@ -10,6 +10,7 @@ import Footer from '../Components/Footer/Footer'
 import FaqsPage from '../LandingPage/Faqs/faqsPage'
 import Header2 from '../Components/Header2'
 import { useLocation } from 'react-router-dom'
+import Page from '../../components/Page/Page'
 
 const About = () => {
   const [isScroll, setIsScroll] = useState(false);
@@ -33,6 +34,7 @@ const About = () => {
   },[])
   return (
     <>
+    <Page title="Company">
     <Box sx={{
         backgroundImage: 'linear-gradient(to right, #132650, #000000)',
         position:'relative', 
@@ -58,6 +60,9 @@ const About = () => {
         <FaqsPage/>
         <Footer/>
     </Box>
+    </Page>
+
+    
     </>
   )
 }

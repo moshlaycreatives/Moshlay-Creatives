@@ -6,6 +6,7 @@ import Header2 from '../Components/Header2'
 import CareersHero from './components/CareersHero'
 import CareersJob from './components/CareersJob'
 import CareersJoinUs from './components/CareersJoinUs'
+import Page from '../../components/Page/Page'
 
 
 const CareersMain = () => {
@@ -30,6 +31,7 @@ const CareersMain = () => {
   },[])
   return (
     <>
+    <Page title="Career">
     <Box sx={{
         backgroundImage: 'linear-gradient(to right, #132650, #000000)',
         // position:'relative', 
@@ -51,6 +53,9 @@ const CareersMain = () => {
         <CareersJoinUs/>
         <Footer/>
     </Box>
+    </Page>
+
+   
     </>
   )
 }

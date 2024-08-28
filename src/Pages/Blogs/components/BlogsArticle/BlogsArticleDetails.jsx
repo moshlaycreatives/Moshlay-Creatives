@@ -4,10 +4,11 @@ import { CiClock2 } from "react-icons/ci";
 import { SlCalender } from "react-icons/sl";
 // import BlogsCard from '../../../LandingPage/Blogs/blogsCard';
 import { useParams } from 'react-router';
-import { SendBlogsId } from '../../../../store/actions/dataActions';
+
 import { useDispatch } from 'react-redux';
 import dateFormat from 'dateformat';
 import BlogsCard from '../../../LandingPage/Blogs/blogsCard';
+import { SendBlogsId } from '../../../../store/actions/DataActions';
 
 
 
@@ -32,7 +33,7 @@ useEffect(()=>{
         setLoading(true)
         try {
             const res = await dispatch(SendBlogsId(id));
-            setSingleBlog(res.data.data);
+            setSingleBlog(res?.data?.data);
 
         } catch (error) {
             throw(error);

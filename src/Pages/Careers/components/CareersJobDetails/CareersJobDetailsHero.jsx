@@ -14,9 +14,10 @@ import React, { useEffect, useState } from "react";
 import CareersHMQ from "./CareersHMQ";
 import { useNavigate, useParams } from "react-router";
 import { useDispatch } from "react-redux";
-import { SendJobId } from "../../../../store/actions/dataActions";
+
 import BreadCrumbs from "../../../../components/BreadCrumbs/BreadCrumbs";
 import { Link } from "react-router-dom";
+import { SendJobId } from "../../../../store/actions/DataActions";
 
 
 const CareersJobDetailsHero = () => {
@@ -36,7 +37,7 @@ const fetchData = async ()=>{
   setLoading(true);
   try {
   const res = await dispatch(SendJobId(id))
-  setCareerJobDetail(res.data.data)
+  setCareerJobDetail(res?.data?.data)
   // console.log('resresresres', res.data.data) 
   console.log('ahmad ahmad ')
   } catch (error) {
