@@ -2,15 +2,14 @@ import { Box, Typography, useTheme, useMediaQuery, Grid } from "@mui/material";
 import React from "react";
 
 const AboutHero = () => {
-    const theme = useTheme();
-    const isDesktop = useMediaQuery('(max-width:1250px)');
-    const minDesktop = useMediaQuery('(max-width:1000px)');
-    const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const theme = useTheme();
+  const isDesktop = useMediaQuery("(max-width:1250px)");
+  const minDesktop = useMediaQuery("(max-width:1000px)");
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
-  const isTwelve80 = useMediaQuery('(max-width:1280px)');
-  const isTwelve = useMediaQuery('(max-width:1200px)');
+  const isTwelve80 = useMediaQuery("(max-width:1280px)");
+  const isTwelve = useMediaQuery("(max-width:1200px)");
 
-  
   return (
     <>
       {/* <Box sx={{
@@ -82,82 +81,86 @@ const AboutHero = () => {
         </Box>
       </Box> */}
 
-
-      <Box sx={{
-        padding:'2% 10%',
-        marginBottom:'-3rem',
-      }}>
-        <Grid container spacing={ isMedium ? 5 : 10}>
-            <Grid item lg={7} md={12} sm={12} xs={12}>
-            <Box sx={{
-          }}>
-            <Typography
+      <Box
+        sx={{
+          padding: "2% 10%",
+          marginBottom: "-3rem",
+        }}
+      >
+        <Grid container spacing={isMedium ? 5 : 10}>
+          <Grid item lg={7} md={12} sm={12} xs={12}>
+            <Box sx={{}}>
+              <Typography
+                sx={{
+                  fontSize: isSmall ? "1.5rem" : "2.5rem",
+                  fontWeight: 600,
+                  color: theme.palette.primary.main,
+                  marginBottom: ".5rem",
+                  fontFamily: "Montserrat",
+                }}
+              >
+                About Moshlay Creatives
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: "1rem",
+                  fontWeight: 400,
+                  color: "white",
+                  textAlign: "justify",
+                  fontFamily: "Montserrat",
+                }}
+              >
+               Moshlay Creatives empowers businesses to thrive in the digital age. We're a one-stop shop for all your IT and data solutions, specializing in making impactful software and optimizing your online presence. From small businesses to established enterprises, we help you achieve your goals and drive impressive results.
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item lg={5} md={12} sm={12} xs={12}>
+            <Box
               sx={{
-                fontSize: isSmall ? '1.5rem' : "2.5rem",
-                fontWeight: 600,
-                color: theme.palette.primary.main,
-                marginBottom:'.5rem',
-                fontFamily:'Montserrat'
-              }}
-            >
-              About Moshlay Creatives
-            </Typography>
-            <Typography
-              sx={{
-                fontSize: "1rem",
-                fontWeight: 400,
-                color: "white",
-                textAlign: 'justify',
-                fontFamily:'Montserrat'
-              }}
-            >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elis
-              non quam egestas sagittis. Sed gravida nulla tellus, eu aliqui
-              vulputate at. Proin nunc magna, varius vel faucibus id, ornare
-              msem. Nullam at molestie justo, ut fringilla dui. Nam convallis
-              msodales augue consectetur,Proin nunc magna, varius vel faucibus id, ornare
-              msem. Nullam at molestie justo, ut fringilla dui. Nam convallis
-              msodales augue consectetur,
-            </Typography>
-          </Box>
-            </Grid>
-            <Grid item lg={5} md={12} sm={12} xs={12} >
-            <Box sx={{
-                width:'100%',
+                width: "100%",
                 // display:"flex",
                 // justifyContent:'end'
                 // marginTop: isTwelve80 ? '5rem' : '0rem'
-                
-          }}>
-            <img src="aboutHero1.svg" alt="aboutHero1" width="100%"  />
-          </Box>
-            </Grid>
+              }}
+            >
+              <img src="aboutHero1.svg" alt="aboutHero1" width="100%" />
+            </Box>
+          </Grid>
         </Grid>
 
-        <Grid container spacing={isTwelve ? 2 : 5} sx={{
-            marginTop: isMedium ? ".1rem" : ".1rem"
-        }}>
-            <Grid item lg={5} md={12} sm={12} xs={12}>
-            <Box sx={{
-                marginTop:isTwelve ? '0rem' : isTwelve80 ? '-2rem' : '-3rem'
-          }}>
-            <img src="aboutHero3.svg" alt="aboutHero1" width="100%" />
-          </Box>
-            </Grid>
-            <Grid item lg={7} md={12} sm={12} xs={12}>
-            <Box sx={{
-            // position: 'absolute',
-            // top: '10%', 
-            // right: '0%',
-            // width: minDesktop ? '43%' : '38%',
-            // marginTop:isTwelve80 ? '-2rem' : '0rem'
-          }}>
-            <img src="aboutHero2.svg" alt="aboutHero1" width="100%" />
-          </Box>
-            </Grid>
+        <Grid
+          container
+          spacing={isTwelve ? 2 : 5}
+          sx={{
+            marginTop: isMedium ? ".1rem" : ".1rem",
+          }}
+        >
+          <Grid item lg={5} md={12} sm={12} xs={12}>
+            <Box
+              sx={{
+                marginTop: isTwelve ? "0rem" : isTwelve80 ? "-2rem" : "-3rem",
+              }}
+            >
+              <img src="aboutHero3.svg" alt="aboutHero1" width="100%" />
+            </Box>
+          </Grid>
+          <Grid item lg={7} md={12} sm={12} xs={12}>
+            <Box
+              sx={
+                {
+                  // position: 'absolute',
+                  // top: '10%',
+                  // right: '0%',
+                  // width: minDesktop ? '43%' : '38%',
+                  // marginTop:isTwelve80 ? '-2rem' : '0rem'
+                }
+              }
+            >
+              <img src="aboutHero2.svg" alt="aboutHero1" width="100%" />
+            </Box>
+          </Grid>
         </Grid>
       </Box>
-
     </>
   );
 };

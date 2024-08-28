@@ -52,10 +52,7 @@ const ContactHero = () => {
               fontFamily: 'Montserrat',
             }}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            porttitor fermentum elit ut facilisis. Curabitur sit amet sagittis
-            magna. porttitor Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit.
+           Unlock your business potential. Contact us now!
           </Typography>
           {/* <Box>
             <img src="getintouch.svg" alt="" />

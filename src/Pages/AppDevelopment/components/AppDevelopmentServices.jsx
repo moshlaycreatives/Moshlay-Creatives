@@ -16,41 +16,41 @@ const AppDevelopmentServices = () => {
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
 
   const listData = [
-    { dot: <RxDotFilled />, title: "Website Development" },
-    { dot: <RxDotFilled />, title: "Web Application Development" },
-    { dot: <RxDotFilled />, title: "eCommerce Solutions Development" },
+    { dot: <RxDotFilled />, title: "Custom iOS and Android apps development" },
+    { dot: <RxDotFilled />, title: "Native and cross-platform solutions" },
+    { dot: <RxDotFilled />, title: "Second platform app development" },
     {
       dot: <RxDotFilled />,
-      title: "Dedicated Content Management System Development",
+      title: "UI/UX design",
     },
     {
       dot: <RxDotFilled />,
-      title: "No-code Development & Low-code Development",
+      title: "Consulting and prototyping",
     },
     {
       dot: <RxDotFilled />,
-      title: "Ideation - Market Research - Wireframing - Prototyping",
+      title: "Automated QA and testing",
     },
     {
       dot: <RxDotFilled />,
-      title: "Dedicated Content Management System Development",
+      title: "Power management, notification and geofencing",
     },
     {
       dot: <RxDotFilled />,
-      title: "No-code Development & Low-code Development",
+      title: "Embedded Android & AOSP customizations",
     },
     {
       dot: <RxDotFilled />,
-      title: "Ideation - Market Research - Wireframing - Prototyping",
+      title: "Maintenance and post-warranty support",
     },
-    {
-      dot: <RxDotFilled />,
-      title: "Cybersecurity - Consulting - Publishing - Maintenance - Support",
-    },
-    {
-      dot: <RxDotFilled />,
-      title: "Project Management - UI Design - UX Design - Coding - QA Testing",
-    },
+    // {
+    //   dot: <RxDotFilled />,
+    //   title: "Cybersecurity - Consulting - Publishing - Maintenance - Support",
+    // },
+    // {
+    //   dot: <RxDotFilled />,
+    //   title: "Project Management - UI Design - UX Design - Coding - QA Testing",
+    // },
   ];
 
   return (

@@ -6,10 +6,10 @@ const Technologytwosmall = () => {
   const iconSize = 25; // Size of each icon
 
   // Arrays of image URLs for each circle
-  const iconUrlsBlackCircle = ['image13.svg', 'image14.svg', 'image15.svg'];
-  const iconUrlsRedCircle = ['image13.svg', 'image14.svg', 'image15.svg', 'image16.svg'];
-  const iconUrlsBlueCircle = ['image13.svg', 'image14.svg', 'image15.svg', 'image16.svg', 'image13.svg'];
-
+  const iconUrlsBlackCircle = ['laraveltech.png', 'figmatech.png', 'fluttertech.png']; 
+  const iconUrlsRedCircle = ['reacttech.png', 'nodetech.png', 'pythontech.png', 'phptech.png']; 
+  const iconUrlsBlueCircle = ['androidtech.png', 'posttech.png', 'appletech.png', 'angulartech.png', 'gittech.png'];
+  
   // Calculate positions for icons around the circles
   const calculatePositions = (numIcons, radius, offset = 0) => {
     return Array.from({ length: numIcons }, (_, index) => {

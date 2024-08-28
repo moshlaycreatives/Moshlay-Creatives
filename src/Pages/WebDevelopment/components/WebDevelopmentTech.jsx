@@ -98,7 +98,7 @@ export default function WebDevelopmentTech() {
       display: "none", // Hides the underline indicator
     },
         }}>
-          <Tab label="Item One" {...a11yProps(0)} sx={{
+          <Tab label="Design" {...a11yProps(0)} sx={{
             border:'1px solid white',
             fontSize:'1rem',
             fontWeight:400,
@@ -112,7 +112,7 @@ export default function WebDevelopmentTech() {
                     },
           }}/>
 
-<Tab label="Item One" {...a11yProps(0)} sx={{
+<Tab label="Frontend" {...a11yProps(0)} sx={{
             border:'1px solid white',
             fontSize:'1rem',
             fontWeight:400,
@@ -126,7 +126,7 @@ export default function WebDevelopmentTech() {
                     },
           }}/>
 
-<Tab label="Item One" {...a11yProps(0)} sx={{
+<Tab label="backend" {...a11yProps(0)} sx={{
             border:'1px solid white',
             fontSize:'1rem',
             fontWeight:400,
@@ -140,7 +140,7 @@ export default function WebDevelopmentTech() {
                     },
           }}/>
 
-<Tab label="Item One" {...a11yProps(0)} sx={{
+<Tab label="DevOps" {...a11yProps(0)} sx={{
             border:'1px solid white',
             fontSize:'1rem',
             fontWeight:400,
@@ -164,11 +164,11 @@ export default function WebDevelopmentTech() {
             display:'flex', flexWrap:'wrap',
             justifyContent:'center'
           }}>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
+            <img src="webdevtech1.png" alt="" style={{width:'240px'}}/>
+            <img src="webdevtech2.png" alt="" style={{width:'240px'}}/>
+            <img src="webdevtech3.png" alt="" style={{width:'240px'}}/>
+            <img src="webdevtech4.png" alt="" style={{width:'240px'}}/>
+            <img src="webdevtech5.png" alt="" style={{width:'240px'}}/>
           </Box>
         </Box>
       </CustomTabPanel>
@@ -179,10 +179,10 @@ export default function WebDevelopmentTech() {
           <Box sx={{width:'100%',
             display:'flex', flexWrap:'wrap',justifyContent:'center'
           }}>
-             <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
+             <img src="webdevtech1.png" alt="" style={{width:'240px'}}/>
+            <img src="webdevtech2.png" alt="" style={{width:'240px'}}/>
+            <img src="webdevtech3.png" alt="" style={{width:'240px'}}/>
+            <img src="webdevtech4.png" alt="" style={{width:'240px'}}/>
             {/* <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/> */}
           </Box>
         </Box>
@@ -194,11 +194,11 @@ export default function WebDevelopmentTech() {
           <Box sx={{width:'100%',
             display:'flex', flexWrap:'wrap',justifyContent:'center'
           }}>
-             <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
+             {/* <img src="webdevtech1.png" alt="" style={{width:'240px'}}/> */}
+            <img src="webdevtech2.png" alt="" style={{width:'240px'}}/>
+            <img src="webdevtech3.png" alt="" style={{width:'240px'}}/>
+            {/* <img src="webdevtech1.png" alt="" style={{width:'240px'}}/> */}
+            <img src="webdevtech1.png" alt="" style={{width:'240px'}}/>
           </Box>
         </Box>
       </CustomTabPanel>
@@ -210,11 +210,11 @@ export default function WebDevelopmentTech() {
             display:'flex', flexWrap:'wrap',
             justifyContent:'center'
           }}>
-             <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
-            <img src="appdevtechimg.png" alt="" style={{width:'240px'}}/>
+             {/* <img src="webdevtech1.png" alt="" style={{width:'240px'}}/> */}
+            {/* <img src="webdevtech1.png" alt="" style={{width:'240px'}}/> */}
+            <img src="webdevtech3.png" alt="" style={{width:'240px'}}/>
+            <img src="webdevtech4.png" alt="" style={{width:'240px'}}/>
+            <img src="webdevtech5.png" alt="" style={{width:'240px'}}/>
           </Box>
         </Box>
       </CustomTabPanel>

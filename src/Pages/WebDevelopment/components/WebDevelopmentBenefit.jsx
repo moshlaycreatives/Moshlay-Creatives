@@ -324,7 +324,7 @@ const WebDevelopmentBenefit = () => {
                 <Tab
                   icon={<FaCircle className="icon" />}
                   iconPosition="start"
-                  label="Item one"
+                  label="Online presence"
                   {...a11yProps(1)}
                   sx={{
                     color: "white",
@@ -365,7 +365,7 @@ const WebDevelopmentBenefit = () => {
                 <Tab
                   icon={<FaCircle className="icon" />} // Add icon before text
                   iconPosition="start"
-                  label="Item Two"
+                  label="Market Expansion"
                   {...a11yProps(1)}
                   sx={{
                     color: "white", // Text color
@@ -407,7 +407,7 @@ const WebDevelopmentBenefit = () => {
                 <Tab
                   icon={<FaCircle className="icon" />} // Add icon before text
                   iconPosition="start"
-                  label="Item Two"
+                  label="Faster Process"
                   {...a11yProps(1)}
                   sx={{
                     color: "white", // Text color
@@ -448,7 +448,7 @@ const WebDevelopmentBenefit = () => {
                  <Tab
                   icon={<FaCircle className="icon" />}
                   iconPosition="start"
-                  label="Item one"
+                  label="Credibility"
                   {...a11yProps(1)}
                   sx={{
                     color: "white",
@@ -489,7 +489,7 @@ const WebDevelopmentBenefit = () => {
                 <Tab
                   icon={<FaCircle className="icon" />} // Add icon before text
                   iconPosition="start"
-                  label="Item Two"
+                  label="Cost reduction"
                   {...a11yProps(1)}
                   sx={{
                     color: "white", // Text color

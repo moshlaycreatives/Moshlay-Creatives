@@ -87,10 +87,10 @@ const AppDevelopmentTech = () => {
                 <br />
                 <ul className="appdevtechios">
                     <li>iPhone App Development</li>
-                    <li>iPhone App Development</li>
-                    <li >iPhone App Development</li>
-                    <li>iPhone App Development</li>
-                    <li>iPhone App Development</li>
+                    <li>iPad App Development</li>
+                    <li >Apple Watch App Development</li>
+                    <li>Apple TV App Development</li>
+                    <li>App Clips Development</li>
                 </ul>
             </Grid>
             <Grid item lg={6} md={6} sm={12} xs={12} width={'100%'} >
@@ -101,12 +101,12 @@ const AppDevelopmentTech = () => {
                     textAlign:isMedium ?  'center' : 'start',
 
                     }}>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech1.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech2.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech3.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech4.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech5.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech6.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
                     </Box>
                 </Box>
             </Grid>
@@ -121,7 +121,7 @@ const AppDevelopmentTech = () => {
                     fontFamily:'Montserrat',
                     fontWeight:500
                 }}>
-                iOS App Development
+                Android App Development
                 </Typography>
                 <br />
                 <Typography sx={{
@@ -135,11 +135,11 @@ const AppDevelopmentTech = () => {
                 </Typography>
                 <br />
                 <ul className="appdevtechios">
-                    <li>iPhone App Development</li>
-                    <li>iPhone App Development</li>
-                    <li >iPhone App Development</li>
-                    <li>iPhone App Development</li>
-                    <li>iPhone App Development</li>
+                    <li>Android Mobile App Development</li>
+                    <li>Android TV App Development</li>
+                    <li >Android Tablet App Development</li>
+                    <li>Android Wear App Development</li>
+                    {/* <li>iPhone App Development</li> */}
                 </ul>
             </Grid>
             <Grid item lg={6} md={6} sm={12} xs={12}>
@@ -148,12 +148,12 @@ const AppDevelopmentTech = () => {
                          textAlign:isMedium ?  'center' : 'start',
                         // textAlign:'end'
                     }}>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                         <img src="appdevtech1.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech2.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech3.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech4.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech5.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech6.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
                     </Box>
                 </Box>
             </Grid>
@@ -168,7 +168,7 @@ const AppDevelopmentTech = () => {
                     fontFamily:'Montserrat',
                     fontWeight:500
                 }}>
-                iOS App Development
+                Cross-platform App Development
                 </Typography>
                 <br />
                 <Typography sx={{
@@ -182,11 +182,11 @@ const AppDevelopmentTech = () => {
                 </Typography>
                 <br />
                 <ul className="appdevtechios">
-                    <li>iPhone App Development</li>
-                    <li>iPhone App Development</li>
-                    <li >iPhone App Development</li>
-                    <li>iPhone App Development</li>
-                    <li>iPhone App Development</li>
+                    <li>Hybrid Mobile App Development</li>
+                    <li>Hybrid Tablet App Development</li>
+                    <li >Hybrid TV App Development</li>
+                    {/* <li>iPhone App Development</li> */}
+                    {/* <li>iPhone App Development</li> */}
                 </ul>
             </Grid>
             <Grid item lg={6} md={6} sm={12} xs={12}>
@@ -194,12 +194,12 @@ const AppDevelopmentTech = () => {
                     <Box sx={{
                          textAlign:isMedium ?  'center' : 'start'
                     }}>
-                       <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech1.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech2.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech3.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech4.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech5.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech6.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
                     </Box>
                 </Box>
             </Grid>
@@ -214,7 +214,7 @@ const AppDevelopmentTech = () => {
                     fontFamily:'Montserrat',
                     fontWeight:500
                 }}>
-                iOS App Development
+                Progressive Web App Development
                 </Typography>
                 <br />
                 <Typography sx={{
@@ -228,11 +228,11 @@ const AppDevelopmentTech = () => {
                 </Typography>
                 <br />
                 <ul className="appdevtechios">
-                    <li>iPhone App Development</li>
-                    <li>iPhone App Development</li>
-                    <li >iPhone App Development</li>
-                    <li>iPhone App Development</li>
-                    <li>iPhone App Development</li>
+                    <li>Cross-browser Web App Development</li>
+                    <li>Responsive Web App Development</li>
+                    <li >Offline Web App Development</li>
+                    {/* <li>iPhone App Development</li> */}
+                    {/* <li>iPhone App Development</li> */}
                 </ul>
             </Grid>
             <Grid item lg={6} md={6} sm={12} xs={12} justifyContent={'center'}>
@@ -245,12 +245,12 @@ const AppDevelopmentTech = () => {
                         // justifyContent:'center'
                         textAlign:isMedium ?  'center' : 'start'
                     }}>
-                       <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
-                        <img src="appdevtechimg.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech1.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech2.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech3.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech4.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech5.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
+                        <img src="appdevtech6.png" alt="" style={{ width: '10rem', height: 'auto' }}/>
                     </Box>
                 </Box>
             </Grid>

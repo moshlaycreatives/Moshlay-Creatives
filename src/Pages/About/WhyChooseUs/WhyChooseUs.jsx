@@ -79,13 +79,7 @@ const WhyChooseUs = () => {
                 textAlign: 'justify',fontFamily:'Montserrat'
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elis
-              non quam egestas sagittis. Sed gravida nulla tellus, eu aliqui
-              vulputate at. Proin nunc magna, varius vel faucibus id, ornare
-              msem. Nullam at molestie justo, ut fringilla dui. Nam convallis
-              msodales augue consectetur,Proin nunc magna, varius vel faucibus id, ornare
-              msem. Nullam at molestie justo, ut fringilla dui. Nam convallis
-              msodales augue consectetur,
+              We have a strong history of successful project completion, delivering measurable results for our clients.
             </Typography>
           </Box>
             </Grid>
@@ -136,13 +130,8 @@ const WhyChooseUs = () => {
                 fontFamily:'Montserrat'
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elis
-              non quam egestas sagittis. Sed gravida nulla tellus, eu aliqui
-              vulputate at. Proin nunc magna, varius vel faucibus id, ornare
-              msem. Nullam at molestie justo, ut fringilla dui. Nam convallis
-              msodales augue consectetur,Proin nunc magna, varius vel faucibus id, ornare
-              msem. Nullam at molestie justo, ut fringilla dui. Nam convallis
-              msodales augue consectetur,
+              Our commitment to client success is unwavering. We take full ownership of project outcomes.
+
             </Typography>
           </Box>
             </Grid>
@@ -212,13 +201,7 @@ const WhyChooseUs = () => {
                 fontFamily:'Montserrat'
               }}
             >
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc elis
-              non quam egestas sagittis. Sed gravida nulla tellus, eu aliqui
-              vulputate at. Proin nunc magna, varius vel faucibus id, ornare
-              msem. Nullam at molestie justo, ut fringilla dui. Nam convallis
-              msodales augue consectetur,Proin nunc magna, varius vel faucibus id, ornare
-              msem. Nullam at molestie justo, ut fringilla dui. Nam convallis
-              msodales augue consectetur,
+           Whether you're a startup or a large enterprise, we have the expertise to adapt and grow your business.
             </Typography>
           </Box>
             </Grid>

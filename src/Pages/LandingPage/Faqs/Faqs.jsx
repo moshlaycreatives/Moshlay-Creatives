@@ -17,24 +17,28 @@ const Faqs = () => {
   };
 
    const faqsData =[{
-    question: "What is Moshlay Creatives?",
-    answer: "Moshlay Creatives is a creative agency specializing in innovative design solutions."
+    question: "What are your help desk hours?",
+    answer: "Our help desk is available 24/7 to assist you with any IT issues."
   },
   {
-    question: "How can I contact you?",
-    answer: "You can contact us via email at contact@moshlaycreatives.com or call us at (123) 456-7890."
+    question: "What is your response time? ",
+    answer: " We make sure to respond as soon as possible. We strive to respond to all support requests within 24 hours."
   },
   {
-    question: "What services do you offer?",
-    answer: "We offer a wide range of services including graphic design, web development, branding, and marketing."
+    question: "What is the typical contract length?",
+    answer: "Our contracts are typically customized to meet client needs, but average contract lengths range from six to twelve months."
   },
   {
-    question: "Where are you located?",
-    answer: "We are located in the heart of New York City, but we offer our services worldwide."
+    question: "How do you price your services?",
+    answer: "Yes, we provide comprehensive penetration testing services to identify vulnerabilities in your systems."
   },
   {
-    question: "Where are you located?",
-    answer: "We are located in the heart of New York City, but we offer our services worldwide."
+    question: "How do you ensure the security of my data?",
+    answer: "We employ industry-leading security measures, including encryption, firewalls, and regular security audits."
+  },
+  {
+    question: "How do you help with data privacy compliance (GDPR, CCPA, etc.)? ",
+    answer: "We assist with compliance by providing expert guidance and implementing necessary measures."
   }
 ]
 

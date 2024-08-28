@@ -16,29 +16,29 @@ import {
     const isMedium = useMediaQuery(theme.breakpoints.down("md"));
   
     const listData = [
-      { dot: <RxDotFilled />, title: "Website Development" },
-      { dot: <RxDotFilled />, title: "Web Application Development" },
-      { dot: <RxDotFilled />, title: "eCommerce Solutions Development" },
+      { dot: <RxDotFilled />, title: "A shared understanding of project objectives" },
+      { dot: <RxDotFilled />, title: "Business requirements transformed into functional" },
+      { dot: <RxDotFilled />, title: "The initial vision of the architecture of the project" },
       {
         dot: <RxDotFilled />,
-        title: "Dedicated Content Management System Development",
+        title: "A project plan that includes risks and budgets",
       },
       {
         dot: <RxDotFilled />,
-        title: "No-code Development & Low-code Development",
+        title: "A clear product strategy and development roadmap",
       },
-      {
-        dot: <RxDotFilled />,
-        title: "Ideation - Market Research - Wireframing - Prototyping",
-      },
-      {
-        dot: <RxDotFilled />,
-        title: "Dedicated Content Management System Development",
-      },
-      {
-        dot: <RxDotFilled />,
-        title: "No-code Development & Low-code Development",
-      },
+      // {
+      //   dot: <RxDotFilled />,
+      //   title: "Ideation - Market Research - Wireframing - Prototyping",
+      // },
+      // {
+      //   dot: <RxDotFilled />,
+      //   title: "Dedicated Content Management System Development",
+      // },
+      // {
+      //   dot: <RxDotFilled />,
+      //   title: "No-code Development & Low-code Development",
+      // },
       
     ];
   
