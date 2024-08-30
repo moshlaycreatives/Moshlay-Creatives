@@ -127,7 +127,7 @@ const ContactForm = () => {
                 // justifyContent:'space-between',
                  gap:2
               }}>
-                    <a href="https://www.google.com/">
+                    <a href="https://www.facebook.com/MoshlayCreatives">
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',
@@ -144,7 +144,7 @@ const ContactForm = () => {
                 </Typography>
                     </a>
 
-                    <a href="https://www.google.com/">
+                    <a href="https://www.linkedin.com/company/moshlaycreatives/?viewAsMember=true">
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',
@@ -161,7 +161,7 @@ const ContactForm = () => {
                 </Typography>
                     </a>
 
-                    <a href="https://www.google.com/">
+                    <a href="https://www.linkedin.com/company/moshlaycreatives/?viewAsMember=true">
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',
@@ -178,7 +178,7 @@ const ContactForm = () => {
                 </Typography>
                     </a>
 
-                    <a href="https://www.google.com/">
+                    <a href="https://www.linkedin.com/company/moshlaycreatives/?viewAsMember=true">
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
                     border:'2px solid #98c447',

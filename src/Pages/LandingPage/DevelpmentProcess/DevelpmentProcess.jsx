@@ -71,8 +71,11 @@ const DevelpmentProcess = () => {
               <Box width={'100%'} sx={{
               display:'flex',
               justifyContent:isMedium ? 'center' : 'start',
+              width:'100%', height:'auto'
             }}> 
-                <img src="develop.svg" alt=""  width={'90%'} style={{cursor:'pointer'}}/>
+                <img src="develop.svg" alt=""  width={'85%'}
+                //  height={'600rem'}
+                  style={{cursor:'pointer'}}/>
               </Box>
             </Grid>
             <Grid item lg={6} md={6} sm={12} xs={12} >
@@ -80,7 +83,9 @@ const DevelpmentProcess = () => {
               display:'flex',
               justifyContent:isMedium ? 'center' : 'end',
             }}> 
-                <img src="res-ln.svg" alt="" width={'90%'} style={{cursor:'pointer'}}/>
+                <img src="res-ln.svg" alt="" width={'85%'}
+                //  height={'300rem'} 
+                 style={{cursor:'pointer'}}/>
               </Box>
             </Grid>
           </Grid>

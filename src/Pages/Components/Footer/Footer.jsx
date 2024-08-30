@@ -84,14 +84,14 @@ function Footer() {
                 Johar Town,Lahore
               </i>
             </a>
-            <a href="">
+            <a href="mailto: moshlaycreatives@gmail.com">
               {" "}
               <i>
                 {" "}
                 <MdOutlineEmail /> moshlaycreatives@gmail.com
               </i>
             </a>
-            <a href="">
+            <a href="tel:+923092087119">
               {" "}
               <i>
                 {" "}

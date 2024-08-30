@@ -63,7 +63,8 @@ const ReviewsCarousel = () => {
                     <Box key={ind} sx={{
                         backgroundColor:'#1c2844', color:'white' , padding:'1.5rem',
                         textAlign:'center',
-                        borderRadius:'10px'
+                        borderRadius:'10px',
+                        cursor:'pointer'
                     }}>
                 <Box sx={{
                   display:'flex',

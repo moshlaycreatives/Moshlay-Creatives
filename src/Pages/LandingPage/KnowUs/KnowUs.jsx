@@ -102,13 +102,13 @@ const KnowUs = () => {
               >
                 {" "}
                 Moshlay Creatives is your affordable IT partner dedicated to
-                empowering businesses. Our experienced team offers high-quality,
-                budget-friendly solutions tailored to your unique needs. We're
-                passionate about helping you succeed in the digital age by
-                providing innovative solutions for website development, digital
-                marketing, and software development. Choose Moshlay Creatives
-                for exceptional service and results that drive your business
-                forward.
+                empowering businesses. Our mission is to provide quality IT
+                services affordably without compromising the quality. Our
+                experienced team offers high-quality, budget-friendly solutions
+                tailored to your unique needs. Whether you need a stunning
+                website, effective digital marketing campaigns, or custom
+                software development, we have the expertise to deliver tailored
+                solutions that meet your specific goals.
               </Typography>
               <Typography
                 sx={{
@@ -120,11 +120,10 @@ const KnowUs = () => {
                 }}
               >
                 {" "}
-                {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                portt tum elit ut facilisis. Curabitur sit amet sagittis magna.
-                Vestibulum lao lacus, vitae venenatis magna interdum a.
-                Pellentesque vestibulum tortor sed mollis. Orci varius natoque
-                penatibus et */}
+                We understand that
+                every business is unique, and we're committed to working closely
+                with you to understand your needs and develop a strategy that
+                drives your success.
               </Typography>
               <Box>
                 <Button
@@ -136,8 +135,8 @@ const KnowUs = () => {
                     fontFamily: "Montserrat",
                     textTransform: "none",
                     "&:hover": {
-                      color: theme.palette.primary.main,
-                      background: "white",
+                      color: "white",
+                      background: theme.palette.primary.main,
                     },
                   }}
                 >

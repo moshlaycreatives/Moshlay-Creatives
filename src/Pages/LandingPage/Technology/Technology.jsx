@@ -55,7 +55,13 @@ const Technology = () => {
                 }}
               >
                 {" "}
-                As a leading IT service company, we specialize in delivering detailed solutions tailored to your unique needs. Our skilled team is proficient in working with a wide range of backend and frontend technologies, ensuring seamless integration and optimal performance. Whether you require robust backend development, captivating frontend design, or a combination of both, we have the expertise to deliver exceptional results
+                As a leading IT service company, we specialize in delivering
+                detailed solutions tailored to your unique needs. Our skilled
+                team is proficient in working with a wide range of backend and
+                frontend technologies, ensuring seamless integration and optimal
+                performance. Whether you require robust backend development,
+                captivating frontend design, or a combination of both, we have
+                the expertise to deliver exceptional results
               </Typography>
               <Typography
                 sx={{
@@ -68,11 +74,11 @@ const Technology = () => {
                 }}
               >
                 {" "}
-                {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                portt tum elit ut facilisis. Curabitur sit amet sagittis magna.
-                Vestibulum lao lacus, vitae venenatis magna interdum a.
-                Pellentesque vestibulum tortor sed mollis. Orci varius natoque
-                penatibus */}
+                Whether you require a complex e-commerce platform, a dynamic web
+                application, or a user-friendly mobile app, Moshlay Creatives
+                can handle it all. We are committed to staying up-to-date with
+                the latest industry trends and technologies to provide you with
+                cutting-edge solutions that drive your business forward.
               </Typography>
               {/* <Box>
                 <Button variant="outlined" 

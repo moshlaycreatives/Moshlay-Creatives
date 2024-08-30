@@ -51,7 +51,8 @@ const WebDevelopmentServices = () => {
                 borderRadius:'5px',
                 padding:'.2rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
-                width: isSmall ? '100%' : 'auto'
+                width: isSmall ? '100%' : 'auto', 
+                cursor:'pointer',
             }}>
                 <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
                 <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
@@ -69,7 +70,8 @@ const WebDevelopmentServices = () => {
                 borderRadius:'5px',
                 padding:'.2rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
-                width: isSmall ? '100%' : 'auto'
+                width: isSmall ? '100%' : 'auto',
+                cursor:'pointer',
             }}>
                 <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
                 <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
@@ -88,7 +90,8 @@ const WebDevelopmentServices = () => {
                 justifyContent:'center',
                 padding:'.2rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
-                width: isSmall ? '100%' : 'auto'
+                width: isSmall ? '100%' : 'auto',
+                cursor:'pointer',
             }}>
                 <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
                 <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
@@ -107,7 +110,7 @@ const WebDevelopmentServices = () => {
                 justifyContent:'center',
                 padding:'.2rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
-                width: isSmall ? '100%' : 'auto'
+                width: isSmall ? '100%' : 'auto', cursor:'pointer',
             }}>
                 <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
                 <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
@@ -137,7 +140,7 @@ const WebDevelopmentServices = () => {
                 justifyContent:'center',
                 padding:'.2rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
-                width: isSmall ? '100%' : 'auto'
+                width: isSmall ? '100%' : 'auto', cursor:'pointer',
             }}>
                 <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
                 <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
@@ -156,7 +159,7 @@ const WebDevelopmentServices = () => {
                 justifyContent:'center',
                 padding:'.2rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
-                width: isSmall ? '100%' : 'auto'
+                width: isSmall ? '100%' : 'auto', cursor:'pointer',
             }}>
                 <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
                 <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
@@ -175,7 +178,7 @@ const WebDevelopmentServices = () => {
                 justifyContent:'center',
                 padding:'.2rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
-                width: isSmall ? '100%' : 'auto'
+                width: isSmall ? '100%' : 'auto', cursor:'pointer',
             }}>
                 <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
                 <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
@@ -205,7 +208,7 @@ const WebDevelopmentServices = () => {
                 justifyContent:'center',
                 padding:'.2rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
-                width: isSmall ? '100%' : 'auto'
+                width: isSmall ? '100%' : 'auto', cursor:'pointer',
             }}>
                 <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
                 <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
@@ -224,7 +227,7 @@ const WebDevelopmentServices = () => {
                 justifyContent:'center',
                 padding:'.2rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
-                width: isSmall ? '100%' : 'auto'
+                width: isSmall ? '100%' : 'auto', cursor:'pointer',
             }}>
                 <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
                 <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
@@ -243,7 +246,7 @@ const WebDevelopmentServices = () => {
                 justifyContent:'center',
                 padding:'.2rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
-                width: isSmall ? '100%' : 'auto'
+                width: isSmall ? '100%' : 'auto', cursor:'pointer',
             }}>
                 <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
                 <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />

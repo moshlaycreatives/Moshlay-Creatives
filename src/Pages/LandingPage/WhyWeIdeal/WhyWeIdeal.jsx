@@ -23,6 +23,7 @@ const WhyWeIdeal = () => {
   const istwelve80 = useMediaQuery('(max-width:1280px)');
   const istwelve = useMediaQuery('(max-width:1200px)');
   const isLarge = useMediaQuery('(max-width:1400px)');
+  const is1450 = useMediaQuery('(max-width:1450px)');
   const isExtraLarge = useMediaQuery('(max-width:1500px)');
 
   return (
@@ -220,7 +221,9 @@ const WhyWeIdeal = () => {
     </Typography>
   </Box>
 
-  <Box sx={{ flex: 1, width:'100%', display:'flex', flexDirection:'column', alignItems:'start', justifyContent:'start', marginLeft:'-2rem'}}>
+  <Box sx={{ flex: 1, width:'100%', display:'flex', flexDirection:'column', alignItems:'start', justifyContent:'start', 
+    marginLeft: istwelve ? '0rem' : istwelve80 ? "3rem": isLarge ? "1rem": is1450 ? "-2rem" : isExtraLarge ? " -3rem" : '-5rem'
+    }}>
     {[
       {
         title: "Happy Customers",

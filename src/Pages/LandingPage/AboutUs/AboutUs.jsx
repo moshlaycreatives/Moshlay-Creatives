@@ -116,7 +116,7 @@ const AboutUs = () => {
                     color:'white',
                   }
                 }}
-                onClick={() => handleSeeMore("/comming-soon")}
+                onClick={() => handleSeeMore("/about")}
               >
                 See More...
               </Button>
@@ -164,7 +164,7 @@ const AboutUs = () => {
                     fontStyle: "italic",
                     textTransform: "none",
                   }}
-                  onClick={() => handleSeeMore("/comming-soon")}
+                  onClick={() => handleSeeMore("/about")}
                 >
                   {" "}
                   Request for Quote
@@ -184,7 +184,7 @@ const AboutUs = () => {
                       color: theme.palette.primary.main,
                     },
                   }}
-                  onClick={() => handleSeeMore("/comming-soon")}
+                  onClick={() => handleSeeMore("/about")}
                 >
                   {/* <ArrowRightAltIcon  style={{fontSize:'2.2rem'}}/> */}
                   <IoIosArrowRoundForward style={{ fontSize: "2.5rem" }} />

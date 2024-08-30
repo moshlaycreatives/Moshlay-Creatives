@@ -26,7 +26,7 @@ const Services = () => {
     {
       title: "Search Engine Optimization",
       subTitle:
-        "Our SEO experts are dedicated to improving your website's visibility in search engine results pages (SERPs). We employ proven strategies to optimize your website's content, structure, and technical aspects, ensuring that you rank higher for relevant keywords.",
+        "Our SEO experts are dedicated to improving your website's visibility in search engine results pages (SERPs). We employ proven strategies to optimize your website's content, and technical aspects, ensuring that you rank higher for relevant keywords.",
       image: "services2.svg",
     },
     {
@@ -44,7 +44,7 @@ const Services = () => {
     {
       title: "Block Chain",
       subTitle:
-        "A wide client base across various industries is proof of our ability to deliver remarkable software solutions.",
+        "Harness the power of blockchain technology. Our expert team specializes in developing innovative blockchain solutions tailored to your specific needs. From decentralized applications to smart contracts, we leverage the security and transparency.",
       image: "services5.svg",
     },
     {
@@ -87,13 +87,15 @@ const Services = () => {
           padding: "2.5% 10%",
         }}
       >
-        <Box marginBottom={"2rem"}>
+        <Box marginBottom={"2rem"} width={'100%'}>
           <Typography
             sx={{
               color: theme.palette.primary.main,
               fontSize: isSmall ? "1.6rem" : isMedium ? "2rem" : "2.5rem",
               fontFamily: "Montserrat",
               fontWeight: 600,
+              display:'flex',
+              justifyContent:'center',
               textAlign: "center",
               marginBottom: "1rem",
               marginTop: "1rem",
@@ -102,6 +104,11 @@ const Services = () => {
           >
             Affordable Digital Solution & Marketing Services
           </Typography>
+          <Box sx={{
+             width:'100%', 
+             display:'flex',
+             justifyContent:'center'
+          }}>
           <Typography
             variant="body2"
             sx={{
@@ -111,10 +118,12 @@ const Services = () => {
               fontWeight: 400,
               textAlign: "center",
               marginBottom: "-2rem",
+              width:isSmall ? "100%" : isMedium ? " 90%" :'90%',
             }}
           >
            We Don't compromise on quality, choose our affordable services and hire our premium services at budget-friendly prices to scale your business.
           </Typography>
+          </Box>
         </Box>
 
         <Grid
@@ -128,6 +137,7 @@ const Services = () => {
             <Grid item key={ind} lg={6} md={6} sm={12} xs={12}>
               <Box
                 sx={{
+                  cursor:'pointer',
                   position: "relative",
                   backgroundImage: `url(${val.image})`,
                   backgroundRepeat: "no-repeat",
@@ -142,7 +152,7 @@ const Services = () => {
                     : isMedium
                     ? "20vh"
                     : isFourteen
-                    ? "25vh"
+                    ? "30vh"
                     : "20vh",
                   overflow: "hidden",
                   transition:'1s',
