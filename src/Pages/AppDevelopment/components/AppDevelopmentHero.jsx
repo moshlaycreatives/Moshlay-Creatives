@@ -82,7 +82,7 @@ const AppDevelopmentHero = () => {
           <Button
             // variant="contained"
             sx={{
-              padding: "1rem 2rem",
+              padding: ".5rem 1.5rem",
               fontSize: "1rem",
               color: theme.palette.primary.main,
               fontWeight: 500,
@@ -90,6 +90,7 @@ const AppDevelopmentHero = () => {
               backgroundColor: "#4e6645",
               border:'1px solid #4e6645',
               textTransform: "none",
+              marginBottom:'0.5rem',
               transition:'.2s',
               '&:hover':{
                 color:'white', 
@@ -106,6 +107,7 @@ const AppDevelopmentHero = () => {
               fontSize: isSmall ? "1.9rem" : isMedium ? "2.5rem" : "3rem",
               fontWeight: 600,
               color: theme.palette.primary.main,
+              marginBottom:'0.5rem',
             }}
           >
             {" "}
@@ -128,7 +130,7 @@ const AppDevelopmentHero = () => {
           <Button
             variant="outlined"
             sx={{
-              padding: "1rem 2rem",
+              padding: "0.5rem 1.5rem",
               fontSize: "1rem",
               color: theme.palette.primary.main,
               fontWeight: 500,

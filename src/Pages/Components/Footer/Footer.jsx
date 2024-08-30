@@ -84,20 +84,20 @@ function Footer() {
                 Johar Town,Lahore
               </i>
             </a>
-            <a href="mailto: moshlaycreatives@gmail.com">
+            <a href="mailto: info@moshlaycreatives.com">
               {" "}
               <i>
                 {" "}
-                <MdOutlineEmail /> moshlaycreatives@gmail.com
+                <MdOutlineEmail /> info@moshlaycreatives.com
               </i>
             </a>
-            <a href="tel:+923092087119">
+            {/* <a href="tel:+923092087119">
               {" "}
               <i>
                 {" "}
                 <FaPhoneVolume /> +92 309 2087119
               </i>
-            </a>
+            </a> */}
           </div>
 
           {/* <div className='footer-social-btn'>

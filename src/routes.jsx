@@ -28,6 +28,7 @@ import CareersAddJobDetails from "./Pages/Careers/components/CareersAddJobDetail
 import WebDevelopmentMain from "./Pages/WebDevelopment/WebDevelopmentMain";
 import AppDevelopmentMain from "./Pages/AppDevelopment/AppDevelopmentMain";
 import CareersAddJobDetailsForm from "./Pages/Careers/components/CareersAddJobDetails/CareersAddJobDetailsForm";
+import UiUxDesignMain from "./Pages/UiUxDesign/UiUxDesignMain";
 
 export default function Router() {
 
@@ -101,6 +102,10 @@ console.log(isAuthenticated, 'hgyfuhhj')
          path:'/app-development',
          element : <AppDevelopmentMain /> ,
         },
+        {
+            path:'/ui-ux-design',
+            element : <UiUxDesignMain /> ,
+           },
     // {
     //     path:'/',
     //     element : <ComingSoon /> ,

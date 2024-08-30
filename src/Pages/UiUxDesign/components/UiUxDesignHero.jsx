@@ -15,7 +15,7 @@ import React from "react";
 import { Gradient } from "@mui/icons-material";
 // import CareersHMQ from "./CareersJobDetails/CareersHMQ";
 
-const WebDevelopmentHero = () => {
+const UiUxDesignHero = () => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
@@ -82,21 +82,21 @@ const WebDevelopmentHero = () => {
           <Button
             // variant="contained"
             sx={{
-              padding: "0.5rem 1.5rem",
+              padding: ".5rem 1.5rem",
               fontSize: "1rem",
               color: theme.palette.primary.main,
               fontWeight: 500,
               fontFamily: "montserrat",
               backgroundColor: "#4e6645",
-              border:'1px solid #4e6645',
+              border: "1px solid #4e6645",
               textTransform: "none",
               marginBottom:'0.5rem',
-              transition:'.2s',
-              '&:hover':{
-                color:'white', 
-                border:'1px solid white',
+              transition: ".2s",
+              "&:hover": {
+                color: "white",
+                border: "1px solid white",
                 // transition:'1s'
-              }
+              },
             }}
           >
             Digital Solutions
@@ -111,7 +111,7 @@ const WebDevelopmentHero = () => {
             }}
           >
             {" "}
-            Web Development
+            UI & UX Design
           </Typography>
           {/* <br /> */}
           <Typography
@@ -123,11 +123,10 @@ const WebDevelopmentHero = () => {
               //   textAlign: "center",
             }}
           >
-            Your digital vision, our expertise. Moshlay Creatives bridges the
-            gap between front-end, back-end, and architecture to deliver
-            tailored web solutions that drive your business forward. With a
-            proven track record, we'll craft innovative software that exceeds
-            your expectations. Contact us to discuss your project
+            Need a digital platform that stands out? Our UI/UX experts will
+            craft a captivating design tailored to your audience. Let's build a
+            user-friendly experience that sets you apart. Contact us today to
+            discuss your project.
           </Typography>
           <br />
           <br />
@@ -141,11 +140,12 @@ const WebDevelopmentHero = () => {
               fontFamily: "montserrat",
               // backgroundColor:'#4e6645',
               textTransform: "none",
-              transition:'0.2s',
-              "&:hover":{
-                color:'white',
-                background:theme.palette.primary.main, border:'none'
-              }
+              transition: "0.2s",
+              "&:hover": {
+                color: "white",
+                background: theme.palette.primary.main,
+                border: "none",
+              },
             }}
           >
             Schedule a Free Consultation
@@ -154,117 +154,43 @@ const WebDevelopmentHero = () => {
       </Box>
       <Box
         sx={{
-          marginTop: "1rem",
-          padding: "0 10%",
-          marginBottom: "4rem",
+          // marginTop: "1rem",
+          padding: "1rem 10%",
+          // marginBottom: "4rem",
         }}
       >
-        {/* ========================================================TEXT PART============================================= */}
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            // justifyContent:'center'
-          }}
-        >
+        {/* =============================================LEVERAGE============================================================= */}
+        <Box padding={"3rem 0rem"}>
           <Typography
             sx={{
+              fontFamily: "Montserrat",
               fontSize: isSmall ? "1.5rem" : isMedium ? "2rem" : "2.5rem",
-              fontWeight: 600,
+              fontWeight: "600",
               color: theme.palette.primary.main,
               textAlign: "center",
-              marginTop: "4rem",
-              fontFamily: "montserrat",
             }}
           >
-            {" "}
-            Our Process of Web Development Services
+            Leverage Our Expertise in UI & UX Design Services
           </Typography>
+          <br />
           <Typography
             sx={{
+              fontFamily: "Montserrat",
               fontSize: "1rem",
-              fontWeight: 400,
+              fontWeight: "400",
               color: "white",
               textAlign: "center",
-              width: isSmall ? "100%" : isMedium ? "90%" : "90%",
-              fontFamily: "montserrat",
             }}
           >
             Your business is unique and has distinct goals. That’s why we carry
-            a vast arsenal of digital marketing solutions to help you achieve
-            those goals. Is it quality website traffic you seek?
+            a vast arsenal of digital marketing so you achieve those goals. Is
+            it quality website traffic you seek? With our content marketing and
+            the right kind of visitors you want frequenting your website.
           </Typography>
         </Box>
-        <br />
-        <br />
-
-        {/* ===========================CARDS================================ */}
-
-        <Grid container spacing={6}>
-          {listData.map((row, id) => (
-            <Grid key={id} item lg={4} md={6} sm={12} xs={12}>
-              <Box
-                sx={{
-                  height: "100%",
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  justifyContent: "end",
-                  // flexDirection: isSmall ? 'column' : 'row',
-                  // padding:'1.5rem',
-                  gap: 2,
-                }}
-              >
-                <Box
-                  sx={{
-                    width: "100%",
-                    display: "flex",
-                    justifyContent: "center",
-                  }}
-                >
-                  <img src={row.careerlogo} alt="" width={"15%"} />
-                </Box>
-
-                <Box
-                  sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    // justifyContent:'center'
-                  }}
-                >
-                  <Typography
-                    sx={{
-                      color: theme.palette.primary.main,
-                      fontSize: isSmall ? "1.2rem" : "1.5rem",
-                      fontFamily: "Montserrat",
-                      fontWeight: 600,
-                      textAlign: "center",
-                    }}
-                  >
-                    {row.careertitle}
-                  </Typography>
-                  <br />
-                  <Typography
-                    sx={{
-                      color: "white",
-                      fontSize: "1rem",
-                      fontFamily: "Montserrat",
-                      fontWeight: 400,
-                      textAlign: "center",
-                    }}
-                  >
-                    {row.carrerdes}
-                  </Typography>
-                </Box>
-              </Box>
-            </Grid>
-          ))}
-        </Grid>
       </Box>
     </>
   );
 };
 
-export default WebDevelopmentHero;
+export default UiUxDesignHero;

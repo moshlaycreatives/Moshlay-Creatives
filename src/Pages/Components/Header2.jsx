@@ -598,6 +598,13 @@ const Header2 = () => {
             >
               App Development
             </MenuItem>
+            <MenuItem
+              onClick={() =>
+                handleAnchorClose(setAnchorSolutionEl, "/ui-ux-design")
+              }
+            >
+              UI UX Design
+            </MenuItem>
           </Menu>
 
           <Box onClick={handleAnchorElClickMarketing} sx={{
@@ -807,6 +814,13 @@ const Header2 = () => {
                     }
                   >
                     App Development
+                  </MenuItem>
+                  <MenuItem
+                    onClick={() =>
+                      handleAnchorClose(setAnchorSolutionEl, "/ui-ux-design")
+                    }
+                  >
+                    UI UX Design
                   </MenuItem>
                 </Menu>
               </Box>
