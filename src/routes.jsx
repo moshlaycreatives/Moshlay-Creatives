@@ -29,6 +29,9 @@ import WebDevelopmentMain from "./Pages/WebDevelopment/WebDevelopmentMain";
 import AppDevelopmentMain from "./Pages/AppDevelopment/AppDevelopmentMain";
 import CareersAddJobDetailsForm from "./Pages/Careers/components/CareersAddJobDetails/CareersAddJobDetailsForm";
 import UiUxDesignMain from "./Pages/UiUxDesign/UiUxDesignMain";
+import CustomSoftwareMain from "./Pages/CustomSoftware/CustomSoftwareMain";
+
+
 
 export default function Router() {
 
@@ -106,6 +109,11 @@ console.log(isAuthenticated, 'hgyfuhhj')
             path:'/ui-ux-design',
             element : <UiUxDesignMain /> ,
            },
+           {
+            path:'/custom-software',
+            element : <CustomSoftwareMain /> ,
+           },
+           
     // {
     //     path:'/',
     //     element : <ComingSoon /> ,

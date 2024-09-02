@@ -215,7 +215,7 @@ function CustomTabPanel(props) {
 
   return (
     <div
-      style={{ width: "100%", height:'100%', }}
+      style={{ width: "100%" }}
       role="tabpanel"
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
@@ -228,7 +228,6 @@ function CustomTabPanel(props) {
             p: "2rem",
             backgroundColor: "#1c2844",
             width: "100%",
-            height:'100%',
             color: "white",
             borderRadius: "10px",
             fontSize: "1rem",

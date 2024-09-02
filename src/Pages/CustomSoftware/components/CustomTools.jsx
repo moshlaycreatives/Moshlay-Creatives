@@ -13,13 +13,14 @@ function CustomTabPanel(props) {
     //  style={{display:'flex',
 
     // }}
+    // width={'100%'}
       role="tabpanel"
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && <Box sx={{ py: 3 }}>{children}</Box>}
+      {value === index && <Box sx={{ py:3}}>{children}</Box>}
     </div>
   );
 }
@@ -37,7 +38,7 @@ function a11yProps(index) {
   };
 }
 
-export default function WebDevelopmentTech() {
+export default function CustomTools() {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
@@ -49,26 +50,22 @@ export default function WebDevelopmentTech() {
 
   const listImage1=[
     {img:'/webdevtech1.png'},
-    {img:'/webdevtech2.png'},
-    {img:'/webdevtech3.png'},
-    {img:'/webdevtech4.png'},
-    {img:'/webdevtech5.png'},
+    {img:'/webdevtech1.png'},
+    {img:'/webdevtech1.png'},
+    {img:'/webdevtech1.png'},
+    {img:'/webdevtech1.png'},
   ]
   const listImage2=[
-    {img:'/webdevtech3.png'},
-    {img:'/webdevtech4.png'},
-    {img:'/webdevtech5.png'},
+    {img:'/webdevtech1.png'},
+    {img:'/webdevtech1.png'},
+    {img:'/webdevtech1.png'},
   ]
   const listImage3=[
     {img:'/webdevtech1.png'},
-    {img:'/webdevtech2.png'},
-    {img:'/webdevtech4.png'},
+    {img:'/webdevtech1.png'},
+    {img:'/webdevtech1.png'},
   ]
-  const listImage4=[
-    {img:'/webdevtech5.png'},
-    {img:'/webdevtech2.png'},
-    {img:'/webdevtech3.png'},
-  ]
+
   return (
     <Box sx={{ width: '100%', padding:'0% 10%' }}>
       {/* ========================================================TEXT PART============================================= */}
@@ -109,75 +106,80 @@ export default function WebDevelopmentTech() {
         <br /><br />
       <Box sx={{ 
         display:'flex',
-        justifyContent:'center'
+        justifyContent:'center',
+        width:'100%'
        }}>
-        <Tabs value={value} onChange={handleChange} 
-        variant={isMedium ? 'scrollable' : ''}
+      <Tabs
+      value={value}
+      onChange={handleChange}
+      variant={isMedium ? 'scrollable' : 'fullWidth'}
+    //   justifyContent={'start'}   
+      sx={{
+        width: '100%',
+        backgroundColor: theme.palette.primary.main,
+        "& .MuiTabs-indicator": {
+          backgroundColor: 'white',
+          height:'4px'
+        },
+      }}
+    >
+      <Tab
+        label="Tools & Technologies"
+        {...a11yProps(0)}
         sx={{
-          display:'flex',
-          gap:3,
-          "& .MuiTabs-indicator": {
-      display: "none", // Hides the underline indicator
-    },
-        }}>
-          <Tab label="Design" {...a11yProps(0)} sx={{
-            border:'1px solid white',
-            fontSize:'1rem',
-            fontWeight:400,
-            borderRadius:'50px',
-            padding:isSmall ? '.5rem 1rem ': isMedium ? "1rem 2rem " : '1rem 3rem ',
-           color:'white', 
-           fontFamily:'Montserrat',
-           marginRight:isSmall ? '1rem' : isMedium ? '2rem' :  '4rem',
-           "&.Mui-selected ": {
-                      border: "1px solid #98c447",
-                    },
-          }}/>
-
-<Tab label="Frontend" {...a11yProps(0)} sx={{
-            border:'1px solid white',
-            fontSize:'1rem',
-            fontWeight:400,
-            borderRadius:'50px',
-            padding:isSmall ? '.5rem 1rem ': isMedium ? "1rem 2rem " : '1rem 3rem ',
-           color:'white', 
-           fontFamily:'Montserrat',
-           marginRight:isSmall ? '1rem' : isMedium ? '2rem' :  '4rem',
-           "&.Mui-selected ": {
-                      border: "1px solid #98c447",
-                    },
-          }}/>
-
-<Tab label="backend" {...a11yProps(0)} sx={{
-            border:'1px solid white',
-            fontSize:'1rem',
-            fontWeight:400,
-            borderRadius:'50px',
-            padding:isSmall ? '.5rem 1rem ': isMedium ? "1rem 2rem " : '1rem 3rem ',
-           color:'white', 
-           fontFamily:'Montserrat',
-           marginRight:isSmall ? '1rem' : isMedium ? '2rem' :  '4rem',
-           "&.Mui-selected ": {
-                      border: "1px solid #98c447",
-                    },
-          }}/>
-
-<Tab label="DevOps" {...a11yProps(0)} sx={{
-            border:'1px solid white',
-            fontSize:'1rem',
-            fontWeight:400,
-            borderRadius:'50px',
-            padding:isSmall ? '.5rem 1rem ': isMedium ? "1rem 2rem " : '1rem 3rem ',
-           color:'white', 
-           fontFamily:'Montserrat',
-           marginRight:isSmall ? '1rem' : isMedium ? '2rem' :  '4rem',
-           "&.Mui-selected ": {
-                      border: "1px solid #98c447",
-                    },
-          }}/>
-
-        </Tabs>
+            fontSize: isSmall ? "1rem": isMedium? "1.2rem": '1.3rem',
+            textTransform:'none',
+          fontWeight: 400,
+          color: 'white',
+          fontFamily: 'Montserrat',
+          justifyContent: 'flex-start', // Aligns the label to the start
+      textAlign: 'left', // Ensures the text is aligned left within the Tab
+      alignItems: 'flex-start', // Aligns the content to the top of the Tab
+          "&.Mui-selected": {
+            border: "1px solid #98c447",
+            color: 'white',
+          },
+        }}
+      />
+    <Tab
+        label="Programming Languages"
+        {...a11yProps(0)}
+        sx={{
+            fontSize: isSmall ? "1rem": isMedium? "1.2rem": '1.3rem',
+            textTransform:'none',
+          fontWeight: 400,
+          color: 'white',
+          fontFamily: 'Montserrat',
+          justifyContent: 'flex-start', // Aligns the label to the start
+      textAlign: 'left', // Ensures the text is aligned left within the Tab
+      alignItems: 'flex-start', // Aligns the content to the top of the Tab
+          "&.Mui-selected": {
+            border: "1px solid #98c447",
+            color: 'white',
+          },
+        }}
+      />
+       <Tab
+        label="Database & Reporting"
+        {...a11yProps(0)}
+        sx={{
+            fontSize: isSmall ? "1rem": isMedium? "1.2rem": '1.3rem',
+            textTransform:'none',
+          fontWeight: 400,
+          color: 'white',
+          fontFamily: 'Montserrat',
+          justifyContent: 'flex-start', // Aligns the label to the start
+      textAlign: 'left', // Ensures the text is aligned left within the Tab
+      alignItems: 'flex-start', // Aligns the content to the top of the Tab
+          "&.Mui-selected": {
+            border: "1px solid #98c447",
+            color: 'white',
+          },
+        }}
+      />
+    </Tabs>
       </Box>
+      
       <CustomTabPanel value={value} index={0} width={'100%'}>
         <Box sx={{
           width:'100%'
@@ -232,25 +234,6 @@ export default function WebDevelopmentTech() {
           }}>
             <Grid container justifyContent={'center'}>
                 {listImage3.map((row,index)=>(
-                    <Grid key={index}  item lg={2.4} md={3} sm={4} xs={6} sx={{ width: '100%' }}>
-                    <Box sx={{width:'100%'}}>
-                <img src={row.img} alt="" style={{width:'100%'}}/>
-                </Box>
-                    </Grid>
-                ))}
-            </Grid>
-          </Box>
-        </Box>
-      </CustomTabPanel>
-      <CustomTabPanel value={value} index={3}>
-      <Box sx={{
-          width:'100%'
-        }}>
-          <Box sx={{width:'100%',
-            display:'flex', flexWrap:'wrap',justifyContent:'center'
-          }}>
-            <Grid container justifyContent={'center'}>
-                {listImage4.map((row,index)=>(
                     <Grid key={index}  item lg={2.4} md={3} sm={4} xs={6} sx={{ width: '100%' }}>
                     <Box sx={{width:'100%'}}>
                 <img src={row.img} alt="" style={{width:'100%'}}/>

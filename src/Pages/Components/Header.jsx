@@ -602,6 +602,13 @@ const Header = () => {
             >
               Ui Ux Design
             </MenuItem>
+            <MenuItem
+              onClick={() =>
+                handleAnchorClose(setAnchorSolutionEl, "/custom-software")
+              }
+            >
+              Custom Software Development
+            </MenuItem>
           </Menu>
 
           <Box onClick={handleAnchorElClickMarketing} sx={{
