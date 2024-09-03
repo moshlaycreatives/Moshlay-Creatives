@@ -9,6 +9,9 @@ const AboutHero = () => {
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
   const isTwelve80 = useMediaQuery("(max-width:1280px)");
   const isTwelve = useMediaQuery("(max-width:1200px)");
+  const is1500 = useMediaQuery("(max-width:1500px)");
+  const is1600 = useMediaQuery("(max-width:1600px)");
+  const is1650 = useMediaQuery("(max-width:1650px)");
 
   return (
     <>
@@ -106,11 +109,11 @@ const AboutHero = () => {
                   fontSize: "1rem",
                   fontWeight: 400,
                   color: "white",
-                  textAlign: "justify",
+                  textAlign: "start",
                   fontFamily: "Montserrat",
                 }}
               >
-               Moshlay Creatives empowers businesses to thrive in the digital age. We're a one-stop shop for all your IT and data solutions, specializing in making impactful software and optimizing your online presence. From small businesses to established enterprises, we help you achieve your goals and drive impressive results.
+              Whether you're a nimble startup aiming to rapidly expand or a seasoned enterprise seeking to optimize operations, Moshlay Creatives is your trusted partner for scalable solutions. Our team of experienced professionals has business landscapes and implements innovative solutions that drive growth. We understand the unique challenges and opportunities that come with scaling a business. From optimizing resource allocation to implementing effective strategies, we provide the guidance and support you need to achieve your goals. Let us help you navigate the complexities of growth and unlock your business's full potential.
               </Typography>
             </Box>
           </Grid>
@@ -130,7 +133,7 @@ const AboutHero = () => {
 
         <Grid
           container
-          spacing={isTwelve ? 2 : 5}
+          spacing={isTwelve ? 2 : 4}
           sx={{
             marginTop: isMedium ? ".1rem" : ".1rem",
           }}
@@ -138,7 +141,7 @@ const AboutHero = () => {
           <Grid item lg={5} md={12} sm={12} xs={12}>
             <Box
               sx={{
-                marginTop: isTwelve ? "0rem" : isTwelve80 ? "-2rem" : "-3rem",
+                marginTop: isTwelve ? "0rem" : isTwelve80 ? "-2rem" : is1500 ?"-2rem" : is1600 ? '-3rem' : is1650 ? "-4rem" : "-6rem",
               }}
             >
               <img src="aboutHero3.svg" alt="aboutHero1" width="100%" />

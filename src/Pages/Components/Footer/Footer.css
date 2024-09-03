@@ -190,6 +190,12 @@ font-family: 'Montserrat';
     }
 }
 
+@media(max-width:464px){
+    .footer-logo-text{
+        width: 100%;
+    }
+}
+
 @media(max-width:400px){
     
     .footer-logo-text img{
