@@ -8,7 +8,7 @@ const ContactUs = () => {
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
   const isLarge = useMediaQuery('(max-width:1400px)');
-
+  const is1600 = useMediaQuery('(min-width:1800px)');
 
   const translateYAnimation = keyframes`
   0% {
@@ -22,6 +22,24 @@ const ContactUs = () => {
   }
   75% {
     transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+`;
+
+const translateYAnimation2 = keyframes`
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5%);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(5%);
   }
   100% {
     transform: translateY(0);
@@ -54,7 +72,9 @@ const ContactUs = () => {
               width: "100%",
             }}
           >
-            <Box sx={{ width: "100%", animation: `${translateYAnimation} 2s linear infinite`, }}>
+            <Box sx={{ width: "100%", 
+             animation: is1600 ? `${translateYAnimation2} 2s linear infinite` : `${translateYAnimation} 2s linear infinite`,
+               }}>
               <img src="rocket2.svg" alt="" width={ isLarge ? '100%' : '90%'} />
             </Box>
           </Grid>
@@ -71,7 +91,7 @@ const ContactUs = () => {
                   fontSize: isSmall ? '1.6rem' : isMedium ? '2rem' : '3rem',
                   color: 'white',
                   fontWeight: 700,
-                  marginBottom: ".5rem",
+                  // marginBottom: ".5rem",
                   textAlign: "center",
                   fontFamily:'Montserrat'
                 }}
@@ -90,7 +110,7 @@ const ContactUs = () => {
               >
                 Contact Us
               </Typography>
-              <Typography
+              {/* <Typography
                 sx={{
                   fontSize: "1.2rem",
                   color: "white",
@@ -99,13 +119,14 @@ const ContactUs = () => {
                 }}
               >
                 +92 (308) 5465788
-              </Typography>
+              </Typography> */}
               <Typography
                 sx={{
                   fontSize: "2rem",
                   color: "white",
                   fontWeight: 400,
-                  marginBottom: "1rem",
+                  // marginBottom: "1rem",
+                  marginTop:'-1rem',
                   fontFamily:'Moon Dance'
                 }}
               >

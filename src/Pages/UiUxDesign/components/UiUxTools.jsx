@@ -145,14 +145,18 @@ const UiUxTools = () => {
                         display: "flex",
                         alignItems: "center",
                         gap: 2,
-                        marginBottom: "1rem",
+                        marginBottom: "1.3rem",
                       }}
                     >
                       <img
                         src={data.img}
                         alt=""
-                        width={"45rem"}
-                        height={"50rem"}
+                        width={ isSmall ? (
+                          data.img === "fgtools.png" ?'11%' : data.img === "aetools.png" ? '14%' : data.img === "pntools.png" ?  '13%' : data.img === "intools.png" || data.img === "xdtools.png"  || data.img === "sdtools.png" ? '14%'  : "15%"
+                        ) : (
+                          data.img === "fgtools.png" ?'19%' : data.img === "aetools.png" ? '21%' : data.img === "pntools.png" ? '20%' : "24%"
+                        )}
+                        // height={"55rem"}
                       />
                       <Typography
                         sx={{
