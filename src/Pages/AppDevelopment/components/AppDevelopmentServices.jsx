@@ -14,6 +14,7 @@ const AppDevelopmentServices = () => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
+  const is1200 = useMediaQuery('(max-width:1200px)');
 
   const listData = [
     { dot: <RxDotFilled />, title: "Custom iOS and Android apps development" },
@@ -101,11 +102,13 @@ const AppDevelopmentServices = () => {
             <Box
               sx={{
                 display: "flex",
-                alignItems: "center",
+                alignItems: "start",
                 width: "100%",
               }}
             >
-              <img src="appdevservices.png" alt="" width={"70%"} />
+              <img src="appdevservices.png" alt="" style={{width:isSmall ? "65%": '75%', 
+                marginTop: is1200 ? '0rem':'-2rem'
+              }}/>
             </Box>
           </Grid>
           <Grid Item lg={6} md={12} sm={12} xs={12}>
@@ -117,7 +120,7 @@ const AppDevelopmentServices = () => {
                 key={IDBDatabase}
                 sx={{
                   display: "flex",
-                  alignItems: "center",
+                  alignItems: "end",
                 }}
               >
                 <IconButton sx={{ color: theme.palette.primary.main }}>
