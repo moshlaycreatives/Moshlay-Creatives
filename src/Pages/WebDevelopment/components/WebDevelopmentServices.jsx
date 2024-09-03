@@ -13,28 +13,28 @@ const WebDevelopmentServices = () => {
     <>
     <Box sx={{
         backgroundImage: "linear-Gradient(to right  ,#21335b, #111112)",
-        padding:'5% 10%'
+        padding:'4% 10%'
     }}>
         <Typography sx={{
             fontSize: isSmall ? '1.5rem' : isMedium ? '2rem' : '2.5rem',
             color:'white',
             fontFamily:'Montserrat',
             textAlign:'center',
-            fontWeight:600
+            fontWeight:600,
+             marginBottom:'.5rem'
         }}>
             Full Website
         </Typography>
-        <br />
         <Typography sx={{
             fontSize: isSmall ? '1.5rem' : isMedium ? '2rem' : '2.5rem',
             color:theme.palette.primary.main,
             fontFamily:'Montserrat',
             textAlign:'center',
-            fontWeight:600
+            fontWeight:600,
+             marginBottom:'1.3rem'
         }}>
             Development Services
         </Typography>
-        <br />
 {/* ==========================================ROW ONE ==================================================================== */}
         <Box sx={{
             display:'flex',
@@ -49,14 +49,18 @@ const WebDevelopmentServices = () => {
                 display:'flex',
                 alignItems:'center',
                 borderRadius:'5px',
-                padding:'.2rem .5rem',
+                padding:'.8rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
+                alignItems:'center',
                 width: isSmall ? '100%' : 'auto', 
                 cursor:'pointer',
             }}>
-                <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
-                <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
-                </IconButton>
+                <Box sx={{color:theme.palette.primary.main, marginRight:isSmall ? '0rem ': '0.5rem',display:'flex',
+                    alignItems:'end',
+                    // marginLeft:'0.5rem'
+                }}>
+                <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
+                </Box>
                 <Typography sx={{color:'white', fontSize:isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                     Web Designing
                 </Typography>
@@ -68,14 +72,17 @@ const WebDevelopmentServices = () => {
                 display:'flex',
                 alignItems:'center',
                 borderRadius:'5px',
-                padding:'.2rem .5rem',
+                padding:'.8rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
                 width: isSmall ? '100%' : 'auto',
                 cursor:'pointer',
             }}>
-                <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
-                <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
-                </IconButton>
+                  <Box sx={{color:theme.palette.primary.main, marginRight:isSmall ? '0rem ': '0.5rem',display:'flex',
+                    alignItems:'end',
+                    // marginLeft:'0.5rem'
+                }}>
+                <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
+                </Box>
                 <Typography sx={{color:'white', fontSize:isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Front-End Development
                 </Typography>
@@ -88,14 +95,17 @@ const WebDevelopmentServices = () => {
                 alignItems:'center',
                 borderRadius:'5px',
                 justifyContent:'center',
-                padding:'.2rem .5rem',
+                padding:'.8rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
                 width: isSmall ? '100%' : 'auto',
                 cursor:'pointer',
             }}>
-                <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
-                <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
-                </IconButton>
+               <Box sx={{color:theme.palette.primary.main, marginRight:isSmall ? '0rem ': '0.5rem',display:'flex',
+                    alignItems:'end',
+                    // marginLeft:'0.5rem'
+                }}>
+                <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
+                </Box>
                 <Typography sx={{color:'white', fontSize: isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Back-End Development
                 </Typography>
@@ -108,13 +118,16 @@ const WebDevelopmentServices = () => {
                 alignItems:'center',
                 borderRadius:'5px',
                 justifyContent:'center',
-                padding:'.2rem .5rem',
+                padding:'.8rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
                 width: isSmall ? '100%' : 'auto', cursor:'pointer',
             }}>
-                <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
-                <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
-                </IconButton>
+               <Box sx={{color:theme.palette.primary.main, marginRight:isSmall ? '0rem ': '0.5rem',display:'flex',
+                    alignItems:'end',
+                    // marginLeft:'0.5rem'
+                }}>
+                <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
+                </Box>
                 <Typography sx={{color:'white', fontSize: isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Database Integration
                 </Typography>
@@ -138,13 +151,16 @@ const WebDevelopmentServices = () => {
                 alignItems:'center',
                 borderRadius:'5px',
                 justifyContent:'center',
-                padding:'.2rem .5rem',
+                padding:'.8rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
                 width: isSmall ? '100%' : 'auto', cursor:'pointer',
             }}>
-                <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
-                <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
-                </IconButton>
+              <Box sx={{color:theme.palette.primary.main, marginRight:isSmall ? '0rem ': '0.5rem',display:'flex',
+                    alignItems:'end',
+                    // marginLeft:'0.5rem'
+                }}>
+                <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
+                </Box>
                 <Typography sx={{color:'white', fontSize: isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 E-Commerce Integration
                 </Typography>
@@ -157,13 +173,16 @@ const WebDevelopmentServices = () => {
                 alignItems:'center',
                 borderRadius:'5px',
                 justifyContent:'center',
-                padding:'.2rem .5rem',
+                padding:'.8rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
                 width: isSmall ? '100%' : 'auto', cursor:'pointer',
             }}>
-                <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
-                <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
-                </IconButton>
+               <Box sx={{color:theme.palette.primary.main, marginRight:isSmall ? '0rem ': '0.5rem',display:'flex',
+                    alignItems:'end',
+                    // marginLeft:'0.5rem'
+                }}>
+                <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
+                </Box>
                 <Typography sx={{color:'white', fontSize: isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Responsive Design
                 </Typography>
@@ -176,13 +195,16 @@ const WebDevelopmentServices = () => {
                 alignItems:'center',
                 borderRadius:'5px',
                 justifyContent:'center',
-                padding:'.2rem .5rem',
+                padding:'.8rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
                 width: isSmall ? '100%' : 'auto', cursor:'pointer',
             }}>
-                <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
-                <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
-                </IconButton>
+               <Box sx={{color:theme.palette.primary.main, marginRight:isSmall ? '0rem ': '0.5rem',display:'flex',
+                    alignItems:'end',
+                    // marginLeft:'0.5rem'
+                }}>
+                <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
+                </Box>
                 <Typography sx={{color:'white', fontSize:isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Search Engine Optimization
                 </Typography>
@@ -206,13 +228,16 @@ const WebDevelopmentServices = () => {
                 alignItems:'center',
                 borderRadius:'5px',
                 justifyContent:'center',
-                padding:'.2rem .5rem',
+                padding:'.8rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
                 width: isSmall ? '100%' : 'auto', cursor:'pointer',
             }}>
-                <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
-                <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
-                </IconButton>
+               <Box sx={{color:theme.palette.primary.main, marginRight:isSmall ? '0rem ': '0.5rem',display:'flex',
+                    alignItems:'end',
+                    // marginLeft:'0.5rem'
+                }}>
+                <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
+                </Box>
                 <Typography sx={{color:'white', fontSize: isSmall ? '1rem' : ' 1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Web Testing & Debugging
                 </Typography>
@@ -225,13 +250,16 @@ const WebDevelopmentServices = () => {
                 alignItems:'center',
                 borderRadius:'5px',
                 justifyContent:'center',
-                padding:'.2rem .5rem',
+                padding:'.8rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
                 width: isSmall ? '100%' : 'auto', cursor:'pointer',
             }}>
-                <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
-                <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
-                </IconButton>
+               <Box sx={{color:theme.palette.primary.main, marginRight:isSmall ? '0rem ': '0.5rem',display:'flex',
+                    alignItems:'end',
+                    // marginLeft:'0.5rem'
+                }}>
+                <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
+                </Box>
                 <Typography sx={{color:'white', fontSize: isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Security Measures
                 </Typography>
@@ -244,13 +272,16 @@ const WebDevelopmentServices = () => {
                 alignItems:'center',
                 borderRadius:'5px',
                 justifyContent:'center',
-                padding:'.2rem .5rem',
+                padding:'.8rem .5rem',
                 justifyContent:isSmall ? 'start' : 'center',
                 width: isSmall ? '100%' : 'auto', cursor:'pointer',
             }}>
-                <IconButton sx={{color:theme.palette.primary.main, marginLeft:'-.5rem'}}>
-                <IoCheckmark fontSize={'1.8rem'} fontWeight={'900'} />
-                </IconButton>
+               <Box sx={{color:theme.palette.primary.main, marginRight:isSmall ? '0rem ': '0.5rem',display:'flex',
+                    alignItems:'end',
+                    // marginLeft:'0.5rem'
+                }}>
+                <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
+                </Box>
                 <Typography sx={{color:'white', fontSize: isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Content Migration
                 </Typography>

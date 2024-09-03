@@ -102,7 +102,7 @@ const AboutUs = () => {
               <Button
                 // variant="outlined"
                 sx={{
-                  border:"1px solid #98c447",
+                  border:"1px solid white",
                   padding:'0.5rem 1.7rem',
                   fontFamily: "Montserrat",
                   color: "white",
@@ -114,6 +114,7 @@ const AboutUs = () => {
                   "&:Hover":{
                     backgroundColor:theme.palette.primary.main,
                     color:'white',
+                    border:"1px solid #98c447",
                   }
                 }}
                 onClick={() => handleSeeMore("/about")}

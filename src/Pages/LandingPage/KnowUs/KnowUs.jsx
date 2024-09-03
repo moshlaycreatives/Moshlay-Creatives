@@ -127,8 +127,9 @@ const KnowUs = () => {
               </Typography>
               <Box>
                 <Button
-                  variant="outlined"
+                  // variant="outlined"
                   sx={{
+                    border:"1px solid white",
                     color: "white",
                     padding: ".8rem 2rem",
                     fontSize: "1rem",
@@ -137,6 +138,7 @@ const KnowUs = () => {
                     "&:hover": {
                       color: "white",
                       background: theme.palette.primary.main,
+                      border:"1px solid #98c447",
                     },
                   }}
                 >

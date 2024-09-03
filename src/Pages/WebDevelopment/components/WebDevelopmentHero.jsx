@@ -223,7 +223,7 @@ const WebDevelopmentHero = () => {
                     justifyContent: "center",
                   }}
                 >
-                  <img src={row.careerlogo} alt="" width={"15%"} />
+                  <img src={row.careerlogo} alt="" width={"45rem"} height={'auto'} />
                 </Box>
 
                 <Box
