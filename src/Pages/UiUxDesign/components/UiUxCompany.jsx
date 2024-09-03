@@ -84,11 +84,13 @@ const UiUxCompany = () => {
               textAlign: "center",
               marginTop: "2rem",
               fontFamily: "montserrat",     
+              marginBottom:'0.5rem'
             }}
           >
             {" "}
             UI & UX Design Company
           </Typography>
+          
           <Typography
             sx={{
               fontSize: "1rem",
@@ -97,17 +99,15 @@ const UiUxCompany = () => {
               textAlign: "center",
               width: isSmall ? "100%" : isMedium ? "90%" : "90%",
               fontFamily: "montserrat",
+              marginBottom:isSmall ?'2rem' :'4rem'
             }}
           >
            We specialize in delivering exceptional user experiences through our comprehensive UI & UX design services.
           </Typography>
         </Box>
-        <br />
-        <br />
-
         {/* ===========================CARDS================================ */}
 
-        <Grid container spacing={6}>
+        <Grid container spacing={isSmall ? 3 : 6}>
           {listData.map((row, id) => (
             <Grid key={id} item lg={4} md={6} sm={12} xs={12}>
               <Box
@@ -138,14 +138,14 @@ const UiUxCompany = () => {
                       fontFamily: "Montserrat",
                       fontWeight: 600,
                       textAlign: "center",
+                      marginBottom:'.6rem'
                     }}
                   >
                     {row.careertitle}
                   </Typography>
                   <Box sx={{width:'100%', display:'flex', justifyContent:'center'}}>
-            <Divider sx={{backgroundColor:theme.palette.primary.main, height:'2px' ,color:'red', width:'25%'}}/>
+            <Divider sx={{backgroundColor:theme.palette.primary.main, height:'2.3px' ,color:'red', width:'30%', marginBottom:'.6rem'}}/>
           </Box>
-                  <br />
                   <Typography
                     sx={{
                       color: "white",

@@ -19,7 +19,7 @@ const UiUxEssence = () => {
     { title: "Information Architecture" },
     { title: "User Experience (UX)Development" },
     { title: "User Interface (UI)Development" },
-    { title: "Unique Design AppSolutions" },
+    { title: "Unique Design App Solutions" },
   ];
 
   return (
@@ -30,7 +30,12 @@ const UiUxEssence = () => {
           backgroundColor: "#1c2844",
         }}
       >
-        <Box >
+        <Box sx={{
+          display:'flex',
+          flexDirection:'column',
+          justifyContent:'center',
+          alignItems:'center',
+        }}>
           <Typography
             sx={{
               fontFamily: "Montserrat",
@@ -38,6 +43,7 @@ const UiUxEssence = () => {
               fontWeight: "600",
               color: theme.palette.primary.main,
               textAlign: "center",
+              
             }}
           >
             Essence of Our UI & UX Design
@@ -50,6 +56,7 @@ const UiUxEssence = () => {
               fontWeight: "400",
               color: "white",
               textAlign: "center",
+              width: isSmall ? '100%': isMedium ?'90%' : '80%'
             }}
           >
             Your business is unique and has distinct goals. That’s why we carry
@@ -57,7 +64,7 @@ const UiUxEssence = () => {
             quality website traffic you seek?
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", justifyContent: "center", width: "100%" , marginTop:'3rem'}}>
+        <Box sx={{ display: "flex", justifyContent: "center", width: "100%" , marginTop:'2rem'}}>
           <img
             src="/uiuxessence.png"
             alt=""
@@ -70,6 +77,7 @@ const UiUxEssence = () => {
             {listData.map((row, index) => (
               <Grid key={index} item lg={3} md={4} sm={6} xs={12}>
                 <Box sx={{
+                  border:'2px dashed #98c447',
                     backgroundColor:'white',
                     display:'flex', 
                     justifyContent:'center', 
@@ -79,8 +87,8 @@ const UiUxEssence = () => {
                   <Typography sx={{
                      fontFamily: "Montserrat",
                      fontSize: "1rem",
-                     fontWeight: "500",
-                     color: "black",
+                     fontWeight: "600",
+                     color: index === 1 || index === 2 ? "#98c447" : "black",
                      textAlign: "center",
                   }}>{row.title}</Typography>
                 </Box>

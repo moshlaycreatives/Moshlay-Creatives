@@ -54,7 +54,11 @@ const UiUxServices = () => {
           marginTop: "1rem",
           padding: "3rem 10%",
           marginBottom: "4rem",
-          background:'#323d56'
+          // background:'#323d56
+          backgroundImage:'url(/uiuxservicesbg.png)',
+          backgroundPosition:'center', 
+          backgroundRepeat:'no-repeat', 
+          backgroundSize:'cover',
         }}
       >
         {/* ========================================================TEXT PART============================================= */}
@@ -107,7 +111,7 @@ const UiUxServices = () => {
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "start",
-                  backgroundColor:'#596277',
+                  backgroundColor:'#646c7ca7',
                   padding:isSmall ? '1rem' : '2rem',
                   borderBottom:'5px solid white',
                   gap: 2,
