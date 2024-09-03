@@ -163,7 +163,9 @@ const Services = () => {
                     transform: "translateX(-150%)",
                   },
                   '&:hover':{
-                    transform:'scale(1.05)'
+                    // transform:'scale(1.05)',
+                    // width:'98%',
+                    // height:'90%'
                   }
                   // '&:hover .divider': {
                   //   transform:'translateX(-1000%)'

@@ -288,7 +288,7 @@ const ContactForm = () => {
         </Grid>
 
         <Box width={'100%'} marginTop={'3rem'}>
-            <img src="contactmap1.svg" alt=""  width={'100%'}/>
+            <img src="contactmap2.png" alt=""  width={'100%'}/>
         </Box>
       </Box>
       </>
