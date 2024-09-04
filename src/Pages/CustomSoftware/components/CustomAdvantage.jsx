@@ -25,37 +25,37 @@ const CustomAdvantage = () => {
       careerlogo: "customadvantage1.png",
       careertitle: "Engineering Excellence",
       carrerdes:
-        "In-depth analysis of your business goals, target audience, and competitors.  For the Creation of a comprehensive project plan",
+        "At Moshlay Creatives, we pride ourselves on our team of highly skilled engineers who possess a deep understanding of software development best practices. Our engineers are dedicated to delivering high-quality, innovative solutions that meet the highest standards of excellence.",
     },
     {
       careerlogo: "customadvantage2.png",
       careertitle: "Agile Development",
       carrerdes:
-        "Designing visually appealing and user-friendly interfaces. Development of wireframes and mockups.",
+        "We embrace an agile methodology to ensure flexibility, responsiveness, and continuous improvement throughout the development process. Our agile approach allows us to adapt to changing requirements, deliver value incrementally, and minimize risks.",
     },
     {
       careerlogo: "customadvantage3.png",
       careertitle: "Future-Ready Products",
       carrerdes:
-        "Building the website's structure and functionality using cutting-edge technologies. integration of essential features.",
+        "We design and develop products that are not only functional today but also equipped to meet the challenges of tomorrow. Our focus on emerging technologies and industry trends ensures that our solutions remain relevant and competitive in the long run.",
     },
     {
       careerlogo: "customadvantage4.png",
       careertitle: "Operational Efficiency",
       carrerdes:
-        "Rigorous testing to ensure optimal performance and compatibility. Implementation of analytics tools to track website performance.",
+        "We optimize our development processes to maximize efficiency and minimize costs. Our streamlined workflows, automation tools, and best practices enable us to deliver projects on time and within budget.",
     },
     {
       careerlogo: "customadvantage5.png",
       careertitle: "Customer Experience",
       carrerdes:
-        "Deployment of the website on a secure and reliable server. Search engine optimization (SEO) to improve visibility.",
+        "Customer satisfaction is our top priority. We work closely with our clients to understand their unique needs and deliver solutions that exceed their expectations. Our commitment to excellent customer service ensures a positive and collaborative partnership.",
     },
     {
       careerlogo: "customadvantage6.png",
       careertitle: "DevOps Mindset",
       carrerdes:
-        "Ongoing updates and maintenance to keep your website secure and up-to-date. Technical support and troubleshooting services.",
+        " We adopt a DevOps approach to foster collaboration between development and operations teams. This enables us to deliver products faster, improve quality, and ensure continuous deployment and maintenance. Our DevOps mindset ensures that our solutions are reliable, scalable, and maintainable.",
     },
   ];
   return (
@@ -99,8 +99,7 @@ const CustomAdvantage = () => {
               fontFamily: "montserrat",
             }}
           >
-           Your business is unique and has distinct goals. That’s why we carry a vast arsenal of digital marketing
-           you achieve those goals. Is it quality website traffic you seek?
+           Hire our experts for your business problems. In the process of the fulfillment of your requirements, you experienced the following advantages that make us the perfect selection for your business.
           </Typography>
         </Box>
         <br />

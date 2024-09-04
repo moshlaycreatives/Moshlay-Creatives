@@ -3,18 +3,23 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Box from "@mui/material/Box";
-import { Grid, IconButton, Typography, useMediaQuery, useTheme } from "@mui/material";
+import {
+  Grid,
+  IconButton,
+  Typography,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 // import HomeIcon from '@mui/icons-material/Home';
 // import { HiArrowLongRight } from "react-icons/fa";
 import { HiArrowLongRight } from "react-icons/hi2";
-
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
 
   return (
     <div
-      style={{ width: "100%", height:'100%' }}
+      style={{ width: "100%", height: "100%" }}
       role="tabpanel"
       hidden={value !== index}
       id={`simple-tabpanel-${index}`}
@@ -25,9 +30,10 @@ function CustomTabPanel(props) {
         <Box
           sx={{
             p: "2rem",
-            backgroundColor: "white",
+            backgroundColor: "#354745",
+            // color:'white',
             width: "100%",
-            height:'100%',
+            height: "100%",
             color: "white",
             borderRadius: "10px",
             fontSize: "1rem",
@@ -85,27 +91,30 @@ const CustomTabs = () => {
               textAlign: "center",
             }}
           >
-           Moshlay Creatives Custom Software Development
+            Moshlay Creatives Custom Software Development
           </Typography>
-         <Box sx={{
-            display:'flex',
-            justifyContent:'center'
-         }}>
-         <Typography
+          <Box
             sx={{
-              fontSize: isSmall ? ".9rem" : isMedium ? "1rem" : "1rem",
-              fontFamily: "Montserrat",
-              color: 'white',
-              fontWeight: 400,
-              textAlign: "center",
-              marginBottom: "2rem ",
-              width:isSmall ? '100%' : '80%'
+              display: "flex",
+              justifyContent: "center",
             }}
           >
-          Your business is unique and has distinct goals. That’s why we carry a vast arsenal of digital marketing
-          you achieve those goals. Is it quality website traffic you seek?
-          </Typography>
-         </Box>
+            <Typography
+              sx={{
+                fontSize: isSmall ? ".9rem" : isMedium ? "1rem" : "1rem",
+                fontFamily: "Montserrat",
+                color: "white",
+                fontWeight: 400,
+                textAlign: "center",
+                marginBottom: "2rem ",
+                width: isSmall ? "100%" : "80%",
+              }}
+            >
+              Your business is unique and has distinct goals. That’s why we
+              carry a vast arsenal of digital marketing you achieve those goals.
+              Is it quality website traffic you seek?
+            </Typography>
+          </Box>
         </Box>
         <Grid container spacing={5}>
           <Grid
@@ -140,8 +149,8 @@ const CustomTabs = () => {
                   label="Custom Application Development "
                   {...a11yProps(1)}
                   sx={{
-                    color: "#666666",
-                    backgroundColor: "white",
+                    color: "white",
+                    backgroundColor: "#354745",
                     fontFamily: "Montserrat",
                     fontSize: isSmall ? "1rem" : isMedium ? "1.2rem" : "1.3rem",
                     fontWeight: 500,
@@ -155,8 +164,8 @@ const CustomTabs = () => {
                     marginBottom: ".5rem",
                     marginRight: isMedium ? "0.5rem" : "0rem",
                     ".icon": {
-                      color: 'white',
-                      fontSize:'2.5rem'
+                      color: "#354745",
+                      fontSize: "2.5rem",
                     },
                     "&.Mui-selected .icon": {
                       color: "white",
@@ -176,14 +185,14 @@ const CustomTabs = () => {
                   }}
                 />
 
-<Tab
+                <Tab
                   icon={<HiArrowLongRight className="icon" />}
                   iconPosition="end"
                   label="Web Application Development "
                   {...a11yProps(1)}
                   sx={{
-                    color: "#666666",
-                    backgroundColor: "white",
+                    color: "white",
+                    backgroundColor: "#354745",
                     fontFamily: "Montserrat",
                     fontSize: isSmall ? "1rem" : isMedium ? "1.2rem" : "1.3rem",
                     fontWeight: 500,
@@ -197,8 +206,8 @@ const CustomTabs = () => {
                     marginBottom: ".5rem",
                     marginRight: isMedium ? "0.5rem" : "0rem",
                     ".icon": {
-                      color: 'white',
-                      fontSize:'2.5rem'
+                      color: "#354745",
+                      fontSize: "2.5rem",
                     },
                     "&.Mui-selected .icon": {
                       color: "white",
@@ -223,8 +232,8 @@ const CustomTabs = () => {
                   label="Applied AI Solutions"
                   {...a11yProps(1)}
                   sx={{
-                    color: "#666666",
-                    backgroundColor: "white",
+                    color: "white",
+                    backgroundColor: "#354745",
                     fontFamily: "Montserrat",
                     fontSize: isSmall ? "1rem" : isMedium ? "1.2rem" : "1.3rem",
                     fontWeight: 500,
@@ -238,8 +247,8 @@ const CustomTabs = () => {
                     marginBottom: ".5rem",
                     marginRight: isMedium ? "0.5rem" : "0rem",
                     ".icon": {
-                      color: 'white',
-                      fontSize:'2.5rem'
+                      color: "#354745",
+                      fontSize: "2.5rem",
                     },
                     "&.Mui-selected .icon": {
                       color: "white",
@@ -264,8 +273,8 @@ const CustomTabs = () => {
                   label="Enterprise Application Development"
                   {...a11yProps(1)}
                   sx={{
-                    color: "#666666",
-                    backgroundColor: "white",
+                    color: "white",
+                    backgroundColor: "#354745",
                     fontFamily: "Montserrat",
                     fontSize: isSmall ? "1rem" : isMedium ? "1.2rem" : "1.3rem",
                     fontWeight: 500,
@@ -279,8 +288,8 @@ const CustomTabs = () => {
                     marginBottom: ".5rem",
                     marginRight: isMedium ? "0.5rem" : "0rem",
                     ".icon": {
-                      color: 'white',
-                      fontSize:'2.5rem'
+                      color: "#354745",
+                      fontSize: "2.5rem",
                     },
                     "&.Mui-selected .icon": {
                       color: "white",
@@ -305,8 +314,8 @@ const CustomTabs = () => {
                   label="Mobile Development"
                   {...a11yProps(1)}
                   sx={{
-                    color: "#666666",
-                    backgroundColor: "white",
+                    color: "white",
+                    backgroundColor: "#354745",
                     fontFamily: "Montserrat",
                     fontSize: isSmall ? "1rem" : isMedium ? "1.2rem" : "1.3rem",
                     fontWeight: 500,
@@ -320,8 +329,8 @@ const CustomTabs = () => {
                     marginBottom: ".5rem",
                     marginRight: isMedium ? "0.5rem" : "0rem",
                     ".icon": {
-                      color: 'white',
-                      fontSize:'2.5rem'
+                      color: "#354745",
+                      fontSize: "2.5rem",
                     },
                     "&.Mui-selected .icon": {
                       color: "white",
@@ -341,13 +350,13 @@ const CustomTabs = () => {
                   }}
                 />
                 <Tab
-                  icon={<HiArrowLongRight className="icon" />}  
+                  icon={<HiArrowLongRight className="icon" />}
                   iconPosition="end"
                   label="Cloud Development"
                   {...a11yProps(1)}
                   sx={{
-                    color: "#666666",
-                    backgroundColor: "white",
+                    color: "white",
+                    backgroundColor: "#354745",
                     fontFamily: "Montserrat",
                     fontSize: isSmall ? "1rem" : isMedium ? "1.2rem" : "1.3rem",
                     fontWeight: 500,
@@ -361,8 +370,8 @@ const CustomTabs = () => {
                     marginBottom: ".5rem",
                     marginRight: isMedium ? "0.5rem" : "0rem",
                     ".icon": {
-                      color: 'white',
-                      fontSize:'2.5rem'
+                      color: "#354745",
+                      fontSize: "2.5rem",
                     },
                     "&.Mui-selected .icon": {
                       color: "white",
@@ -387,8 +396,8 @@ const CustomTabs = () => {
                   label="SaaS Development"
                   {...a11yProps(1)}
                   sx={{
-                    color: "#666666",
-                    backgroundColor: "white",
+                    color: "white",
+                    backgroundColor: "#354745",
                     fontFamily: "Montserrat",
                     fontSize: isSmall ? "1rem" : isMedium ? "1.2rem" : "1.3rem",
                     fontWeight: 500,
@@ -402,8 +411,8 @@ const CustomTabs = () => {
                     marginBottom: ".5rem",
                     marginRight: isMedium ? "0.5rem" : "0rem",
                     ".icon": {
-                      color: 'white',
-                      fontSize:'2.5rem'
+                      color: "#354745",
+                      fontSize: "2.5rem",
                     },
                     "&.Mui-selected .icon": {
                       color: "white",
@@ -428,8 +437,8 @@ const CustomTabs = () => {
                   label="Legacy Modernization"
                   {...a11yProps(1)}
                   sx={{
-                    color: "#666666",
-                    backgroundColor: "white",
+                    color: "white",
+                    backgroundColor: "#354745",
                     fontFamily: "Montserrat",
                     fontSize: isSmall ? "1rem" : isMedium ? "1.2rem" : "1.3rem",
                     fontWeight: 500,
@@ -443,8 +452,8 @@ const CustomTabs = () => {
                     marginBottom: ".5rem",
                     marginRight: isMedium ? "0.5rem" : "0rem",
                     ".icon": {
-                      color: 'white',
-                      fontSize:'2.5rem'
+                      color: "#354745",
+                      fontSize: "2.5rem",
                     },
                     "&.Mui-selected .icon": {
                       color: "white",
@@ -476,35 +485,41 @@ const CustomTabs = () => {
             // backgroundColor={"aqua"}
             width={"100%"}
           >
-            <CustomTabPanel value={value} index={0} >
-                <Box>
-                    <img src="/customtabs1.png" alt="" width={isSmall ? "50rem":  isMedium ? "60rem": '70rem'} />
-                </Box>
-                <Typography sx={{
-            fontSize: isSmall ? '1.3rem' : isMedium ? '1.5rem' : '1.8rem',
-            color:theme.palette.primary.main,
-            fontFamily:'Montserrat',
-            // textAlign:'center',
-            fontWeight:500,
-            marginBottom:'0.5rem',
-            marginTop:'0.5rem'
-
-        }}>
-                Custom Application Development 
-                </Typography>
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
-                A well-designed website is more than just an online brochure;
-                it's a digital source that allows businesses to showcase their
-                products or services to a global audience. In today's digital
-                age, having an online presence is crucial for attracting new
-                customers and building brand awareness.
+            <CustomTabPanel value={value} index={0}>
+              <Box>
+                <img
+                  src="/customtabs1.png"
+                  alt=""
+                  width={isSmall ? "50rem" : isMedium ? "60rem" : "70rem"}
+                />
+              </Box>
+              <Typography
+                sx={{
+                  fontSize: isSmall ? "1.3rem" : isMedium ? "1.5rem" : "1.8rem",
+                  color: theme.palette.primary.main,
+                  fontFamily: "Montserrat",
+                  // textAlign:'center',
+                  fontWeight: 500,
+                  marginBottom: "0.5rem",
+                  marginTop: "0.5rem",
+                }}
+              >
+                Custom Application Development
+              </Typography>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
+                At Moshlay Creatives, we specialize in creating bespoke software
+                solutions that perfectly align with your unique business needs.
+                Our team of skilled developers leverages the latest technologies
+                to build innovative and efficient applications tailored to your
+                specific requirements. From concept to deployment, we work
+                closely with you to ensure your satisfaction.
               </Typography>
               <br />
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
                 A website serves as a central hub where potential customers can
                 learn about a company's offerings, explore its values, and make
                 informed decisions. By creating a visually appealing and
@@ -514,34 +529,38 @@ const CustomTabs = () => {
             </CustomTabPanel>
 
             <CustomTabPanel value={value} index={1}>
-            <Box>
-                    <img src="/customtabs1.png" alt="" width={isSmall ? "50rem":  isMedium ? "60rem": '70rem'} />
-                </Box>
-                <Typography sx={{
-            fontSize: isSmall ? '1.3rem' : isMedium ? '1.5rem' : '1.8rem',
-            color:theme.palette.primary.main,
-            fontFamily:'Montserrat',
-            // textAlign:'center',
-            fontWeight:500,
-            marginBottom:'0.5rem',
-            marginTop:'0.5rem'
-
-        }}>
-                Custom Application Development 
-                </Typography>
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
-                A well-designed website is more than just an online brochure;
-                it's a digital source that allows businesses to showcase their
-                products or services to a global audience. In today's digital
-                age, having an online presence is crucial for attracting new
-                customers and building brand awareness.
+              <Box>
+                <img
+                  src="/customtabs1.png"
+                  alt=""
+                  width={isSmall ? "50rem" : isMedium ? "60rem" : "70rem"}
+                />
+              </Box>
+              <Typography
+                sx={{
+                  fontSize: isSmall ? "1.3rem" : isMedium ? "1.5rem" : "1.8rem",
+                  color: theme.palette.primary.main,
+                  fontFamily: "Montserrat",
+                  // textAlign:'center',
+                  fontWeight: 500,
+                  marginBottom: "0.5rem",
+                  marginTop: "0.5rem",
+                }}
+              >
+                Custom Application Development
+              </Typography>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
+                We ensure your business requirements and develop software that
+                meets your requirements and exceeds your business scale. We deal
+                in the following types of development. Take an overview of the
+                list.
               </Typography>
               <br />
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
                 A website serves as a central hub where potential customers can
                 learn about a company's offerings, explore its values, and make
                 informed decisions. By creating a visually appealing and
@@ -551,24 +570,29 @@ const CustomTabs = () => {
             </CustomTabPanel>
 
             <CustomTabPanel value={value} index={2}>
-            <Box>
-                    <img src="/customtabs1.png" alt="" width={isSmall ? "50rem":  isMedium ? "60rem": '70rem'} />
-                </Box>
-                <Typography sx={{
-            fontSize: isSmall ? '1.3rem' : isMedium ? '1.5rem' : '1.8rem',
-            color:theme.palette.primary.main,
-            fontFamily:'Montserrat',
-            // textAlign:'center',
-            fontWeight:500,
-            marginBottom:'0.5rem',
-            marginTop:'0.5rem'
-
-        }}>
-                Custom Application Development 
-                </Typography>
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
+              <Box>
+                <img
+                  src="/customtabs1.png"
+                  alt=""
+                  width={isSmall ? "50rem" : isMedium ? "60rem" : "70rem"}
+                />
+              </Box>
+              <Typography
+                sx={{
+                  fontSize: isSmall ? "1.3rem" : isMedium ? "1.5rem" : "1.8rem",
+                  color: theme.palette.primary.main,
+                  fontFamily: "Montserrat",
+                  // textAlign:'center',
+                  fontWeight: 500,
+                  marginBottom: "0.5rem",
+                  marginTop: "0.5rem",
+                }}
+              >
+                Custom Application Development
+              </Typography>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
                 A well-designed website is more than just an online brochure;
                 it's a digital source that allows businesses to showcase their
                 products or services to a global audience. In today's digital
@@ -576,9 +600,9 @@ const CustomTabs = () => {
                 customers and building brand awareness.
               </Typography>
               <br />
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
                 A website serves as a central hub where potential customers can
                 learn about a company's offerings, explore its values, and make
                 informed decisions. By creating a visually appealing and
@@ -588,24 +612,29 @@ const CustomTabs = () => {
             </CustomTabPanel>
 
             <CustomTabPanel value={value} index={3}>
-            <Box>
-                    <img src="/customtabs1.png" alt="" width={isSmall ? "50rem":  isMedium ? "60rem": '70rem'} />
-                </Box>
-                <Typography sx={{
-            fontSize: isSmall ? '1.3rem' : isMedium ? '1.5rem' : '1.8rem',
-            color:theme.palette.primary.main,
-            fontFamily:'Montserrat',
-            // textAlign:'center',
-            fontWeight:500,
-            marginBottom:'0.5rem',
-            marginTop:'0.5rem'
-
-        }}>
-                Custom Application Development 
-                </Typography>
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
+              <Box>
+                <img
+                  src="/customtabs1.png"
+                  alt=""
+                  width={isSmall ? "50rem" : isMedium ? "60rem" : "70rem"}
+                />
+              </Box>
+              <Typography
+                sx={{
+                  fontSize: isSmall ? "1.3rem" : isMedium ? "1.5rem" : "1.8rem",
+                  color: theme.palette.primary.main,
+                  fontFamily: "Montserrat",
+                  // textAlign:'center',
+                  fontWeight: 500,
+                  marginBottom: "0.5rem",
+                  marginTop: "0.5rem",
+                }}
+              >
+                Custom Application Development
+              </Typography>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
                 A well-designed website is more than just an online brochure;
                 it's a digital source that allows businesses to showcase their
                 products or services to a global audience. In today's digital
@@ -613,9 +642,9 @@ const CustomTabs = () => {
                 customers and building brand awareness.
               </Typography>
               <br />
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
                 A website serves as a central hub where potential customers can
                 learn about a company's offerings, explore its values, and make
                 informed decisions. By creating a visually appealing and
@@ -625,24 +654,29 @@ const CustomTabs = () => {
             </CustomTabPanel>
 
             <CustomTabPanel value={value} index={4}>
-            <Box>
-                    <img src="/customtabs1.png" alt="" width={isSmall ? "50rem":  isMedium ? "60rem": '70rem'} />
-                </Box>
-                <Typography sx={{
-            fontSize: isSmall ? '1.3rem' : isMedium ? '1.5rem' : '1.8rem',
-            color:theme.palette.primary.main,
-            fontFamily:'Montserrat',
-            // textAlign:'center',
-            fontWeight:500,
-            marginBottom:'0.5rem',
-            marginTop:'0.5rem'
-
-        }}>
-                Custom Application Development 
-                </Typography>
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
+              <Box>
+                <img
+                  src="/customtabs1.png"
+                  alt=""
+                  width={isSmall ? "50rem" : isMedium ? "60rem" : "70rem"}
+                />
+              </Box>
+              <Typography
+                sx={{
+                  fontSize: isSmall ? "1.3rem" : isMedium ? "1.5rem" : "1.8rem",
+                  color: theme.palette.primary.main,
+                  fontFamily: "Montserrat",
+                  // textAlign:'center',
+                  fontWeight: 500,
+                  marginBottom: "0.5rem",
+                  marginTop: "0.5rem",
+                }}
+              >
+                Custom Application Development
+              </Typography>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
                 A well-designed website is more than just an online brochure;
                 it's a digital source that allows businesses to showcase their
                 products or services to a global audience. In today's digital
@@ -650,9 +684,9 @@ const CustomTabs = () => {
                 customers and building brand awareness.
               </Typography>
               <br />
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
                 A website serves as a central hub where potential customers can
                 learn about a company's offerings, explore its values, and make
                 informed decisions. By creating a visually appealing and
@@ -662,24 +696,29 @@ const CustomTabs = () => {
             </CustomTabPanel>
 
             <CustomTabPanel value={value} index={5}>
-            <Box>
-                    <img src="/customtabs1.png" alt="" width={isSmall ? "50rem":  isMedium ? "60rem": '70rem'} />
-                </Box>
-                <Typography sx={{
-            fontSize: isSmall ? '1.3rem' : isMedium ? '1.5rem' : '1.8rem',
-            color:theme.palette.primary.main,
-            fontFamily:'Montserrat',
-            // textAlign:'center',
-            fontWeight:500,
-            marginBottom:'0.5rem',
-            marginTop:'0.5rem'
-
-        }}>
-                Custom Application Development 
-                </Typography>
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
+              <Box>
+                <img
+                  src="/customtabs1.png"
+                  alt=""
+                  width={isSmall ? "50rem" : isMedium ? "60rem" : "70rem"}
+                />
+              </Box>
+              <Typography
+                sx={{
+                  fontSize: isSmall ? "1.3rem" : isMedium ? "1.5rem" : "1.8rem",
+                  color: theme.palette.primary.main,
+                  fontFamily: "Montserrat",
+                  // textAlign:'center',
+                  fontWeight: 500,
+                  marginBottom: "0.5rem",
+                  marginTop: "0.5rem",
+                }}
+              >
+                Custom Application Development
+              </Typography>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
                 A well-designed website is more than just an online brochure;
                 it's a digital source that allows businesses to showcase their
                 products or services to a global audience. In today's digital
@@ -687,9 +726,9 @@ const CustomTabs = () => {
                 customers and building brand awareness.
               </Typography>
               <br />
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
                 A website serves as a central hub where potential customers can
                 learn about a company's offerings, explore its values, and make
                 informed decisions. By creating a visually appealing and
@@ -699,24 +738,29 @@ const CustomTabs = () => {
             </CustomTabPanel>
 
             <CustomTabPanel value={value} index={6}>
-            <Box>
-                    <img src="/customtabs1.png" alt="" width={isSmall ? "50rem":  isMedium ? "60rem": '70rem'} />
-                </Box>
-                <Typography sx={{
-            fontSize: isSmall ? '1.3rem' : isMedium ? '1.5rem' : '1.8rem',
-            color:theme.palette.primary.main,
-            fontFamily:'Montserrat',
-            // textAlign:'center',
-            fontWeight:500,
-            marginBottom:'0.5rem',
-            marginTop:'0.5rem'
-
-        }}>
-                Custom Application Development 
-                </Typography>
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
+              <Box>
+                <img
+                  src="/customtabs1.png"
+                  alt=""
+                  width={isSmall ? "50rem" : isMedium ? "60rem" : "70rem"}
+                />
+              </Box>
+              <Typography
+                sx={{
+                  fontSize: isSmall ? "1.3rem" : isMedium ? "1.5rem" : "1.8rem",
+                  color: theme.palette.primary.main,
+                  fontFamily: "Montserrat",
+                  // textAlign:'center',
+                  fontWeight: 500,
+                  marginBottom: "0.5rem",
+                  marginTop: "0.5rem",
+                }}
+              >
+                Custom Application Development
+              </Typography>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
                 A well-designed website is more than just an online brochure;
                 it's a digital source that allows businesses to showcase their
                 products or services to a global audience. In today's digital
@@ -724,9 +768,9 @@ const CustomTabs = () => {
                 customers and building brand awareness.
               </Typography>
               <br />
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
                 A website serves as a central hub where potential customers can
                 learn about a company's offerings, explore its values, and make
                 informed decisions. By creating a visually appealing and
@@ -735,25 +779,30 @@ const CustomTabs = () => {
               </Typography>
             </CustomTabPanel>
 
-            <CustomTabPanel value={value} index={7  }>
-            <Box>
-                    <img src="/customtabs1.png" alt="" width={isSmall ? "50rem":  isMedium ? "60rem": '70rem'} />
-                </Box>
-                <Typography sx={{
-            fontSize: isSmall ? '1.3rem' : isMedium ? '1.5rem' : '1.8rem',
-            color:theme.palette.primary.main,
-            fontFamily:'Montserrat',
-            // textAlign:'center',
-            fontWeight:500,
-            marginBottom:'0.5rem',
-            marginTop:'0.5rem'
-
-        }}>
+            <CustomTabPanel value={value} index={7}>
+              <Box>
+                <img
+                  src="/customtabs1.png"
+                  alt=""
+                  width={isSmall ? "50rem" : isMedium ? "60rem" : "70rem"}
+                />
+              </Box>
+              <Typography
+                sx={{
+                  fontSize: isSmall ? "1.3rem" : isMedium ? "1.5rem" : "1.8rem",
+                  color: theme.palette.primary.main,
+                  fontFamily: "Montserrat",
+                  // textAlign:'center',
+                  fontWeight: 500,
+                  marginBottom: "0.5rem",
+                  marginTop: "0.5rem",
+                }}
+              >
                 Custom Application Development 8
-                </Typography>
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
+              </Typography>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
                 A well-designed website is more than just an online brochure;
                 it's a digital source that allows businesses to showcase their
                 products or services to a global audience. In today's digital
@@ -761,9 +810,9 @@ const CustomTabs = () => {
                 customers and building brand awareness.
               </Typography>
               <br />
-              <Typography sx={{color: "#666666",
-                fontSize:isSmall ? '0.9rem': '1rem'
-              }}>
+              <Typography
+                sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
+              >
                 A website serves as a central hub where potential customers can
                 learn about a company's offerings, explore its values, and make
                 informed decisions. By creating a visually appealing and
@@ -771,9 +820,6 @@ const CustomTabs = () => {
                 connect with customers from all corners of the world.
               </Typography>
             </CustomTabPanel>
-
-
-
           </Grid>
         </Grid>
       </Box>

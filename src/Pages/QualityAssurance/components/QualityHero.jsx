@@ -15,7 +15,7 @@ import React from "react";
 import { Gradient } from "@mui/icons-material";
 // import CareersHMQ from "./CareersJobDetails/CareersHMQ";
 
-const CustomHero = () => {
+const QualityHero = () => {
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
@@ -111,7 +111,7 @@ const CustomHero = () => {
             }}
           >
             {" "}
-            Digital Solutions
+            Quality Assurance
           </Typography>
           {/* <br /> */}
           <Typography
@@ -120,7 +120,7 @@ const CustomHero = () => {
               fontWeight: 400,
               color: "white",
               fontFamily: "Montserrat",
-              width: { lg: "50%", md: "100%" },
+              width: { lg: "70%", md: "100%" },
               //   textAlign: "center",
             }}
           >
@@ -161,4 +161,4 @@ const CustomHero = () => {
   );
 };
 
-export default CustomHero;
+export default QualityHero;

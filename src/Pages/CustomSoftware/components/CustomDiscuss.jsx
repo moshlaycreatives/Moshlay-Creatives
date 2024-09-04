@@ -49,7 +49,7 @@ const CustomDiscuss = () => {
               fontFamily: "montserrat",
             }}
           >
-            10Pearls is a global digital development company with over 20 years
+            Moshlay Creatives is a global digital development company with over 20 years
             of experience in software development and outsourcing. We enhance
             business with disruptive technologies that create better customer
             experiences and drive revenue through innovation – developing

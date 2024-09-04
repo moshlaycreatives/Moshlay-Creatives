@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 import Footer from '../Components/Footer/Footer'
 import Header2 from '../Components/Header2'
-import CustomHero from './components/CustomHero'
+import CustomHero from './components/QualityHero'
 // import WebDevelopmentServices from './components/WebDevelopmentServices'
 // import WebDevelopmentDigitalStand from './components/WebDevelopmentDigitalStand'
 // import WebDevelopmentType from './components/WebDevelopentType'
@@ -11,13 +11,16 @@ import ContactUs from '../LandingPage/ContactUs/ContactUs'
 // import WebDevelopmentBenefit from './components/WebDevelopmentBenefit'
 // import WebDevelopmentTech from './components/WebDevelopmentTech'
 import Page from '../../components/Page/Page'
-import CustomAdvantage from './components/QualityProcess'
+// import CustomAdvantage from './components/QualityProcess'
 import CustomNeeds from './components/QualityNeeds'
-import CustomTabs from './components/CustomTabs'
-import CustomDiscuss from './components/CustomDiscuss'
-import CustomCaseStudy from '../WebDevelopment/components/CustomCaseStudy'
-import CustomIndustry from '../WebDevelopment/components/CustomIndustry'
-import CustomTools from './components/CustomTools'
+// import CustomTabs from './components/CustomTabs'
+// import CustomDiscuss from './components/CustomDiscuss'
+// import CustomCaseStudy from '../WebDevelopment/components/CustomCaseStudy'
+// import CustomIndustry from '../WebDevelopment/components/CustomIndustry'
+// import CustomTools from './components/CustomTools'
+import QualityHero from './components/QualityHero'
+import QualityProcess from './components/QualityProcess'
+import QualityServices from './components/QualityServices'
 
 
 
@@ -62,10 +65,11 @@ const QualityAssuranceMain = () => {
       }}>
       <Header2/>
       </Box>      
-        <CustomHero/>
+        <QualityHero/>
         <CustomNeeds/>
         {/* <CustomTabs/> */}
-        <CustomAdvantage/>
+        <QualityProcess/>
+        <QualityServices/>
         {/* <CustomDiscuss/> */}
         {/* <CustomTools  /> */}
         {/* <CustomCaseStudy/> */}

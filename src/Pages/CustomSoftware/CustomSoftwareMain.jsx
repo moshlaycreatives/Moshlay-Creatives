@@ -10,8 +10,8 @@ import CustomAdvantage from './components/CustomAdvantage'
 import CustomNeeds from './components/CustomNeeds'
 import CustomTabs from './components/CustomTabs'
 import CustomDiscuss from './components/CustomDiscuss'
-import CustomCaseStudy from '../WebDevelopment/components/CustomCaseStudy'
-import CustomIndustry from '../WebDevelopment/components/CustomIndustry'
+import CustomCaseStudy from '../CustomSoftware/components/CustomCaseStudy'
+import CustomIndustry from '../CustomSoftware/components/CustomIndustry'
 import CustomTools from './components/CustomTools'
 
 

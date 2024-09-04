@@ -88,15 +88,15 @@ const CustomHero = () => {
               fontWeight: 500,
               fontFamily: "montserrat",
               backgroundColor: "#4e6645",
-              border:'1px solid #4e6645',
+              border: "1px solid #4e6645",
               textTransform: "none",
-              marginBottom:'0.5rem',
-              transition:'.2s',
-              '&:hover':{
-                color:'white', 
-                border:'1px solid white',
+              marginBottom: "0.5rem",
+              transition: ".2s",
+              "&:hover": {
+                color: "white",
+                border: "1px solid white",
                 // transition:'1s'
-              }
+              },
             }}
           >
             Digital Solutions
@@ -107,7 +107,7 @@ const CustomHero = () => {
               fontSize: isSmall ? "1.9rem" : isMedium ? "2.5rem" : "3rem",
               fontWeight: 600,
               color: theme.palette.primary.main,
-              marginBottom:'0.5rem',
+              marginBottom: "0.5rem",
             }}
           >
             {" "}
@@ -120,15 +120,19 @@ const CustomHero = () => {
               fontWeight: 400,
               color: "white",
               fontFamily: "Montserrat",
-              width: { lg: "50%", md: "100%" },
+              width: { lg: "70%", md: "100%" },
               //   textAlign: "center",
             }}
           >
-            Your digital vision, our expertise. Moshlay Creatives bridges the
-            gap between front-end, back-end, and architecture to deliver
-            tailored web solutions that drive your business forward. With a
-            proven track record, we'll craft innovative software that exceeds
-            your expectations. Contact us to discuss your project
+            At Moshlay Creatives, a custom software development company with a
+            proven track record of delivering exceptional value. we specialize
+            in developing tailored software solutions that meet your unique
+            business needs. Our team of skilled developers knows the latest
+            technologies to build innovative and efficient applications. Whether
+            you require a CRM system, an e-commerce platform, or
+            enterprise-level software. From concept to deployment, we work
+            closely with you to understand your goals and ensure your
+            satisfaction. Let's create something extraordinary together.
           </Typography>
           <br />
           <br />
@@ -142,11 +146,12 @@ const CustomHero = () => {
               fontFamily: "montserrat",
               // backgroundColor:'#4e6645',
               textTransform: "none",
-              transition:'0.2s',
-              "&:hover":{
-                color:'white',
-                background:theme.palette.primary.main, border:'none'
-              }
+              transition: "0.2s",
+              "&:hover": {
+                color: "white",
+                background: theme.palette.primary.main,
+                border: "none",
+              },
             }}
           >
             Schedule a Free Consultation

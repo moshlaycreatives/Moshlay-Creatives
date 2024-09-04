@@ -41,7 +41,8 @@ const CustomIndustry = () => {
                 {listData.map((row, index)=>(
                     <Grid key={index} item lg={4} md={6} sm={12} xs={12}>
                     <Box sx={{
-                        backgroundColor:'white', 
+                        // backgroundColor:'white', 
+                        border:'1px solid white',
                         borderRadius:'10px',
                         padding:'1rem', 
                         display:'flex', 
@@ -49,11 +50,11 @@ const CustomIndustry = () => {
                          alignItems:'center',
                     }}>
                         <Box>
-                            <img src={row.img} alt="" width={isSmall ? '22rem' :'33rem'} />
+                            <img src={row.img} alt="" width={isSmall ? '22rem' :'33rem'} color={'white'}/>
                         </Box>
                         <Typography sx={{
                             fontSize: isSmall ? '1.2rem' : isMedium ? '1.5rem' : '1.6rem',
-                            color:'#666666', marginLeft:'1rem'
+                            color:'white', marginLeft:'1rem'
                         }}>
                         {row.title}
                         </Typography>
