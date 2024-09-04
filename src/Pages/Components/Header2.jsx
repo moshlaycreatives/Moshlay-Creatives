@@ -605,6 +605,20 @@ const Header2 = () => {
             >
               UI UX Design
             </MenuItem>
+            <MenuItem
+              onClick={() =>
+                handleAnchorClose(setAnchorSolutionEl, "/custom-software")
+              }
+            >
+              Custom Software Development
+            </MenuItem>
+            <MenuItem
+              onClick={() =>
+                handleAnchorClose(setAnchorSolutionEl, "/quality-assurance")
+              }
+            >
+              Quality Assurance
+            </MenuItem>
           </Menu>
 
           <Box onClick={handleAnchorElClickMarketing} sx={{
@@ -821,6 +835,20 @@ const Header2 = () => {
                     }
                   >
                     UI UX Design
+                  </MenuItem>
+                  <MenuItem
+                    onClick={() =>
+                      handleAnchorClose(setAnchorSolutionEl, "/custom-software")
+                    }
+                  >
+                    Custom Software Development
+                  </MenuItem>
+                  <MenuItem
+                    onClick={() =>
+                      handleAnchorClose(setAnchorSolutionEl, "/quality-assurance")
+                    }
+                  >
+                    Quality Assurance
                   </MenuItem>
                 </Menu>
               </Box>

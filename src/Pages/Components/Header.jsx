@@ -827,7 +827,21 @@ const Header = () => {
                       handleAnchorClose(setAnchorSolutionEl, "/ui-ux-design")
                     }
                   >
-                    App Development
+                    UI UX Design
+                  </MenuItem>
+                  <MenuItem
+                    onClick={() =>
+                      handleAnchorClose(setAnchorSolutionEl, "/custom-software")
+                    }
+                  >
+                    Custom Software Development
+                  </MenuItem>
+                  <MenuItem
+                    onClick={() =>
+                      handleAnchorClose(setAnchorSolutionEl, "/quality-assurance")
+                    }
+                  >
+                    Quality Assurance
                   </MenuItem>
                 </Menu>
               </Box>
