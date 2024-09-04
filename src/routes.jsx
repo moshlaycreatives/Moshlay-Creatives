@@ -30,6 +30,7 @@ import AppDevelopmentMain from "./Pages/AppDevelopment/AppDevelopmentMain";
 import CareersAddJobDetailsForm from "./Pages/Careers/components/CareersAddJobDetails/CareersAddJobDetailsForm";
 import UiUxDesignMain from "./Pages/UiUxDesign/UiUxDesignMain";
 import CustomSoftwareMain from "./Pages/CustomSoftware/CustomSoftwareMain";
+import QualityAssuranceMain from "./Pages/QualityAssurance/QualityAssuranceMain";
 
 
 
@@ -113,6 +114,11 @@ console.log(isAuthenticated, 'hgyfuhhj')
             path:'/custom-software',
             element : <CustomSoftwareMain /> ,
            },
+           {
+            path:'/quality-assurance',
+            element : <QualityAssuranceMain /> ,
+           },
+
            
     // {
     //     path:'/',

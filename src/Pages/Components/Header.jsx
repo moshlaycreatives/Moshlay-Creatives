@@ -609,6 +609,13 @@ const Header = () => {
             >
               Custom Software Development
             </MenuItem>
+            <MenuItem
+              onClick={() =>
+                handleAnchorClose(setAnchorSolutionEl, "/quality-assurance")
+              }
+            >
+              Quality Assurance
+            </MenuItem>
           </Menu>
 
           <Box onClick={handleAnchorElClickMarketing} sx={{

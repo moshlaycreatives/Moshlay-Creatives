@@ -4,10 +4,15 @@ import { useLocation } from 'react-router-dom'
 import Footer from '../Components/Footer/Footer'
 import Header2 from '../Components/Header2'
 import CustomHero from './components/CustomHero'
+// import WebDevelopmentServices from './components/WebDevelopmentServices'
+// import WebDevelopmentDigitalStand from './components/WebDevelopmentDigitalStand'
+// import WebDevelopmentType from './components/WebDevelopentType'
 import ContactUs from '../LandingPage/ContactUs/ContactUs'
+// import WebDevelopmentBenefit from './components/WebDevelopmentBenefit'
+// import WebDevelopmentTech from './components/WebDevelopmentTech'
 import Page from '../../components/Page/Page'
-import CustomAdvantage from './components/CustomAdvantage'
-import CustomNeeds from './components/CustomNeeds'
+import CustomAdvantage from './components/QualityProcess'
+import CustomNeeds from './components/QualityNeeds'
 import CustomTabs from './components/CustomTabs'
 import CustomDiscuss from './components/CustomDiscuss'
 import CustomCaseStudy from '../WebDevelopment/components/CustomCaseStudy'
@@ -18,7 +23,7 @@ import CustomTools from './components/CustomTools'
 
 
 
-const CustomSoftwareMain = () => {
+const QualityAssuranceMain = () => {
   const [isScroll, setIsScroll] = useState(false);
   const location = useLocation()
 
@@ -59,18 +64,18 @@ const CustomSoftwareMain = () => {
       </Box>      
         <CustomHero/>
         <CustomNeeds/>
-        <CustomTabs/>
+        {/* <CustomTabs/> */}
         <CustomAdvantage/>
-        <CustomDiscuss/>
-        <CustomTools  />
-        <CustomCaseStudy/>
-        <CustomIndustry/>
+        {/* <CustomDiscuss/> */}
+        {/* <CustomTools  /> */}
+        {/* <CustomCaseStudy/> */}
+        {/* <CustomIndustry/> */}
         {/* <WebDevelopmentServices/> */}
         {/* <WebDevelopmentDigitalStand/> */}
         {/* <WebDevelopmentBenefit/> */}
         {/* <WebDevelopmentType/> */}
         {/* <WebDevelopmentTech/> */}
-        {/* <ContactUs/> */}
+        <ContactUs/>
         <Footer/>
     </Box>
     </Page>
@@ -80,4 +85,4 @@ const CustomSoftwareMain = () => {
   )
 }
 
-export default CustomSoftwareMain;
+export default QualityAssuranceMain;
