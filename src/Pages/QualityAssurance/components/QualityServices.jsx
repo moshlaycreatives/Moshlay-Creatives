@@ -170,14 +170,7 @@ const QualityServices = () => {
 
   return (
     <>
-      <Box
-        sx={{
-          // display: "flex" ,
-          padding: "4rem 10%",
-          // backgroundColor: "PINK",
-        }}
-      >
-        <Box>
+     <Box>
           <Typography
             sx={{
               fontSize: isSmall ? "1.5rem" : isMedium ? "2rem" : "2.5rem",
@@ -186,11 +179,20 @@ const QualityServices = () => {
               fontWeight: 600,
               textAlign: "center",
               marginBottom: "2rem ",
+              marginTop :'2rem',
             }}
           >
             Services We Offer
           </Typography>
         </Box>
+      <Box
+        sx={{
+          // display: "flex" ,
+          padding: "2rem 10%",
+          backgroundColor: "#1c2844",
+        }}
+      >
+       
         <Grid container spacing={5}>
           <Grid
             item

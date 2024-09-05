@@ -10,6 +10,7 @@ const QualityNeeds = () => {
     <Box
       sx={{
         padding: "3% 10%",
+        marginBottom : isSmall ? '0rem': "-2rem"
       }}
     >
       <Box>
@@ -52,7 +53,7 @@ const QualityNeeds = () => {
           <Typography
             sx={{
               color: "white",
-              fontSize: isSmall ? "1.5rem" : isMedium ? "2.5rem" : "3.2rem",
+              fontSize: isSmall ? "1.4rem" : isMedium ? "2.5rem" : "3.2rem",
               fontWeight: 400,
               fontFamily: "Montserrat",
               marginBottom: isSmall ? "-.5rem" : "-1rem",
@@ -63,7 +64,7 @@ const QualityNeeds = () => {
           <Typography
             sx={{
               color: "white",
-              fontSize: isSmall ? "1.5rem" : isMedium ? "2.5rem" : "3.2rem",
+              fontSize: isSmall ? "1.4rem" : isMedium ? "2.5rem" : "3.2rem",
               fontWeight: 400,
               fontFamily: "Montserrat",
               marginBottom: isSmall ? "-.5rem" : "-1rem",
@@ -74,7 +75,7 @@ const QualityNeeds = () => {
           <Typography
             sx={{
               color: "white",
-              fontSize: isSmall ? "1.5rem" : isMedium ? "2.5rem" : "3.2rem",
+              fontSize: isSmall ? "1.4rem" : isMedium ? "2.5rem" : "3.2rem",
               fontWeight: 400,
               fontFamily: "Montserrat",
               marginBottom: isSmall ? "-.5rem" : "-1.2rem",
@@ -85,7 +86,7 @@ const QualityNeeds = () => {
           <Typography
             sx={{
               color: "white",
-              fontSize: isSmall ? "1.5rem" : isMedium ? "2.5rem" : "3.2rem",
+              fontSize: isSmall ? "1.4rem" : isMedium ? "2.5rem" : "3.2rem",
               fontWeight: 400,
               fontFamily: "Montserrat",
               marginBottom: isSmall ? "-.5rem" : "-1.2rem",
@@ -96,7 +97,7 @@ const QualityNeeds = () => {
           <Typography
             sx={{
               color: "white",
-              fontSize: isSmall ? "1.5rem" : isMedium ? "2.5rem" : "3.2rem",
+              fontSize: isSmall ? "1.4rem" : isMedium ? "2.5rem" : "3.2rem",
               fontWeight: 400,
               fontFamily: "Montserrat",
               marginBottom: isSmall ? "-.5rem" : "-1.2rem",
@@ -107,7 +108,7 @@ const QualityNeeds = () => {
           <Typography
             sx={{
               color: "white",
-              fontSize: isSmall ? "1.5rem" : isMedium ? "2.5rem" : "3.2rem",
+              fontSize: isSmall ? "1.4rem" : isMedium ? "2.5rem" : "3.2rem",
               fontWeight: 700,
               fontFamily: "Montserrat",
               display: "inline-block",
@@ -126,7 +127,7 @@ const QualityNeeds = () => {
           <Typography
             sx={{
               color: "white",
-              fontSize: isSmall ? "1.5rem" : isMedium ? "2.5rem" : "3.2rem",
+              fontSize: isSmall ? "1.4rem" : isMedium ? "2.5rem" : "3.2rem",
               fontWeight: 700,
               fontFamily: "Montserrat",
               display: "inline-block",

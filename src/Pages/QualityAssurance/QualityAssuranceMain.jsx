@@ -68,8 +68,8 @@ const QualityAssuranceMain = () => {
         <QualityHero/>
         <CustomNeeds/>
         {/* <CustomTabs/> */}
-        <QualityProcess/>
         <QualityServices/>
+        <QualityProcess/>
         {/* <CustomDiscuss/> */}
         {/* <CustomTools  /> */}
         {/* <CustomCaseStudy/> */}

@@ -64,7 +64,7 @@ const QualityProcess = () => {
         sx={{
           marginTop: "1rem",
           padding: "0 10%",
-          marginBottom: "4rem",
+          marginBottom: "3rem",
         }}
       >
         {/* ========================================================TEXT PART============================================= */}
@@ -82,7 +82,7 @@ const QualityProcess = () => {
               fontWeight: 600,
               color: theme.palette.primary.main,
               textAlign: "center",
-              marginTop: "4rem",
+              marginTop:isSmall ? "1rem": "2rem",
               fontFamily: "montserrat",
             }}
           >
@@ -117,7 +117,7 @@ const QualityProcess = () => {
         
         {/* ===========================CARDS================================ */}
 
-        <Grid container spacing={6}>
+        <Grid container spacing={isSmall ? 4:6}>
           {listData.map((row, id) => (
             <Grid key={id} item lg={4} md={6} sm={12} xs={12}>
               <Box
@@ -165,7 +165,7 @@ const QualityProcess = () => {
                   <Typography
                     sx={{
                       color: "white",
-                      fontSize: "1rem",
+                      fontSize: isSmall ? "0.9rem" :"1rem",
                       fontFamily: "Montserrat",
                       fontWeight: 400,
                       textAlign: isSmall ? 'center' : "start",

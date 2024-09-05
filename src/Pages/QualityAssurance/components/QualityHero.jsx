@@ -82,8 +82,8 @@ const QualityHero = () => {
           <Button
             // variant="contained"
             sx={{
-              padding: "0.5rem 1.5rem",
-              fontSize: "1rem",
+              padding: isSmall ?  "0.5rem 1rem" : "0.5rem 1.5rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               color: theme.palette.primary.main,
               fontWeight: 500,
               fontFamily: "montserrat",
@@ -104,7 +104,7 @@ const QualityHero = () => {
           <br />
           <Typography
             sx={{
-              fontSize: isSmall ? "1.9rem" : isMedium ? "2.5rem" : "3rem",
+              fontSize: isSmall ? "1.8rem" : isMedium ? "2.5rem" : "3rem",
               fontWeight: 600,
               color: theme.palette.primary.main,
               marginBottom: "0.5rem",
@@ -116,7 +116,7 @@ const QualityHero = () => {
           {/* <br /> */}
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize:isSmall ? "0.9rem": "1rem",
               fontWeight: 400,
               color: "white",
               fontFamily: "Montserrat",
@@ -138,8 +138,8 @@ const QualityHero = () => {
           <Button
             variant="outlined"
             sx={{
-              padding: ".5rem 1.5rem",
-              fontSize: "1rem",
+              padding: isSmall ?  "0.5rem 1rem" : "0.5rem 1.5rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               color: theme.palette.primary.main,
               fontWeight: 500,
               fontFamily: "montserrat",
