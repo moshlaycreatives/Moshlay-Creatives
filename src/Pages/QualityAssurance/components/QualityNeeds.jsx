@@ -191,11 +191,7 @@ const QualityNeeds = () => {
                 marginBottom: isSmall ? "1rem" : "2rem",
               }}
             >
-              We offer comprehensive quality assurance services to ensure your
-              software products meet the highest standards of excellence. Our
-              team of experienced QA professionals utilizes cutting-edge
-              methodologies and tools to deliver efficient and effective testing
-              solutions.
+              Our comprehensive quality assurance services ensure that your software products meet the highest standards of excellence. We understand the importance of delivering reliable and high-quality software, and our team of experienced QA professionals is dedicated to providing efficient and effective testing solutions. We utilize cutting-edge methodologies and tools to ensure thorough testing of your software products. Our services include manual testing, automated test frameworks, and performance testing.
             </Typography>
 
             <Typography
@@ -206,10 +202,7 @@ const QualityNeeds = () => {
                 fontFamily: "Montserrat",
               }}
             >
-              From manual testing to automated test frameworks, we
-              provide services to meet your specific needs. With Moshlay
-              Creatives as your QA partner, you can trust that your software
-              will be thoroughly tested and ready for deployment.
+             We work closely with your development team to understand your specific requirements and tailor our testing approach accordingly. With Moshlay Creatives as your QA partner, you can trust that your software will be thoroughly tested and ready for deployment. Our team is committed to delivering the highest quality testing services and ensuring that your software products meet the expectations of your customers.
             </Typography>
           </Box>
         </Grid>

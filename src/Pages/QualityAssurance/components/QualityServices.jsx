@@ -89,18 +89,18 @@ const QualityServices = () => {
       img: "/customtabs1.png",
       title: "QA Strategy Audit",
       desc1:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "Our QA strategy audit is a comprehensive evaluation of your existing QA processes, methodologies, and tools. We delve deep into your current practices to identify strengths, weaknesses, and areas for improvement. By analyzing factors such as test coverage, test automation, defect management, and overall QA maturity, we can provide valuable insights into the effectiveness of your QA strategy. Our experts will conduct a thorough assessment of your QA team's skills, experience, and resources. We will also examine your testing environment, tools, and processes to identify any bottlenecks or inefficiencies.",
       desc2:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "Based on our findings, we will provide tailored recommendations to enhance your QA efficiency and effectiveness. Our goal is to help you optimize your QA strategy and ensure that your software products meet the highest quality standards. By identifying areas for improvement and implementing recommended strategies, you can streamline your QA processes, reduce testing time, and improve overall product quality.",
     },
     {
       Id: 2, // Ensure this property has a value if needed
       img: "/customtabs1.png",
       title: "Process Optimization and Best Practices",
       desc1:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "We help you optimize your QA processes to streamline workflows, reduce testing time, and improve overall efficiency. Our experts can recommend best practices for test case design, test data management, and defect tracking. We also guide implementation automation frameworks and tools to accelerate testing and reduce manual effort. Additionally, we can help you establish metrics and KPIs to measure QA performance and identify areas for improvement.",
       desc2:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "By partnering with Moshlay Creatives for QA consultancy, you can gain valuable insights, optimize your QA processes, and ensure the delivery of high-quality software products. Our team is committed to providing expert guidance and support to help you achieve your QA goals.",
     },
   ];
   const FunctionalTesting = [
@@ -109,18 +109,18 @@ const QualityServices = () => {
       img: "/customtabs1.png",
       title: "QA Strategy Audit1",
       desc1:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "Our QA strategy audit is a comprehensive evaluation of your existing QA processes, methodologies, and tools. We delve deep into your current practices to identify strengths, weaknesses, and areas for improvement. By analyzing factors such as test coverage, test automation, defect management, and overall QA maturity, we can provide valuable insights into the effectiveness of your QA strategy. Our experts will conduct a thorough assessment of your QA team's skills, experience, and resources. We will also examine your testing environment, tools, and processes to identify any bottlenecks or inefficiencies.",
       desc2:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "Based on our findings, we will provide tailored recommendations to enhance your QA efficiency and effectiveness. Our goal is to help you optimize your QA strategy and ensure that your software products meet the highest quality standards. By identifying areas for improvement and implementing recommended strategies, you can streamline your QA processes, reduce testing time, and improve overall product quality.",
     },
     {
       Id: 2, // Ensure this property has a value if needed
       img: "/customtabs1.png",
       title: "Process Optimization and Best Practices1",
       desc1:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "We help you optimize your QA processes to streamline workflows, reduce testing time, and improve overall efficiency. Our experts can recommend best practices for test case design, test data management, and defect tracking. We also guide implementation automation frameworks and tools to accelerate testing and reduce manual effort. Additionally, we can help you establish metrics and KPIs to measure QA performance and identify areas for improvement.",
       desc2:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "By partnering with Moshlay Creatives for functional testing, you can ensure that your software applications meet the highest quality standards and deliver a positive user experience. Our team is committed to providing comprehensive testing services that help you achieve your QA goals.",
     },
   ];
   const NonFunctionalTesting = [
@@ -129,18 +129,18 @@ const QualityServices = () => {
       img: "/customtabs1.png",
       title: "QA Strategy Audit2",
       desc1:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "Our QA strategy audit is a comprehensive evaluation of your existing QA processes, methodologies, and tools. We delve deep into your current practices to identify strengths, weaknesses, and areas for improvement. By analyzing factors such as test coverage, test automation, defect management, and overall QA maturity, we can provide valuable insights into the effectiveness of your QA strategy. Our experts will conduct a thorough assessment of your QA team's skills, experience, and resources. We will also examine your testing environment, tools, and processes to identify any bottlenecks or inefficiencies.",
       desc2:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "Based on our findings, we will provide tailored recommendations to enhance your QA efficiency and effectiveness. Our goal is to help you optimize your QA strategy and ensure that your software products meet the highest quality standards. By identifying areas for improvement and implementing recommended strategies, you can streamline your QA processes, reduce testing time, and improve overall product quality.",
     },
     {
       Id: 2, // Ensure this property has a value if needed
       img: "/customtabs1.png",
       title: "Process Optimization and Best Practices2",
       desc1:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "We help you optimize your QA processes to streamline workflows, reduce testing time, and improve overall efficiency. Our experts can recommend best practices for test case design, test data management, and defect tracking. We also guide implementation automation frameworks and tools to accelerate testing and reduce manual effort. Additionally, we can help you establish metrics and KPIs to measure QA performance and identify areas for improvement.",
       desc2:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "By partnering with Moshlay Creatives for functional testing, you can ensure that your software applications meet the highest quality standards and deliver a positive user experience. Our team is committed to providing comprehensive testing services that help you achieve your QA goals.",
     },
   ];
   const SelfHealingTestAutomation = [
@@ -149,18 +149,18 @@ const QualityServices = () => {
       img: "/customtabs1.png",
       title: "QA Strategy Audit3",
       desc1:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "We help you optimize your QA processes to streamline workflows, reduce testing time, and improve overall efficiency. Our experts can recommend best practices for test case design, test data management, and defect tracking. We also guide implementation automation frameworks and tools to accelerate testing and reduce manual effort. Additionally, we can help you establish metrics and KPIs to measure QA performance and identify areas for improvement.",
       desc2:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "Based on our findings, we will provide tailored recommendations to enhance your QA efficiency and effectiveness. Our goal is to help you optimize your QA strategy and ensure that your software products meet the highest quality standards. By identifying areas for improvement and implementing recommended strategies, you can streamline your QA processes, reduce testing time, and improve overall product quality.",
     },
     {
       Id: 2, // Ensure this property has a value if needed
       img: "/customtabs1.png",
       title: "Process Optimization and Best Practices3",
       desc1:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "We help you optimize your QA processes to streamline workflows, reduce testing time, and improve overall efficiency. Our experts can recommend best practices for test case design, test data management, and defect tracking. We also guide implementation automation frameworks and tools to accelerate testing and reduce manual effort. Additionally, we can help you establish metrics and KPIs to measure QA performance and identify areas for improvement.",
       desc2:
-        "A well-designed website is more than just an online brochureit's a digital source that allows businesses to showcase theirproducts or services to a global audience. In today's digitalage, having an online presence is crucial for attracting newcustomers and building brand awareness.",
+        "By partnering with Moshlay Creatives for functional testing, you can ensure that your software applications meet the highest quality standards and deliver a positive user experience. Our team is committed to providing comprehensive testing services that help you achieve your QA goals.",
     },
   ];
 
@@ -170,21 +170,21 @@ const QualityServices = () => {
 
   return (
     <>
-     <Box>
-          <Typography
-            sx={{
-              fontSize: isSmall ? "1.5rem" : isMedium ? "2rem" : "2.5rem",
-              fontFamily: "Montserrat",
-              color: theme.palette.primary.main,
-              fontWeight: 600,
-              textAlign: "center",
-              marginBottom: "2rem ",
-              marginTop :'2rem',
-            }}
-          >
-            Services We Offer
-          </Typography>
-        </Box>
+      <Box>
+        <Typography
+          sx={{
+            fontSize: isSmall ? "1.5rem" : isMedium ? "2rem" : "2.5rem",
+            fontFamily: "Montserrat",
+            color: theme.palette.primary.main,
+            fontWeight: 600,
+            textAlign: "center",
+            marginBottom: "2rem ",
+            marginTop: "2rem",
+          }}
+        >
+          Services We Offer
+        </Typography>
+      </Box>
       <Box
         sx={{
           // display: "flex" ,
@@ -192,7 +192,6 @@ const QualityServices = () => {
           backgroundColor: "#1c2844",
         }}
       >
-       
         <Grid container spacing={5}>
           <Grid
             item
@@ -212,14 +211,13 @@ const QualityServices = () => {
                 aria-label="basic tabs example"
                 variant={isMedium ? "scrollable" : "fullWidth"}
                 orientation={"horizontal"}
-               
                 sx={{
                   display: "flex",
                   flexDirection: "column",
                   width: "100%",
-                  "& .MuiTabs-indicator":{
-                    display:'none'
-                }
+                  "& .MuiTabs-indicator": {
+                    display: "none",
+                  },
                 }}
               >
                 <Tab
@@ -255,21 +253,21 @@ const QualityServices = () => {
                     "&.Mui-selected .icon": {
                       color: theme.palette.primary.main,
                       display: "block",
-                      marginTop:'1rem',
-                    //    marginBottom:'1rem'
+                      marginTop: "1rem",
+                      //    marginBottom:'1rem'
                     },
                     "&.Mui-selected": {
                       backgroundColor: "white",
                       color: "black",
                       padding: "1rem .8rem",
-                    //   height: "4rem",
+                      //   height: "4rem",
                     },
-                    "& .MuiTabs-indicator":{
-                        display:'none'
-                    }
+                    "& .MuiTabs-indicator": {
+                      display: "none",
+                    },
                   }}
                 />
-               <Tab
+                <Tab
                   icon={<Divider className="icon" />} // Add icon before text
                   iconPosition="bottom"
                   label="Functional Testing"
@@ -302,18 +300,18 @@ const QualityServices = () => {
                     "&.Mui-selected .icon": {
                       color: theme.palette.primary.main,
                       display: "block",
-                      marginTop:'1rem',
-                    //    marginBottom:'1rem'
+                      marginTop: "1rem",
+                      //    marginBottom:'1rem'
                     },
                     "&.Mui-selected": {
                       backgroundColor: "white",
                       color: "black",
                       padding: "1rem .8rem",
-                    //   height: "4rem",
+                      //   height: "4rem",
                     },
-                    "& .MuiTabs-indicator":{
-                        display:'none'
-                    }
+                    "& .MuiTabs-indicator": {
+                      display: "none",
+                    },
                   }}
                 />
                 <Tab
@@ -349,18 +347,18 @@ const QualityServices = () => {
                     "&.Mui-selected .icon": {
                       color: theme.palette.primary.main,
                       display: "block",
-                      marginTop:'1rem',
-                    //    marginBottom:'1rem'
+                      marginTop: "1rem",
+                      //    marginBottom:'1rem'
                     },
                     "&.Mui-selected": {
                       backgroundColor: "white",
                       color: "black",
                       padding: "1rem .8rem",
-                    //   height: "4rem",
+                      //   height: "4rem",
                     },
-                    "& .MuiTabs-indicator":{
-                        display:'none'
-                    }
+                    "& .MuiTabs-indicator": {
+                      display: "none",
+                    },
                   }}
                 />
                 <Tab
@@ -396,17 +394,17 @@ const QualityServices = () => {
                     "&.Mui-selected .icon": {
                       color: theme.palette.primary.main,
                       display: "block",
-                      marginTop:'1rem',
-                    //    marginBottom:'1rem'
+                      marginTop: "1rem",
+                      //    marginBottom:'1rem'
                     },
                     "&.Mui-selected": {
                       backgroundColor: "white",
                       color: "black",
                       padding: "1rem .8rem",
                     },
-                    "& .MuiTabs-indicator":{
-                        display:'none'
-                    }
+                    "& .MuiTabs-indicator": {
+                      display: "none",
+                    },
                   }}
                 />
               </Tabs>
@@ -422,11 +420,10 @@ const QualityServices = () => {
             // backgroundColor={"aqua"}
             width={"100%"}
           >
-            
-            <CustomTabPanel value={value} index={0} width={'100%'}>
-              <Grid container spacing={5} width={'100%'}>
+            <CustomTabPanel value={value} index={0} width={"100%"}>
+              <Grid container spacing={5} width={"100%"}>
                 <Grid item lg={6} md={6} sm={12} xs={12}>
-                  <Box sx={{width:isMedium ? '100%' : '70%'}}>
+                  <Box sx={{ width: isMedium ? "100%" : "70%" }}>
                     <Typography
                       sx={{
                         color: "white",
@@ -435,10 +432,10 @@ const QualityServices = () => {
                         fontWeight: "400",
                       }}
                     >
-                      In this phase, design takes center stage. Our Web
-                      designers use their creativity to create In this phase,
-                      design takes center stage. Ou layouts, colorpalettes, and
-                      typography.
+                      At Moshlay Creatives, we offer comprehensive QA
+                      consultancy services to help you optimize your software
+                      testing processes and ensure the highest quality
+                      standards.
                     </Typography>
                     <br />
                     <Typography
@@ -449,10 +446,9 @@ const QualityServices = () => {
                         fontWeight: "400",
                       }}
                     >
-                      In this phase, design takes center stage. Our Web
-                      designers use their creativity to create In this phase,
-                      design takes center stage. Ou layouts, colorpalettes, and
-                      typography.
+                      Our team of experienced QA professionals provides expert
+                      guidance and support throughout the entire software
+                      development lifecycle.
                     </Typography>
 
                     <Box
@@ -620,7 +616,7 @@ const QualityServices = () => {
             <CustomTabPanel value={value} index={1}>
               <Grid container spacing={5}>
                 <Grid item lg={6} md={6} sm={12} xs={12}>
-                  <Box>
+                  <Box sx={{ width: isMedium ? "100%" : "70%" }}>
                     <Typography
                       sx={{
                         color: "white",
@@ -629,10 +625,8 @@ const QualityServices = () => {
                         fontWeight: "400",
                       }}
                     >
-                      In this phase, design takes center stage. Our Web
-                      designers use their creativity to create In this phase,
-                      design takes center stage. Ou layouts, colorpalettes, and
-                      typography.
+                      Functional testing ensures that your software functions as
+                      intended and meets the specified requirements. 
                     </Typography>
                     <br />
                     <Typography
@@ -643,10 +637,10 @@ const QualityServices = () => {
                         fontWeight: "400",
                       }}
                     >
-                      In this phase, design takes center stage. Our Web
-                      designers use their creativity to create In this phase,
-                      design takes center stage. Ou layouts, colorpalettes, and
-                      typography.
+                     Our team of
+                      skilled testers will meticulously examine your
+                      application's features, workflows, and user interactions
+                      to identify and address any defects.
                     </Typography>
 
                     <Box
@@ -814,7 +808,7 @@ const QualityServices = () => {
             <CustomTabPanel value={value} index={2}>
               <Grid container spacing={5}>
                 <Grid item lg={6} md={6} sm={12} xs={12}>
-                  <Box>
+                  <Box sx={{ width: isMedium ? "100%" : "70%" }}>
                     <Typography
                       sx={{
                         color: "white",
@@ -823,10 +817,11 @@ const QualityServices = () => {
                         fontWeight: "400",
                       }}
                     >
-                      In this phase, design takes center stage. Our Web
-                      designers use their creativity to create In this phase,
-                      design takes center stage. Ou layouts, colorpalettes, and
-                      typography.
+                      Non-functional testing evaluates aspects such as
+                      performance, security, usability, and compatibility. We
+                      employ rigorous testing techniques to ensure that your
+                      software meets the required standards in these areas,
+                      
                     </Typography>
                     <br />
                     <Typography
@@ -837,10 +832,8 @@ const QualityServices = () => {
                         fontWeight: "400",
                       }}
                     >
-                      In this phase, design takes center stage. Our Web
-                      designers use their creativity to create In this phase,
-                      design takes center stage. Ou layouts, colorpalettes, and
-                      typography.
+                     delivering a positive user experience and protecting your
+                      system from vulnerabilities.
                     </Typography>
 
                     <Box
@@ -1008,7 +1001,7 @@ const QualityServices = () => {
             <CustomTabPanel value={value} index={3}>
               <Grid container spacing={5}>
                 <Grid item lg={6} md={6} sm={12} xs={12}>
-                  <Box>
+                  <Box sx={{ width: isMedium ? "100%" : "70%" }}>
                     <Typography
                       sx={{
                         color: "white",
@@ -1017,10 +1010,9 @@ const QualityServices = () => {
                         fontWeight: "400",
                       }}
                     >
-                      In this phase, design takes center stage. Our Web
-                      designers use their creativity to create In this phase,
-                      design takes center stage. Ou layouts, colorpalettes, and
-                      typography.
+                      We specialize in developing self-healing test automation
+                      frameworks that can adapt to changes in your application's
+                      interface. 
                     </Typography>
                     <br />
                     <Typography
@@ -1031,10 +1023,9 @@ const QualityServices = () => {
                         fontWeight: "400",
                       }}
                     >
-                      In this phase, design takes center stage. Our Web
-                      designers use their creativity to create In this phase,
-                      design takes center stage. Ou layouts, colorpalettes, and
-                      typography.
+                     These frameworks reduce maintenance efforts and
+                      improve the efficiency of your testing process, allowing
+                      you to focus on delivering high-quality software.
                     </Typography>
 
                     <Box
