@@ -77,7 +77,7 @@ const CustomTabs = () => {
       <Box
         sx={{
           // display: "flex" ,
-          padding:isSmall ?  "2rem 10%": "3rem 10%",
+          padding: isSmall ? "2rem 10%" : "3rem 10%",
           backgroundColor: "#1c2844",
         }}
       >
@@ -509,22 +509,21 @@ const CustomTabs = () => {
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                At Moshlay Creatives, we specialize in creating bespoke software
+                At Moshlay Creatives, we specialize in crafting bespoke software
                 solutions that perfectly align with your unique business needs.
                 Our team of skilled developers leverages the latest technologies
                 to build innovative and efficient applications tailored to your
                 specific requirements. From concept to deployment, we work
-                closely with you to ensure your satisfaction.
+                closely with you to ensure your satisfaction. We understand that
+                every business is different, and we strive to create solutions
+                that not only meet your functional needs but also enhance your
+                overall business objectives.
               </Typography>
               <br />
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                A website serves as a central hub where potential customers can
-                learn about a company's offerings, explore its values, and make
-                informed decisions. By creating a visually appealing and
-                informative website, businesses can establish credibility and
-                connect with customers from all corners of the world.
+              Our custom application development process begins with a thorough understanding of your business goals, target audience, and desired outcomes. We conduct in-depth consultations to gather valuable insights and identify potential challenges. Once we have a clear vision, our team of experienced developers gets to work, leveraging their expertise in various programming languages, frameworks, and tools to create a tailored solution.
               </Typography>
             </CustomTabPanel>
 
@@ -547,25 +546,20 @@ const CustomTabs = () => {
                   marginTop: "0.5rem",
                 }}
               >
-                Custom Application Development
+                Web Application Development
               </Typography>
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                We ensure your business requirements and develop software that
-                meets your requirements and exceeds your business scale. We deal
-                in the following types of development. Take an overview of the
-                list.
+                Our expertise extends to developing cutting-edge web applications that provide engaging user experiences and drive business growth. We design and develop responsive websites, e-commerce platforms, and web-based tools that are both visually appealing and functionally robust. Our team is skilled in using modern web development frameworks and technologies to build scalable and maintainable web applications. We prioritize user-centered design to ensure that your applications are easy to navigate and intuitive to use.
+
               </Typography>
               <br />
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                A website serves as a central hub where potential customers can
-                learn about a company's offerings, explore its values, and make
-                informed decisions. By creating a visually appealing and
-                informative website, businesses can establish credibility and
-                connect with customers from all corners of the world.
+               We understand that your website is often the first impression your customers have of your business. That's why we focus on creating visually appealing and engaging designs that reflect your brand identity. Our team is skilled in using the latest design trends and best practices to create websites that are both aesthetically pleasing and effective.
+
               </Typography>
             </CustomTabPanel>
 
@@ -588,26 +582,20 @@ const CustomTabs = () => {
                   marginTop: "0.5rem",
                 }}
               >
-                Custom Application Development
+                Applied AI Solutions
               </Typography>
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                A well-designed website is more than just an online brochure;
-                it's a digital source that allows businesses to showcase their
-                products or services to a global audience. In today's digital
-                age, having an online presence is crucial for attracting new
-                customers and building brand awareness.
+                Harness the power of artificial intelligence with Moshlay Creatives. We offer a range of applied AI solutions, including machine learning, natural language processing, and computer vision. Our team can help you integrate AI into your business processes to improve efficiency, enhance customer experiences, and gain valuable insights from data. We leverage the latest AI techniques to develop intelligent applications that can automate tasks, make data-driven decisions, and provide personalized recommendations.
+
               </Typography>
               <br />
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                A website serves as a central hub where potential customers can
-                learn about a company's offerings, explore its values, and make
-                informed decisions. By creating a visually appealing and
-                informative website, businesses can establish credibility and
-                connect with customers from all corners of the world.
+               We work closely with you to understand your data, goals, and challenges, and we develop AI models that are tailored to your specific requirements. Our AI solutions can be used for a variety of purposes, including customer service, marketing, sales, and operations. We can help you automate repetitive tasks, improve decision-making, and gain a competitive edge in your industry.
+
               </Typography>
             </CustomTabPanel>
 
@@ -630,26 +618,18 @@ const CustomTabs = () => {
                   marginTop: "0.5rem",
                 }}
               >
-                Custom Application Development
+             Enterprise Application Development
               </Typography>
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                A well-designed website is more than just an online brochure;
-                it's a digital source that allows businesses to showcase their
-                products or services to a global audience. In today's digital
-                age, having an online presence is crucial for attracting new
-                customers and building brand awareness.
+               We specialize in developing enterprise-grade software solutions that streamline operations and drive productivity. Our team has extensive experience in building complex applications that can handle large-scale data processing, integration with existing systems, and scalability to meet the demands of your growing business. We understand the unique challenges and requirements of enterprise applications, and we deliver solutions that are reliable, secure, and adaptable to your evolving business needs.
               </Typography>
               <br />
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                A website serves as a central hub where potential customers can
-                learn about a company's offerings, explore its values, and make
-                informed decisions. By creating a visually appealing and
-                informative website, businesses can establish credibility and
-                connect with customers from all corners of the world.
+               Our enterprise application development process is tailored to meet the specific needs of large organizations. We work closely with your IT team to ensure that our solutions integrate seamlessly with your existing systems. We also focus on security and compliance to protect your sensitive data. supply chain management, financial management, and human resources. We can help you streamline your operations, improve efficiency, and reduce costs.
               </Typography>
             </CustomTabPanel>
 
@@ -672,26 +652,18 @@ const CustomTabs = () => {
                   marginTop: "0.5rem",
                 }}
               >
-                Custom Application Development
+              Mobile Development
               </Typography>
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                A well-designed website is more than just an online brochure;
-                it's a digital source that allows businesses to showcase their
-                products or services to a global audience. In today's digital
-                age, having an online presence is crucial for attracting new
-                customers and building brand awareness.
+                Our mobile development services cater to both iOS and Android platforms. We create native mobile apps that offer a seamless user experience and deliver value to your target audience. Whether you need a consumer-facing app or an internal tool, our team can develop solutions that meet your specific requirements. We focus on creating apps that are not only visually appealing but also perform well and provide a delightful user experience. We understand that mobile apps have become an essential part of modern business.
               </Typography>
               <br />
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                A website serves as a central hub where potential customers can
-                learn about a company's offerings, explore its values, and make
-                informed decisions. By creating a visually appealing and
-                informative website, businesses can establish credibility and
-                connect with customers from all corners of the world.
+              That's why we focus on creating apps that are user-friendly, intuitive, and engaging. We use the latest mobile development frameworks and technologies to build high-quality apps that are optimized for performance and security. Our mobile development services include app design, development, testing, and deployment. We can also provide ongoing maintenance and support to ensure that your app remains up-to-date and functional.
               </Typography>
             </CustomTabPanel>
 
@@ -714,26 +686,18 @@ const CustomTabs = () => {
                   marginTop: "0.5rem",
                 }}
               >
-                Custom Application Development
+               Cloud Development
               </Typography>
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                A well-designed website is more than just an online brochure;
-                it's a digital source that allows businesses to showcase their
-                products or services to a global audience. In today's digital
-                age, having an online presence is crucial for attracting new
-                customers and building brand awareness.
+               Leverage the power of cloud computing with Moshlay Creatives. We offer cloud-based solutions that provide scalability, flexibility, and cost-effectiveness. Our team can help you migrate existing applications to the cloud, develop new cloud-native applications, and optimize your cloud infrastructure. We have expertise in working with leading cloud platforms and can help you select the best cloud solution for your business. Cloud computing offers several benefits, including increased scalability, improved performance, 
               </Typography>
               <br />
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                A website serves as a central hub where potential customers can
-                learn about a company's offerings, explore its values, and make
-                informed decisions. By creating a visually appealing and
-                informative website, businesses can establish credibility and
-                connect with customers from all corners of the world.
+             and reduced costs. By leveraging the cloud, you can access the resources you need when you need them, without the need for significant upfront investments. Our cloud development services include cloud migration, cloud optimization, and cloud-native application development. We can also provide ongoing maintenance and support to ensure that your cloud infrastructure is secure and reliable.
               </Typography>
             </CustomTabPanel>
 
@@ -756,26 +720,18 @@ const CustomTabs = () => {
                   marginTop: "0.5rem",
                 }}
               >
-                Custom Application Development
+               SaaS Development
               </Typography>
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                A well-designed website is more than just an online brochure;
-                it's a digital source that allows businesses to showcase their
-                products or services to a global audience. In today's digital
-                age, having an online presence is crucial for attracting new
-                customers and building brand awareness.
+              We specialize in developing Software-as-a-Service (SaaS) applications that can be accessed and used over the Internet. Our SaaS solutions are designed to be scalable, secure, and easy to maintain, providing a convenient and cost-effective way to deliver your software to your customers. We focus on building SaaS applications that are user-friendly, reliable, and easy to deploy
               </Typography>
               <br />
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                A website serves as a central hub where potential customers can
-                learn about a company's offerings, explore its values, and make
-                informed decisions. By creating a visually appealing and
-                informative website, businesses can establish credibility and
-                connect with customers from all corners of the world.
+               SaaS applications offer many benefits, including reduced costs, improved scalability, and easier maintenance. By delivering your software as a service, you can reach a wider audience and reduce your operational overhead. Our SaaS development services include application design, development, deployment, and ongoing maintenance. We can also help you with marketing and sales to promote your SaaS application.
               </Typography>
             </CustomTabPanel>
 
@@ -798,26 +754,18 @@ const CustomTabs = () => {
                   marginTop: "0.5rem",
                 }}
               >
-                Custom Application Development 8
+               Legacy Modernization
               </Typography>
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                A well-designed website is more than just an online brochure;
-                it's a digital source that allows businesses to showcase their
-                products or services to a global audience. In today's digital
-                age, having an online presence is crucial for attracting new
-                customers and building brand awareness.
+                Don't let outdated legacy systems hinder your business growth. Our team can help you modernize your legacy applications to improve performance, enhance security, and integrate with newer technologies. We offer services such as application migration, refactoring, and modernization strategies to ensure a smooth transition. We understand the challenges of modernizing legacy systems and can provide tailored solutions to meet your specific needs.
               </Typography>
               <br />
               <Typography
                 sx={{ color: "white", fontSize: isSmall ? "0.9rem" : "1rem" }}
               >
-                A website serves as a central hub where potential customers can
-                learn about a company's offerings, explore its values, and make
-                informed decisions. By creating a visually appealing and
-                informative website, businesses can establish credibility and
-                connect with customers from all corners of the world.
+               Modernizing your legacy systems can help you improve efficiency, reduce costs, and stay competitive. Our team can help you assess the state of your legacy systems and develop a modernization plan that meets your specific needs. We can also guide application migration, refactoring, and integration with newer technologies.
               </Typography>
             </CustomTabPanel>
           </Grid>
