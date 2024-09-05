@@ -14,7 +14,7 @@ const DevelpmentProcess = () => {
     <Box sx={{
       position:'relative',
       overflow:'hidden',
-      marginBottom:'-2rem'
+      marginBottom: isSmall ? "-3rem" :'-2rem'
     }}>
       <Box sx={{
         position:'absolute',
@@ -36,7 +36,7 @@ const DevelpmentProcess = () => {
           }}>
             <Typography variant='h3' sx={{
               color:theme.palette.primary.main,
-              fontSize: isSmall ?  '1.6rem' : isMedium ? '2rem' :  '2.5rem',
+              fontSize: isSmall ?  '1.5rem' : isMedium ? '2rem' :  '2.5rem',
               fontWeight:600,
               textAlign:'center',
               marginBottom:'1rem',
@@ -46,7 +46,7 @@ const DevelpmentProcess = () => {
             </Typography>
             <Typography variant='h3' sx={{
               color:'white',
-              fontSize:'1.1rem',
+              fontSize: isSmall ?  '0.9rem' :'1rem',
               fontWeight:400,
               fontFamily:'Montserrat',
               textAlign:'center',

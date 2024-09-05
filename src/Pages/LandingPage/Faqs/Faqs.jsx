@@ -79,7 +79,9 @@ const Faqs = () => {
           </AccordionSummary>
           <AccordionDetails sx={{ color: 'white', }}>
             <Typography sx={{
-              fontFamily:'Montserrat', fontSize:'1rem', fontWeight:'400'
+              fontFamily:'Montserrat',
+               fontSize:isSmall ? "0.9rem":'1rem',
+               fontWeight:'400'
             }}>
               {faq.answer}
             </Typography>

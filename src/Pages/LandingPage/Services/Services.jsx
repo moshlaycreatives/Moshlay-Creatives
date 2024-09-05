@@ -14,6 +14,7 @@ const Services = () => {
   const theme = useTheme();
   const isMedium = useMediaQuery(theme.breakpoints.down("md"));
   const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const is400 = useMediaQuery("(max-width:400px)");
   const isFourteen = useMediaQuery("(max-width:1400px)");
 
   const listData = [
@@ -91,7 +92,7 @@ const Services = () => {
           <Typography
             sx={{
               color: theme.palette.primary.main,
-              fontSize: isSmall ? "1.6rem" : isMedium ? "2rem" : "2.5rem",
+              fontSize: isSmall ? "1.5rem" : isMedium ? "2rem" : "2.5rem",
               fontFamily: "Montserrat",
               fontWeight: 600,
               display:'flex',
@@ -113,7 +114,7 @@ const Services = () => {
             variant="body2"
             sx={{
               color: "white",
-              fontSize: isMedium ? "1rem" : "1.1rem",
+              fontSize: isSmall  ? "0.9rem" : "1rem",
               fontFamily: "Montserrat",
               fontWeight: 400,
               textAlign: "center",
@@ -147,7 +148,7 @@ const Services = () => {
                   alignItems: "center",
                   padding: "3rem",
                   width: "100%",
-                  height: isSmall
+                  height: is400 ?  "25vh": isSmall
                     ? "20vh"
                     : isMedium
                     ? "20vh"
@@ -229,7 +230,7 @@ const Services = () => {
                     sx={{
                       color: "white",
                       fontSize: isSmall
-                        ? "1.3rem"
+                        ? "1.2rem"
                         : isMedium
                         ? "1.5rem"
                         : "1.7rem",

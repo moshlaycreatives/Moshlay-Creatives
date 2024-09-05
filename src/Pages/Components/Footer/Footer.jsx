@@ -25,6 +25,8 @@ import { styled } from "@mui/material";
 
 function Footer() {
   const theme = useTheme();
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMedium = useMediaQuery(theme.breakpoints.down("md"));
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -119,9 +121,9 @@ function Footer() {
                 variant="i"
                 sx={{
                   color: "white",
-                  border: "2px solid white",
+                  border:isSmall ? "1.8px solid white" : "2px solid white",
+                  fontSize:isSmall ? "0.8rem" : "1rem",
                   padding: ".3rem .2rem 0rem .2rem",
-                  fontSize: "1rem",
                   fontFamily: "Montserrat",
                   transition: "0.5s",
                   borderRadius: "4px",
@@ -140,9 +142,9 @@ function Footer() {
                 variant="i"
                 sx={{
                   color: "white",
-                  border: "2px solid white",
+                  border:isSmall ? "1.8px solid white" : "2px solid white",
+                  fontSize:isSmall ? "0.8rem" : "1rem",
                   padding: ".3rem .2rem 0rem .2rem",
-                  fontSize: "1rem",
                   fontFamily: "Montserrat",
                   borderRadius: "4px",
                   transition: "0.5s",
@@ -161,9 +163,9 @@ function Footer() {
                 variant="i"
                 sx={{
                   color: "white",
-                  border: "2px solid white",
+                  border:isSmall ? "1.8px solid white" : "2px solid white",
+                  fontSize:isSmall ? "0.8rem" : "1rem",
                   padding: ".3rem .2rem 0rem .2rem",
-                  fontSize: "1rem",
                   fontFamily: "Montserrat",
                   borderRadius: "4px",
                   transition: "0.5s",
@@ -182,9 +184,9 @@ function Footer() {
                 variant="i"
                 sx={{
                   color: "white",
-                  border: "2px solid white",
+                  border:isSmall ? "1.8px solid white" : "2px solid white",
+                  fontSize:isSmall ? "0.8rem" : "1rem",
                   padding: ".3rem .2rem 0rem .2rem",
-                  fontSize: "1rem",
                   fontFamily: "Montserrat",
                   borderRadius: "4px",
                   transition: "0.5s",
@@ -203,7 +205,7 @@ function Footer() {
       <div className="footer-horizntal-line">
         <hr />
       </div>
-      <p className="footer-term-condition">
+      <p className="footer-term-condition" style={{fontSize:isSmall ? "0.9rem": '1rem'}}>
         © Terms of Use | Privacy Policy | © 2024 Moshaly Creative
       </p>
     </footer>

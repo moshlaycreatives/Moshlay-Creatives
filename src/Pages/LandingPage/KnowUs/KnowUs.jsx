@@ -21,7 +21,7 @@ const KnowUs = () => {
         sx={{
           // width: "100%",
           backgroundColor: "#1c2844",
-          marginTop: "5rem",
+          marginTop:isSmall ? "orem": "5rem",
           padding: isMedium ? "5% 10%" : "2% 10%",
         }}
       >
@@ -68,7 +68,7 @@ const KnowUs = () => {
             <Box>
               <Typography
                 sx={{
-                  fontSize: isSmall ? "1.6rem" : isMedium ? "2rem" : "2.5rem",
+                  fontSize: isSmall ? "1.5rem" : isMedium ? "2rem" : "2.5rem",
                   color: theme.palette.primary.main,
                   fontWeight: 600,
                   marginBottom: ".5rem",
@@ -80,7 +80,7 @@ const KnowUs = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: isSmall ? "1.1rem" : "1.2rem",
+                  fontSize: isSmall ? "1rem" : "1.2rem",
                   color: "white",
                   fontWeight: 400,
                   marginBottom: ".5rem",
@@ -93,7 +93,7 @@ const KnowUs = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: isSmall ? "1rem" : "1rem",
+                  fontSize: isSmall ? "0.9rem" : "1rem",
                   color: "white",
                   fontWeight: 400,
                   marginBottom: ".5rem",
@@ -112,7 +112,7 @@ const KnowUs = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: isSmall ? "1rem" : "1rem",
+                  fontSize: isSmall ? "0.9rem" : "1rem",
                   color: "white",
                   fontWeight: 400,
                   marginBottom: "2rem",
@@ -131,8 +131,8 @@ const KnowUs = () => {
                   sx={{
                     border:"1px solid white",
                     color: "white",
-                    padding: ".8rem 2rem",
-                    fontSize: "1rem",
+                    padding: isSmall ? '0.5rem 1rem' : '0.8rem 2rem',
+                    fontSize: isSmall ? "0.9rem" : "1rem",
                     fontFamily: "Montserrat",
                     textTransform: "none",
                     "&:hover": {

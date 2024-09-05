@@ -32,7 +32,7 @@ const Technology = () => {
             <Box>
               <Typography
                 sx={{
-                  fontSize: isSmall ? "1.4rem " : "1.8rem",
+                  fontSize: isSmall ? "1.2rem " : isMedium ?  "1.5rem": "1.8rem",
                   color: theme.palette.primary.main,
                   fontWeight: 600,
                   marginBottom: ".5rem",
@@ -46,7 +46,7 @@ const Technology = () => {
 
               <Typography
                 sx={{
-                  fontSize: isSmall ? " 1rem" : "1rem",
+                  fontSize: isSmall ? " 0.9rem" : "1rem",
                   color: "white",
                   fontWeight: 400,
                   marginBottom: ".5rem",
@@ -65,7 +65,7 @@ const Technology = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "1.1rem",
+                  fontSize: isSmall ? " 0.9rem" : "1rem",
                   color: "white",
                   fontWeight: 400,
                   marginBottom: "2rem",

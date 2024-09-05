@@ -30,7 +30,6 @@ const WhyWeIdeal = () => {
     <>
       <Box
         sx={{
-          // margin:'2rem 0rem',
           padding: "0% 10%",
         }}
       >
@@ -39,7 +38,7 @@ const WhyWeIdeal = () => {
             // variant="h3"
             sx={{
               color: theme.palette.primary.main,
-              fontSize: isSmall ? "1.7rem" : isMedium ? "2rem" : "2.5rem",
+              fontSize: isSmall ? "1.5rem" : isMedium ? "2rem" : "2.5rem",
               textAlign: "center",
               marginBottom: "1rem",
               marginTop: "6rem",
@@ -58,7 +57,7 @@ const WhyWeIdeal = () => {
             variant="h3"
             sx={{
               color: "white",
-              fontSize: isMedium ? "1rem" : "1.1rem",
+              fontSize: isMedium ? "0.9rem" : "1rem",
               textAlign: "center",
               marginBottom: "1rem",
               marginTop: "1rem",
@@ -171,8 +170,8 @@ const WhyWeIdeal = () => {
       height: '100%',
       borderRadius: '20px 0 20px 0',
       padding: isSmall ? '.5rem' : '1rem 1rem 2rem 1rem',
-      gap: isfour ? 27 : isfour50 ? 22  : isfive ? 18 : isfive50 ? 15.5 : isSmall ? 15 : isseven ? 14 : isEight ? 13 : isMedium ? 12 : isTen ? 10 :  8,
-      paddingBottom: isfour ? '9rem' : isfour50 ? '8rem' : isfive ? '7rem' : isfive50 ? '7rem' : isSmall ? '6rem' : isseven ? '4rem' : isEight ? '3rem' : isMedium ? '3rem' : '2rem',
+      gap: isfour ? 19 : isfour50 ? 16  : isfive ? 14 : isfive50 ? 12 : isSmall ? 12 : isseven ? 14 : isEight ? 13 : isMedium ? 12 : isTen ? 10 :  8,
+      paddingBottom: isfour ? '9rem' : isfour50 ? '7rem' : isfive ? '8rem' : isfive50 ? '7rem' : isSmall ? '6rem' : isseven ? '4rem' : isEight ? '3rem' : isMedium ? '3rem' : '2rem',
       marginRight: '1rem',
     }}
   >
@@ -253,7 +252,7 @@ const WhyWeIdeal = () => {
       >
         <Typography
           sx={{
-            fontSize: { xs: "1.5rem", sm: "1.8rem" },
+            fontSize: { xs: "1.2rem", sm: "1.8rem" },
             color: "white",
             fontFamily: 'Montserrat',
             fontWeight: 500,
@@ -263,7 +262,7 @@ const WhyWeIdeal = () => {
         </Typography>
         <Typography
           sx={{
-            fontSize: "1rem",
+            fontSize: isSmall ? "0.9rem" : "1rem",
             color: "white",
             fontFamily: 'Montserrat',
             fontWeight: 400,

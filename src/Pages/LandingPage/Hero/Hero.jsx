@@ -43,16 +43,16 @@ const Hero = () => {
         <Box sx={{
             display:'flex',
             justifyContent:'center',
-            width:'100%'
+            width: '100%'
         }}>
-            <img src="logo.svg" alt=""  style={{}}/>
+            <img src="logo.svg" alt=""  style={{ width: isSmall ? "60%" : "auto"}}/>
         </Box>
         <Box sx={{
             display:'flex',
             justifyContent:'center'
         }}>
             <Typography sx={{
-                fontSize:'2rem',
+                fontSize:isSmall ? "1.2rem" : isMedium ? "1.6rem" :'2rem',
                 fontWeight:'500',
                 fontFamily:'Montserrat',
                 color:'white',

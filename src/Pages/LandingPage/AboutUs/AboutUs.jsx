@@ -73,7 +73,7 @@ const AboutUs = () => {
             >
               <Typography
                 sx={{
-                  fontSize: "2rem",
+                  fontSize:isSmall ? "1.2rem": isMedium ? "1.5rem": "2rem",
                   fontWeight: 600,
                   color: theme.palette.primary.main,
                   fontFamily: "Montserrat",
@@ -83,7 +83,7 @@ const AboutUs = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "1rem",
+                  fontSize:isSmall ?"0.9rem":"1rem",
                   fontFamily: "Montserrat",
                   color: "white",
                   fontWeight: 400,
@@ -103,11 +103,11 @@ const AboutUs = () => {
                 // variant="outlined"
                 sx={{
                   border:"1px solid white",
-                  padding:'0.5rem 1.7rem',
+                  padding: isSmall ? '0.5rem 1rem' : '0.8rem 2rem',
                   fontFamily: "Montserrat",
                   color: "white",
                   fontWeight: 400,
-                  fontSize: "1rem",
+                  fontSize:isSmall ?"0.9rem":"1rem",
                   marginTop: "1rem",
                   textTransform: "none",
                   transition:'0.3s',
@@ -137,7 +137,7 @@ const AboutUs = () => {
               >
                 <Typography
                   sx={{
-                    fontSize: "1rem",
+                    fontSize:isSmall ?"0.9rem":"1rem",
                     paddingBottom: "1rem",
                     fontFamily: "Montserrat",
                     fontWeight: 400,
@@ -161,7 +161,7 @@ const AboutUs = () => {
                     fontFamily: "Montserrat",
                     color: "white",
                     fontWeight: 400,
-                    fontSize: "1.1rem",
+                    fontSize:isSmall ? "1rem": "1.1rem",
                     fontStyle: "italic",
                     textTransform: "none",
                   }}
@@ -188,7 +188,7 @@ const AboutUs = () => {
                   onClick={() => handleSeeMore("/about")}
                 >
                   {/* <ArrowRightAltIcon  style={{fontSize:'2.2rem'}}/> */}
-                  <IoIosArrowRoundForward style={{ fontSize: "2.5rem" }} />
+                  <IoIosArrowRoundForward style={{ fontSize: isSmall  ? "2.2rem" : "2.5rem" }} />
                 </Button>
               </Box>
             </Box>

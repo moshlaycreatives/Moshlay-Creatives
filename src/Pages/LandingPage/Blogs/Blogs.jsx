@@ -51,7 +51,7 @@ const Blogs = () => {
             variant="h3"
             sx={{
               color: theme.palette.primary.main,
-              fontSize: "2.5rem",
+              fontSize: isSmall ? "1.5rem" : isMedium ? "2rem" : "2.5rem",
               textAlign: "center",
               marginBottom: "1rem",
               fontFamily: "Montserrat",
@@ -63,7 +63,7 @@ const Blogs = () => {
           <Typography
             sx={{
               color: "white",
-              fontSize: isMedium ? "1rem" : "1.1rem",
+              fontSize: isMedium ? "0.9rem" : "1rem",
               textAlign: "center",
               marginBottom: "1rem",
               fontFamily: "Montserrat",
@@ -86,10 +86,10 @@ const Blogs = () => {
             // variant="contained"
             sx={{
               backgroundColor:theme.palette.primary.main,
-              padding:'0.8rem 2rem',
+              padding: isSmall ? '0.5rem 1rem' : '0.8rem 2rem',
               border:'1px solid #98c447',
               color: "white",
-              fontSize: "1rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               fontFamily: "Montserrat",
               textTransform: "none",
               fontWeight: 500,

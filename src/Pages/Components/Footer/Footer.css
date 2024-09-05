@@ -44,7 +44,7 @@ font-family: 'Montserrat';
     bottom: -5%;
 }
 .footer-logo-text p{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: 400;
     font-family: 'Montserrat';
 }
@@ -181,8 +181,44 @@ font-family: 'Montserrat';
     .footer-logo-text{
         width: 60%;
     }
+    .footer-logo-text p{
+        font-size: 1rem;
+    }
+    .footer-quick-links h2{
+        font-size: 1.1rem;
+    }
+    .footer-links li{   
+        font-size: 1rem;
+    }
+    .footer-contact-info h3{
+        font-size: 1.1rem;
+    }
+    .footer-contact-info-links i{
+        font-size: 1rem;
+    }
 }
 
+@media(max-width:600px){
+    
+    .footer-logo-text img{
+        width: 40%;
+    }
+    .footer-logo-text p{
+        font-size: 0.9rem;
+    }
+    .footer-quick-links h2{
+        font-size: 1rem;
+    }
+    .footer-links li{   
+        font-size: 0.9rem;
+    }
+    .footer-contact-info h3{
+        font-size: 1rem;
+    }
+    .footer-contact-info-links i{
+        font-size: 0.9rem;
+    }
+}
 @media(max-width:500px){
     
     .footer-logo-text img{

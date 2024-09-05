@@ -75,7 +75,7 @@ const translateYAnimation2 = keyframes`
             <Box sx={{ width: "100%", 
              animation: is1600 ? `${translateYAnimation2} 2s linear infinite` : `${translateYAnimation} 2s linear infinite`,
                }}>
-              <img src="rocket2.svg" alt="" width={ isLarge ? '100%' : '90%'} />
+              <img src="rocket2.svg" alt="" width={isSmall ? '90%': isLarge ? '100%' : '90%'} />
             </Box>
           </Grid>
           <Grid item lg={6} md={6} sm={12} xs={12} order={isMedium ? 1 : 2}>
@@ -100,7 +100,7 @@ const translateYAnimation2 = keyframes`
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "2rem",
+                  fontSize: isSmall ? "1.5rem": "2rem",
                   color: "white",
                   fontWeight: 400,
                   marginBottom: ".5rem",
@@ -112,7 +112,7 @@ const translateYAnimation2 = keyframes`
               </Typography>
               {/* <Typography
                 sx={{
-                  fontSize: "1.2rem",
+                  fontSize:isSmall ? "1rem" : "1.2rem",
                   color: "white",
                   fontWeight: 600,
                   marginBottom: ".5rem",
@@ -122,7 +122,7 @@ const translateYAnimation2 = keyframes`
               </Typography> */}
               <Typography
                 sx={{
-                  fontSize: "2rem",
+                  fontSize: isSmall ? "1.5rem": "2rem",
                   color: "white",
                   fontWeight: 400,
                   // marginBottom: "1rem",
@@ -137,8 +137,8 @@ const translateYAnimation2 = keyframes`
                   // variant="contained"
                   sx={{
                     color: theme.palette.primary.main,
-                    padding:'0.8rem 2rem',
-                    fontSize: "1rem",
+                    padding: isSmall ? '0.5rem 1rem' : '0.8rem 2rem',
+                    fontSize:isSmall ? '0.9rem' : "1rem",
                     backgroundColor:'white',
                     textTransform:'none',
                     fontFamily:'Montserrat',
