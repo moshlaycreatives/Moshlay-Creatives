@@ -211,6 +211,9 @@ import { Grid, Typography, useMediaQuery, useTheme } from "@mui/material";
 import { FaCircle } from "react-icons/fa";
 
 function CustomTabPanel(props) {
+   const theme = useTheme();
+  const isSmall = useMediaQuery(theme.breakpoints.down("sm"));
+  const isMedium = useMediaQuery(theme.breakpoints.down("md"));
   const { children, value, index, ...other } = props;
 
   return (
@@ -231,7 +234,7 @@ function CustomTabPanel(props) {
             height:'100%',
             color: "white",
             borderRadius: "10px",
-            fontSize: "1rem",
+            fontSize:isSmall ? "0.9rem" : "1rem",
             fontFamily: "Montserrat",
             fontWeight: 400,
           }}
@@ -537,7 +540,7 @@ const WebDevelopmentBenefit = () => {
             width={"100%"}
           >
             <CustomTabPanel value={value} index={0}>
-              <Typography>
+              <Typography sx={{fontSize:isSmall ? "0.9rem" : "1rem",}}>
                 A well-designed website is more than just an online brochure;
                 it's a digital source that allows businesses to showcase their
                 products or services to a global audience. In today's digital
@@ -545,7 +548,7 @@ const WebDevelopmentBenefit = () => {
                 customers and building brand awareness.
               </Typography>
               <br />
-              <Typography>
+              <Typography sx={{fontSize:isSmall ? "0.9rem" : "1rem",}}>
                 A website serves as a central hub where potential customers can
                 learn about a company's offerings, explore its values, and make
                 informed decisions. By creating a visually appealing and
@@ -555,16 +558,16 @@ const WebDevelopmentBenefit = () => {
             </CustomTabPanel>
 
             <CustomTabPanel value={value} index={1}>
-              <Typography>
+              <Typography sx={{fontSize:isSmall ? "0.9rem" : "1rem",}}>
                 Websites have the power to break down geographical barriers and
                 expand a business's market reach. By creating a user-friendly
                 online platform, companies can attract customers from diverse
                 regions and cultures. Online stores enable businesses to sell
                 products and services to customers who may not have access to
                 brick-and-mortar locations
-              </Typography>
+              </Typography >
               <br />
-              <Typography>
+              <Typography sx={{fontSize:isSmall ? "0.9rem" : "1rem",}}>
                 Additionally, websites can be translated into multiple
                 languages, making it easier for businesses to cater to
                 international audiences. This market expansion can lead to
@@ -574,7 +577,7 @@ const WebDevelopmentBenefit = () => {
             </CustomTabPanel>
 
             <CustomTabPanel value={value} index={2}>
-              <Typography>
+              <Typography sx={{fontSize:isSmall ? "0.9rem" : "1rem",}}>
                 Web development can significantly streamline processes and
                 improve efficiency within organizations. Online tools and
                 platforms can automate tasks, reducing manual labor and errors.
@@ -582,7 +585,7 @@ const WebDevelopmentBenefit = () => {
                 inventory management, and customer service inquiries.
               </Typography>
               <br />
-              <Typography>
+              <Typography sx={{fontSize:isSmall ? "0.9rem" : "1rem",}}>
                 Additionally, cloud-based collaboration tools can facilitate
                 communication and teamwork, leading to faster decision-making
                 and improved productivity. By leveraging technology, businesses
@@ -592,14 +595,14 @@ const WebDevelopmentBenefit = () => {
             </CustomTabPanel>
 
             <CustomTabPanel value={value} index={3}>
-              <Typography>
+              <Typography sx={{fontSize:isSmall ? "0.9rem" : "1rem",}}>
                 A professional website can enhance a company's credibility and
                 reputation. It demonstrates a commitment to quality, innovation,
                 and customer service. A well-designed and informative website
                 can build trust and confidence among potential clients.
               </Typography>
               <br />
-              <Typography>
+              <Typography sx={{fontSize:isSmall ? "0.9rem" : "1rem",}}>
                 By showcasing a company's expertise, success stories, and
                 testimonials, businesses can position themselves as reliable and
                 trustworthy partners. A strong online presence can also help to
@@ -609,7 +612,7 @@ const WebDevelopmentBenefit = () => {
             </CustomTabPanel>
 
             <CustomTabPanel value={value} index={4}>
-              <Typography>
+              <Typography sx={{fontSize:isSmall ? "0.9rem" : "1rem",}}>
                 While there may be initial costs associated with web
                 development, the long-term benefits can outweigh the expenses.
                 Websites can help businesses reduce marketing and operational
@@ -618,7 +621,7 @@ const WebDevelopmentBenefit = () => {
                 traditional methods.
               </Typography>
               <br />
-              <Typography>
+              <Typography sx={{fontSize:isSmall ? "0.9rem" : "1rem",}}>
                 Additionally, websites can eliminate the need for physical
                 storefronts, reducing overhead costs. By investing in a
                 well-designed website, businesses can improve their bottom line

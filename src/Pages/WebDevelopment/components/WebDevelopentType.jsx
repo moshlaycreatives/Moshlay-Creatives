@@ -65,9 +65,9 @@ const WebDevelopmentType = () => {
     
       <Box
         sx={{
-          marginTop: "1rem",
+          marginTop:isSmall ? '0rem': "1rem",
           padding: "4rem 10%",
-          marginBottom: "4rem",
+          marginBottom:isSmall ? '3rem' : "4rem",
         backgroundImage: "linear-Gradient(to right  , #1c2844, #1c2844 )",
 
         }}
@@ -94,7 +94,7 @@ const WebDevelopmentType = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize:isSmall ? "0.9rem" : "1rem",
               fontWeight: 400,
               color: "white",
               textAlign: "center",
@@ -111,7 +111,7 @@ const WebDevelopmentType = () => {
 
         {/* ===========================CARDS================================ */}
 
-        <Grid container spacing={6}>
+        <Grid container spacing={isSmall ? 2:isMedium ? 4: 6}>
           {listData.map((row, id) => (
             <Grid key={id} item lg={4} md={6} sm={12} xs={12}>
               <Box
@@ -123,7 +123,7 @@ const WebDevelopmentType = () => {
                   // justifyContent: "end",
                   // flexDirection: isSmall ? 'column' : 'row',
                   // padding:'1.5rem',
-                  gap: 2,
+                  gap: 1,
                 }}
               >
                 <Box
@@ -155,11 +155,11 @@ const WebDevelopmentType = () => {
                   >
                     {row.careertitle}
                   </Typography>
-                  <br />
+
                   <Typography
                     sx={{
                       color: "white",
-                      fontSize: "1rem",
+                      fontSize: isSmall ?  '0.9rem': "1rem",
                       fontFamily: "Montserrat",
                       fontWeight: 400,
                       textAlign: "center",

@@ -13,7 +13,7 @@ const WebDevelopmentServices = () => {
     <>
     <Box sx={{
         backgroundImage: "linear-Gradient(to right  ,#21335b, #111112)",
-        padding:'4% 10%'
+        padding:'4% 10%', marginTop :isSmall ?  "-1rem": "0rem"
     }}>
         <Typography sx={{
             fontSize: isSmall ? '1.5rem' : isMedium ? '2rem' : '2.5rem',
@@ -61,7 +61,7 @@ const WebDevelopmentServices = () => {
                 }}>
                 <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
                 </Box>
-                <Typography sx={{color:'white', fontSize:isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
+                <Typography sx={{color:'white', fontSize:isSmall ? '0.9rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                     Web Designing
                 </Typography>
             </Box>
@@ -83,7 +83,7 @@ const WebDevelopmentServices = () => {
                 }}>
                 <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
                 </Box>
-                <Typography sx={{color:'white', fontSize:isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
+                <Typography sx={{color:'white', fontSize:isSmall ? '0.9rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Front-End Development
                 </Typography>
             </Box>
@@ -106,7 +106,7 @@ const WebDevelopmentServices = () => {
                 }}>
                 <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
                 </Box>
-                <Typography sx={{color:'white', fontSize: isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
+                <Typography sx={{color:'white', fontSize: isSmall ? '0.9rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Back-End Development
                 </Typography>
             </Box>
@@ -128,7 +128,7 @@ const WebDevelopmentServices = () => {
                 }}>
                 <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
                 </Box>
-                <Typography sx={{color:'white', fontSize: isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
+                <Typography sx={{color:'white', fontSize: isSmall ? '0.9rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Database Integration
                 </Typography>
             </Box>
@@ -161,7 +161,7 @@ const WebDevelopmentServices = () => {
                 }}>
                 <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
                 </Box>
-                <Typography sx={{color:'white', fontSize: isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
+                <Typography sx={{color:'white', fontSize: isSmall ? '0.9rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 E-Commerce Integration
                 </Typography>
             </Box>
@@ -183,7 +183,7 @@ const WebDevelopmentServices = () => {
                 }}>
                 <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
                 </Box>
-                <Typography sx={{color:'white', fontSize: isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
+                <Typography sx={{color:'white', fontSize: isSmall ? '0.9rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Responsive Design
                 </Typography>
             </Box>
@@ -205,7 +205,7 @@ const WebDevelopmentServices = () => {
                 }}>
                 <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
                 </Box>
-                <Typography sx={{color:'white', fontSize:isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
+                <Typography sx={{color:'white', fontSize:isSmall ? '0.9rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Search Engine Optimization
                 </Typography>
             </Box>
@@ -238,7 +238,7 @@ const WebDevelopmentServices = () => {
                 }}>
                 <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
                 </Box>
-                <Typography sx={{color:'white', fontSize: isSmall ? '1rem' : ' 1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
+                <Typography sx={{color:'white', fontSize: isSmall ? '0.9rem' : ' 1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Web Testing & Debugging
                 </Typography>
             </Box>
@@ -260,7 +260,7 @@ const WebDevelopmentServices = () => {
                 }}>
                 <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
                 </Box>
-                <Typography sx={{color:'white', fontSize: isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
+                <Typography sx={{color:'white', fontSize: isSmall ? '0.9rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Security Measures
                 </Typography>
             </Box>
@@ -282,7 +282,7 @@ const WebDevelopmentServices = () => {
                 }}>
                 <img src="/webdevservicetick.png" alt="" width={isSmall ?  '70%': '85%'} />
                 </Box>
-                <Typography sx={{color:'white', fontSize: isSmall ? '1rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
+                <Typography sx={{color:'white', fontSize: isSmall ? '0.9rem' : '1.1rem', fontWeight:500, fontFamily:'Montserrat', textAlign:'center'}}>
                 Content Migration
                 </Typography>
             </Box>

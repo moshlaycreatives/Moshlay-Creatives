@@ -94,7 +94,7 @@ export default function WebDevelopmentTech() {
           <br />
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize:isSmall ? "0.9rem" : "1rem",
               fontWeight: 400,
               color: "white",
               textAlign: "center",
@@ -122,7 +122,7 @@ export default function WebDevelopmentTech() {
         }}>
           <Tab label="Design" {...a11yProps(0)} sx={{
             border:'1px solid white',
-            fontSize:'1rem',
+            fontSize:isSmall ? "0.9rem" : "1rem",
             fontWeight:400,
             borderRadius:'50px',
             padding:isSmall ? '.5rem 1rem ': isMedium ? "1rem 2rem " : '1rem 3rem ',
@@ -136,7 +136,7 @@ export default function WebDevelopmentTech() {
 
 <Tab label="Frontend" {...a11yProps(0)} sx={{
             border:'1px solid white',
-            fontSize:'1rem',
+            fontSize:isSmall ? "0.9rem" : "1rem",
             fontWeight:400,
             borderRadius:'50px',
             padding:isSmall ? '.5rem 1rem ': isMedium ? "1rem 2rem " : '1rem 3rem ',
@@ -150,7 +150,7 @@ export default function WebDevelopmentTech() {
 
 <Tab label="backend" {...a11yProps(0)} sx={{
             border:'1px solid white',
-            fontSize:'1rem',
+            fontSize:isSmall ? "0.9rem" : "1rem",
             fontWeight:400,
             borderRadius:'50px',
             padding:isSmall ? '.5rem 1rem ': isMedium ? "1rem 2rem " : '1rem 3rem ',
@@ -164,7 +164,7 @@ export default function WebDevelopmentTech() {
 
 <Tab label="DevOps" {...a11yProps(0)} sx={{
             border:'1px solid white',
-            fontSize:'1rem',
+            fontSize:isSmall ? "0.9rem" : "1rem",
             fontWeight:400,
             borderRadius:'50px',
             padding:isSmall ? '.5rem 1rem ': isMedium ? "1rem 2rem " : '1rem 3rem ',

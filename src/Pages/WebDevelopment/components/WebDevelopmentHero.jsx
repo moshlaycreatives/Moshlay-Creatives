@@ -82,8 +82,8 @@ const WebDevelopmentHero = () => {
           <Button
             // variant="contained"
             sx={{
-              padding: "0.5rem 1.5rem",
-              fontSize: "1rem",
+              padding: isSmall ?  "0.5rem 1rem" : "0.5rem 1.5rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               color: theme.palette.primary.main,
               fontWeight: 500,
               fontFamily: "montserrat",
@@ -104,7 +104,7 @@ const WebDevelopmentHero = () => {
           <br />
           <Typography
             sx={{
-              fontSize: isSmall ? "1.9rem" : isMedium ? "2.5rem" : "3rem",
+              fontSize: isSmall ? "1.5rem" : isMedium ? "2.5rem" : "3rem",
               fontWeight: 600,
               color: theme.palette.primary.main,
               marginBottom:'0.5rem',
@@ -116,7 +116,7 @@ const WebDevelopmentHero = () => {
           {/* <br /> */}
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize:isSmall ? "0.9rem": "1rem",
               fontWeight: 400,
               color: "white",
               fontFamily: "Montserrat",
@@ -134,7 +134,7 @@ const WebDevelopmentHero = () => {
           <Button
             variant="outlined"
             sx={{
-              padding: ".5rem 1.5rem",
+              padding: isSmall ?  "0.5rem 1rem" : "0.5rem 1.5rem",
               fontSize: "1rem",
               color: theme.palette.primary.main,
               fontWeight: 500,
@@ -174,7 +174,7 @@ const WebDevelopmentHero = () => {
               fontWeight: 600,
               color: theme.palette.primary.main,
               textAlign: "center",
-              marginTop: "4rem",
+              marginTop: "2rem",
               fontFamily: "montserrat",
             }}
           >
@@ -183,7 +183,7 @@ const WebDevelopmentHero = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize:isSmall ? "0.9rem" :  "1rem",
               fontWeight: 400,
               color: "white",
               textAlign: "center",
@@ -201,7 +201,7 @@ const WebDevelopmentHero = () => {
 
         {/* ===========================CARDS================================ */}
 
-        <Grid container spacing={6}>
+        <Grid container spacing={isSmall ? 2 : isMedium ? 4: 6}>
           {listData.map((row, id) => (
             <Grid key={id} item lg={4} md={6} sm={12} xs={12}>
               <Box
@@ -213,7 +213,7 @@ const WebDevelopmentHero = () => {
                   justifyContent: "end",
                   // flexDirection: isSmall ? 'column' : 'row',
                   // padding:'1.5rem',
-                  gap: 2,
+                  gap: 1,
                 }}
               >
                 <Box
@@ -237,7 +237,7 @@ const WebDevelopmentHero = () => {
                   <Typography
                     sx={{
                       color: theme.palette.primary.main,
-                      fontSize: isSmall ? "1.2rem" : "1.5rem",
+                      fontSize: isSmall ? "1.1rem" : "1.5rem",
                       fontFamily: "Montserrat",
                       fontWeight: 600,
                       textAlign: "center",
@@ -245,11 +245,10 @@ const WebDevelopmentHero = () => {
                   >
                     {row.careertitle}
                   </Typography>
-                  <br />
-                  <Typography
+                <Typography
                     sx={{
                       color: "white",
-                      fontSize: "1rem",
+                      fontSize: isSmall ? "0.9rem" : "1rem",
                       fontFamily: "Montserrat",
                       fontWeight: 400,
                       textAlign: "center",

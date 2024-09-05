@@ -45,7 +45,7 @@ const WebDevelopmentDigitalStand = () => {
     <>
       <Box
         sx={{
-          padding: "5% 10%",
+          padding: isSmall ?"2% 10%" : "5% 10%",
         }}
       >
         <Grid container justifyContent={"center"}>
@@ -64,7 +64,7 @@ const WebDevelopmentDigitalStand = () => {
             <Typography
               sx={{
                 fontFamily: "Montserrat",
-                fontSize: isSmall ? "1.3rem" : isMedium ? "1.5rem" : "1.8rem",
+                fontSize: isSmall ? "1.2rem" : isMedium ? "1.5rem" : "1.8rem",
                 fontWeight: "600",
                 color: theme.palette.primary.main,
               }}
@@ -76,7 +76,7 @@ const WebDevelopmentDigitalStand = () => {
             <Typography
               sx={{
                 fontFamily: "Montserrat",
-                fontSize: "1rem",
+                fontSize:isSmall ? "0.9rem" : "1rem",
                 fontWeight: "500",
                 color: "white",
               }}
@@ -100,7 +100,7 @@ const WebDevelopmentDigitalStand = () => {
                 <Typography
                   sx={{
                     fontFamily: "Montserrat",
-                    fontSize: "1rem",
+                    fontSize:isSmall ? "0.9rem" : "1rem",
                     fontWeight: isSmall ? "400" : "500",
                     color: "white",
                   }}
@@ -118,10 +118,12 @@ const WebDevelopmentDigitalStand = () => {
           <br />
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize:isSmall ? "0.9rem" : "1rem",
               fontFamily: "Montserrat",
               fontWeight: "400",
               color: "white",
+              marginTop :'-2rem', 
+              marginBottom: isSmall ? '2rem' :'0rem'
             }}
           >
             The role of a web development company is to seek and build solutions
@@ -134,7 +136,8 @@ const WebDevelopmentDigitalStand = () => {
 
       <Box sx={{
         backgroundImage: "linear-Gradient(to right  , #1c2844, #1c2844 )",
-        padding:'5% 10%'
+        padding:'5% 10%',
+        marginBottom: isSmall ? '-1rem' :'0rem'
     }}>
         <Box>
           <Typography
@@ -144,6 +147,7 @@ const WebDevelopmentDigitalStand = () => {
               fontWeight: "600",
               color: theme.palette.primary.main,
               textAlign: "center",
+
             }}
           >
             Results-Driven Website Solutions
@@ -152,7 +156,7 @@ const WebDevelopmentDigitalStand = () => {
           <Typography
             sx={{
               fontFamily: "Montserrat",
-              fontSize:'1rem',
+              fontSize:isSmall ? "0.9rem" : "1rem",
               fontWeight: "400",
               color: 'white',
               textAlign: "center",
