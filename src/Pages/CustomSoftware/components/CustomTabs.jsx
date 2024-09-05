@@ -77,7 +77,7 @@ const CustomTabs = () => {
       <Box
         sx={{
           // display: "flex" ,
-          padding: "3rem 10%",
+          padding:isSmall ?  "2rem 10%": "3rem 10%",
           backgroundColor: "#1c2844",
         }}
       >

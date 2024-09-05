@@ -24,7 +24,7 @@ const CustomIndustry = () => {
     <>
     <Box sx={{
         // backgroundImage: "linear-Gradient(to right  ,#21335b, #111112)",
-        padding:'3% 10%'
+        padding:isSmall ? "5% 10%": '3% 10%'
     }}>
         <Typography sx={{
             fontSize: isSmall ? '1.5rem' : isMedium ? '2rem' : '2.5rem',
@@ -53,7 +53,7 @@ const CustomIndustry = () => {
                             <img src={row.img} alt="" width={isSmall ? '22rem' :'33rem'} color={'white'}/>
                         </Box>
                         <Typography sx={{
-                            fontSize: isSmall ? '1.2rem' : isMedium ? '1.5rem' : '1.6rem',
+                            fontSize: isSmall ? '1.1rem' : isMedium ? '1.5rem' : '1.6rem',
                             color:'white', marginLeft:'1rem'
                         }}>
                         {row.title}

@@ -62,9 +62,9 @@ const CustomAdvantage = () => {
     <>
       <Box
         sx={{
-          marginTop: "1rem",
+          marginTop: isSmall ? '-1.5rem' : "-1rem",
           padding: "0 10%",
-          marginBottom: "4rem",
+          marginBottom: isSmall ? '3rem' : "4rem",
         }}
       >
         {/* ========================================================TEXT PART============================================= */}
@@ -91,7 +91,7 @@ const CustomAdvantage = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               fontWeight: 400,
               color: "white",
               textAlign: "center",
@@ -107,7 +107,7 @@ const CustomAdvantage = () => {
 
         {/* ===========================CARDS================================ */}
 
-        <Grid container spacing={6}>
+        <Grid container spacing={isSmall ? 3:isMedium ? 4: 6}>
           {listData.map((row, id) => (
             <Grid key={id} item lg={4} md={6} sm={12} xs={12}>
               <Box
@@ -155,7 +155,7 @@ const CustomAdvantage = () => {
                   <Typography
                     sx={{
                       color: "white",
-                      fontSize: "1rem",
+                      fontSize: isSmall ? "0.9rem" :"1rem",
                       fontFamily: "Montserrat",
                       fontWeight: 400,
                       textAlign: isSmall ? 'center' : "start",

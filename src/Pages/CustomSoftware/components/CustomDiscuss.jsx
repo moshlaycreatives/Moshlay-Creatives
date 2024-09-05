@@ -25,7 +25,7 @@ const CustomDiscuss = () => {
       <Box
         sx={{
           marginTop: "1rem",
-          padding: "3% 10%",
+          padding: isSmall ? "4% 10%" :"3% 10%",
           marginBottom: "4rem",
           backgroundColor: theme.palette.primary.main,
         }}

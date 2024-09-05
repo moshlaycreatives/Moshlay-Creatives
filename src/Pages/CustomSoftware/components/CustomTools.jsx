@@ -67,13 +67,14 @@ export default function CustomTools() {
   ]
 
   return (
-    <Box sx={{ width: '100%', padding:'0% 10%' }}>
+    <Box sx={{ width: '100%', padding:'0% 10%' ,marginBottom:isSmall ?  "-2rem": '-1rem',}}>
       {/* ========================================================TEXT PART============================================= */}
       <Box sx={{
             display:'flex',
             flexDirection:'column',
-            alignItems:'center'
-            // justifyContent:'center'
+            alignItems:'center',
+            marginTop:isSmall ?  "-2rem": '-1rem',
+            
         }}>
           <Typography
             sx={{
@@ -81,17 +82,17 @@ export default function CustomTools() {
               fontWeight: 600,
               color: theme.palette.primary.main,
               textAlign: "center",
-              // marginTop:'4rem',
+              marginBottom:'0.5 rem',
               fontFamily: "montserrat",
             }}
           >
             {" "}
-            Technologies We Work With
+            Tools & Technologies
           </Typography>
-          <br />
-          <Typography
+
+          {/* <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               fontWeight: 400,
               color: "white",
               textAlign: "center",
@@ -101,7 +102,7 @@ export default function CustomTools() {
           >
             Your business is unique and has distinct goals. That’s why we carry a vast arsenal of digital marketing
             you achieve those goals. Is it quality website traffic you seek?
-          </Typography>
+          </Typography> */}
         </Box>
         <br /><br />
       <Box sx={{ 
