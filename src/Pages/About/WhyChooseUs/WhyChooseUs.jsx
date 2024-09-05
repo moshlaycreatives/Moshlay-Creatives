@@ -21,7 +21,7 @@ const WhyChooseUs = () => {
         <Box>
           <Typography
             sx={{
-              fontSize: isSmall ? "1.8rem" : isMedium ? "2rem" : "2.5rem",
+              fontSize: isSmall ? "1.5rem" : isMedium ? "2rem" : "2.5rem",
               color: theme.palette.primary.main,
               marginBottom: "2rem",
               fontFamily: "Montserrat",
@@ -69,7 +69,7 @@ const WhyChooseUs = () => {
             >
               <Typography
                 sx={{
-                  fontSize: isSmall ? "1.4rem" : "1.7rem",
+                  fontSize: isSmall ? "1.2rem" : "1.7rem",
                   fontWeight: 600,
                   // color: theme.palette.primary.main
                   color: "white",
@@ -93,7 +93,7 @@ const WhyChooseUs = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "1rem",
+                  fontSize: isSmall ? "0.9rem" : "1.1rem",
                   fontWeight: 400,
                   color: "white",
                   textAlign: "start",
@@ -143,7 +143,7 @@ const WhyChooseUs = () => {
             >
               <Typography
                 sx={{
-                  fontSize: isSmall ? "1.4rem" : "1.7rem",
+                  fontSize: isSmall ? "1.2rem" : "1.7rem",
                   fontWeight: 600,
                   // color: theme.palette.primary.main
                   color: "white",
@@ -167,7 +167,7 @@ const WhyChooseUs = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "1rem",
+                  fontSize: isSmall ? "0.9rem": "1rem",
                   fontWeight: 400,
                   color: "white",
                   textAlign: "start",
@@ -254,7 +254,7 @@ const WhyChooseUs = () => {
             >
               <Typography
                 sx={{
-                  fontSize: isSmall ? "1.4rem" : "1.7rem",
+                  fontSize: isSmall ? "1.2rem" : "1.7rem",
                   fontWeight: 600,
                   // color: theme.palette.primary.main
                   color: "white",
@@ -278,7 +278,7 @@ const WhyChooseUs = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "1rem",
+                  fontSize: isSmall ? "0.9rem": "1rem",
                   fontWeight: 400,
                   color: "white",
                   textAlign: "start",

@@ -87,7 +87,7 @@ const AboutHero = () => {
       <Box
         sx={{
           padding: "2% 10%",
-          marginBottom: "-3rem",
+          marginBottom: isSmall ? "-4rem": "-3rem",
         }}
       >
         <Grid container spacing={isMedium ? 5 : 10}>
@@ -95,7 +95,7 @@ const AboutHero = () => {
             <Box sx={{}}>
               <Typography
                 sx={{
-                  fontSize: isSmall ? "1.5rem" : "2.5rem",
+                  fontSize: isSmall ? "1.5rem" : isMedium ? "2rem" : "2.5rem",
                   fontWeight: 600,
                   color: theme.palette.primary.main,
                   marginBottom: ".5rem",
@@ -106,7 +106,7 @@ const AboutHero = () => {
               </Typography>
               <Typography
                 sx={{
-                  fontSize: "1rem",
+                  fontSize:isSmall ? "0.9rem" : "1rem",
                   fontWeight: 400,
                   color: "white",
                   textAlign: "start",

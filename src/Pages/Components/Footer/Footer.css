@@ -218,6 +218,9 @@ font-family: 'Montserrat';
     .footer-contact-info-links i{
         font-size: 0.9rem;
     }
+    .footer-horizntal-line {  
+        height: 0.8px;
+    }
 }
 @media(max-width:500px){
     
