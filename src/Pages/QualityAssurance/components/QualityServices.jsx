@@ -420,10 +420,10 @@ const QualityServices = () => {
             // backgroundColor={"aqua"}
             width={"100%"}
           >
-            <CustomTabPanel value={value} index={0} width={"100%"}>
-              <Grid container spacing={5} width={"100%"}>
+            <CustomTabPanel value={value} index={0}>
+              <Grid container spacing={5} >
                 <Grid item lg={6} md={6} sm={12} xs={12}>
-                  <Box sx={{ width: isMedium ? "100%" : "70%" }}>
+                  <Box sx={{ width: isMedium ? "100%" : "60%" }}>
                     <Typography
                       sx={{
                         color: "white",

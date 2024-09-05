@@ -964,7 +964,7 @@ const Header2 = () => {
                 marginBottom={'.5rem'}
                 marginTop={'.5rem'}
                 sx={{
-                  color:'white'
+                  color:'black'
                 }}
               >
                 Contact
