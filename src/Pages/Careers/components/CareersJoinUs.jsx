@@ -86,7 +86,7 @@ const CareersJoinUs = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: isSmall ? "1.4rem" : isMedium ? "2rem" : "2.5rem",
+              fontSize: isSmall ? "1.2rem" : isMedium ? "2rem" : "2.5rem",
               fontWeight: 600,
               color: "white",
               textAlign: "center",
@@ -100,7 +100,7 @@ const CareersJoinUs = () => {
 
         {/* ===========================CARDS================================ */}
 
-        <Grid container spacing={6}>
+        <Grid container spacing={isSmall ? 2 : isMedium ? 4: 6}>
         {listData.map((row, id)=>(
         <Grid key={id} item lg={6} md={6} sm={12} xs={12}>
           <Box sx={{
@@ -116,7 +116,7 @@ const CareersJoinUs = () => {
               <Typography
                 sx={{
                   color: theme.palette.primary.main,
-                  fontSize: isSmall ? '1.2rem' : "1.5rem",
+                  fontSize: isSmall ? '1.1rem' : isMedium ? '1.3rem' : "1.5rem",
                   fontFamily: "Montserrat",
                   fontWeight: 600,
                 }}
@@ -126,6 +126,7 @@ const CareersJoinUs = () => {
               <br />
               <Typography
                 sx={{
+                  fontSize: isSmall ? '0.9rem' : "1rem",
                   color: "white",
                   fontSize: "1rem",
                   fontFamily: "Montserrat",

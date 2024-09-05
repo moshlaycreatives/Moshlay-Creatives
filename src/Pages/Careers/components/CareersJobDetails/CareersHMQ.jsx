@@ -31,7 +31,7 @@ const CareersHMQ = () => {
           <Typography sx={{
             color:'white',
             fontFamily:'Montserrat',
-            fontSize:isSmall ? '1.6rem' : isMedium ? '2rem' : '2.5rem',
+            fontSize:isSmall ? '1.5rem' : isMedium ? '2rem' : '2.5rem',
             fontWeight:600 
           }}>
           Have More Questions?
@@ -39,7 +39,7 @@ const CareersHMQ = () => {
           <Typography sx={{
             color:'white',
             fontFamily:'Montserrat',
-            fontSize:'1rem',
+            fontSize: isSmall ? '0.9rem' :'1rem',
             fontWeight:400 
           }}>
           Drop us a note and we’ll get back to you soon
@@ -48,8 +48,8 @@ const CareersHMQ = () => {
           <Button variant="outlined" sx={{
             backgroundColor:'white',
             color:theme.palette.primary.main,
-            padding:'.8rem 2rem',
-            fontSize:'1rem',
+            padding: isSmall ? '0.5rem 1rem' : '0.8rem 2rem',
+            fontSize: isSmall ? '0.9rem' :'1rem',
             fontFamily:500,
             textTransform:'none',
             '&:hover':{

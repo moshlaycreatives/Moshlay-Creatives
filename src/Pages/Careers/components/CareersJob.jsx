@@ -5,7 +5,7 @@ import { TbCurrentLocation } from "react-icons/tb";
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
-import { GetCareersJob } from '../../../store/actions/DataActions';
+import { GetCareersJob } from '../../../store/actions/dataActions';
 
 
 const CareersJob = () => {
@@ -115,7 +115,7 @@ useEffect(()=>{
                 textAlign:'center',fontFamily: 'Montserrat',
             }}> Our Jobs</Typography>
               <Typography sx={{
-                fontSize: isSmall ? '1.4rem' : isMedium ? '2rem' : '2.5rem', 
+                fontSize: isSmall ? '1.2rem' : isMedium ? '2rem' : '2.5rem', 
                 fontWeight:600, 
                 color:'white',
                 textAlign:'center',fontFamily: 'Montserrat',

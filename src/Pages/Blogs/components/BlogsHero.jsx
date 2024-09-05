@@ -46,7 +46,7 @@ const BlogsHero = () => {
             </Typography>
             <Typography
               sx={{
-                fontSize: "1rem",
+                fontSize:isSmall ? "0.9rem" : "1rem",
                 fontWeight: 400,
                 color: "white",
                 textAlign: "center",
@@ -86,6 +86,7 @@ const BlogsHero = () => {
                   marginBottom: "-1.2rem",
                   animation: "fade 2s infinite",
                   animationDelay: "0s", // Starts immediately
+                  width: isSmall ? '4rem':'5rem'
                 }}
               />
               <img
@@ -96,6 +97,7 @@ const BlogsHero = () => {
                   marginBottom: "-1.2rem",
                   animation: "fade 2s infinite",
                   animationDelay: "3s", // Starts after 3s
+                  width: isSmall ? '4rem':'5rem'
                 }}
               />
               <img
@@ -105,6 +107,7 @@ const BlogsHero = () => {
                   // position: 'absolute',
                   animation: "fade 2s infinite",
                   animationDelay: "6s", // Starts after 6s
+                  width: isSmall ? '4rem':'5rem'
                 }}
               />
               <style>
