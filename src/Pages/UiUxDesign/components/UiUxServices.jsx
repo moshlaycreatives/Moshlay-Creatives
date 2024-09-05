@@ -51,8 +51,8 @@ const UiUxServices = () => {
     <>
       <Box
         sx={{
-          marginTop: "1rem",
-          padding: "3rem 10%",
+          marginTop:  "1rem",
+          padding: isSmall ? "2rem 10%" : "3rem 10%",
           marginBottom: "4rem",
           // background:'#323d56
           backgroundImage:'url(/uiuxservicesbg.png)',
@@ -86,7 +86,7 @@ const UiUxServices = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               fontWeight: 400,
               color: "white",
               textAlign: "center",
@@ -141,7 +141,7 @@ const UiUxServices = () => {
                   <Typography
                     sx={{
                       color: "white",
-                      fontSize: "1rem",
+                      fontSize: isSmall ? "0.9rem" :"1rem",
                       fontFamily: "Montserrat",
                       fontWeight: 400,
                     //   textAlign: "center",

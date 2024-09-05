@@ -82,6 +82,7 @@ const UiUxTools = () => {
               textAlign: "center",
               marginTop: "2rem",
               fontFamily: "montserrat",
+              marginBottom:'.5rem'
             }}
           >
             {" "}
@@ -89,12 +90,13 @@ const UiUxTools = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               fontWeight: 400,
               color: "white",
               textAlign: "center",
               width: isSmall ? "100%" : isMedium ? "90%" : "90%",
               fontFamily: "montserrat",
+              
             }}
           >
             Your business is unique and has distinct goals. That’s why we carry
@@ -152,16 +154,16 @@ const UiUxTools = () => {
                         src={data.img}
                         alt=""
                         width={ isSmall ? (
-                          data.img === "fgtools.png" ?'11%' : data.img === "aetools.png" ? '14%' : data.img === "pntools.png" ?  '13%' : data.img === "intools.png" || data.img === "xdtools.png"  || data.img === "sdtools.png" ? '14%'  : "15%"
+                          data.img === "fgtools.png" ?'14%' : data.img === "aetools.png" ? '14%' : data.img === "pntools.png" ?  '13%' : data.img === "intools.png" || data.img === "xdtools.png"  || data.img === "sdtools.png" ? '14%'  : "15%"
                         ) : (
-                          data.img === "fgtools.png" ?'19%' : data.img === "aetools.png" ? '21%' : data.img === "pntools.png" ? '20%' : "24%"
+                          data.img === "fgtools.png" ?'22%' : data.img === "aetools.png" ? '21%' : data.img === "pntools.png" ? '20%' : "24%"
                         )}
                         // height={"55rem"}
                       />
                       <Typography
                         sx={{
                           color: "white",
-                          fontSize: "1rem",
+                          fontSize: isSmall ? "0.9rem" :"1rem",
                           fontFamily: "Montserrat",
                           fontWeight: 400,
                         }}

@@ -82,8 +82,8 @@ const UiUxDesignHero = () => {
           <Button
             // variant="contained"
             sx={{
-              padding: ".5rem 1.5rem",
-              fontSize: "1rem",
+              padding: isSmall ?  "0.5rem 1rem" : "0.5rem 1.5rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               color: theme.palette.primary.main,
               fontWeight: 500,
               fontFamily: "montserrat",
@@ -104,7 +104,7 @@ const UiUxDesignHero = () => {
           <br />
           <Typography
             sx={{
-              fontSize: isSmall ? "1.9rem" : isMedium ? "2.5rem" : "3rem",
+              fontSize: isSmall ? "1.8rem" : isMedium ? "2.5rem" : "3rem",
               fontWeight: 600,
               color: theme.palette.primary.main,
               marginBottom:'0.5rem',
@@ -116,7 +116,7 @@ const UiUxDesignHero = () => {
           {/* <br /> */}
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               fontWeight: 400,
               color: "white",
               fontFamily: "Montserrat",
@@ -133,8 +133,8 @@ const UiUxDesignHero = () => {
           <Button
             variant="outlined"
             sx={{
-              padding: ".5rem 1.5rem",
-              fontSize: "1rem",
+              padding: isSmall ?  "0.5rem 1rem" : "0.5rem 1.5rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               color: theme.palette.primary.main,
               fontWeight: 500,
               fontFamily: "montserrat",
@@ -160,7 +160,7 @@ const UiUxDesignHero = () => {
         }}
       >
         {/* =============================================LEVERAGE============================================================= */}
-        <Box padding={"3rem 0rem"}>
+        <Box padding={isSmall ? "1.5rem 0rem" : "2rem 0rem"}>
           <Typography
             sx={{
               fontFamily: "Montserrat",
@@ -172,14 +172,15 @@ const UiUxDesignHero = () => {
           >
             Leverage Our Expertise in UI & UX Design Services
           </Typography>
-          <br />
           <Typography
             sx={{
               fontFamily: "Montserrat",
-              fontSize: "1rem",
+              padding: isSmall ?  "0.5rem 1rem" : "0.5rem 1.5rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               fontWeight: "400",
               color: "white",
               textAlign: "center",
+              marginTop:'0.5rem'
             }}
           >
             Your business is unique and has distinct goals. That’s why we carry

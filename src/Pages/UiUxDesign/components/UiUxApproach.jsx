@@ -67,7 +67,7 @@ const UiUxApproach = () => {
         sx={{
           // marginTop: "3rem",
           padding: "0 10%",
-          marginBottom:'3rem'
+          marginBottom:isSmall ? '-2rem' : '3rem'
         }}
       >
        <Box
@@ -85,7 +85,8 @@ const UiUxApproach = () => {
               color: theme.palette.primary.main,
               textAlign: "center",
               // marginTop: "2rem",
-              fontFamily: "montserrat",     
+              fontFamily: "montserrat",   
+              marginBottom :'0.5rem'  
             }}
           >
             {" "}
@@ -93,7 +94,7 @@ const UiUxApproach = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               fontWeight: 400,
               color: "white",
               textAlign: "center",
@@ -109,7 +110,7 @@ const UiUxApproach = () => {
 
         {/* ===========================CARDS================================ */}
 
-        <Grid container spacing={6}>
+        <Grid container spacing={isSmall ?3 : isMedium ? 4:6}>
         {listData.map((row, id)=>(
         <Grid key={id} item lg={6} md={6} sm={12} xs={12}>
           <Box sx={{
@@ -136,7 +137,7 @@ const UiUxApproach = () => {
               <Typography
                 sx={{
                   color: "white",
-                  fontSize: "1rem",
+                  fontSize: isSmall ? "0.9rem" :"1rem",
                   fontFamily: "Montserrat",
                   fontWeight: 400,
                   marginLeft:'2.3rem'

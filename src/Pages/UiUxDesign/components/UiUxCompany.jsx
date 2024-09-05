@@ -62,9 +62,9 @@ const UiUxCompany = () => {
     <>
       <Box
         sx={{
-          marginTop: "1rem",
+          marginTop:isSmall ? "0rem" :  "1rem",
           padding: "0 10%",
-          marginBottom: "4rem",
+          marginBottom: isSmall ? "3rem": "4rem",
         }}
       >
         {/* ========================================================TEXT PART============================================= */}
@@ -93,7 +93,7 @@ const UiUxCompany = () => {
           
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               fontWeight: 400,
               color: "white",
               textAlign: "center",
@@ -149,7 +149,7 @@ const UiUxCompany = () => {
                   <Typography
                     sx={{
                       color: "white",
-                      fontSize: "1rem",
+                      fontSize: isSmall ? "0.9rem" :"1rem",
                       fontFamily: "Montserrat",
                       fontWeight: 400,
                       textAlign: "center",

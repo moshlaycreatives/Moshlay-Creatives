@@ -43,16 +43,15 @@ const UiUxEssence = () => {
               fontWeight: "600",
               color: theme.palette.primary.main,
               textAlign: "center",
-              
+              marginBottom:'0.5rem'              
             }}
           >
             Essence of Our UI & UX Design
           </Typography>
-          <br />
           <Typography
             sx={{
               fontFamily: "Montserrat",
-              fontSize: "1rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               fontWeight: "400",
               color: "white",
               textAlign: "center",
@@ -86,7 +85,7 @@ const UiUxEssence = () => {
                 }}>
                   <Typography sx={{
                      fontFamily: "Montserrat",
-                     fontSize: "1rem",
+                     fontSize: isSmall ? "0.9rem" :"1rem",
                      fontWeight: "600",
                      color: index === 1 || index === 2 ? "#98c447" : "black",
                      textAlign: "center",
