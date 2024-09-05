@@ -45,7 +45,7 @@ import {
     return (
       <>
       <Box sx={{
-        padding:'4rem 10%',
+        padding:isSmall ? '2rem 10%' : '3rem 10%' ,
         backgroundColor:'#1c2844'
       }}>
       <Box sx={{
@@ -71,7 +71,7 @@ PROCESS
             </Typography>
             <Typography
               sx={{
-                fontSize: "1rem",
+                fontSize: isSmall ? "0.9rem" :"1rem",
                 fontWeight: 400,
                 color: "white",
                 textAlign: "center",
@@ -102,7 +102,7 @@ PROCESS
 
                 }}
               >
-                <img src="appdevsteps.png" alt="" width={"90%"} />
+                <img src="appdevsteps.png" alt="" width={"85%"} />
               </Box>
             </Grid>
             <Grid Item lg={4} md={4} sm={12} xs={12}>
@@ -123,7 +123,7 @@ PROCESS
                   <Typography
                     sx={{
                       fontFamily: "Montserrat",
-                      fontSize: "1rem",
+                      fontSize: isSmall ? "0.9rem" :"1rem",
                       fontWeight: isSmall ? "400" : "400",
                       color: "white",
                     }}

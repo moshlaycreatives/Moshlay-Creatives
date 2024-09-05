@@ -20,7 +20,7 @@ const AppDevelopmentTech = () => {
     <>
       <Box
         sx={{
-            marginTop:'4rem',
+            marginTop:isSmall ? '3rem' : '4rem',
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
@@ -43,7 +43,7 @@ const AppDevelopmentTech = () => {
         </Typography>
         <Typography
           sx={{
-            fontSize: "1rem",
+            fontSize: isSmall ? "0.9rem" :"1rem",
             fontWeight: 400,
             color: "white",
             textAlign: "center",
@@ -68,7 +68,7 @@ const AppDevelopmentTech = () => {
             <Grid item lg={6} md={6} sm={12} xs={12}>
                 <Typography sx={{
                     color:theme.palette.primary.main,
-                    fontSize:isSmall ? '1.4rem' : '1.8rem',
+                    fontSize:isSmall ? '1.2rem' : isMedium ?  "1.5rem": '1.8rem',
                     fontFamily:'Montserrat',
                     fontWeight:500
                 }}>
@@ -77,7 +77,7 @@ const AppDevelopmentTech = () => {
                 <br />
                 <Typography sx={{
                     color:'white',
-                    fontSize:'1rem',
+                    fontSize: isSmall ? "0.9rem" :"1rem",
                     fontFamily:'Montserrat',
                     fontWeight:400
                 }}>
@@ -117,7 +117,7 @@ const AppDevelopmentTech = () => {
             <Grid item lg={6} md={6} sm={12} xs={12}>
                 <Typography sx={{
                     color:theme.palette.primary.main,
-                    fontSize:isSmall ? '1.4rem' : '1.8rem',
+                    fontSize:isSmall ? '1.2rem' : isMedium ?  "1.5rem": '1.8rem',
                     fontFamily:'Montserrat',
                     fontWeight:500
                 }}>
@@ -126,7 +126,7 @@ const AppDevelopmentTech = () => {
                 <br />
                 <Typography sx={{
                     color:'white',
-                    fontSize:'1rem',
+                    fontSize: isSmall ? "0.9rem" :"1rem",
                     fontFamily:'Montserrat',
                     fontWeight:400
                 }}>
@@ -164,7 +164,7 @@ const AppDevelopmentTech = () => {
             <Grid item lg={6} md={6} sm={12} xs={12}>
                 <Typography sx={{
                     color:theme.palette.primary.main,
-                    fontSize:isSmall ? '1.4rem' : '1.8rem',
+                    fontSize:isSmall ? '1.2rem' : isMedium ?  "1.5rem": '1.8rem',
                     fontFamily:'Montserrat',
                     fontWeight:500
                 }}>
@@ -173,7 +173,7 @@ const AppDevelopmentTech = () => {
                 <br />
                 <Typography sx={{
                     color:'white',
-                    fontSize:'1rem',
+                    fontSize: isSmall ? "0.9rem" :"1rem",
                     fontFamily:'Montserrat',
                     fontWeight:400
                 }}>
@@ -219,7 +219,7 @@ const AppDevelopmentTech = () => {
                 <br />
                 <Typography sx={{
                     color:'white',
-                    fontSize:'1rem',
+                    fontSize: isSmall ? "0.9rem" :"1rem",
                     fontFamily:'Montserrat',
                     fontWeight:400
                 }}>

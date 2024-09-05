@@ -14,3 +14,10 @@
     color: #98c447;
     margin-bottom: 1rem;
  }
+
+ @media (max-width:600px){
+   .appdevtechios li{
+      font-size: 0.9rem;
+   }
+
+ }
