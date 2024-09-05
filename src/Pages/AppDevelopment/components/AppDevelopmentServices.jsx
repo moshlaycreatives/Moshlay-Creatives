@@ -69,7 +69,7 @@ const AppDevelopmentServices = () => {
               fontWeight: 600,
               color: theme.palette.primary.main,
               textAlign: "center",
-              marginTop:'4rem',
+              marginTop:isSmall ?  "-1rem": '0rem',
               fontFamily: "montserrat",
             }}
           >
@@ -78,7 +78,7 @@ const AppDevelopmentServices = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               fontWeight: 400,
               color: "white",
               textAlign: "center",
@@ -129,7 +129,7 @@ const AppDevelopmentServices = () => {
                 <Typography
                   sx={{
                     fontFamily: "Montserrat",
-                    fontSize: "1rem",
+                    fontSize: isSmall ? "0.9rem" :"1rem",
                     fontWeight: isSmall ? "400" : "500",
                     color: "white",
                   }}

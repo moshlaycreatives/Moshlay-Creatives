@@ -46,7 +46,7 @@ const AppDevelopmentPlatforms = () => {
         backgroundPosition:'center',
         backgroundRepeat:'no-repeat',
         backgroundSize:'cover',
-        padding:' 4rem 10%'
+        padding:isSmall ? '2rem 10%' : '3rem 10%'
     }}>
     <Box sx={{
             display:'flex',
@@ -70,7 +70,7 @@ FOR VARIOUS PLATFORMS
           </Typography>
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize: isSmall ? "0.9rem" :"1rem",
               fontWeight: 400,
               color: "white",
               textAlign: "center",
@@ -85,7 +85,7 @@ FOR VARIOUS PLATFORMS
         <br /><br />
 
         {/* ================================================CARDS =============================================== */}
-<Grid container spacing={6}>
+<Grid container spacing={isSmall ? 1 : isMedium ? 4 :6}>
           {listData.map((row, id) => (
             <Grid key={id} item lg={3} md={6} sm={12} xs={12}>
               <Box
@@ -121,7 +121,7 @@ FOR VARIOUS PLATFORMS
                   <Typography
                     sx={{
                       color: 'white',
-                      fontSize: isSmall ? "1.1rem" : "1.2rem",
+                      fontSize: isSmall ? "1rem" : "1.2rem",
                       fontFamily: "Montserrat",
                       fontWeight: 600,
                       marginBottom:'.5rem'
@@ -134,7 +134,7 @@ FOR VARIOUS PLATFORMS
                   <Typography
                     sx={{
                       color: "white",
-                      fontSize: "1rem",
+                      fontSize: isSmall ? "0.9rem" :"1rem",
                       fontFamily: "Montserrat",
                       fontWeight: 400,
                       // textAlign: "center",
