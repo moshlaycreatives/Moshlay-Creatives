@@ -44,7 +44,7 @@ const ContactHero = () => {
           </Typography>
           <Typography
             sx={{
-              fontSize: "1rem",
+              fontSize:isSmall ? "0.9rem" : "1rem",
               fontWeight: 400,
               color: "white",
               textAlign:'center',
@@ -67,6 +67,7 @@ const ContactHero = () => {
         position: 'relative',
         width: 'fit-content',
         height: 'fit-content',
+        
       }}
     >
       <img
@@ -76,7 +77,8 @@ const ContactHero = () => {
           // position: 'absolute',
           marginBottom: '-1.2rem',
           animation: 'fade 2s infinite',
-          animationDelay: '0s', // Starts immediately
+          animationDelay: '0s',
+          width: isSmall ? '4rem':'5rem'
         }}
       />
       <img
@@ -87,6 +89,7 @@ const ContactHero = () => {
           marginBottom: '-1.2rem',
           animation: 'fade 2s infinite',
           animationDelay: '3s', // Starts after 3s
+           width: isSmall ? '4rem':'5rem'
         }}
       />
       <img
@@ -96,6 +99,7 @@ const ContactHero = () => {
           // position: 'absolute',
           animation: 'fade 2s infinite',
           animationDelay: '6s', // Starts after 6s
+           width: isSmall ? '4rem':'5rem'
         }}
       />
       <style>

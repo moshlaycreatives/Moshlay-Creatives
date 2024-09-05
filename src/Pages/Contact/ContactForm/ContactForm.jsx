@@ -9,6 +9,7 @@ import {styled} from "@mui/material"
 import { useDispatch } from "react-redux";
 import { useSnackbar } from "notistack";
 import { SendFormData } from "../../../store/actions/dataActions";
+import { isImmutableDefault } from "@reduxjs/toolkit";
 
 const CustomTextField = styled(TextField)({
     '& .MuiOutlinedInput-root': {
@@ -36,6 +37,7 @@ const CustomTextField = styled(TextField)({
       color: 'white',
     },
     '& .MuiOutlinedInput-input::placeholder': {
+      fontSize:  '0.9rem',
       color: 'white',
       opacity: 1, // Ensure the placeholder is fully opaque
     },
@@ -101,17 +103,17 @@ const ContactForm = () => {
       <Box sx={{
         padding:'5% 10%'
       }}>
-        <Grid container spacing={10}>
+        <Grid container spacing={isMedium ? 5: 10}>
           <Grid item lg={5} md={5} sm={12} xs={12}>
             <Box>
               <Typography sx={{
-                fontSize: isSmall ? '1.6rem' : '1.8rem',
+                fontSize: isSmall ? '1.2rem' : isMedium ? '1.5rem': '1.8rem',
                 fontWeight:600,
                 color:theme.palette.primary.main,
                 fontFamily: 'Montserrat',
               }}>Write Us a Message</Typography>
               <Typography sx={{
-                fontSize:'1rem',
+                fontSize: isSmall ? '0.9rem':'1rem',
                 fontWeight:400,
                 color:'white',
                 textAlign:'justify',
@@ -130,10 +132,11 @@ const ContactForm = () => {
                     <a href="https://www.facebook.com/MoshlayCreatives">
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
-                    border:'2px solid #98c447',
+                    border:isSmall ? "1.8px solid white" : "2px solid white",
+                  fontSize:isSmall ? "0.8rem" : "1rem", 
                     padding:'.3rem .2rem 0rem .2rem',
                     borderRadius:'4px',
-                    fontSize:'1rem', fontFamily: 'Montserrat',
+                     fontFamily: 'Montserrat',
                     transition:'0.3s',
                     '&:hover':{
                       color:'white',
@@ -147,10 +150,11 @@ const ContactForm = () => {
                     <a href="https://www.linkedin.com/company/moshlaycreatives/?viewAsMember=true">
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
-                    border:'2px solid #98c447',
+                   border:isSmall ? "1.8px solid white" : "2px solid white",
+                  fontSize:isSmall ? "0.8rem" : "1rem",
                     padding:'.3rem .2rem 0rem .2rem',
                     borderRadius:'4px',
-                    fontSize:'1rem', fontFamily: 'Montserrat',
+                     fontFamily: 'Montserrat',
                     transition:'0.3s',
                     '&:hover':{
                       color:'white',
@@ -164,10 +168,11 @@ const ContactForm = () => {
                     <a href="https://www.linkedin.com/company/moshlaycreatives/?viewAsMember=true">
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
-                    border:'2px solid #98c447',
+                    border:isSmall ? "1.8px solid white" : "2px solid white",
+                    fontSize:isSmall ? "0.8rem" : "1rem",
                     padding:'.3rem .2rem 0rem .2rem',
                     borderRadius:'4px',
-                    fontSize:'1rem', fontFamily: 'Montserrat',
+                    fontFamily: 'Montserrat',
                     transition:'0.3s',
                     '&:hover':{
                       color:'white',
@@ -181,10 +186,11 @@ const ContactForm = () => {
                     <a href="https://www.linkedin.com/company/moshlaycreatives/?viewAsMember=true">
                 <Typography variant="i" sx={{
                     color:theme.palette.primary.main,
-                    border:'2px solid #98c447',
+                    border:isSmall ? "1.8px solid white" : "2px solid white",
+                    fontSize:isSmall ? "0.8rem" : "1rem",
                     padding:'.3rem .2rem 0rem .2rem',
                     borderRadius:'4px',
-                    fontSize:'1rem', fontFamily: 'Montserrat',
+                     fontFamily: 'Montserrat',
                     transition:'0.3s',
                     '&:hover':{
                       color:'white',
@@ -266,8 +272,9 @@ const ContactForm = () => {
             // variant="contained"
              sx={{marginTop:'3rem', color:'white', textTransform:'none',
               backgroundColor:theme.palette.primary.main,
-              padding:'0.8rem 2rem',
+              padding: isSmall ? '0.5rem 1rem' : '0.8rem 2rem',
                fontFamily: 'Montserrat',
+               fontSize:isSmall ? '0.9rem': '1rem' ,
                fontWeight:500,
                border:'1px solid #98c447',
                transition:'0.3s',
