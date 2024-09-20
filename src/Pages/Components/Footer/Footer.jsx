@@ -78,14 +78,14 @@ function Footer() {
         <div className="footer-contact-info">
           <h3>Contact US</h3>
           <div className="footer-contact-info-links">
-            <a href="">
+            {/* <a href="">
               {" "}
               <i>
                 {" "}
                 <IoLocationOutline />
                 Johar Town,Lahore
               </i>
-            </a>
+            </a> */}
             <a href="mailto: info@moshlaycreatives.com">
               {" "}
               <i>
