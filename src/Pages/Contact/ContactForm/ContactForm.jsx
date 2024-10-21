@@ -10,6 +10,10 @@ import { useDispatch } from "react-redux";
 import { useSnackbar } from "notistack";
 import { SendFormData } from "../../../store/actions/dataActions";
 import { isImmutableDefault } from "@reduxjs/toolkit";
+import { MdOutlineEmail } from "react-icons/md";
+import { FaPhoneVolume } from "react-icons/fa";
+import style from "./ContactForm.module.css"
+
 
 const CustomTextField = styled(TextField)({
     '& .MuiOutlinedInput-root': {
@@ -117,17 +121,36 @@ const ContactForm = () => {
                 fontWeight:400,
                 color:'white',
                 textAlign:'justify',
-                marginBottom:'1rem',
+                marginBottom:'0rem',
                 fontFamily: 'Montserrat',
 
               }}> 
               Have a question? Need help? Send us a message. We welcome your query and are ready to assist you.
               </Typography>
               <br />
+
+              <Box sx={{display:'flex' , flexDirection:'column' , gap:'0.5rem' ,mb:'2rem'}}>
+              <a href="mailto: info@moshlaycreatives.com" className={style.emaila} >
+              {" "}
+              <i className={style.emailli}>
+                {" "}
+                <MdOutlineEmail  style={{fontSize:'1.2rem',marginBottom:'-3px'}}/> info@moshlaycreatives.com
+              </i>
+            </a>
+            <a href="tel:+18044303544" className={style.emaila}>
+              {" "}
+              <i className={style.emailli}>
+                {" "}
+                <FaPhoneVolume style={{fontSize:'1.2rem', marginBottom:'-3px'}}/> +1 804-430-3544
+              </i>
+            </a>
+              </Box>
+
               <Box sx={{
                 display:'flex',
                 // justifyContent:'space-between',
-                 gap:2
+                 gap:2,
+                 marginTop:'1rem',
               }}>
                     <a href="https://www.facebook.com/MoshlayCreatives">
                 <Typography variant="i" sx={{

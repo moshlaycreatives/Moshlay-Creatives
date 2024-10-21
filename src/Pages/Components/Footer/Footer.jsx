@@ -72,6 +72,7 @@ function Footer() {
             <li onClick={() => handleQuickLinks("/blogs")}>Blogs</li>
             <li onClick={() => handleQuickLinks("/about")}>Career</li>
             <li onClick={() => handleQuickLinks("/contact")}>Contact</li>
+            <li onClick={() => handleQuickLinks("/privacy-policy")}>Privacy Policy</li>
           </ul>
         </div>
 
@@ -93,13 +94,13 @@ function Footer() {
                 <MdOutlineEmail /> info@moshlaycreatives.com
               </i>
             </a>
-            {/* <a href="tel:+923092087119">
+            <a href="tel:+18044303544">
               {" "}
               <i>
                 {" "}
-                <FaPhoneVolume /> +92 309 2087119
+                <FaPhoneVolume /> +1 804-430-3544
               </i>
-            </a> */}
+            </a>
           </div>
 
           {/* <div className='footer-social-btn'>

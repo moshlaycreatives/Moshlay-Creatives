@@ -31,6 +31,7 @@ import CareersAddJobDetailsForm from "./Pages/Careers/components/CareersAddJobDe
 import UiUxDesignMain from "./Pages/UiUxDesign/UiUxDesignMain";
 import CustomSoftwareMain from "./Pages/CustomSoftware/CustomSoftwareMain";
 import QualityAssuranceMain from "./Pages/QualityAssurance/QualityAssuranceMain";
+import PrivacyPolicy from "./Pages/PrivacyPolicy/PrivacyPolicy";
 
 
 
@@ -69,6 +70,10 @@ console.log(isAuthenticated, 'hgyfuhhj')
       {
         path:'/contact',
         element : <Contact /> ,
+       },
+       {
+        path:'/privacy-policy',
+        element : <PrivacyPolicy /> ,
        },
        {
         path:'/blogs',

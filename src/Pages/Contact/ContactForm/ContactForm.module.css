@@ -1,0 +1,19 @@
+.emaila {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+}
+.emailli{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Montserrat';
+
+}
+ .emaila:hover {
+    color: #98c447;
+ }
+ .emailli:hover {
+    color: #98c447;
+ }
