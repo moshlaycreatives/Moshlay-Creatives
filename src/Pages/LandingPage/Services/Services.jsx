@@ -22,61 +22,61 @@ const Services = () => {
       title: "Web Developer",
       subTitle:
         "We specialize in crafting custom websites that not only look stunning but also drive results. Our team of skilled developers utilizes the latest technologies to create websites that are visually appealing, user-friendly, and optimized for search engines.",
-      image: "services1.svg",
+      image: "services1.webp",
     },
     {
       title: "Search Engine Optimization",
       subTitle:
         "Our SEO experts are dedicated to improving your website's visibility in search engine results pages (SERPs). We employ proven strategies to optimize your website's content, and technical aspects, ensuring that you rank higher for relevant keywords.",
-      image: "services2.svg",
+      image: "services2.webp",
     },
     {
       title: "App Developer",
       subTitle:
         "We create innovative mobile apps that meet your business objectives and provide a seamless user experience. Our app development services cover a wide range of platforms and functionalities, ensuring that your app stands out in the crowded marketplace.",
-      image: "services3.svg",
+      image: "services3.webp",
     },
     {
       title: "Email Marketing",
       subTitle:
         "Our email marketing services help you nurture customer relationships and drive conversions. We develop targeted email campaigns, personalize content, and track performance metrics to optimize your results.",
-      image: "services4.svg",
+      image: "services4.webp",
     },
     {
       title: "Block Chain",
       subTitle:
         "Harness the power of blockchain technology. Our expert team specializes in developing innovative blockchain solutions tailored to your specific needs. From decentralized applications to smart contracts, we leverage the security and transparency.",
-      image: "services5.svg",
+      image: "services5.webp",
     },
     {
       title: "Socail Medai Marketing",
       subTitle:
         "We help you engage with your target audience on popular social media platforms. Our team develops effective social media strategies, creates engaging content, and manages your online presence to drive brand awareness and increase customer engagement.",
-      image: "services6.svg",
+      image: "services6.webp",
     },
     {
       title: "Quality Assurance",
       subTitle:
         "We are committed to delivering high-quality IT solutions. Our quality assurance team conducts thorough testing and quality checks to ensure that your website, app, or other digital asset meets the highest standards of performance and reliability.",
-      image: "services7.svg",
+      image: "services7.webp",
     },
     {
       title: "Pay-Par-Click(PPC)",
       subTitle:
         "We optimize your online advertising campaigns to maximize your return on investment (ROI). Our PPC experts leverage data-driven strategies to target the right audience, improve click-through rates, and drive conversions.",
-      image: "services8.svg",
+      image: "services8.webp",
     },
     {
       title: "UI/UX Designing",
       subTitle:
         "We focus on designing intuitive and visually appealing user experiences that leave a lasting impression. Our UI/UX experts combine creativity and technical expertise to create interfaces that are both functional and aesthetically pleasing.",
-      image: "services9.svg",
+      image: "services9.webp",
     },
     {
       title: "Content Marketing",
       subTitle:
         "We help you create valuable and engaging content that attracts and retains your target audience. Our content marketing services include blog writing, article creation, and social media content development.",
-      image: "services10.svg",
+      image: "services10.webp",
     },
   ];
   return (

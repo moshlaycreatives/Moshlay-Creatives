@@ -15,25 +15,25 @@ import "./ReviewsCarousel.css";
 const ReviewsCarousel = () => {
   const cardData = [
     {
-      cardimage: "services1.svg",
+      cardimage: "services1.webp",
       cardTitle: "ahmad sultan",
       cardDes:
         "Lorem Ipsum es simplemente el texto  relleno de las imprentas y archivos de teLorem Ipsum ha sido el texto de relleno tándar de las industrias desde el año 15",
     },
     {
-      cardimage: "services2.svg",
+      cardimage: "services2.webp",
       cardTitle: "imran ashiq",
       cardDes:
         "Lorem Ipsum es simplemente el texto  relleno de las imprentas y archivos de teLorem Ipsum ha sido el texto de relleno tándar de las industrias desde el año 15",
     },
     {
-      cardimage: "services3.svg",
+      cardimage: "services3.webp",
       cardTitle: "usama jawad",
       cardDes:
         "Lorem Ipsum es simplemente el texto  relleno de las imprentas y archivos de teLorem Ipsum ha sido el texto de relleno tándar de las industrias desde el año 15",
     },
     {
-      cardimage: "services4.svg",
+      cardimage: "services4.webp",
       cardTitle: "hassan ali",
       cardDes:
         "Lorem Ipsum es simplemente el texto  relleno de las imprentas y archivos de teLorem Ipsum ha sido el texto de relleno tándar de las industrias desde el año 15",

@@ -61,7 +61,7 @@ const KnowUs = () => {
                 },
               }}
             >
-              <img src="knowus.svg" alt="description" />
+              <img src="knowus.webp" alt="description" />
             </Box>
           </Grid>
           <Grid item lg={6} md={6} sm={12} xs={12} order={isMedium ? 1 : 2}>

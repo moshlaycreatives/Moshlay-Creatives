@@ -84,7 +84,7 @@ const WhyWeIdeal = () => {
                 width: "100%",
               }}
             >
-              <img src="whyWeIdeal.svg" alt="" style={{
+              <img src="whyWeIdeal.webp" alt="" style={{
                 width: isMedium ? '100%' : istwelve ? '50%' : istwelve80 ? '100%' : isLarge ? '95%' : isExtraLarge ? '85%' : '75%'
               }} />
               <Box

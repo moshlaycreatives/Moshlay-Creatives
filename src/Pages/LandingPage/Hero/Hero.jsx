@@ -25,14 +25,14 @@ const Hero = () => {
             position:'relative',
             overflow:'hidden',
         }}>
-        <img src="heroImage.svg" alt="" style={{
+        <img src="heroImage.webp" alt="" style={{
             position:'absolute',width:'100%',
             // height: isSmall ? '15vh' : isMedium ? '10vh' : 'auto',
              top: four ? 2 : isSmall ? -5 : seven5 ? -25 : isMedium ? -30 : ten ? -30 : twelve ? -35 : -40 ,
              left:isSmall ? -5 : isMedium ? -40 : ten ? -45 :  twelve ? -50 : -60 
             ,objectFit:'cover',
             objectPosition:'center'}}/>
-        <img src="heroImage1.svg" alt="" style={{
+        <img src="heroImage1.webp" alt="" style={{
             position:'absolute',width:'110%',
             top: four ? -30 : isSmall ? -40 : seven5 ? -70 : isMedium ? -90 : ten ? -110 : twelve ? -130 : -150 ,
             left:isSmall ? -20 : isMedium ? -30 : twelve ? -35  : -40 

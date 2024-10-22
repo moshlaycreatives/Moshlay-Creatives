@@ -45,7 +45,7 @@ const AboutUs = () => {
                 width: "100%",
               }}
             >
-              <img src="homeAbout.svg" alt="" width={"100%"} />
+              <img src="homeAbout.webp" alt="" width={"100%"} />
             </Box>
           </Grid>
           <Grid

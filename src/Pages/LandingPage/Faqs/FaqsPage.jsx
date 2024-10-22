@@ -29,7 +29,7 @@ const FaqsPage = () => {
             display:'flex',
             justifyContent:isMedium ? 'center': 'start'
            }}>
-           <img src="faqs.svg" alt="" width={"100%"} />
+           <img src="faqs.webp" alt="" width={"100%"} />
            </Box>
           </Grid>
           <Grid item lg={8} md={8} sm={12} xs={12}>
