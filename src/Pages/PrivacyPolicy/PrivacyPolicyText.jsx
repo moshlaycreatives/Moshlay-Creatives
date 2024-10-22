@@ -17,8 +17,11 @@ const PrivacyPolicyText = () => {
         </Typography>
 
         <br />
+        <Typography sx={{ color: "white" }}>
+        No Mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
+          </Typography>
 
-        <Box>
+        {/* <Box>
           <br />
           <Typography sx={{ fontWeight: "600", fontSize: "1.1rem"  , color:theme.palette.primary.main}}>
             1. Acceptance of Terms
@@ -155,7 +158,7 @@ const PrivacyPolicyText = () => {
             Terms, which will be posted on our website. You are responsible for
             reviewing the Terms periodically for changes and staying updated.
           </Typography>
-        </Box>
+        </Box> */}
       </Box>
     </>
   );
