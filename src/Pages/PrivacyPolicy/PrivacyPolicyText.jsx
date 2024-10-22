@@ -17,9 +17,166 @@ const PrivacyPolicyText = () => {
         </Typography>
 
         <br />
-        <Typography sx={{ color: "white" }}>
-        No Mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.
+        <Typography sx={{ color: "white",lineHeight:'1.5rem' }}>
+        At Moshlay Creatives, we respect your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, share, and protect your personal information when you visit our website or use our services. Please read this privacy policy carefully before using our website or services.
           </Typography>
+
+          <br />
+          <Typography sx={{ fontWeight: "600", fontSize: "1.2rem"  , color:theme.palette.primary.main}}>
+          Information We Collect
+          </Typography>
+          <Typography sx={{ color: "white" ,lineHeight:'1.5rem'}}>
+          We collect two types of information from you: personal information and non-personal information.
+          </Typography>
+          <br />
+
+    
+         <ol style={{marginLeft:'30px',lineHeight:'1.5rem'}}>
+          <li style={{color:'white' , fontFamily:'Montserrat'}}>
+          <strong style={{color:theme.palette.primary.main,fontWeight: "600", fontSize: "1rem" }}>Personal Information:</strong> Any information that can be used to identify you as an individual, such as your name, email address, phone number, physical address, payment details, etc. We collect personal information when you:
+
+          <ul style={{marginLeft:'25px' , lineHeight:'2rem'}}>
+            <li> Register an account with us</li>
+            <li> Purchase or use our services</li>
+            <li> Contact us for inquiries, feedback, or support</li>
+            <li> Subscribe to our newsletter or other communications</li>
+            <li> Participate in surveys, contests, or promotions</li>
+            <li> Post or submit content to our website or services</li>
+
+          </ul>
+          </li>
+          <br />
+
+          <li style={{color:'white' , fontFamily:'Montserrat'}}>
+          <strong style={{color:theme.palette.primary.main,fontWeight: "600", fontSize: "1rem" }}>Non-Personal Information:</strong>  Any information that cannot be used to identify you as an individual, such as your browser type, device type, operating system, IP address, location data, etc. We collect non-personal information when you:
+          <ul style={{marginLeft:'25px' , lineHeight:'2rem'}}>
+            <li> Visit or browse our website</li>
+            <li> Use our services</li>
+            <li> Interact with our advertisements or social media pages</li>
+          </ul>
+          <br />
+          <br />
+          <p style={{marginLeft:'-25px' , lineHeight:'2rem'}}>We may also collect information from third-party sources, such as:</p>
+          <br />
+          <ul style={{marginLeft:'25px' , lineHeight:'2rem'}}>
+          <li> Analytics providers</li>
+            <li> Advertising partners</li>
+            <li> Social media platforms</li>
+            <li> Other service providers</li>
+          </ul>
+          </li>
+         </ol>
+         <br />  
+
+         <Typography sx={{color:'white' , fontWeight:'600' , fontSize:'1.1rem',color:theme.palette.primary.main}}>
+         No Mobile information, except for text messaging originator opt-in data and consent, will be shared with third parties/affiliates for marketing/promotional purposes
+         </Typography>
+         <br />
+
+         <Typography sx={{color:'white' , fontWeight:'600' , fontSize:'1.1rem',color:theme.palette.primary.main}}>
+         How We Use Your Information?
+         </Typography>
+         <br />
+         <Typography sx={{color:'white' , }}>
+         We use your information for various purposes, including:
+         </Typography>
+         <br />
+
+         <ul style={{marginLeft:'25px' , lineHeight:'2rem', color:'white', fontFamily:'Montserrat'}}>
+          <li> Providing and improving our website and services</li>
+            <li> Processing and fulfilling orders and requests</li>
+            <li> Communicating with you about your account, requests, feedback, support, etc.</li>
+            <li> Personalizing and optimizing your experience on our website and services</li>
+            <li> Monitoring and analyzing website and service performance, usage, trends, etc.</li>
+            <li> Monitoring and analyzing website and service performance, usage, trends, etc.</li>
+            <li> Complying with legal obligations, enforcing policies, resolving disputes.</li>
+            <li> Sending you newsletters, offers, promotions, updates, etc.</li>
+          </ul>
+          <br />
+
+          <Typography sx={{color:'white' , fontWeight:'600' , fontSize:'1.1rem',color:theme.palette.primary.main}}>
+          How We Share Your Information?
+         </Typography>
+         <br />
+         <Typography sx={{color:'white' , }}>
+         We do not sell or rent your personal information to third parties for their marketing purposes without your consent. We may share your information with:  
+         </Typography>
+         <br />
+
+         <ul style={{color:'white' , fontFamily:'Montserrat', marginLeft:'30px' , lineHeight:'1.5rem'}}>
+          <li >
+         <strong style={{color:theme.palette.primary.main,fontWeight: "600", fontSize: "1rem",fontFamily:'Montserrat' }}>Service providers: </strong>
+          We may share your information with service providers that help us operate and enhance our website and services (e.g., hosting providers, payment processors, analytics providers, and advertising partners). These service providers are contractually obligated to protect your information and use it only for the purposes we specify. 
+          </li>
+          <li >
+         <strong style={{color:theme.palette.primary.main,fontWeight: "600", fontSize: "1rem",fontFamily:'Montserrat' }}>Affiliates and partners: </strong>
+          We may share your information with our affiliates and partners that offer products or services that may interest you or complement ours.
+          </li>
+          <li >
+         <strong style={{color:theme.palette.primary.main,fontWeight: "600", fontSize: "1rem",fontFamily:'Montserrat' }}>Law enforcement and regulators: </strong>
+          We may share your information with law enforcement and regulators when required or permitted by law.
+          </li>
+          <li >
+          Other parties in connection with a merger, acquisition, reorganization, or sale.
+          </li>
+         </ul>
+         <br />
+
+<Typography sx={{color:'white' , fontWeight:'600' , fontSize:'1.1rem',color:theme.palette.primary.main}}>
+How We Protect Your Information?
+</Typography>
+<br />
+<Typography sx={{color:'white' , }}>
+We take reasonable measures to protect your information from unauthorized access, use, disclosure, alteration, or destruction. We use security technologies and procedures, such as encryption, firewalls, passwords, etc. However, no method of transmission or storage is 100% secure. You are responsible for keeping your account credentials and devices secure and confidential.  
+</Typography>
+<br />
+
+
+<Typography sx={{color:'white' , fontWeight:'600' , fontSize:'1.1rem',color:theme.palette.primary.main}}>
+Your Rights
+</Typography>
+<br />
+<Typography sx={{color:'white' , }}>
+You may have certain rights regarding your personal information, depending on applicable laws. These rights may include:  
+</Typography>
+<br />
+<ul style={{marginLeft:'25px' , lineHeight:'2rem', color:'white', fontFamily:'Montserrat'}}>
+          <li> Accessing your personal information</li>
+            <li> Rectifying or updating your personal information</li>
+            <li> Erasing your personal information.</li>
+            <li> Restricting the processing of your personal information</li>
+            <li> Objecting to the processing of your personal information  </li>
+            <li> Data portability.</li>
+          </ul>
+        <br />
+
+        <Typography sx={{color:'white' , fontWeight:'600' , fontSize:'1.1rem',color:theme.palette.primary.main}}>
+        Acceptance of Policy
+</Typography>
+<br />
+<Typography sx={{color:'white' , }}>
+
+You agree to our privacy policy by accessing this website or using services provided by this website. Please do not use our website or the services provided by this website if you do not agree with any of the terms. We also reserve the right, at our discretion, to amend, modify, add, or remove elements of this policy by simply posting such changes, updates, or modifications on the website. Continued use of our site after the policy terms have been changed indicates your acceptance of these terms.
+
+</Typography>
+<br />
+
+<Typography sx={{color:'white' , fontWeight:'600' , fontSize:'1.1rem',color:theme.palette.primary.main}}>
+Contact Us
+</Typography>
+<br />
+<Typography sx={{color:'white' , }}>
+If you have any questions about this Privacy Policy or our privacy practices,
+ please contact us at: 
+ <a href="mailto: info@moshlaycreatives.com"
+ style={{textDecoration:'none' , color:theme.palette.primary.main, display:'block'}}> info@moshlaycreatives.com </a>
+            <a href="tel:+18044303544"
+            style={{textDecoration:'none' , color:theme.palette.primary.main, display:'block'}}> +1 804-430-3544 </a>
+</Typography>
+
+
+
+
 
         {/* <Box>
           <br />
